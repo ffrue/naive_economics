@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mapping Sector Balances">
+  <meta name="twitter:description" content="Interactive tool for creating sector balances maps.">
+  <meta name="twitter:image" content="https://www.naive-economics.com/static/thumbnail.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <!-- Formulas -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link here" href="../datawork">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../models">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Part -->
+<div class="container-fluid" style="padding-top: 2.5%; text-align: center; width: 80%;">
+    <h2 class="title">Analysing drivers of GDP growth</h2>
+      <div class="row text" style="text-align: justify; padding: 0 10%; margin-bottom: 2.5%;">
+
+    <script language="Javascript">
+            window.onload=function(){
+            var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+            if (mobile) {
+                alert("Visit this on a Computer for Better View.");
+            } else {
+
+            }
+          }
+     </script>
+
+      <p>
+          First things first: Of course, GDP growth is no measure for holistic development. Not at all. And yes, GDP growth should not be an objective for itself, but only
+          a means to another end. This is why the Degrowth debate is important, as it kick-starts a discussion about what we actually aim for as a society. And needless to say,
+          if we do not manage to achieve GDP growth while staying within the planetary boundaries, it is better not to grow.
+          Nevertheless, GDP growth still is <i>one</i> relevant indicator to assess the economic capabilities of a country. But how did and do countries actually grow?
+      </p>
+
+      <p>
+          To give a purely descriptive answer, it is useful to decompose GDP growth into the contribution of multiple factors. For this, one can write
+          "GDP = (GDP / hours worked) * (hours worked / employment) * (employment / labor force) * (labor force / population) * population". In a next step,
+          one calculates how GDP growth is reflected in the growth of the separate factors, namely productivity, average hours per employee, employment rate, participation rate, and population growth.
+          It is important to note that this does not tell us anything about the causes of GDP growth. For example, average hours per employee can change because people want to work less (and enjoy more leisure)
+          or because the order situation for firms is not good enough to have all employees work as much as they would like to. Nevertheless, one can learn quite a bit from the
+          descriptive pictures below, also because a causal explanation for a country's growth must match the empirical facts. If people explain low overall growth with an increase in
+          size of low-wage sectors, where productivity is low, this should be reflected in low productivity growth but stable/increasing employment (be it total employment or hours worked).
+      </p>
+
+      <p>
+          The following two figures show the results of such a decomposition, using data from the OECD.
+          The numbers account for changes in price levels and exchange rates, i.e., they reflect real GDP growth adjusted for purchasing power.
+          This makes the numbers comparable for countries with different currencies.
+      </p>
+
+    </div>
+
+    <form method="post" style="text-align: center;">
+      <div class="btn-group" role="group">
+            <button class="button-group" name="submit_button" type="submit" value="1980s" style="margin-left:1%; margin-right:1%;">1980s</button>
+            <button class="button-group" name="submit_button" type="submit" value="1990s" style="margin-left:1%; margin-right:1%;">1990s</button>
+            <button class="button-group" name="submit_button" type="submit" value="2000s" style="margin-left:1%; margin-right:1%;">2000s</button>
+            <button class="button-group" name="submit_button" type="submit" value="2010s" style="margin-left:1%; margin-right:1%;">2010s</button>
+        </div>
+    </form>
+
+
+    </div>
+   <div class="diagram-container" style="text-align: center;">
+    {{ code_decade|safe }}
+    </div>
+
+    <div class="container-fluid" style="padding-top: 2.5%; text-align: center; width: 80%;">
+        <div class="row text" style="text-align: justify; padding: 0 10%; margin-bottom: 2.5%;">
+            <p>
+                To study the development of a country in particular over time, use the following tool.
+                Needless to say, there are the same caveats with regard to interpretation as before.
+                Missing data may lead to gaps in the development over time for some countries.
+            </p>
+        </div>
+
+    <form method="post" style="text-align: center;">
+      <div class="btn-group" role="group">
+            <button class="button-group" name="submit_button" type="submit" value="Australia">Australia</button>
+            <button class="button-group" name="submit_button" type="submit" value="Austria">Austria</button>
+            <button class="button-group" name="submit_button" type="submit" value="Belgium">Belgium</button>
+            <button class="button-group" name="submit_button" type="submit" value="Czech Republic">Czechia</button>
+            <button class="button-group" name="submit_button" type="submit" value="Denmark">Denmark</button>
+            <button class="button-group" name="submit_button" type="submit" value="Estonia">Estonia</button>
+            <button class="button-group" name="submit_button" type="submit" value="Finland">Finland</button>
+            <button class="button-group" name="submit_button" type="submit" value="France">France</button>
+        </div>
+        <div class="btn-group" role="group">
+            <button class="button-group" name="submit_button" type="submit" value="Germany">Germany</button>
+            <button class="button-group" name="submit_button" type="submit" value="Greece">Greece</button>
+            <button class="button-group" name="submit_button" type="submit" value="Hungary">Hungary</button>
+            <button class="button-group" name="submit_button" type="submit" value="Iceland">Iceland</button>
+            <button class="button-group" name="submit_button" type="submit" value="Ireland">Ireland</button>
+            <button class="button-group" name="submit_button" type="submit" value="Italy">Italy</button>
+            <button class="button-group" name="submit_button" type="submit" value="Japan">Japan</button>
+            <button class="button-group" name="submit_button" type="submit" value="Korea">Korea</button>
+        </div>
+        <div class="btn-group" role="group">
+            <button class="button-group" name="submit_button" type="submit" value="Lithuania">Lithuania</button>
+            <button class="button-group" name="submit_button" type="submit" value="Mexico">Mexico</button>
+            <button class="button-group" name="submit_button" type="submit" value="Netherlands">Netherlands</button>
+            <button class="button-group" name="submit_button" type="submit" value="Norway">Norway</button>
+            <button class="button-group" name="submit_button" type="submit" value="Poland">Poland</button>
+            <button class="button-group" name="submit_button" type="submit" value="Portugal">Portugal</button>
+            <button class="button-group" name="submit_button" type="submit" value="Slovak Republic">Slovakia</button>
+      </div>
+      <div class="btn-group" role="group">
+            <button class="button-group" name="submit_button" type="submit" value="Slovenia">Slovenia</button>
+            <button class="button-group" name="submit_button" type="submit" value="Spain">Spain</button>
+            <button class="button-group" name="submit_button" type="submit" value="Sweden">Sweden</button>
+            <button class="button-group" name="submit_button" type="submit" value="Switzerland">Switzerland</button>
+            <button class="button-group" name="submit_button" type="submit" value="Türkiye">Turkey</button>
+            <button class="button-group" name="submit_button" type="submit" value="United Kingdom">UK</button>
+            <button class="button-group" name="submit_button" type="submit" value="United States">USA</button>
+      </div>
+    </form>
+    </div>
+</div>
+
+  <div class="diagram-container" style="text-align: center;">
+    {{ code_annual|safe }}
+  </div>
+
+  <div class="bottom">
+      © Florian Frühhaber
+  </div>
+
+</body>
+
+</html>

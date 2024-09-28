@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Wirtschaft naiv denken</h2>
+
+      <!-- <p class="disclaimer">
+        Der folgende Text ist der Erstversuch einer kompakten Einführung in progressives Wirtschaftsdenken. Da es ein Work-in-Progress und eine hoffentlich anregende Diskussionsgrundlage ist, bin ich für Kommentare/Kritik/Ergänzungen hier besonders
+        dankbar.
+      </p> -->
+
+      <p>
+        Die Wirtschaft ist ein prägendes Element unserer Gesellschaftsordnung und unseres täglichen Lebens, denn es geht dort um nichts anderes als das Erreichen von individuellen und kollektiven Zielen unter gewissen Beschränkungen (wie z.B.
+        Ressourcenknappheit oder thermodynamische Gesetze). Es ist daher enorm wichtig, dass jeder eine demokratische Teilhabe an der Ausgestaltung der Wirtschaftsordnung hat. Oft wird Wirtschaftspolitik in der öffentlichen Diskussion jedoch von
+        Experten bestimmt, die mit ökonomischen „Gesetzen“ als Todschlagargumente normative Debatten beenden, den politischen Gestaltungsspielraum massiv einschränken oder direkt Patentlösungen vorgeben. Davon darf sich nicht täuschen oder abschrecken
+        lassen! Wirtschaft ist, was wir als Gesellschaft daraus machen, und solange man die Grundlagen unseres aktuellen Wirtschaftssystems kennt, sollte jeder sich in wirtschaftliche Debatten einbringen, wo
+        große Teile unserer Gesellschaftsordnung verhandelt werden. Es gilt, mit einem frischen und ehrlichen Blick auf die Wirtschaft zu schauen und ein naives Verständnis derer zu entwickeln. Den Begriff „naiv“ verwende ich hier im positiven Sinne,
+        nämlich als einen unvoreingenommenen, wirklichkeitsorientierten und kreativen Zugang zur Welt in Abgrenzung zu pseudointellektuellen Elfenbeindiskussionen. Genau diese Herangehensweise brauchen wir, wenn wir unser dysfunktionales
+        Wirtschaftssystem wieder an den Zielen und Bedürfnissen von Mensch und Natur auszurichten. Wirtschaft naiv zu denken, heißt, Wirtschaft neu zu denken.
+      </p>
+
+      <p>
+        Der folgende Text besteht aus neun Abschnitte, die je einen (Anwendungsfall) enthalten und auch einzeln gelesen werden können, plus einem kurzen Fazit:
+      </p>
+      <ul style="padding-left: 5%;">
+        <li>
+          <a href="#1">Denkfehler der VWL (Überhitzt unsere Wirtschaft?)</a>
+        </li>
+        <li>
+          <a href="#2">Mikro- und Makroebene (Griechenland-Krise)</a>
+        </li>
+        <li>
+          <a href="#3">Unser zweistufiges Geldsystem (Vollgeld-Initiative)</a>
+        </li>
+        <li>
+          <a href="#4">Einnahmen und Ausgaben des Staates (Unsinnige Staatsanleihen)</a>
+        </li>
+        <li>
+          <a href="#5">Warum die EZB verzweifelt: Was wirklich die Inflation bestimmt (Staatliche Jobgarantie)</a>
+        </li>
+        <li>
+          <a href="#6">Wirtschaftspolitik: Make it real (Rente) </a>
+        </li>
+        <li>
+          <a href="#7">Stabilität ist instabil: Finanzmärkte (Finanzkrise 2008) </a>
+        </li>
+        <li>
+          <a href="#8">Alles andere als quid pro quo: Der Welthandel (Deutschland und die Eurokrise) </a>
+        </li>
+        <li>
+          <a href="#9">Ein progressives Staatsverständnis (Pharmaindustrie) </a>
+        </li>
+      </ul>
+
+      <div id="1" class="jumper">
+      </div>
+
+      <h3>1. Denkfehler der VWL</h3>
+
+      <p>
+        Bevor ich die aus meiner Sicht grundlegendsten Zusammenhänge unserer aktuellen Wirtschaftssystems knapp und verständlich darzustellen versuche, soll die obige Kritik an der Technokratisierung der Wirtschaftspolitik noch kurz erläutert werden.
+        Wer direkt zur Sache kommen will, kann diesen ersten Teil getrost überspringen. Die aktuelle Volkswirtschaftslehre gibt vor, wissenschaftlich und neutral die Wirtschaft beschreiben und verbessern zu können. Zunächst einmal gibt es „die“
+        Wirtschaft jedoch nicht, denn die wirtschaftliche Ordnung ist immer zeit- und ortsgebunden, da sie von Gesellschaft, Politik und Kultur erschaffen wird. Triebkräfte einer jeden Volkswirtschaft sind die darin tätigen Menschen, die von Ideen,
+        Überzeugungen und Narrativen geprägt sowie durch Gesetze und soziale Normen in ihrem Handeln beschränkt sind. Menschen unterscheiden sich fundamental vom Homo Oeconomicus der VWL-Modelle, der jederzeit seinen Nutzen mittels Allwissenheit über
+        alle Zustände in Vergangenheit, Gegenwart und Zukunft maximiert. Echte Menschen sind nicht perfekt rational, sie wissen manchmal nicht, was sie wollen oder was langfristig das richtige ist, und die Zukunft kann in der echten Welt nicht
+        mittels
+        Daten über die Vergangenheit stochastisch „korrekt“ hervorgesagt bzw. abgeschätzt werden (VWLer nennen dies „Ergodizität“), sondern ist fundamental unsicher – wir können einfach nicht sagen, was passieren wird!
+      </p>
+      <p>
+        Nun ist es nicht so, dass Mainstream-Ökonomen das überhaupt nicht wissen würden. Die Verhaltensökonomik etwa unterscheidet Erwartungsnutzen und Erfahrungsnutzen: Klassischerweise geht ein Ökonom davon aus, dass z.B. der Kauf einer Flasche
+        Wodka
+        die wahren Präferenzen des Käufers widerspiegelt und er damit also seinen Nutzen erhöht. Eine Alkoholsteuer, die das Umsetzen seiner Präferenzen in einen Einkaufskorb erschweren, würde also seinen Nutzen verringern. Jedoch spiegelt die
+        Kaufentscheidung nur den Erwartungsnutzen im Kaufmoment wider („Wie viel Freude wird mir diese Flasche Wodka wohl heute Abend machen?“). Fragte man den verkaterten Käufer am nächsten Tag, ob dieser Wodkakauf rückblickend tatsächlich eine gute
+        Idee war und er wieder die gleiche Menge Geld auf den Tisch legen würde, würde dieser wohl verneinen. Gegebenenfalls würde der Käufer dann für eine Alkoholsteuer votieren, die seine Irrationalität im Partyrausch beschränkt hätte. Klar, das
+        ist
+        ein etwas billiges Beispiel, aber denken wir größer: Ist mangelnde Altersvorsorge eine individuell optimale Entscheidung oder schieben wir die Ersparnisbildung nicht vielmehr auf, weil der aktuelle Erwartungsnutzen dafür sehr gering ist, auch
+        wenn wir um den eigentlich großen Erfahrungsnutzen wissen? Beispiele für solch suboptimales Verhalten gibt es viele und Zweige der VWL beschreiben diese auch, doch in den Modellen der Mainstream-Ökonomen tauchen sie meist nicht auf, da sie
+        mathematisch nicht gut beschreibbar sind und damit kaum zum aktuellen Standard-Methodenkasten inkl. Nutzenfunktionen und Gleichgewichtsformeln passen.
+      </p>
+      <p>
+        Diese mathematische Methodik verwenden Ökonomen u.a. deshalb so gerne, da sie eine Wertfreiheit vorgaukelt. Man kann jedoch genauso wenig wertfrei über Wirtschaft reden wie über andere gesellschaftspolitische Fragestellungen. So hört man z.B.
+        in Argumentationen von Wirtschaftsexperten häufig den Begriff „Effizienz“ (meistens in einem Satz über Märkte) und sieht mit dem eigenen Alltagswissen auch schnell ein, dass „ineffiziente“ Verschwendungen natürlich schlecht sind. Doch um
+        nutzlose Verschwendungen geht es Ökonomen hier gar nicht: Effizienz heißt zwar, einen Zustand zu den geringsten Kosten herzustellen, d.h. jeden Zustand vorzuziehen, der für mind. einen Beteiligten besser ist, ohne für die anderen schlecht zu
+        sein. Das klingt erstmal noch vernünftig, obwohl total vage. Im Umkehrschluss heißt das aber, dass für sie alles ineffizient ist, was mind. einen Beteiligten schlechterstellt. Polemisches Beispiel: Einem geizigen Milliardär 100€ wegnehmen und
+        davon einem Verhungernden Essen zu kaufen, ist ineffizient (der Zustand vorher also – sofern es keine anderen Zustände gibt – pareto-optimal). Wozu diese seltsame Definition? Man ahnt es schon, sie lässt sich wunderbar mathematisch verwerten.
+        Ob das im echten Leben eine Entscheidungshilfe bietet oder überhaupt in einer komplexen Realität mit unvorhersehbaren Einzelwirkungen umsetzbar ist, spielt da keine Rolle.
+      </p>
+      <p>
+        Nicht alle Teile der modernen Mainstream-VWL sind also als Entscheidungsgrundlage für praktische Fragen geeignet, und gesunder Menschenverstand bleibt ein wichtiges Korrektiv für teils wenig stichfeste Prognosen oder entweltlichte Modellrechnungen.
+        Auch deshalb sollten Forderungen nach unabhängigen „Expertengremien“ (Mindestlohnkommission, Rentenkommission oder neuerdings auch Fiskalgremien) mit Verweis auf die demokratische Souveränität und die
+        bisherige Erfolgsbilanz von „Experten“ im ersten Reflex immer kritisch hinterfragt werden. Wir reden hier schließlich von der Profession, die nicht nur Anfang der 2000er bereits das Ende von Konjunkturkrisen und die „Great Moderation“ feierte, sondern fünf Jahre nach
+        der von Finanzmärkten (ausgelösten Weltwirtschaftskrise von 2008 („Great Recession“) dem „Finanzexperten“ Eugen Fama einen Nobelpreis für seine Markteffizienzhypothese (Assetpreise spiegeln alle verfügbaren Informationen wider und daher sind
+        Assetpreise fundamental korrekt) überreichte. Was dieser Experte wohl an wissenschaftlicher Expertise zum freidrehenden Bitcoin beisteuert? Auf die Frage, wie er sich den Kurs von Bitcoin erklärt, sagte Fama in der Zeit (1/2018): „Ich habe
+        keine Ahnung. Märkte sind meistens rational, fast immer. Aber es gibt Ausnahmen.“ Und das von einem Mann, der für seine Arbeit über Finanzmärkte einen Nobelpreis gewann. So viel zu den „Wirtschaftsexperten“.
+      </p>
+
+      <h4>Anwendungsfall 1: Überhitzt unsere Wirtschaft?</h4>
+      <p>
+        Besonders in den USA läuft derzeit eine hitzige Debatte darüber, ob die staatlichen Ausgabenprogramme von Präsident Biden zur Stützung der Wirtschaft, zur Sanierung der Infrastruktur und für den ökologischen Umbau der USA nicht zu groß sind
+        und
+        die Wirtschaft „überhitzt“. Es ist offensichtlich, dass ein solcher Befund eine Ablehnung der Programme verlangen würde und es sich damit um politischen Zündstoff handelt. „Überhitzen“ das bedeutet „zu viel sein“: Zu viel Geld, zu viel
+        Inflation. Doch was ist zu viel? Ökonomen behandeln diese Frage meist nicht transparent, sondern halten sich an das bereits beschlossene 2%-Inflationsziel. Alles was darüber ist, ist zu viel. Dabei ist es eine gesellschaftliche Frage, ob man
+        lieber 4% Inflation als 4° Erderwärmung möchte. Es gibt keine wertfreie Bewertung von Inflation, sondern nur normative Urteile über Trade-Offs. Hinter dem Festhalten an starren Zielgrößen verbergen sich meist handfeste politische Interessen.
+        Ein plattes Beispiel zur Veranschaulichung: Stellen wir uns vor, es gäbe ein Land, dessen oberstes 10% alles Vermögen besitzt und der restliche Teil gar nichts hat. Um dies zu ändern, könnte man Geld von den Reichen nehmen und zum Rest umverteilen,
+        was in der Praxis aber nicht immer so leicht möglich ist (z.B. weil das Vermögen außer Landes gehalten wird). Alternativ könnte man den besitzlosen 90% einfach neu gedrucktes Geld in die Hand drücken.
+        Auch dies würde die Vermögensunterschiede nivellieren, aber natürlich zu enormer Inflation führen, weil mit einem Schlag viel mehr Kaufkraft in der Wirtschaft vorhanden ist als zuvor. Doch wäre dies sicherlich ein Preis, den 90% der Bevölkerung zahlen würden.
+      </p>
+
+      <div id="2" class="jumper">
+      </div>
+
+      <h3> 2. Mikro und Makro trennen: Warum VWL keine BWL im Großen ist</h3>
+
+      <p>
+        Obgleich ich in der Einleitung für einen naiven Zugang geworben habe, ist es natürlich trotzdem wichtig, gewisse Grundfehler nicht zu machen. Einer der am meisten begangenen Fehler ist die Übertragung von wirtschaftlichen Logiken der
+        Haushaltsebene (Mikro) auf die Gesamtwirtschaft (Makro). Gerade Politiker bedienen sich gerne dieses Tricks, um Wähler in die Irre zu führen. So prägte Angela Merkel auf dem CDU-Parteitag 2008 ein seitdem viel beschworenes Bild, nämlich das
+        der
+        „schwäbischen Hausfrau“. Mit Blick auf die staatliche Antwort nach der Finanzkrise erklärte sie: „Da wir uns nun hier in Stuttgart befinden: Man hätte einfach nur die schwäbische Hausfrau fragen sollen. Sie hätte uns eine ebenso kurze wie
+        richtige Lebensweisheit gesagt, die da lautet: Man kann nicht auf Dauer über seine Verhältnisse leben. Wir werden uns nicht an diesem sinnlosen Wettbewerb um Milliarden beteiligen“. Solche Aussagen funktionieren natürlich gut, denn jeder
+        Bürger
+        weiß, dass er selbst ja auch vorsichtig wirtschaften und erst etwas sparen muss, bevor er große Ausgaben tätigen kann. Doch wie wir gleich sehen werden, funktionieren ein Staat und eine Volkswirtschaft vollkommen anders als ein normaler
+        Haushalt! Denn wenn ein einzelner spart, hat er mehr Geld als zuvor. Wenn jedoch alle Bürger sparen und damit weniger Geld ausgeben, hat auch jeder Bürger weniger Einkommen und am Ende sind alle ärmer – nicht trotz, sondern wegen des
+        allgemeinen Sparens. Und wie wir ebenfalls sehen werden, gilt für einen Staat eine genau gegensätzliche Logik wie für einen Haushalt: Erst braucht es Ausgaben und dann die Einnahmen. Man muss also immer auf der Hut sein, wenn eine Logik von
+        der
+        individuellen Ebene auf die kollektive Ebene übertragen wird (dabei entstehende Fehler nennt man „fallacy of composition“). Dies geschieht meist nämlich nur aus Unverständnis oder aus politischen Motiven (so wie das Bild der „schwäbischen
+        Hausfrau“ eine makroökonomisch unsinnige Schuldenbremse stützen soll).
+      </p>
+
+      <h4>Anwendungsfall 2: Die Griechenland-Krise</h4>
+      <p>
+        Die öffentliche Diskussion und die journalistische Berichterstattung zur sog. „Griechenlandkrise“ war gekennzeichnet von unzulässigen Vereinfachungen, wüsten Verdrehungen – und der Verwechslung von Mikro- und Makroebene. Dies beginnt
+        natürlich
+        schon bei der bloßen Beschreibung von Vorgängen: „Die Griechen“ bekommen „unser“ Geld, erbosten sich etwa deutsche Politiker lautstark in verschiedensten Zeitungen. Auf politischer Makroebene mag das den Anschein gehabt haben (der deutsche
+        Staat war an Finanzhilfen für den griechischen Staat beteiligt), doch wohin floss das Geld denn genau? Mit den Finanzhilfen sollte Griechenland primär nicht seine Arbeitslosen unterstützen, sondern Staatsanleihen tilgen, die von deutschen und
+        französischen Banken gehalten wurden. Die Hilfsgelder sind also nicht in Griechenland geblieben, sondern größtenteils zu den Banken der Geberländer zurückgeflossen. Hier wurden zwar genau genommen keine Ebenen verwechselt, sondern einfach
+        nicht
+        genau hingeschaut, doch zeigt auch dieses Beispiel, dass man bei schnellen Aussagen auf Landesebene o.ä. vorsichtig sein muss. Ein ganz klarer Fall des obigen Logikfehlers war jedoch die Idee, der griechische Staat müsse jetzt – wie eine in
+        finanzielle Schieflage geratener Privatperson – den „Gürtel enger schnallen“, um wieder auf die Beine zu kommen. Ein Staat funktioniert jedoch nicht wie eine Privatperson! Damit wir verstehen, warum das so ist, müssen wir über Geld sprechen.
+      </p>
+
+      <div id="3" class="jumper">
+      </div>
+
+      <h3>3. Geld ist nicht gleich Geld: Unser zweistufiges Geldsystem</h3>
+      <p>
+        Bevor wir zu unserem gegenwärtigen Geldsystem kommen, sollten wir zumindest kurz klären, was Geld denn eigentlich ist. Abhandlungen zu dieser Frage füllen ganze Regale und kleiden sich oft in einen schwerfälligen philosophischen Sprachduktus.
+        Doch die Antwort darauf ist eigentlich ganz unspektakulär: Geld ist alles, was sozial als solches bestimmt wird, und dabei mindestens eine seiner drei möglichen Funktionen – Tauschmittel, Recheneinheit, Wertaufbewahrungsmittel – erfüllt. Als
+        Tauschmittel verwenden wir z.B. Euros, wenn wir sie durch Güterverkauf erwerben oder für den Güterkauf verwenden. Um den Preis (den Tauschwert) anzugeben und über mehrere Güter hinweg zu vergleichen oder zu verrechnen, verwendet man die
+        Einheit
+        Euro – der Euro ist also auch eine Recheneinheit. Zuletzt können wir heutige Kaufkraft in die Zukunft transferieren, indem wir Euro-Guthaben auf unserem Bankkonto liegen lassen. Für alle drei Funktionen des Geldes ist es wichtig, dass Preise
+        nicht übermäßig schwanken oder nicht allzu stark steigen bzw. sinken (Inflation bzw. Deflation). Dies erklärt, warum bereits erwähnter Bitcoin mit seinen ständigen Kurskapriolen kein gutes Geld ist. Da ihn Menschen jedoch für obige Funktionen
+        gebrauchen, dient er für diese als Geld (für andere – mich eingeschlossen – ist er lediglich ein Spekulationsobjekt). Was der Euro dem Bitcoin aber objektiv voraus hat, ist, dass er auch ein gesetzliches Zahlungsmittel ist: Im Euroraum
+        braucht
+        man Euros zur Steuerbegleichung und jeder Schuldner ist verpflichtet, von seinem Gläubiger Euros zur Schuldentilgung anzunehmen. Selbst ein überzeugter Bitcoin-Fan braucht im Euroraum also noch Euros – und das wird sich zumindest
+        mittelfristig
+        nicht ändern. Hier zeigt sich die zentrale Rolle des Staates in der Gestaltung des Geldsystems: Über die in Euro notierte Steuerpflicht wird jeder zur Nutzung von Euros gezwungen, unser Geld ist also keineswegs nur das Produkt von Vertrauen
+        (sei es in den nächsten Transaktionspartner oder die preisstabile Geldpolitik der EZB).
+      </p>
+      <p>
+        Doch auch beim Euro muss weiter differenziert werden, wir haben nämlich ein zweistufiges Geldsystem aus Fiatgeld und Giralgeld. Fiatgeld ist das Geld, das vom Staat erzeugt wird, also z.B. Bargeld. Weder eine Bank noch eine Privatperson
+        dürfen
+        Bargeld herstellen, sondern nur die staatliche Zentralbank. Zudem kann diese eine Art elektronisches Bargeld erschaffen, nämlich die (Zentralbank)Reserven. Diese Reserven sind nicht (!) das elektronische Geld, das wir Privatleute auf unseren
+        Bankkonten halten, denn Reserven können nur von den Geschäftsbanken selbst auf Konten bei der Zentralbank gehalten werden. Die Reserven braucht eine Bank, um Überweisungen an andere Geschäftsbanken (ein Sparkassenkunde überweist an einen
+        Commerzbankkunden) oder an den Staat zu tätigen (ein Sparkassenkunde zahlt seine Steuern, wobei die Sparkasse Reserven von ihrem Konto bei der Zentralbank an das Konto des Finanzministeriums bei der Zentralbank überträgt). Entscheidend ist,
+        dass dieses Fiatgeld nur vom Staat, zu dem wir die Zentralbank als öffentliche Institution zählen, erschaffen werden kann. Dafür gibt es das Angebot der Zentralbank, den Banken (während des Geschäftstages) stets Reserven zum sog. Leitzins zu
+        verleihen. Brauchen die Geldinstitute für ihre täglichen Bankgeschäfte (deren Volumen durch Kreditvergabe zunehmen) mehr Reserven, so müssen sie die Höhe des Leitzinses berücksichtigen, sodass sich dieser auch bei der Kreditvergabe an Kunden
+        auswirken wird. Dass im Bankensektor Reservenknappheit vorherrscht, ist allerdings (wie gegenwärtig) nicht zwingend der Fall, denn Reserven kommen auch ins System, wenn die Zentralbank den Geschäftsbanken irgendetwas abkauft (z.B. eine
+        Staatsanleihe) und ihnen dafür Reserven aushändigt oder der Staat Geld ausgibt. Wenn der Staat z.B. eine Straße baut und die Bauarbeiter bei der Sparkasse sind, erhält die Sparkasse Reserven vom Konto des Finanzministeriums und schreibt dafür
+        den Bauarbeitern Geld auf ihren Girokonten gut.
+      </p>
+      <p>
+        Das gutgeschrieben Geld auf den Girokonten ist jedoch kein Fiatgeld (das liegt als Reserven auf dem Konto der Sparkasse bei der Zentralbank) sondern Giralgeld. Giralgeld ist Geld, was auf Bankkonten liegt und von Geschäftsbanken erschaffen
+        werden kann. Es ist nicht gleichwertig zu staatlichem Fiatgeld, beinhaltet jedoch das Versprechen, jederzeit in Fiatgeld umwandelbar zu sein. Dieses Versprechen lösen Bankkunden ein, wenn sie Bargeld abheben und damit Giralgeld auf ihrem
+        Girokonto in Fiatgeld (Bargeld) in ihrem Portemonnaie eintauschen. Nochmal zurück zur Überweisung von einem Sparkassenkunde zu einem Commerzbankkunden: Die Sparkasse löscht hier Giralgeld vom Konto ihres Kunden, überträgt mittels eines Kontos
+        bei der Zentralbank einen Teil ihrer Reserven (Fiatgeld) an die Commerzbank und diese erschafft dafür Giralgeld auf dem Konto ihres Kunden<!-- (was das mit Target-Salden zu tun hat und warum diese ungefährlich sind, erkläre ich hier)-->. Während
+        hier
+        kein neues Geld geschaffen wird, ist dies bei einem Kredit anders: Wenn die Sparkasse einen Kredit z.B. für den Bau eines Hauses vergibt, dann benutzt sie dafür keinesfalls Spareinlagen von anderen Kunden, sondern erschafft lediglich neues
+        Geld
+        für den Kreditnehmer!
+      </p>
+      <p>
+        Um diesen Vorgang zu verstehen, müssen wir uns rudimentär eine Bankbilanz anschauen, die aus drei Teilen besteht: Die Aktiva (Forderungen, potenzieller Geldzufluss) sind alle Dinge, für die eine Bank Geld verwendet hat, also z.B. vergebene
+        Kredite, gekaufte Aktien/Anleihen oder eigene Reserven bei der Zentralbank. Passiva (Verbindlichkeiten, potenzieller Geldabfluss) geben hingegen an, woher die Bank Geld bezogen hat, dass sie auf kurz oder lang wieder zurückgeben muss, also
+        z.B.
+        Einlagen von Kunden oder Reserve-Kredite von anderen Geschäftsbanken oder der Zentralbank. Um geschäftsfähig zu sein, muss das Eigenkapital einer Bank positiv sein (d.h. Aktiva + Eigenkapital > Passiva), andernfalls ist sie bankrott.
+      </p>
+      <p>
+        Die Kreditvergabe einer Sparkasse sieht nun wie folgt aus: Sie schreibt auf der Passivseite dem Kreditnehmer Giralgeld auf seinem Girokonto gut (erschafft also neues Giralgeld) und bucht analog auf der Aktivseite dieselbe Kreditsumme als
+        Forderung. Da Aktiva und Passiva um die gleiche Menge gestiegen sind, ist das Eigenkapital davon unberührt (man spricht hier von einer Bilanzverlängerung). Überweist der Kreditnehmer dieses Geld an eine andere Bank, so verringert sich für die
+        Sparkasse die Passivseite (weniger Guthaben auf dem Girokonto) und die Aktivseite (weniger Reserven, da diese an die andere Bank gegeben werden mussten). Kann der Kreditnehmer das Geld nicht zurückzahlen, so muss die Bank die Kreditforderung
+        abschreiben und die Bank macht einen Verlust, was ein sinkendes Eigenkapital bedeutet. Muss die Bank so viele Forderungen abschreiben, dass ihr Eigenkapital negativ wird, ist sie bankrott.
+        Einer Zentralbank kann dies übrigens nicht passieren, da sie auch mit negativem Eigenkapital operieren kann.
+      </p>
+      <p>
+        Dieser Fall kann beispielsweise auch eintreten, wenn bei einem Börsencrash von der Bank auf der Aktivaseite gehaltene Aktien plötzlich weniger wert sind. Bankenregulierungen zur Verhinderung von Bankenpleiten, bei denen Privatanleger Teile
+        ihre
+        Einlagen verlieren (im Euroraum sind allerdings 100.000€ pro Person und Bank staatlich geschützt), zielen daher stets auf die Steigerung des Eigenkapitals oder die Stabilisierung der Aktivseite (die Einlagensicherung kann dagegen als Schutz
+        gegen zu schnelle Abflüsse, nämlich von Depositen, auf der Passivaseite gesehen werden). Um den gerade beschrieben Fall einer Bankenpleite durch Wertverluste von Aktien (so geschehen 2008) zu verhindern, sollte man Geschäftsbanken kein
+        Investmentbanking erlauben (Trennbankensystem), so wie dies in den USA bis 1999 der Fall war. Denn dann sind die Aktiva der Geschäftsbank (v.a. Reserven und Kreditforderungen) weit weniger volatil und ein Bankrott deutlich unwahrscheinlicher.
+        Um die Solvenz einer bankrotten Bank wiederherzustellen, müsste die Zentralbank ihr so viele Reserven für die Aktivseite „schenken“, dass die Summe der Aktiva wieder größer sind als die der Passiva und das Eigenkapital in den positiven
+        Bereich
+        steigt. Auf die Details kommt es hier fürs Erste nicht zwingend an, sondern die Erklärungen
+        sollen vor allem folgendes klarmachen: Geschäftsbanken erschaffen neues Giralgeld, wenn sie Kredite vergeben. Kredite bedeuten also zusätzliches Geld, dass dann die effektive Nachfrage erhöht, da schließlich kein Kreditnehmer sein Geld nur
+        auf
+        einem Konto parkt. Analog dazu bedeutet der Abbau von Verschuldung bzw. eine Rückzahlung von Krediten einen Rückgang bei der effektiven Nachfrage. Letzteres Phänomen der Bilanzrezession (unten mehr dazu) spielte letztlich bei jeder großen
+        Wirtschaftskrise im Kapitalismus eine zentrale Rolle, weswegen man die Menge vergebener Kredite im Privatsektor und möglich Risiken aus deren Rückzahlung stets im Auge behalten muss – besonders nach Corona. Eine Steuerung der Menge vergebener
+        Kredite fand vor der jetzigen Energiekrise nicht statt, da die Zentralbank ja mit zu wenig Inflation und zu geringem Wachstum, d.h. zu wenig Nachfrage und zu wenig ausgegebenen Krediten zu kämpfen hat, nicht mit zu vielen.
+        Gegenwärtig resultiert die Anhebung des Leitzinses der EZB aber tatsächlich in einer Reduktion der vergebenen Kredite, obgleich dies mit Blick auf preissenkende Investitionen in Energiesparen und -erzeugung durchaus problematisch ist.
+        Dazu kommt, dass die Zinspolitik der EZB auch die Zinsen auf Staatsanleihen steigen lässt und damit die Zinsausgaben in den öffentlichen Haushalten steigen - mehr dazu im folgenden Kapitel.
+      </p>
+
+
+      <h4> Anwendungsfall 3: Die Vollgeld-Initiative</h4>
+      <p>
+        Die Tatsache, dass Banken neues Geld schöpfen, ist wie alles in der VWL kein Naturgesetz, sondern eine historisch gewachsene Tatsache, die man jederzeit abschaffen könnte. Ihre historischen Wurzeln liegen im mittelalterlichen Bankwesen, als
+        man
+        begann, nicht nur staatliches Münzgeld auszugeben, sondern Anspruchsscheine darauf. Solange nicht alle Anspruchsscheine eingelöst wurden, konnte die Bank so mehr Anspruchsscheine als Geldäquivalente ausgeben und damit neues Geld erschaffen.
+        Auf
+        diese Weise konnte frisches Geld für gewinnversprechende Investitionen jederzeit bereitgestellt und der Siegeszug des Kapitalismus eingeleitet werden. Vertreter der Vollgeldbewegung kritisieren jedoch die von übermäßiger Geldschöpfung
+        ausgelösten Krisen, etwa wenn Menschen das Vertrauen in eine Bank verlieren und alle Kunden gleichzeitig ihr Giralgeld in das weniger vorhandene Fiatgeld (Bargeld) eintauschen wollen. Im Euroraum müssen Banken für jeden Euro Giralgeld nämlich
+        nur einen Cent in Form von Bargeld oder Reserven bei der EZB halten (der sog. Mindestreservesatz beträgt 1%). Solch ein Bank Run kann Bankenpleiten auslösen, sobald einer Bank das Fiatgeld (Bargeld + Reserven) ausgeht. Um das zu verhindern,
+        fordern Vollgeldreformer, dass Banken für jeden Euro Giralgeld einen Euro Fiatgeld halten müssen (Mindestreservesatz 100%). Dies bedeutet, dass sie kein Giralgeld ohne Fiatgeld erschaffen können und der Staat durch die Menge ausgegebenen
+        Fiatgeldes die Geldmenge direkt bestimmt. Problem hierbei ist natürlich, dass der Staat dann den Geldbedarf einer Volkswirtschaft korrekt vorhersagen muss, was ziemlich schwierig bis unmöglich ist, und wöglich gesellschaftlich sinnvolle
+        Projekte keine Kredite bekommen, da sie von spekulativer Kreditnachfrage verdrängt werden. In der Schweiz scheiterte 2018 entsprechend eine Vollgeld-Initiative bei einem Volksentscheid klar mit 75% Gegenstimmen.
+      </p>
+
+      <div id="4" class="jumper">
+      </div>
+
+      <h3>4. Nichts ist unmöglich: Wie der Staat Geld ausgibt und einnimmt</h3>
+      <p>
+        Wie wir bereits festgestellt haben, erschafft der Staat neues Fiatgeld, wenn er Ausgaben tätigt. Diese Aussage erscheint vielleicht seltsam, weil gemeinhin behauptet wird, der Staat brauche Steuereinnahmen für seine Ausgaben.
+        Der Staat ist jedoch für seine Ausgaben nicht auf Einnahmen angewiesen! Nachdem wir bereits den Aufbau unseres zweistufigen Geldsystems kennengelernt haben, ist dies eigentlich ganz logisch.
+        Stellen
+        wir uns vor, es gäbe überhaupt kein Geld in der Wirtschaft außer von einer Geschäftsbank erzeugtes Giralgeld in Höhe von 100€ (wir vernachlässigen die Mindestreserve). Würde mit diesen 100€ ein Einkauf getätigt, müsste der Verkäufer 19€
+        Mehrwertsteuer abführen. Wie bereits erklärt, braucht seine Bank dazu jedoch Fiatgeld, um dieses an das Konto des Finanzministeriums bei der Zentralbank zu überweisen. Da der Staat jedoch keine Ausgaben getätigt hat, befindet sich kein
+        Fiatgeld
+        in der Wirtschaft und der Verkäufer kann keine Steuer zahlen! Der Staat muss also z.B. erst für 50€ eine Brücke bauen lassen, sodass über die Bauarbeiter staatliches Geld in die Wirtschaft gerät, mit dem dann Steuern gezahlt werden können.
+        Staatsausgaben erhöhen die Geldmenge im Umlauf, Steuern verringern sie wieder. Mit unserem Beispiel können wir zudem mit noch einem Mythos aufräumen: In dem Moment, in dem der Staat die Bauarbeiter für die Brücke bezahlt und damit mehr Geld
+        in die Wirtschaft gebracht hat, als er daraus entfernt hat, hat er ein Staatsdefizit von 50€ eingefahren und damit 50€ Staatsschulden aufgehäuft. Staatsschulden sind also per se nichts Schlimmes, sondern geben nur an, wie viel mehr Geld der
+        Staat in die Wirtschaft gebracht hat, als er herausgezogen hat.
+        Nichtsdestotrotz verkennt diese aggregierte monetäre Perspektive natürlich, dass realwirtschaftlichen Auswirkungen noch von vielen anderen Faktoren abhängen. Ein Pauschaltransfer an alle Bürger hat natürlich andere Preiseffekte als der Bau neuer Windparks,
+        der wiederum andere Effekte hat, wenn die Bauindustrie stark oder schwach ausgelastet ist - selbst wenn eine reine Saldenbetrachtung dies nicht zeigt.
+      </p>
+      <p>
+        In unserem aktuellen System gibt es zu dieser Darstellung jedoch einen Unterschied, denn wir haben uns politisch dazu entschlossen, den Staat im engeren Sinne (d.h. die Regierung ohne die Zentralbank) nicht einfach Geld per Knopfdruck
+        erzeugen
+        zu lassen, um seine Ausgaben abzuwickeln. Stattdessen muss das Finanzministerium immer dann, wenn bald anstehende Zahlungen nicht aus bisherigen Steuerzahlungen beglichen werden sollen, Staatsanleihen verkaufen. Eine Staatsanleihe ist nichts
+        anderes, als das Versprechen des Staates, dem Käufer in der Zukunft eine gewisse Menge Geld auszuzahlen – die Kosten für den Staat bestehen also in Zinszahlungen. In den Jahren vor der Coronakrise war die Situation so, dass einige Länder der Eurozone wie Deutschland
+        oder Finnland Staatsanleihen mit negativem Zins ausgeben, der Staat also heute z.B. 100€ von einem Käufer erhält und ihm in zehn Jahren dafür nur 99,7€ zurückzahlen muss. Häufig wird behauptet, dass läge an der soliden Haushaltspolitik der
+        letzten Jahre. Dass das ein Irrtum ist, zeigt allein schon die Tatsache, dass selbst Griechenland und Spanien zuletzt negativ verzinste Anleihen emittierten. Der wahre Grund liegt darin, dass die EZB massiv Anleihen kauft und angekündigt hat,
+        bei finanziellen Engpässen einzelner Länder einen Staatsbankrott zu verhindern, indem es dem entsprechenden Staat so viele Anleihen abkauft wie nötig (OMT Programm). Ohnehin ist es so, dass die EZB einen großen Teil der Staatsanleihen von
+        Euroländern hält (z.B. 36% aller deutschen Anleihen, Stand 2020). Ein Drittel der deutschen Staatsschulden wird also von eine staatlichen Institution gehalten und Zinszahlungen auf diese Anleihen fließen letztlich an Deutschland zurück (da
+        die
+        EZB Gewinne an die Eurostaaten ausschüttet). Es ist leicht zu sehen, dass das praktisch keinen Unterschied zu einer Situation macht, in der Deutschland einfach Geld erschaffen hätte.
+      </p>
+      <p>
+        Wenn Besteuerung nicht zur Finanzierung von Staatsausgaben gebraucht wird, wieso zahlen wir dann überhaupt Steuern? Zuerst einmal ist es einleuchtend, dass wenn der Staat stets nur Geld ausgeben, aber nicht einnehmen würde, die Bürger der
+        Volkswirtschaft zwar immer mehr Geld besitzen, aufgrund des knappen Güterangebots jedoch die Preise steigen würden, weil die gesteigerte Nachfrage durch mehr monetären Reichtum auf ein konstantes Güterangebot trifft. Wenn das Güterangebot
+        inflexibel ist, muss der Staat also dem Wirtschaftskreislauf einen Teil des Geldes wieder entziehen, um Inflation zu vermeiden (Genaueres zur Inflation folgt unten). Wenn Arbeitslosigkeit herrscht, kann die Produktionsmenge aber bei
+        zusätzlicher Nachfrage gesteigert werden, sodass die zusätzliche Nachfrage keine inflationäre Wirkung hat – ohne Vollbeschäftigung macht es also Sinn, dass der Staat mehr ausgibt als er einnimmt! Außerdem nutzt der Staat Steuern, um bestimmte
+        Anreize zu setzen. So dient die Tabaksteuer dazu, gesundheitsschädliches Rauchen unattraktiver zu machen, und die CO2-Steuer soll klimaschädliches Verhalten verringern. Eine weitere Funktion von Steuern kann sein, dass der Staat das
+        gesellschaftliche Ziel einer gerechten Vermögens- bzw. Einkommensverteilung durch progressive Einkommensteuer oder eine Vermögensteuer erreichen will. In Entwicklungsländern, wo die staatliche Währung so schwach ist, dass sie von anderen
+        verdrängt zu werden droht, braucht ein Staat darüber hinaus Steuern, um Nachfrage nach seiner staatlichen Währung zu erzeugen und auf diese Weise seine Geldschöpfungsmacht auszunutzen (ohne Steuern könnte man theoretisch tatsächlich nur
+        Bitcoin
+        nutzen).
+      </p>
+      <p>
+        Die Macht des Staates, sein eigenes Geld beliebig auszugeben (man spricht hier von monetärer Souveränität), ist nicht überall gleichermaßen gegeben. Zunächst einmal ist es notwendig, dass ein Staat eine eigene Währung hat und selbst darüber
+        verfügen kann. Für Mitglieder der Eurozone gilt dies nicht (der griechische Finanzminister durfte 2008 nicht einfach dringend benötigtes Geld erzeugen), für die Eurozone als Ganzes jedoch schon. Wir haben außerdem gesehen, dass durch die
+        Politik der EZB eine Hintertür für staatliche Geldschöpfung eröffnet wird. Die monetäre Souveränität wird zudem verringert, wenn der Staat auf Importe aus anderen Ländern angewiesen ist, die er mit fremder Währung bezahlen muss – diese
+        Fremdwährungen kann er schließlich nicht selbst erzeugen. Dieses Problem haben v.a. Entwicklungsländer, die wichtige Güter nicht selbst herstellen können. Schließlich braucht ein Staat die Verwaltungskapazitäten, um effektive Besteuerung in
+        seiner eigenen Währung (als Zwangsnachfrage nach staatlichem Geld) durchführen zu können. Je mehr monetäre Souveränität ein Staat hat, desto besser kann er die Vorzüge des modernen Geldsystems nutzen.
+      </p>
+      <h4>Anwendungsfall 4: Warum Staatsanleihen eigentlich eine dumme Idee sind</h4>
+      <p>
+        Wie oben bereits erwähnt, ist das aktuelle System der Staatsverschuldung eine politische Entscheidung – und durchaus hinterfragenswert. Zunächst einmal vermittelt das Wort „Staatsschulden“ etwas negatives und krude Vereine wie der Bund der
+        Steuerzahler lassen gar eine Schuldenuhr den aktuellen Stand der staatlichen Schulden panisch mitzählen. Es gibt aber einige Gründe, die dafür sprechen, staatliche Defizite ohne die Ausgabe von Staatsanleihen, sondern nur über staatliche Geldschöpfung zu organisieren. Erstens wäre dieses
+        System
+        transparenter, da die angebliche Schuldenproblematik aus dem öffentlichen Diskurs verschwindet und die Bürger nicht mehr in die Irre führt. Zweitens ist bei positiven Zinsen auf Staatsanleihen nicht erklärbar, warum der Staat über die Ausgabe
+        verzinster Anleihen deren Käufer mittels Zinszahlungen ein de facto risikoloses Einkommen bescheren sollte. Drittens taugen Staatsanleihen nicht dazu, Inflation zu verhindern. Man könnte zwar argumentieren, dass die Ausgabe von Staatsanleihen
+        dafür sorgt, dass für staatliche Mehrausgaben, die mehr Geld in den Wirtschaftskreislauf einspeisen, automatisch wieder Geld daraus entfernt wird (das Geld der Anleihenkäufer) und somit Inflation verhindert wird. Dem ist jedoch nicht so.
+        Staatsanleihen werden nämlich vor allem von Banken gehalten, die sichere Aktiva brauchen. Staatsanleihen entfernen also primär Reserven aus dem Wirtschaftskreislauf, mit denen niemand einkaufen geht! Die effektive Nachfrage und eventuelle
+        Inflationsprobleme bleiben davon unberührt (wie wir gleich sehen werden, ist dies auch der Fall, wenn sehr reiche Privatpersonen Anleihen halten). Letzterer Punkt berührt auch das wichtigste Argument für Staatsanleihen: Sie sind das zentrale
+        Instrument zur Steuerung der Reservemenge im Bankensektor. Dies müsste jedoch nicht so sein, da die Einlagefazilität der EZB letztlich nichts anderes ist und genauso für das Reservemanagement zur Verfügung steht – allerdings weniger
+        zielgenau.
+      </p>
+
+      <div id="5" class="jumper">
+      </div>
+
+      <h3>5. Warum die EZB verzweifelt: Was wirklich die Inflation bestimmt</h3>
+      <p>
+        Nichtsdestotrotz kann ein Staat aber natürlich niemals unbegrenzt Geld ausgeben, sondern er wird von verschiedenen Faktoren begrenzt. Erstens muss er auf reale Schranken wie Ressourcenverfügbarkeit oder klimatische Auswirkungen Rücksicht
+        nehmen. Dies gilt ebenfalls für die vorhandene Menge an Arbeitskraft. Zweitens darf er nicht zulassen, dass die effektive Nachfrage nach Gütern durch das zusätzliche Geld nicht das Güterangebot übersteigt, da es dann mittel- bis langfristig
+        zu
+        Preissteigerungen, d.h. Inflation kommt. Der Staat müsste dann nämlich mit dem Privatsektor um die knappen Güter konkurrieren und höhere Preise für diese zahlen oder Güter aus dem Ausland einkaufen, wofür er jedoch ausländisches Geld
+        benötigt.
+        In Zeiten zu geringer Inflation hat der Staat mit seiner Ausgabenpolitik allerdings ein wirksames Instrument zur Inflationssteigerung in der Hand.
+      </p>
+      <p>
+        In der Eurozone liegt die jährliche Zielinflation bei 2%. Es gibt verschiedene Gründe für ein Inflationsziel über 0: Erstens wird Inflation bei der Messung tendenziell eher überschätzt, zweitens ermöglicht dies Reallohnsenkungen (der im
+        Vertrag
+        festgesetzte Nominallohn wird nur in Ausnahmefällen reduziert, sodass die Arbeit ohne Inflation normalweise höchstens teurer wird) und drittens sorgt das für einen Sicherheitsabstand zur Deflation. Preisrückgänge alarmieren nämlich Ökonomen,
+        da
+        dann Konsumenten mit verschiebbaren Konsumwünschen lieber auf noch niedrigere Preise in der Zukunft warten und daher die Nachfrage einbricht, was dann wieder für noch niedrigere Preise und weniger Einkommen sorgt – ein echter Teufelskreis.
+        Die
+        für Inflationssteuerung zuständige Europäische Zentralbank erreichte in der Vergangenheit aber nie ihr Inflationsziel, sondern blieb stets darunter. Dies zeigt, dass geldpolitische Werkzeuge nicht mehr gut funktionieren: Der Leitzins etwa ist
+        der Zins, den Banken dafür bezahlen müssen, Reserven von der Zentralbank zu erhalten. Mit dessen Senkung sollen die Finanzierungskosten für Banken gesenkt und die Kreditvergabe (Giralgeldschöpfung) angekurbelt werden, sodass die effektive
+        Nachfrage zunimmt. Da wir jedoch gesehen haben, dass heute nur 1% der vergebenen Kredite mit Reserven gedeckt werden, überrascht es nicht, dass Zinsänderungen keinen großen Effekt haben (schon gar nicht, wenn es um lächerliche 0.25
+        Prozentpunkte geht, die in den Medien dann heiß diskutiert werden). Um Banken noch mehr Reserven in die Hand zu drücken, kauft ihnen die EZB zudem Anleihen, Aktien und andere Wertpapiere ab – das berühmt berüchtigte Quantitative Easing. Da
+        die
+        Banken aber ohnehin in Reserven schwimmen und das Finden von geeigneten Kreditnehmern der limitierende Faktor ist, bringt das für die effektive Nachfrage herzlich wenig und sorgt stattdessen nur für Extragewinne für (meist eher wohlhabende)
+        Aktienbesitzer, d.h. steigende Ungleichheit.
+      </p>
+      <p>
+        Um die Inflation wieder auf Zielkurs zu bringen, muss also anderweitig die Nachfrage nach Gütern erhöht werden. Dafür gibt es v.a. zwei Möglichkeiten: Entweder die Löhne werden erhöht (z.B. durch einen höheren gesetzlichen Mindestlohn) oder
+        der
+        Staat tätigt mehr Staatsausgaben (wodurch u.a. in die Löhne steigen). Die besondere Bedeutung Löhnen (v.a.in der unteren Einkommenshälfte) erklärt sich damit, dass weniger gut entlohnte Arbeitnehmer einen großen Teil ihres Gehalts ausgeben
+        (man
+        spricht hier von einer hohen Konsumquote) und nicht zu großen Teilen auf ein Sparkonto legen, wo das Geld nicht nachfragewirksam wird (wie das einkommensstarke Leute meist machen). Zahlt man diesen Leuten mehr Lohn, so macht sich das in einer
+        höheren Nachfrage nach Gütern bemerkbar, wodurch entweder die Wirtschaft wächst und mehr Güter angeboten werden oder die Preise steigen. Mechanisch steigen die Preise in den meisten Fällen auch durch die höheren Produktionskosten (sei es
+        durch
+        Löhne oder etwa – aktuell sehr wichtig – Energiepreise), es sei denn die Firmen verzichten auf einen Teil ihrer Gewinne. Der Zusammenhang von Preisentwicklung und Lohnstückkosten („Menge an Lohn pro Gut“) ist empirisch daher überdeutlich. Die
+        Tatsache, dass Einkommensänderungen nur bei einer hohen Konsumquote nachfragewirksam sind, führt noch zu einem weiteren Schluss: Nimmt man reichen Personen, die ohnehin den größten Teil ihres Geld zur Bank tragen, mehr Geld weg (z.B. über
+        einen
+        höheren Spitzensteuersatz oder eine Vermögenssteuer), dann reduziert das die effektive Nachfrage nicht und schafft keinen Raum für mehr Staatsausgaben ohne Inflation! Steuererhöhungen für Reiche können zwar mit Blick auf die
+        Verteilungsgerechtigkeit sinnvoll sein, aber nicht für das Ermöglichen von mehr Staatsausgaben. Ob man eine Vermögenssteuer einführt oder der Staat das Geld „druckt“ macht praktisch kaum einen Unterschied. Auch hier sieht man, dass das Ziel
+        eines ausgeglichenen Haushalts und das politische Verknüpfungen von Mehrausgaben mit der Einführung neuer Reichensteuern unsinnig sind.
+      </p>
+      <p>
+        Da Löhne letztlich die Inflation bestimmen, ergibt sich bei einem mehr oder weniger ausgeglichenen Staatshaushalt für die Lohnentwicklung eine goldene Regel: Um 2% Inflation zu erreichen, muss bei einem fixen Güterangebot (!) das allgemeine
+        Lohnniveau (d.h. der vertragliche Nominallohn) jährlich ebenfalls um 2% steigen. Da das Angebot hier nicht steigt, kann niemand mehr konsumieren als zuvor, man spricht von einem konstanten Reallohn (konstanter Kaufkraft). Wächst die
+        produzierte
+        Menge pro Arbeiter jedoch um z.B. 3% (d.h. die Produktivität steigt um 3%), so müssen die nominalen Löhne um 2% + 3% = 5% wachsen. Auf diese Weise wird das Inflationsziel erreicht und alle zusätzlich produzierten Güter werden gekauft. Da die
+        Arbeiter hier mehr konsumieren können als zuvor (aufgrund der gestiegenen Produktionsmenge), steigt der Reallohn. Dieser Anstieg entspricht bei Einhaltung der goldenen Regel genau dem Produktivitätswachstum. Da die Löhne v.a. in Deutschland
+        seit 2000 deutlich weniger als gemäß der goldenen Regel gestiegen sind und auch die staatliche Nachfrage zu schwach war (Stichwort „schwarze Null“), dürfte die zu niedrige Inflation im Euroraum vor der Energiekrise niemanden überraschen.
+      </p>
+
+      <h4>Anwendungsfall 5: Eine staatliche Jobgarantie</h4>
+      <p>
+        Da wir gesehen haben, dass die Mittel der Geldpolitik nicht geeignet sind, das Inflationsziel zu erreichen, sollte über Alternativen nachgedacht werden. Ein Vorschlag, der auch losgelöst von der Inflationssteuerung mehr und mehr Zuspruch
+        erhält, ist der einer staatlichen Jobgarantie. In diesem Programm hätte jeder Bürger die garantierte Möglichkeit, eine bezahlte Beschäftigung vom Staat zu erhalten. Der vom Staat gezahlte Lohn würde damit zum allgemeinen Mindestlohn werden,
+        da
+        kein Arbeiter im Privatsektor eine schlechter bezahlte Stelle annehmen müsste. Gleichzeitig ist dieser Lohn ein mächtiges Werkzeug für die Preispolitik, da wie oben erklärt die Lohnentwicklung der entscheidende Faktor für die Preisentwicklung
+        ist. Weil eine Jobgarantie arbeitslose Jobsuchende jederzeit flexibel auffangen kann, würde sie in schlechten Zeiten (wenige private Jobs) mehr Menschen beschäftigen und diese in guten Zeiten wieder für den privaten Arbeitsmarkt freigeben.
+        Sofern die Arbeitsbedingungen und der Lohn im Privatsektor attraktiv sind, würden die Menschen aus dem Jobprogramm wieder zurück in den Privatsektor wechseln. Wichtig zu betonen ist jedoch, dass reguläre staatliche Beschäftigungsverhältnisse
+        davon unberührt bleiben. Zur administrativen Ausgestaltung und den möglichen, am Gemeinwohl orientierten Tätigkeiten gibt es verschiedene Konzepte, meist wird aber ein dezentrales und kommunales System mit bundesstaatlicher Finanzierung
+        gefordert (nur der Bund kann Geldschöpfung betreiben, Kommunen nicht). Progressive Kräfte wie die Grüne Jugend oder die Jusos haben eine solche Jobgarantie bereits in ihren Programmen – allerdings nur als Mittel der Sozialpolitik.
+        Makroökonomische Hintergründe zur Funktionsweise als wirtschaftspolitisches Instrument gibt es in diesem Artikel.
+      </p>
+
+      <div id="6" class="jumper">
+      </div>
+
+      <h3>6. Wirtschaftspolitik: Make it real</h3>
+      <p>
+        An diesem Punkt haben wir bereits viel über Wirtschaft gelernt und gesehen, dass die bestehenden Denkweisen sowie die gegenwärtige Wirtschaftspolitik fundamental falsch sind. In der Politik geht es bei der Frage von Politikmaßnahmen
+        schließlich
+        oft zu großen Teilen um die Frage „Können wir das finanzieren?“. Wir wissen nun, dass dies die falsche Frage ist, weil der Staat seine Ausgaben nicht über Einnahmen finanziert, sondern sein Geldschöpfungsmonopol benutzt. Worum sollte es bei
+        guter Wirtschaftspolitik also gehen?
+      </p>
+      <p>
+        Eine wichtige Beschränkung staatlicher Fiskalpolitik ist wie bereits gesagt die Preisentwicklung. Der Staat könnte ohne weiteres das Einkommen jedes Bürger durch Zuschüsse verdoppeln, doch ohne mehr Güterproduktion führt dies nur zu sich
+        verdoppelnden Preisen. Real, d.h. preisbereinigt, hat also niemand etwas gewonnen. Die reale Welt aus Gütern, Beschäftigten, Umwelt etc. muss also im Mittelpunkt der Wirtschaftspolitik stehen, Fragen rund ums Geld hingegen am Spielfeldrand.
+        Man
+        könnte auf den Gedanken kommen, dass damit alles viel einfacher würde, doch die wahren Probleme von staatlicher Politik bleiben bestehen: Am wichtigsten ist wohl die asymmetrische Information, also der Umstand, dass der Staat (hier im Sinne
+        von
+        Regierung) kein vollständiges Wissen über Bedürfnisse, Ziele, Fähigkeiten, Ausstattungen etc. seiner Bürger hat. Was Bedürfnisse und Ziele angeht, kann man politische Wahlen und Partizipationsformate (z.B. Bürgersprechstunde, Demonstrationen,
+        Bürgerräte) zwar als Prozess der Informationsbeschaffung ansehen, doch ist die beim Staat landende Information meist recht dünn – von der tatsächlichen Verwertung ganz zu schweigen. Ökonomen preisen freie Märkte daher als dem Staat meist
+        überlegene Institution, da die Konsumenten ihr Wissen um eigene Präferenzen und Ausstattungen dort selbst verwerten können. Ob dies in der echten Welt geschieht, ist natürlich mehr als fraglich: Konsumenten haben keine ausreichenden
+        Informationen über angebotene Güter und ihre Beschaffenheit und Produktionsweise, um gemäß ihrer Präferenzen zu handeln. Aus diesem Grund sind effektive Zertifikate und Offenlegungspflichten enorm wichtig zur Steigerung der allgemeinen
+        Wohlfahrt. Zudem erzeugen Marketingabteilungen Scheinpräferenzen bei uns Konsumenten, die wir rational vielleicht gar nicht verfolgen wollen. Das Informationsproblem bzgl. Konsumenten und Güter ist bei Märkten also größer, als man gemeinhin
+        glaubt, und ein regulierungsfrei funktionierender Markt undenkbar. Man könnte daher argumentieren, dass direkte Wege der Informationsbeschaffung (z.B. Auslesen von digitalen Daten) effektiver wären und freie Märkte in Sachen Nutzenmaximierung
+        schlagen könnten – ob das eine wünschenswerte Zukunft ist, sei einmal dahingestellt (von einem ähnlichen Experiment im Chile der 1970er erzähle ich <a href="https://www.naive-economics.com/projekt-cybersyn" target="_blank">hier</a>). Doch selbst wenn man alle relevanten Informationen über Bürger, Güter und Umwelt hätte,
+        wäre zielgenaue politische Maßnahmen aufgrund der enormen Komplexitäten eines Systems aus mehr oder weniger willensfreien und kreativen Menschen aufgrund schwierigster Folgenabschätzungen eine große Herausforderung.
+      </p>
+      <p>
+        Obgleich die genauen ökonomischen Wirkungen einer Maßnahme unmöglich vorhersehbar sind, gibt es ökonomische Grundmechanismen, die jederzeit gelten und nicht außer Kraft gesetzt werden können. Eine wichtige Grundregel ist, dass Geld nicht nur
+        nicht stinkt, sondern gemeinhin auch nicht verschwindet. Geld ist nie weg, sondern nur woanders. Die Ausgaben des einen sind die Einnahmen des anderen und wenn nach einer bestimmten Zeit jemand mehr Geld hat als zuvor, dann muss ein anderer
+        weniger Geld haben. Dies ist eine vereinfachte Darstellung der Saldenmechanik, bei der die Welt meist in heimischen Privatsektor (ggf. unterteilt in Haushalte und Firmen), heimischen Staat und Ausland (Rest der Welt) aufgeteilt wird. Fordert
+        nun ein Politiker, dass jede dieser Einheiten sparen, also mehr einnehmen als ausgeben, soll, so ist dies offensichtlich ein Ding der Unmöglichkeit. Jeder Ersparnis muss ein Verschulden anderswo gegenüber stehen. Dass ersterer Begriff positiv
+        und zweiterer negativ besetzt sind, ist unlogisch und ein progressives Wirtschaftsdenken sollte ein neues Framing etablieren (für eine bessere Verständlichkeit bleibe ich in diesem Text aber bei den alten Begriffen). Mit Blick auf die
+        Saldenmechanik wird ebenfalls ersichtlich, dass staatliche Verschuldung für die anderen Sektoren (v.a. den heimischen Privatsektor) vorteilhaft ist. Ein Abbau der Staatsverschuldung, d.h. Ersparnisbildung des Staatssektors, muss mit einem
+        Entsparen bzw. Vermögensverlust in den anderen Sektoren verbunden sein. Damit ist u.a. klar, dass selbst wenn man der Auffassung ist, der Privatsektor müsse einen Großteil der für die ökologische Transformation nötigen Investitionen leisten,
+        ein Schuldenabbau des Staates kontraproduktiv ist.
+      </p>
+      <p>
+        Neben ökonomischen Grundregeln spielen natürlich naturwissenschaftliche Gesetze eine zentrale Rolle. So muss klar sein, dass Wirtschaftswachstum auf lange Sicht immer mit steigendem Energieeinsatz verbunden ist und dieser Energieeinsatz gemäß
+        den Sätzen der Thermodynamik zur Freisetzung von Wärme führt. Befürworter von Grünem (d.h. klimafreundlichen) Wachstum sind zwar der Auffassung, eine ausreichende Entkopplung von Wachstum und Energieeinsatz sei möglich, doch sprechen die
+        Zahlen
+        bisher eine andere Sprache: Global korrelieren das Wachstum von BIP und Energieverbrauch sehr stark und ein deutlicher Entkopplungstrend ist nicht ersichtlich. Auch andere Kanäle des Wechselwirkens von Wirtschaft und Umwelt müssen beim
+        ökonomischen Denken berücksichtigt werden, so wie es das Konzept der „Embedded Economy“ (eingebettete Wirtschaft) tut: Hier wird die Wirtschaft stets als Teil der natürlichen Umwelt gesehen, inklusive Sonnenenergie als letztlich einzige
+        Primärenergiequelle, lebendiger Biomasse, Rohstoffvorkommen, produzierten Abfällen und abgegebener Abwärme. Darüber hinaus ist die Wirtschaft hier der Gesellschaft mit ihren Regeln, Zielen und Strukturen untergeordnet. Ohne diesen Kontext und
+        Unterordnung kann Wirtschaft nicht sinnvoll gedacht werden. Ein Schema zur Berücksichtigung sozialer und natürlicher Beschränkungen bietet Kate Raworths Doughnut Economy, bei der soziale Mindestanforderungen (z.B. Befriedigung menschlicher
+        Grundbedürfnisse) und planetare Obergrenzen (z.B. Erhalt der Biodiversität) den Bereich begrenzen, in dem eine regenerative und gerechte Wirtschaft operieren muss. Dieser Bereich muss auch bei der Bekämpfung des Klimawandels eingehalten
+        werden,
+        was sowohl eine gerechtere Verteilung des globalen Wohlstandes als auch eine ressourcenschonende Herstellung einer klimaneutralen Wirtschaft erfordert. Leider sind wir davon weit entfernt, da wir uns ständig mit unsinnigen Finanzierungsfragen
+        statt mit realen Bedürfnissen und Problemen beschäftigen.
+      </p>
+
+      <h4>Anwendungsfall 6: Es gibt keine kapitalgedeckte Rente</h4>
+      <p>
+        Ein gutes Beispiel dafür, wie in der Wirtschaftspolitik Finanzierungsschwurbeleien die wirklich relevanten Fragen überdecken, ist die Rentenfrage. In konventionellen Debatten dreht sich hier alles um die Frage, wie sichergestellt werden kann,
+        dass in der Zukunft genug Geld für die Rentner da ist. Sollte es ein Umlageverfahren sein (Aktuelle Arbeitnehmer zahlen Beiträge, die an die Rentner fließen)? Oder besser eine Kapitaldeckung (Rentenzahlungen gespeist aus Einzahlungen während
+        des Erwerbslebens, die am Kapitalmarkt angelegt werden)? Sind private Zusatzversicherungen sinnvoll oder nicht? Was ist das optimale Niveau von Beitragssatz und Sicherungsniveau? Wie viel Geld soll/muss der Staat aus dem Bundeshaushalt
+        beisteuern? Kurzum: Wo kommt am besten das Geld her? Die Wahrheit wurde bereits 1952 von Gerhard Mackenroth beschrieben: Jedes Rentensystem ist ein Umlagesystem. Rentner (und andere Nicht-Erwerbstätige) können stets nur die Güter und
+        Dienstleistungen konsumieren, die gegenwärtige Erwerbstätige produzieren. Man kann noch so viel Geld am Kapitalmarkt zu noch so guten Zinsen anlegen, das reale Güterangebot in Zukunft bleibt davon unberührt. Erwartet man also (wie aktuell der
+        wissenschaftliche Beirat des Wirtschaftsministeriums) eine demografische Entwicklung, die zu mehr Rentnern und weniger Erwerbstätigen führt, sollte man sich einzig und allein darum sorgen machen, wie in Zukunft ein Erwerbstätiger so viel mehr
+        produzieren kann, dass es für alle reicht. Die Rentenfrage ist damit primär ein Produktivitätsproblem. Für das Produktivitätswachstum kann Kapitaldeckung aber ein Problem sein, da hier Menschen auf gegenwärtige Kaufkraft verzichten (um diese
+        vermeintlich in die Zukunft zu transferieren, was unmöglich ist) und damit die Unternehmen geringere Absatzmöglichkeiten haben und vermutlich weniger investieren, sodass die Produktivität langsamer steigt. Sekundär folgt dann die Frage, wie
+        man
+        das vorhandene Volkseinkommen unter Arbeitern und Rentnern aufteilen soll. Das Verteilungsproblem verschärft sich im aktuellen System vor allem dadurch, dass Niedriglöhner nicht genug Beitragspunkte für die Rente erhalten, um im Alter ihre
+        Grundversorgung selbst zu stemmen. Für mehr Verteilungstransparenz würde eine Rente als staatliche Leistung aus dem Bundeshaushalt ohne ein künstliches Beitragssystem sorgen. Grundsätzlich muss die Verteilungsfrage zudem von Überlegungen dazu
+        begleitet werden, wie viel Konsum wir uns überhaupt leisten dürfen, sowohl mit Blick auf ökologische Folgen (hier spielt der Erfolg der Entkopplung eine zentrale Rolle) als auch globale Verteilungsgerechtigkeit. Schwierige und hochpolitische
+        Fragen also, die jedoch nichts mit der monetären Finanzierung zu tun haben. Das Gleiche gilt übrigens für die populäre Forderung nach Arbeitszeitverkürzung mit vollem Lohnausgleich. Hierbei sollen Beschäftigte weniger arbeiten, aber einen
+        konstanten Nominallohn erhalten. Analog zur Rentenfrage ist hier zuallererst zu klären, wie viel Konsum wir uns leisten möchten und wie viel Arbeit dafür nötig ist. Mögen geringfügige Arbeitszeitverkürzungen in manchen Branchen noch direkt
+        mit
+        steigender Produktivität einhergehen, die das Güterangebot und damit unsere Konsummöglichkeiten stabil hält, sieht das bei hohen Arbeitszeitverkürzungen und z.B. dem produzierenden Gewerbe ganz anders aus. Bleibt jedoch die Nachfrage konstant
+        und nimmt das Güterangebot ab, so werden die Preise steigen und der Reallohn sinkt (da nur der Nominallohn konstant ist), die Beschäftigte können also weniger konsumieren und verlieren – ganz egal wer für den konstanten Nominallohn bezahlt.
+        In
+        einer Zukunft, in der Roboter einen Teil der Produktion für uns leisten (höhere Produktivität pro Arbeiter bzw. höheres Güterangebot) oder in der wir genügsamer Leben (niedrigere Konsumnachfrage), ist eine Arbeitszeitverkürzung bei vollem
+        Lohnausgleich aber natürlich sinnvoll.
+      </p>
+
+      <div id="7" class="jumper">
+      </div>
+
+      <h3>7. Stabilität ist instabil: Über übergriffige Finanzmärkte</h3>
+      <p>
+        Die Erfindung der Finanzmärkte war ursprünglich eine gute Idee: Da im wachsenden Welthandel des 17. Jahrhunderts die Fahrten großer Handelsschiffe viel Geld verschlangen und es ein hohes Ausfallrisiko gab, finanzierten Kaufleute in den
+        Niederlanden diese im Kollektiv und teilten sich mögliche Gewinne und Verluste. Für die Börsenanleger ging es natürlich auch damals nur um den eigenen Profit, doch führte ihr Gewinnstreben immerhin zu realen Warenlieferungen aus fremden
+        Landen
+        – die Finanzmärkte unterstützten die Realwirtschaft (d.h. den Wirtschaftsteil rund um Waren und Dienstleistungen). Heute hingegen sind die Finanzmärkte so unnütz für die reale Wirtschaft geworden, dass selbst Josef Ackermann von der Deutschen
+        Bank sich 2010 genötigt sah zu betonen: „Wir wissen, Banken können in einer Parallelwelt nicht gedeihen, sie brauchen die Zustimmung der Menschen und das heißt: Sie müssen in ihrem Tun nicht nur der sogenannten realen Wirtschaft dienen, wie
+        es
+        oft heißt, nein, mehr noch: Sie müssen den Menschen dienen.“
+      </p>
+      <p>
+        Aus dem Munde eines prominenten Vertreters der modernen Finanzindustrie ist das nichts anderes als blanker Hohn. Der Finanzsektor ist inzwischen sehr wohl eine Parallelwelt geworden, in der sekündlich Milliardenbeträge bewegt werden und
+        dessen
+        Zockereien selbst die mächtigsten Staatschefs in Panik versetzt. Ich habe bereits erklärt, dass entgegen der konventionellen Sichtweise der Bankensektor keineswegs eine Vermittlungsrolle zwischen Sparern und Kreditnehmern einnimmt, sondern
+        Geld
+        schöpfen kann. In einer idealen Welt hätten Banken keine andere Aufgabe als zu entscheiden, welche Kreditnehmer einen Kredit werden zurückzahlen können, sei es wegen eines solider Haushaltseinkommen oder wegen einer tollen Geschäftsidee, die
+        Einkommen in der Zukunft garantiert. In diesem Fall würden Banken nämlich nur solches Geld schöpfen, das in Zukunft auch wieder getilgt wird, sodass die Realwirtschaft mit ausreichend Geld versorgt und nicht weiter gestört werden würde. Diese
+        Aufgabe könnte theoretisch auch vom Staat mit seiner Geldschöpfungsmacht übernommen werden, doch eignen sich dafür dezentrale, private Entscheidungsprozesse eigentlich besser.
+      </p>
+      <p>
+        Das Kreditgeschäft ist Kernaufgabe der Geschäftsbanken, während Investmentbanken in Anleihen, Aktien und andere Finanztitel „investieren“. Ich schreibe „investieren“ hier bewusst in Anführungszeichen, denn investiert im Sinne der realen
+        Produktivitätssteigerung wird hier natürlich gar nichts. Bei vielen Anlageformen ist dies offensichtlich, z.B. Derivaten. Ursprünglich dienten diese dazu, z.B. einem Bauern einen Getreidepreis in der Zukunft zu garantieren. War der Marktpreis
+        dann höher, verlor der Bauer und der Käufer machte einen Gewinn, war der Marktpreis niedriger, hatte sich die Versicherung für den Bauern gelohnt. In jedem Fall gab dieser Terminkontrakt beiden Seiten mehr Planungssicherheit. Heute können
+        jedoch Derivate als Preiswetten auf alles Mögliche angewendet werden, ohne dass dafür reale Güter bewegt werden – wie in einer Parallelwelt. Wie wir in Abschnitt 3 bereits gesehen haben, ist die Verbindung von Investmentbank und Geschäftsbank
+        hochproblematisch, da das an der Realwirtschaft ausgerichtet Kreditgeschäft durch Spekulationsverluste tief gestört oder sogar zum Einsturz gebracht werden kann. Manche Spekulationsgeschäfte haben jedoch direkte negative Folgen: So
+        beeinflussen
+        Devisenspekulationen die Wechselkurse zwischen Währungen und führen ggf. dazu, dass die Bewohner eines Landes plötzlich mehr für lebensnotwendige Importe zahlen müssen.
+      </p>
+      <p>
+        Eben weil der Großteil der Finanzmärkte mit der realen Wirtschaft gar nichts mehr zu tun hat, sind Kursdaten nicht an realwirtschafte Entwicklungen gekoppelt, sondern von psychologischen Effekten getrieben. Ein besonders gefährliches Prinzip
+        entdeckte der Ökonom Hyman Minsky: Stabilität ist instabil! Gemäß seiner „Financial Instability Hypothesis“ gibt es an den Börsen einen Zyklus, bei dem der Finanzsektor sich zunächst bei starker Regulierung und vorsichtigem Anlageverhalten
+        moderat positiv entwickelt. Getrieben von diese moderaten Erfolgen wagen die Banken und Anleger immer mehr Risiken und vergeben auch Kredite an solche Schuldner, die die Zinsen nur mit laufenden Einnahmen decken können. Die Politik
+        unterstützt
+        diesen Aufschwung im Finanzsektor mit einem Regulierungsabbau. Durch gesunkene Regulierungen und steigende Euphorie wegen vergangener Gewinne werden Banken und Anleger noch mutiger und vergeben Kredite an fast jeden – selbst solche Schuldner,
+        die ihre Zinsen nur durch die Aufnahme neuer Schulden bedienen können (man spricht hier von einer Ponzi-Finanzierung). Immer mehr Kredite werden vergeben, bis die ersten Gläubiger dahinter kommen, dass nicht jeder Kredit zurückgezahlt werden
+        kann und das Kartenhaus zusammenbricht. Die Kreditvergabe stoppt, Kredite fallen aus, Banken erleiden Verluste und versuchen schnell, andere Kreditrückzahlungen einzutreiben, wodurch noch mehr Kreditnehmer zahlungsunfähig werden. Die
+        Wirtschaft
+        stürzt in eine tiefe Krise, da keine neuen Kredite vergeben werden (d.h. die Gesamtnachfrage sinkt) und Schuldner versuchen, zu sparen und ihre Schulden abzubauen (d.h. die Gesamtnachfrage noch mehr sinkt). Da der Grund für den
+        Nachfrageeinbruch in Versuchen der Bilanzbereinigung liegt, sprich Richard Koo hier von Bilanzrezessionen. Die Politik erkennt ihre Fehler und führt neue Re-Regulierungen ein. Mit der Erholung von der Rezession und einer vorsichtigen erneuten
+        Kreditvergabe beginnt der Zyklus von neuem. Wer Finanzkrisen verhindern will, muss also die private Verschuldung im Verhältnis zum BIP im Auge behalten (vor jeder großen Wirtschaftskrise gab es hier einen deutlichen Peak).
+      </p>
+      <p>
+        Der Finanzsektor vergiftet die Realwirtschaft jedoch nicht nur durch seine Volatilität, sondern auch durch die Verbreitung seiner Wertvorstellungen. An den Finanzmärkten zählen z.B. vor allem kurzfristige Gewinne. Wer zu konservativ
+        wirtschaftet, droht überholt und von einem Konkurrenten übernommen zu werden. Diese Orientierung hat sich inzwischen auch in den meisten großen Unternehmen durchgesetzt: Wo früher sog. „Stakeholder Values“ die Interessen von Unternehmen,
+        Eigentümern, Arbeitern, Gesellschaft etc. (in der Theorie) ganzheitlich berücksichtigt haben, geht es heute meist nur noch um „Shareholder Values“, d.h. die Erfüllung von Aktionärs- bzw. Eigentümerinteressen. Konkret heißt das z.B., dass
+        Unternehmen weniger Kapital in Investitionen und Produktverbesserungen stecken, sondern stattdessen Aktien zurückkaufen, um den eigenen Aktienkurs in die Höhe zu treiben, wovon Aktionäre profitieren. Kurzfristiger Gewinn wird langfristigen
+        Verbesserungen vorgezogen. Um das Management an diesen Ansatz zu binden, erhalten Manager oft Aktienpakete als Boni oder ihre Bezahlung hängt vom Aktienkurs ab. Daneben werden auch gesellschaftliche und institutionelle Bereiche immer mehr von
+        Finanzmarktprinzipien erfasst. Dazu gehören beispielweise die Vermarktlichung und Privatisierung von ehemals öffentlichen Gütern wie Wasser, Gesundheit oder Wohnraum, wodurch diese ebenfalls oben genannten Wertvorstellungen unterworfen
+        werden.
+        All diese Prozesse werden unter dem Begriff Finanzialisierung gefasst. Der Finanzsektor erhält wirtschaftlich, politisch und gesellschaftlich ein immer größerer Gewicht, obwohl er gleichzeitig immer weniger mit der echten Welt zu tun hat.
+        Ohne
+        eine Korrektur diese Entwicklung wird es nicht möglich sein, den Kapitalismus zu reparieren.
+      </p>
+
+      <h4>Anwendungsfall 7: Die Finanzkrise von 2008</h4>
+      <p>
+        All die oben beschriebenen Entwicklungen kamen in der „Großen Rezession“ von 2008 zum Tragen. Ausgangspunkt für diese war genau die von Hyman Minsky beschriebene Dynamik: Nachdem das Kreditgeschäft in den USA lange Zeit gut gelaufen war und
+        die
+        Kreditnehmer mit guter Bonität weitestgehend versorgt waren, suchten die Banken neue Gewinnchancen. Da der Immobiliensektor brummte und die Preise seit 1990 dort kontinuierlich stiegen, vergaben die Banken leichtfertig zahlreiche
+        Immobilienkredite auch an solche Leute, deren Bonität aufgrund eines niedrigen Einkommens sehr niedrig war (Subprime-Kredite). Als Sicherheit für die Kredite dienten die Immobilien selbst. Da die Verschuldung immer weiter stieg und die
+        Rückzahlungsfähigkeit vieler Kreditnehmer gering war, war nicht nur das individuelle Kreditausfallrisiko teils sehr hoch, sondern auch die volkswirtschaftlichen Risiken einer drohenden Bilanzrezession (wovor einige heterodoxe Ökonomen wie
+        Steve
+        Keen auch klar warnten). Da durch immer mehr Immobilienkredite jedoch immer mehr Häuser gekauft wurden und die Immobilienpreise stetig stiegen, wähnten sich viele in Sicherheit. Um die Menge an zu vergebenden Krediten über die regulatorische
+        Menge hinaus zu steigern, kamen amerikanische Banken bald auf eine Idee: Sie behielten die Kredite nicht selbst, sondern verkauften sie einfach weiter, z.B. an unregulierte Finanzakteure im sog. „Schattenbankensektor“ oder ins Ausland, u.a.
+        an
+        deutsche Banken. Damit das hohe Ausfallrisiko der Subprime-Kredite nicht auffiel, wurden immer wieder verschiedene Kredite zusammen in ein Paket geschnürt, mit anderen Krediten besichert und erneut in alternative Papiere verwandelt, bis
+        schließlich niemand mehr wirklich verstand, was dort gehandelt wurde. Als jedoch die ersten Immobilienkredite ausfielen und die Immobilienblase platzte, folgte auf die jahrelang Euphorie der Minsky-Moment: Banken mit zahlreichen
+        Kreditpapieren
+        in ihren Bilanzen brachen zusammen und die sich ausbreitende Schockwelle im globalen Finanzsystem riss andere Geldhäuser mit in oder nahe an den Abgrund. Aufgrund der allgemeinen Verunsicherung brach die Kreditvergabe zusammen und die von
+        Banken forcierten Rückzahlungen alter Kredite ließ die Nachfrage und damit die Realwirtschaft zusammenbrechen (Bilanzrezession). Während die Industriestaaten hohe Arbeitslosigkeit und eine steigende Verarmung unterer Schichten zu verzeichnen
+        hatten, kam es aufgrund steigender Rohstoff- und Lebensmittelpreise in Entwicklungsländern zu einem Anstieg hungernder Menschen um geschätzt 100 Millionen. Aufgrund einer toxischen Mischung aus Finanzeuphorie, krimineller Energie im
+        Bankensektor, Leichtgläubigkeit und grotesk niedriger Regulierungen verloren Millionen von Menschen ihre Existenzen – bisher ohne echte politische Konsequenzen für den Finanzsektor.
+      </p>
+
+      <div id="8" class="jumper">
+      </div>
+
+      <h3>8. Alles andere als quid pro quo: Der Welthandel</h3>
+      <p>
+        Im 21. Jahrhundert ist es unmöglich, Wirtschaft ohne den internationalen Kontext zu denken, wie beispielsweise die zahlreichen Hinweisschilder in deutschen Läden während des blockierten Suezkanals zeigten. Obgleich weltweiter Handel kein
+        neues
+        Phänomen ist und sich seine Spuren bis in die Antike zurückverfolgen lassen, ranken sich um ihn zahlreiche Mythen – wie etwa der von den segensreichen Wirkungen des Freihandels. Argumente für den Freihandel greifen meist auf David Ricardos
+        Idee
+        des komparativen Vorteils zurück, der besagt, dass selbst wenn ein Land in allen gehandelten Gütern einen absoluten Nachteil ggü. seinem Handelspartner hat (es hat höhere Produktionskosten als sein Handelspartner), beide Länder von einem
+        Handel
+        profitieren können, wenn das unterlegene Land das herstellt, was es relativ noch am besten kann. Obgleich Beispielsrechnungen mit Wein und Tuch numerisch überzeugen, gilt das für die echte Welt eher weniger, da hier die zentrale Bedingung der
+        Vollbeschäftigung quasi nie erfüllt ist. Solange das überlegene Land nämlich Arbeitslose hat, gibt es keinen Grund, warum es einen Teil seiner Produktion dem unterlegenen Land überlassen sollte. Im realistischen Kontext von nicht voll
+        ausgelasteten Staaten gilt daher das Argument von Ricardos Vorgänger – dem berühmten Adam Smith. Dieser erklärte Handelsströme mit dem oben bereits erklärten absoluten Kosten. Ein modernes Beispiel hierfür wäre grüner Wasserstoff, der mittels
+        Photovoltaik absolut günstiger in Afrika als in Europa hergestellt werden kann. Für die meisten gegenwärtigen Gütern abgesehen von Rohstoffen haben Entwicklungsländer jedoch absolute (Kosten)Nachteile aufgrund des technischen Vorsprungs und
+        der
+        Kapitalstärke industrialisierte Staaten und profitieren vom Freihandel nicht.
+      </p>
+      <p>
+        Dass westliche Industriestaaten dennoch den Freihandel als Entwicklungshilfe propagieren (man spricht hier oft vom „Washington Consensus“) ist nicht nur falsch, sondern auch geschichtsvergessen. Während britische Ökonomen sich nämlich schon
+        im
+        18. und 19. Jahrhundert für globalen Freihandel einsetzten, wehrten sich andere europäische Großmächte wie Deutschland (d.h. seine staatlichen Vorgänger) vehement dagegen. Es war schließlich offensichtlich, dass Freihandeln zwischen ungleich
+        entwickelten Ländern mit unterschiedlichen absoluten Kosten primär dem überlegenen Land nützt – man könnte also unterstellen, das britische Plädoyer für Freihandel sei von Eigeninteresse getrieben gewesen. Akademisch beschrieb der deutsche
+        Ökonom Friedrich List die Notwendigkeit von Handelsbeschränkungen für sich im Aufbau befindliche Ökonomien mit dem noch heute genutzten „Infant Industry Argument“. Südkorea erhob beispielsweise enorm hohe Schutzzölle, um in den 1970ern seine
+        Autoindustrie vor ausländischer Konkurrenz zu schützen. Erst als diese wettbewerbsfähig war, öffnete es seine Märkte und gehört heute zu den größten Autoherstellen der Welt. Ein ähnliches Vorgehen sehen wir in China. Empörung darüber
+        erscheint
+        zwar auf den ersten Blick gerechtfertigt, doch nutzte Deutschland im 19. Jahrhundert genau dieselbe Taktik aus Protektionismus, Industriespionage und staatlichen Eingriffen um ggü. Großbritannien aufzuholen.
+      </p>
+      <p>
+        Die Tatsache, dass absolute Preisunterschiede letztlich entscheidend sind, hat eine wichtige Implikation für das globale Währungssystem. Angenommen der Wechselkurs zwischen zwei Ländern A und B sei konstant (d.h. ich kann immer gleich viele
+        Einheiten von Währung A in gleich viele Einheiten von Währung B tauschen) und das absolute Kostenniveau in beiden Ländern ist ungefähr gleich, dann sollte kein Land einen allgemeinen Vorteil ggü. dem anderen haben und beide nur aufgrund von
+        Spezialisierungen miteinander mehr oder weniger ausgeglichen handeln. Entscheidet Land A nun jedoch, seine Löhne zu senken, sodass es zu Deflation kommt (wie oben erklärt), dann kostet jedes in Land A hergestellte Gut nun weniger Geld, sowohl
+        in Währung A als auch in Währung B (da der Wechselkurs ja fixiert ist). Damit erlangt Land A jedoch einen systematischen Vorteil ggü. B und wird nun deutlich mehr an B verkaufen, sodass in B Firmen schließen müssen, die von der ausländischen
+        Konkurrenz verdrängt werden. Ist das fair? Nein, denn Lohnsenkungen sind ja keine innovative Idee, die einen Wettbewerbsvorteil begründen sollten. Um diese Ungerechtigkeit zu beseitigen, müsste B entweder seine Löhne ebenfalls senken (was
+        schlicht ein Race to the Bottom wäre) oder – besser – der Wechselkurs muss angepasst werden. Wenn die Löhne und Preise in A sich halbieren und die Währung von A ggü. Währung B um das Doppelte aufwerten (für eine Einheit Währung A muss man nun
+        zwei Einheiten Währung B statt wie vorher nur einer Einheit bezahlen), dann sind die absoluten Kosten preisbereinigt konstant geblieben. Das Währungssystem sollte also so ausgestaltet sein, dass absolute Preisunterschiede durch Löhne bzw.
+        Inflation/Deflation stets nivelliert werden und kein Land einen systematischen absoluten Vorteil hat. So zählt nur der Wettbewerb der innovativen Ideen auf Firmenebene.
+      </p>
+      <p>
+        Ein System, in dem Wechselkurse politisch festgesetzt werden, heißt Festkurssystem. Gegenwärtig haben wir global ein System aus freien/flexiblen Wechselkursen, die davon bestimmt werden, wie viel Währung Investoren und Handelspartner aus dem
+        Ausland nachfragen und wie viel Währung die eigene Zentralbank bereitstellt. Dies kann zu großen Problemen führen, wie ein kurzes Beispiel zeigt: In einem Land A herrscht Deflation und die dortige Zentralbank will die Kreditvergabe durch
+        niedrige Zinsen anschieben (damit wie oben beschrieben die effektive Nachfrage und damit die Preise steigen). In einem Land B herrscht jedoch Inflation und die Zentralbank will diese durch hohe Zinsen für weniger Kredite bekämpfen. Findigen
+        Finanzspekulanten entgeht dies natürlich nicht und sie führen einen sog. „Carry Trade“ durch: Sie leihen sich für geringe Zinsen Geld in Land A und tauschen es in Währung B um, um es in Land B zu hohen Zinsen anzulegen. Nachdem der Zins
+        ausgezahlt und der Gewinn eingeheimst wurde, tauschen sie das Geld wieder in Währung A ein und zahlen es in Land A zurück. Erhöht wird dieser Gewinn dadurch, dass durch die erhöhte Nachfrage nach Währung B (alle wollen in Land B zu hohen
+        Zinsen
+        anlegen) diese Währung aufwertet und die Spekulanten daher noch weniger Einheiten von Währung B für die Rückzahlung des Kredits in Währung A brauchen. Doch damit nicht genug: Wie wir im vorhergehenden Absatz festgestellt haben, sollte die
+        Währung eines Landes mit Inflation abwerten, damit keine systematischen absoluten Unterschiede zwischen Ländern auftreten. Durch Carry Trades und flexible Wechselkurse hingegen wertet die Währung von Land B mit hoher Inflation aber auf und
+        erschwert damit zusätzlich die wirtschaftliche Erholung, weil das Ausland nun aufgrund des höheren realen Preises weniger Güter von Land B nachfragt! Genau dies geschah in Ländern wie Brasilien oder Ungarn, wo nun rechte Diktatoren sitzen.
+      </p>
+      <p>
+        Ein funktionierendes globales Wirtschaftssystem würde dafür sorgen, dass kein Land dauerhafte absolute Vorteile gegenüber anderen hat und permanente Handelsungleichgewichte auftreten. Besonders in Deutschland ist offensichtlich, dass es bis
+        dahin noch ein weiter weg ist, denn hier gilt der enorme Exportüberschuss als Ausdruck der enormen Wettbewerbsfähigkeit der deutschen Wirtschaft und damit als zu verteidigendes Gut. Je nach Perspektive kann man dieses Problem auf zwei Arten
+        beschreiben: Ein klassischer Ansatz würde davon sprechen, dass das Ausland, das mehr aus Deutschland kauft als es dorthin verkauft, sich nicht permanent für den Handel verschulden will. Aus naiver – sinnvoller – Perspektive stehen jedoch
+        tatsächliche Güter im Vordergrund. Hier bedeutet ein Exportüberschuss nichts anderes, als dass Deutschland permanent mehr Güter ins Ausland liefert als es von dort bezieht. Deutschland schießt sich mit einem ständigen Exportüberschuss also
+        ein
+        Eigentor, weil es unter seinen Verhältnissen lebt, d.h. weniger konsumiert, als es könnte (und im Sinne eines globalen Gleichgewichts sollte). Stattdessen häuft Deutschland Geldvermögen an, dass es dann meist im Ausland anlegt. In der
+        Vergangenheit waren diese Anlagen so unerfolgreich, dass sich große Teile des durch Handel aufgebauten Geldvermögens in Luft auflösten und im Ausland der Begriff „Stupid German Money“ aufkam. Handelsungleichgewichte nützen also auf Dauer
+        niemandem und können kurzfristig durch Arbeitsplatzverluste in Defizitländern erheblichen Schaden anrichten. Der große Ökonom John Maynard Keynes wollte deshalb nach dem zweiten Weltkrieg ein System installieren, dass sowohl übermäßige
+        Überschussländer als auch Defizitländer bestraft hätte, um ein globales Gleichgewicht zu erreichen. Leider kam es bekanntlich anders. Ausführlich habe ich über das Thema <a href="https://www.naive-economics.com/stopping-the-swing" target="_blank">hier</a> geschrieben.
+      </p>
+
+      <h4>Anwendungsfall 8: Deutschland und die Eurokrise</h4>
+      <p>
+        Wenn man Menschen fragt, wer Schuld an der Eurokrise ab 2009 trägt, würden viele vermutlich den Finger auf Griechenland und Südeuropa richten. Tatsächlich ist es ab so, dass ausgerechnet der angebliche Musterschüler Deutschland massive
+        Ungleichgewichte innerhalb der Eurozone verursacht hat, die besonders in Südeuropa die wirtschaftliche Entwicklung behindert und den Hauptteil zur Krise beigetragen haben. Die Geschichte ist schnell erzählt: Nachdem Deutschland zur
+        Jahrtausendwende noch als „kranker Mann Europas“ galt, leitete Kanzler Schröder zusammen mit Arbeitgebern und Gewerkschaften mit der Agenda 2010 eine unrühmliche Wende ein, die besonders in Lohnzurückhaltungen bestand. Wie wir nun wissen,
+        ergaunerte Deutschland sich so absolute Vorteile im Handel, weswegen die deutsche Währung ggü. dem Ausland hätte aufwerten müssen, um diese Vorteile auszugleichen. Da Deutschland aber Teil der Eurozone mit einer gemeinsamen Währung war, kam
+        es
+        nicht dazu. Zwar wertete der Euro in den 2000ern z.B. im Verhältnis zum Dollar leicht auf, allerdings nicht so stark, wie es nötig gewesen wäre, weil die anderen europäischen Länder den Anstieg mit ihren Lohnerhöhungen dämpften. Während das
+        Euro-Ausland also zu wenig vor Deutschland geschützt wurde, war die restliche Eurozone Deutschland schutzlos ausgeliefert, da hier aufgrund der gemeinsamen Währung gar keine Wechselkursanpassungen stattfinden konnten. Waren und
+        Dienstleistungen
+        aus Deutschland hatten also einen systematischen absoluten Preisvorteil auf dem Weltmarkt und verdrängten dort andere Länder. Der Aufstieg zum Exportweltmeister ist also keine Heldengeschichte, sondern ein egoistisches Ganovenstück. Um diese
+        Fehler zu korrigieren, wäre ein Lohnanstieg in Deutschland dringend geboten, doch stattdessen empfahl man Südeuropa Einsparungen und Kürzungen als bittere Medizin. Bis heute hat man das Problem augenscheinlich nicht begriffen und daraus keine
+        Konsequenzen gezogen, wie sich etwa an den EU-Regeln zur Vermeidung makroökonomischer Ungleichheit zeigt (<a href="https://www.naive-economics.com/unattraktivster-sixpack-der-welt" target="_blank">hier</a> eine Analyse).
+      </p>
+
+      <div id="9" class="jumper">
+      </div>
+
+      <h3>9. Ein neues Staatsverständnis: Mitspielen statt Zuschauen</h3>
+      <p>
+        Nachdem wir uns nun schon durch so viele wirtschaftliche Themen gekämpft haben, soll zuletzt noch ein weiterer wirtschaftlicher Akteur besprochen werden: der Staat. Allein schon die Sichtweise, dass Staat und Wirtschaft untrennbar miteinander
+        verbunden sind, widerspricht der Sichtweise vieler Ökonomen, die den Staat vor allem als Bewahrer der marktwirtschaftlichen Ordnung sehen. Laut ihnen soll der Staat nur aktiv werden, wenn der Markt ein suboptimales Ergebnis liefert. Bei der
+        Reparatur von Marktversagen muss dabei aber zusätzlich beachtet werden, dass der Staat nicht ein noch schlechteres Ergebnis erzielt. Einem solchen Staatsversagen wird besagten Ökonomen teilweise eine hohe Wahrscheinlichkeit zugemessen, da
+        politische Maßnahmen vor allem aus egoistischen Motiven der Entscheidungsträger abgeleitet werden. Allein dieser Ansatz der politischen Ökonomie, dass Politiker primär Eigeninteressen (Wiederwahl, Geld etc.) verfolgen, zeigt bereits die
+        negative Grundhaltung der Wirtschaftswissenschaften gegenüber dem Staat.
+      </p>
+      <p>
+        Für diese gibt es empirisch jedoch keinen wirklichen Grund. Zunächst einmal ist festzustellen, dass das „Goldene Zeitalter des Kapitalismus“ in der Nachkriegszeit von einem sehr aktiven Staat gekennzeichnet war. Der Bankensektor war stark
+        reguliert, die zentrale Daseinsvorsorge in der öffentlichen Hand und die Wechselkurse politisch festgelegt. Gewiss, die hohen Wachstumsraten waren vor allem der Tatsache geschuldet, dass nach dem zerstörerischen Krieg vieles wieder aufgebaut
+        werden musste, aber nichtsdestotrotz handelte es sich um eine bemerkenswerte stabile Phase. Als mit der Ölkrise 1973 die Wirtschaft in den Industrienationen jedoch in eine Phase niedrigen Wachstums und hoher Inflation eintrat, setzten
+        neoliberale Reformer rund um Ronald Reagan und Margareth Thatcher auf eine 180° Wende: Privatisierungen, Regulierungsabbau, Steuersenkungen – und das in fast jedem Bereich. Der Staat wurde als Fessel für das Unternehmertum gesehen und soweit
+        es
+        ging zurückgedrängt.
+      </p>
+      <p>
+        Dieses Narrativ wirkt bis heute nach und zeichnet ein falsches Bild. Staatliche Forschung ebnete den Weg für alle großen technischen Revolutionen vom Internet über GPS bis hin zum Touchscreen und ist bis heute enorm innovativ.
+        Profitorientierung und Shareholder Values führten nach Privatisierungen vielerorts nicht zu Effizienzgewinnen, sondern zum Abbau von öffentlichem und sozialen Kapital. Bestes Beispiel in Deutschland dafür ist die deutsche Bahn, die zwar
+        immernoch ein Staatsunternehmen ist, aber jahrelang in Vorbereitung auf einen Börsengang (den die Finanzkrise von 2008 verhinderte) auf einen privatwirtschaftlichen, d.h. renditeorientierten Kurs gebracht wurde. Dieser Kurswechsel macht sich
+        in
+        weniger Gleisstrecken sowie weniger Passagieren bemerkbar und rächt sich heute bei der ökologischen Transformation gewaltig. Ein ebenfalls schlechtes Bild gibt der teilprivatisierte Gesundheitssektor ab (Stichwort Pflegenotstand). Diese
+        Entwicklung muss zurückgedreht und die Wirtschaft, besonders der Finanzsektor, massiv re-reguliert werden. Warum sollten beispielweise überhaupt Finanzprodukte erlaubt sein, hinter denen keine realen Transaktionen stecken bzw. die solche
+        nicht
+        einmal unterstützten? Ironischerweise ist aber nicht nur die fehlende Einschränkung des Privatsektors ein Problem, sondern der Staat behindert sich mit eigenen Gesetzen selbst. So urteilte der BGH jüngst, dass der staatliche deutsche
+        Wetterdienst in seiner App zwar Warnmeldungen, nicht aber den Wetterbericht für die Bürger kostenlos machen darf. Geklagt hatte der private Anbieter WetterOnline, der sich unfairen Wettbewerb durch den Staat ausgesetzt sah.
+      </p>
+      <p>
+        Will man den Staat neu befähigen, darf man ihm also nicht einfach nur alte Kompetenzen übertragen, sondern es geht um ein neues Staatsverständnis. Auch im staatlichen Sektor sollten Experimente und kreative Ideen möglich sein, sollten
+        Angestellte neue Wege gehen und flexibel Lösungen finden. Sein Erfolg darf nicht daran gemessen werden, wie viele Einsparungen er durchgeführt hat, sondern wie viel er zum Gemeinwohl beigetragen hat. Ein öffentlich-rechtlicher Rundfunk darf
+        zum
+        Beispiel nicht nur an Zuschauerzahlen oder Budgetminimierung gemessen werden, sondern an der Werthaftigkeit seines Angebots. Ohnehin muss die Frage „Was ist wertvoll?“ wieder Teil der öffentlichen Debatte werden, denn im politischen Raum
+        können
+        gesellschaftliche Wertvorstellungen am besten aggregiert (siehe erster Abschnitt) und zu klaren Konzepten geformt werden. Eine Idee sind hier z.B. Gemeinwohlbilanzen, die die rein monetären Bilanzen von Firmen ablösen sollen, um ihren wahren
+        Beitrag zum gesellschaftlichen Wohlergehen zu messen. Wir müssen den Staat kreativ und innovativ denken, ihm wieder Dinge zutrauen und zu Problemlösungen befähigen. Und – ich fasse mich hier an die eigene Nase – wir sollten auch ein besseres
+        Framing finden und nicht von „dem Staat“ reden, als sei er eine von der Gesellschaft entkoppelte Entität. Der Staat, das sind wir alle.
+      </p>
+      <h4>Anwendungsfall 9: Der Pharma-Sektor</h4>
+      <p>
+        Beim bereits genannten Beispiel des Gesundheitssektors denken die meisten vermutlich zuallererst an überfüllte Krankenhäuser und überfordertes Pflegepersonal. Obgleich dieser Bereich natürlich äußerst wichtig ist und dort viel schief läuft,
+        will ich die Aufmerksamkeit ebenfalls auf die Pharma-Industrie lenken. Diese Branche, die sich vor allem um die Herstellung von Medikamenten und anderen medizinischen Produkten kümmert, ist global hoch konzentriert, weswegen man allein
+        aufgrund
+        des mangelnden Wettbewerbs von Marktversagen sprechen kann. So sprechen sich Pharmakonzerne beispielsweise bei der Behandlung mancher Krankheiten ab, um sich gegenseitig Monopole zu verschaffen, die dann für überhöhte Preise und hohe Gewinne
+        genutzt werden. Doch abgesehen von diesem klassischen Marktversagen muss man auch die Grundsatzfrage stellen, ob so essentielle Produkte wie lebenswichtige Medikamente überhaupt von privaten Firmen entwickelt und hergestellt werden sollten.
+        Da
+        wäre einerseits der normative Aspekt, ob man überhaupt aus lebensbedrohlichen Situationen anderer Profite schlagen darf. Falls man dies bejaht, kommt man zu der noch schwierigeren Frage, was ein angemessener Preis für lebensnotwendige
+        Medikamente sein sollte bzw. wie viel dieser über den Produktionskosten liegen darf. Je nach Regulierungsdichte wird die Profitgier der Pharmakonzerne mal mehr und mal weniger eingeschränkt, doch dieses fundamentale Problem bleibt bestehen.
+        Zudem ist zu beobachten, dass viel Geld in Forschung und Entwicklung gegen Volkskrankheiten der reichen Industriestaaten fließt und deutlicher weniger in teils lebensbedrohliche Probleme von Entwicklungsländern wie der Malariaschutz. In
+        reichen
+        Ländern lässt sich nun mal mehr Geld verdienen, sagt das Profitmotiv, aber sollte das wirklich der Richtwert sein? Ein Nein würde nach mehr staatlicher Aktivität verlangen. Auch heute ist es ohnehin schon so, dass die relevante Forschung,
+        v.a.
+        Grundlagenforschung, an staatlichen Universitäten und Instituten stattfindet. Erst wenn der Wirkstoff im Prinzip schon fertig entwickelt ist, wird er an Firmen verkauft oder es finden Ausgründungen von kleinen Start-Ups statt, die dann
+        wiederum
+        von den Pharmariesen aufgekauft werden. Das Resultat ist am Ende immer dasselbe: Der Pharmasektor selbst ist nicht innovativ (höchsten mit Blick auf den Herstellungsprozess), der staatliche Sektor hingegen schon. Und da wie oben gezeigt für
+        den
+        Staat keine Finanzierungsengpässe bestehen, kann er das Gemeinwohl an die Stelle von Profiten und Kostenminimierung setzen. Warum sollte Staat also nicht auch den Herstellungsprozess übernehmen oder ihn zumindest direkt kontrollieren? Warum
+        sollte man davon ausgehen, dass staatlich Angestellte überhaupt kein Interesse an Kosteneffizienz haben, obwohl diese doch ebenfalls das Gemeinwohl fördert. Und warum sollte man nicht gesellschaftlich entscheiden, welche Krankheiten besondere
+        Forschungsschwerpunkte sein sollten, anstatt diese Frage an potenziellen Profiten auszurichten? Denken wir frisch und seien wir mutig, der Staat kann viel mehr, als ihm heute zugetraut wird.
+      </p>
+
+      <div id="10" class="jumper">
+      </div>
+
+      <h3>10. Wirtschaft naiv denken: Was heißt das also?</h3>
+      <p>
+        Obige Abschnitte haben vor allem eines gezeigt: Will man Wirtschaft und wirtschaftliches Denken reparieren, muss man alle Bereiche der Ökonomie fundamental neu denken. Es gilt, endlich reale Probleme in den Vordergrund zu stellen. Es sollte
+        um
+        soziale Bedürfnisse, ökologische Grenzen und normative Kriterien gehen, nicht um Geld und Finanzierung als Endzweck, wo sie nur Mittel zum Zweck sein sollten. Mit diesem Text habe ich mich bemüht, möglichst viele Themen möglichst knapp, aber verständlich aufzugreifen. Er ist natürlich keineswegs vollständig
+        und auch von dem geprägt, was ich zu wissen und zu verstehen glaube. Die wichtigste Botschaft besteht darin, dass die Gestaltung unserer Wirtschaft eine grundlegend gesellschaftliche und politische Frage ist und es in diesem Sinne keine
+        richtigen Antworten auf ökonomische Systemfragen geben kann. Dennoch muss man die gegenwärtige Ordnung für eine nützliche Beschreibung von Vorgängen und Problemen erst einmal korrekt erfassen. Nur so können wichtige Mechanismen aufgedeckt
+        werden, die für das Finden von Lösungen berücksichtigt werden müssen. Bei alldem ist wichtig, stets die Kontextabhängigkeit offenzulegen. Um neue Lösungen zu entwickeln, sollte man diesen Kontext auch hinterfragen und kreativ über
+        Alternativen
+        nachdenken. Es gibt andere, neue und bessere Wege als die bestehende Wirtschaftsordnung, wir müssen nur unseren defekten Kompass wegwerfen und stattdessen neu und naiv über vermeintliche Wahrheiten nachdenken.
+      </p>
+
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

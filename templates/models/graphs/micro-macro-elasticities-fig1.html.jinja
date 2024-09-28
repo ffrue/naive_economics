@@ -1,0 +1,111 @@
+ <div class="kg-container">
+
+    params:
+      - {name: energy, value: 100, min: 0, max: 100, round: 1}
+      - {name: factor, value: 0, min: 0, max: 1, round: 0.1}
+
+    calcs:
+      factor: ((- params.energy / 100 + 1) * params.factor)
+
+    layout:
+      TwoHorizontalGraphsPlusSidebar:
+        leftGraph:
+          xAxis:
+           max: 105
+           title: Energy (E)
+          yAxis:
+           min: 0
+           max: 150
+           title: Labour (L)
+
+          objects:
+          - Line:
+              point: [0,0]
+              point2: [1,1]
+              color: blue
+              label: {text: "GD", x: 25}
+          - Line:
+              point: [params.energy, 0]
+              point2: [params.energy, 1]
+              color: red
+              lineStyle: dashed
+              label: {text: "E^S", x: params.energy}
+              drag:
+                - horizontal: energy
+          - Line:
+              point: [0,100]
+              point2: [1,100]
+              color: orange
+              label: {text: "GI", x: 25}
+          - Point:
+              coordinates: [params.energy, params.energy]
+              color: blue
+              droplines:
+                 horizontal: "L^D_1"
+
+        rightGraph:
+          title: Gas-independent Industry
+          xAxis:
+           max: 250
+           title: Labour (L) = Output (Y)
+          yAxis:
+           min: 0
+           max: 1.2
+           title: Wage (w)
+
+          objects:
+          - Segment:
+              a: [params.energy,0.5]
+              b: [(1 + calcs.factor) * 100 + params.energy,0.5]
+              color: orange
+              label: {text: "L^D_2", x: 1}
+          - Segment:
+              a: [(1 + calcs.factor) * 100 + params.energy,0.5]
+              b: [(1 + calcs.factor) * 100 + params.energy,0]
+              color: orange
+          - Segment:
+              a: [params.energy,0]
+              b: [params.energy,1]
+              color: blue
+          - Segment:
+              a: [0,1]
+              b: [params.energy,1]
+              label: {text: "L^D_1", x: 0.5 * params.energy}
+              color: blue
+          - Line:
+              point: [0,0]
+              point2: [200, 0.5]
+              color: black
+              label: {text: "L^S", x: 250}
+          - Point:
+              coordinates: [(100 + calcs.factor * 100 + params.energy),(0.25 + calcs.factor * 0.25 + params.energy*0.0025)]
+              color: red
+              droplines:
+                 horizontal: "w"
+          - Arrow:
+              begin: [100 + calcs.factor * 100 + params.energy, 0.1]
+              end: [200, 0.1]
+              trim: 0.001
+              double: true
+              color: red
+              label: {text: "dY", x: (0.01 * params.energy + calcs.factor + 3) * 50}
+          - Line:
+              point: [0, 0.5]
+              point2: [1, 0.5]
+              lineStyle: dotted
+              label: {text: "w_2^* = P_2", x: 250}
+          - Point:
+              coordinates: [params.energy, params.energy * 0.0025]
+              color: blue
+              droplines:
+                 horizontal: "w_1"
+
+        sidebar:
+          controls:
+          - title: Vary Parameters
+            description: Energy Supply and GI Growth Potential
+            sliders:
+            - {param: energy, label: "E^S"}
+            - {param: factor, label: "g_{GI}"}
+
+</div>

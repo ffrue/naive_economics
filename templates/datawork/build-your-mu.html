@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Build your Monetary Union">
+  <meta name="twitter:description" content="Interactive tool for assessing costs and benefits of a custom monetary union.">
+  <meta name="twitter:image" content="https://www.naive-economics.com/static/thumbnail-elasticities.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link here" href="../datawork">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../models">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Part -->
+<div class="container-fluid" style="padding-top: 2.5%; text-align: center; width: 80%;">
+      <div class="row text" style="text-align: justify; margin-bottom: 5%;">
+      <h2 class="title">Test your own Monetary Union</h2>
+
+          <script language="Javascript">
+    window.onload=function(){
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        alert("Visit this on a Computer for Better View.");
+    } else {
+
+    }
+  }
+  </script>
+      <p>
+          There exists a large literature about the concept of "Optimal Currency Areas" as introduced in a famous
+          article by Robert Mundell in 1961. This literare aims at identifying criteria against which one can
+          assess existing or hypothetical monetary unions, i.e. union of countries with a single currency (and, therefore,
+          a common monetary policy). In the end, it all boils down to comparing costs and benefits of such
+          a monetary union: Costs arise from the loss of national monetary policy and shrinking space for national
+          fiscal policy (due to the inability to directly monetize deficits), which is a problem when different
+          members of the monetary union are at different points in their business cycle (e.g., because of asymmetric shocks).
+          On the other side, benefits stem from lower transaction costs and lower uncertainty for cross country trade,
+          since exchange rates are now perfectly fixed (to 1). Costs from monetary integration are lowest when business
+          cycle between countries are highly synchronized, benefits are highest when the members of the monetary
+          union trade a lot with each others.
+      </p>
+      <p>
+          The following tool lets you select a number of countries (the default setting selects all countries from the
+          current Eurozone for which sufficient data was available) and depicts the above cost-benefit-analysis:
+          For assessing potential benefits, the horizontal axis shows the share of total exports going to the selected union
+          for each country (data from <a href="https://wits.worldbank.org/" target="_blank">WITS</a>),
+          while the horizontal axis shows the correlation of the national output gap with the average output gap
+          for the selected union (data from <a href="https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/macro-economic-database-ameco/ameco-database_en"
+          target="_blank">AMECO</a>). Note that the mean output gap is calculated without weights for the size of
+          the respective economies. The higher the lines are, the lower are the costs from weakening national policies,
+          the further the lines are to the right, the higher the benefits are for cross-member trade.
+      </p>
+      </div>
+</div>
+  <div style="width: 70%; text-align: center; margin: auto;">
+    <form method="post" class="check-boxes" style="text-align: center;">
+      <table style="text-align: left; margin: auto;">
+        <tr>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry1" value="Austria" name="cntry1" checked="checked">
+          <label class="form-check-label" for="cntry1">Austria</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry2" value="Belgium" name="cntry2" checked="checked">
+          <label class="form-check-label" for="cntry2">Belgium</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry3" value="Bulgaria" name="cntry3">
+          <label class="form-check-label" for="cntry3">Bulgaria</label>
+        </td>
+          <td class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cntry4" value="Denmark" name="cntry4">
+            <label class="form-check-label" for="cntry4">Denmark</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry5" value="Germany" name="cntry5" checked="checked">
+          <label class="form-check-label" for="cntry5">Germany</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry6" value="Estonia" name="cntry6" checked="checked">
+          <label class="form-check-label" for="cntry6">Estonia</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry7" value="Ireland" name="cntry7" checked="checked">
+          <label class="form-check-label" for="cntry7">Ireland</label>
+        </td>
+          <td class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cntry8" value="Greece" name="cntry8" checked="checked">
+            <label class="form-check-label" for="cntry8">Greece</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry9" value="Finland" name="cntry9" checked="checked">
+          <label class="form-check-label" for="cntry9">Finland</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry10" value="France" name="cntry10" checked="checked">
+          <label class="form-check-label" for="cntry10">France</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry11" value="Italy" name="cntry11" checked="checked">
+          <label class="form-check-label" for="cntry11">Italy</label>
+        </td>
+          <td class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cntry12" value="Latvia" name="cntry12" checked="checked">
+            <label class="form-check-label" for="cntry12">Latvia</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry13" value="Lithuania" name="cntry13" checked="checked">
+          <label class="form-check-label" for="cntry13">Lithuania</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry14" value="Luxembourg" name="cntry14" checked="checked">
+          <label class="form-check-label" for="cntry14">Luxembourg</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry15" value="Hungary" name="cntry15">
+          <label class="form-check-label" for="cntry15">Hungary</label>
+        </td>
+          <td class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cntry16" value="Malta" name="cntry16" checked="checked">
+            <label class="form-check-label" for="cntry16">Malta</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry17" value="Netherlands" name="cntry17" checked="checked">
+          <label class="form-check-label" for="cntry17">Netherlands</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry18" value="Poland" name="cntry18">
+          <label class="form-check-label" for="cntry18">Poland</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry19" value="Portugal" name="cntry19" checked="checked">
+          <label class="form-check-label" for="cntry19">Portugal</label>
+        </td>
+          <td class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cntry20" value="Romania" name="cntry20">
+            <label class="form-check-label" for="cntry20">Romania</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry21" value="Spain" name="cntry21" checked="checked">
+          <label class="form-check-label" for="cntry21">Spain</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry22" value="Slovenia" name="cntry22" checked="checked">
+          <label class="form-check-label" for="cntry22">Slovenia</label>
+        </td>
+        <td class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cntry23" value="Sweden" name="cntry23">
+          <label class="form-check-label" for="cntry23">Sweden</label>
+        </td>
+          <td class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cntry24" value="United Kingdom" name="cntry24">
+            <label class="form-check-label" for="cntry24">UK</label>
+        </td>
+    </tr>
+    </table>
+    <form method="post" style="text-align: center;">
+        <button type="submit" class="btn btn-outline-light btn-sm" style="margin: 2% auto 0 auto;">Reload Diagram</button>
+    </form>
+  </div>
+
+
+  <div class="diagram-container">
+    {{ code|safe }}
+  </div>
+
+
+  <div class="bottom">
+      © Florian Frühhaber
+  </div>
+
+</body>
+
+</html>

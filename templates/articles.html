@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+    <a class="navbar-brand" href="./">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="./articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./datawork">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./models">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <div class="languages">
+      <div class="german language" style="padding-top: 0;">
+        German
+      </div>
+      <div class="english language" style="padding-top: 0;">
+        English
+      </div>
+    </div>
+
+    <hr id="hr-language" style="width: 81.5%; "/>
+
+    <!-- Recommended Articles -->
+    <div class="row" style="text-align: center; padding: 0 10%; margin-bottom: 5%;">
+      <div class="col-lg-4">
+        <div class="recommend">
+          <h3>Where to Start</h3>
+        </div>
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Wirtschaft naiv denken</h5>
+          </div>
+          <div class="card-body">
+            Eine Einführung in unser Wirtschaftssystem mit einem Fokus auf Wirtschaftspolitik.
+             Hoffentlich interessant für Laien und Fortgeschrittene gleichermaßen.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-int">International System</span>
+          </div>
+          <a class="stretched-link" href="./wirtschaft-naiv-denken"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="recommend">
+          <h3>Latest Article</h3>
+        </div>
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Wie golden ist die Goldene Regel?</h5>
+          </div>
+          <div class="card-body">
+            Ein ökonomische Einordnung häufig genannter Argumente gegen und
+            insbesondere für die Goldene Regel der öffentlichen Finanzen:
+            Schulden für Investitionen sind nicht immer besser.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./goldene-regel"></a>
+        </div>
+      </div>
+
+      <hr style="margin-top: 3%; margin-bottom: 5%;" />
+
+      <!-- Article Cards -->
+
+       <div class="col-lg-3">
+                <div class="card article-card german">
+          <div class="card-header">
+            <h5>Eine Einführung in die kommunale Finanzpolitik</h5>
+          </div>
+          <div class="card-body">
+            Ein Überblick über Ausgaben und Einnahmen einer Gemeinde, die aktuelle
+            finanzielle Lage deutscher Kommunen und die zentralen
+            Problemfelder der deutschen Finanzordnung.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./kommunale-finanzen"></a>
+        </div>
+        </div>
+
+        <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Fiscalflation in post-pandemic Germany</h5>
+          </div>
+          <div class="card-body">
+            An introduction to the Fiscal Theory of the Price Level
+            and a FTPL-based estimation of the effect of German Fiscal Policy on
+            current inflation
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./fiscalflation"></a>
+        </div>
+      </div>
+
+    <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>How much does the green transition cost?</h5>
+          </div>
+          <div class="card-body">
+            Overview over current estimates about global annual investment
+            needs for the green transition and explanations for the broad
+            range of values.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./investment-needs-green-transition"></a>
+        </div>
+      </div>
+
+
+    <div class="col-lg-3">
+       <div class="card article-card german">
+          <div class="card-header">
+            <h5>Eine neue Finanzpolitik für Europa</h5>
+          </div>
+          <div class="card-body">
+            Antragstext mit Vorschlägen für eine tiefergehende
+            finanzpolitische Integration Europas sowie für eine neue
+            fiskal- und geldpolitische Interaktion.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./neue-finanzpolitik-europa"></a>
+        </div>
+      </div>
+
+
+    <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>The Euro: What went wrong and where to go</h5>
+          </div>
+          <div class="card-body">
+            Analysing the flaws in the Euro's architecture by studying its
+            history as well as the economic and political ideas behind the
+            Maastricht framework.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-history">History</span>
+          </div>
+          <a class="stretched-link" href="./the-euro"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Das Ende des Kapitalismus?</h5>
+          </div>
+          <div class="card-body">
+              Besprechung zu Ulrike Hermanns aktuellem Buch: Warum Klima retten etwas
+              anderes ist, als einen Krieg zu gewinnen, und was Information
+              damit zu tun hat.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./das-ende-des-kapitalismus"></a>
+        </div>
+      </div>
+
+    <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Stopping the Swing</h5>
+          </div>
+          <div class="card-body">
+            Why current account balances and trade imbalances have increased
+            since 1970 and how the international monetary system needs to
+            change to fix this.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-int">International System</span>
+          </div>
+          <a class="stretched-link" href="./stopping-the-swing"></a>
+        </div>
+      </div>
+
+   <div class="col-lg-3">
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Eine kurze Geschichte der Ökonomik</h5>
+          </div>
+          <div class="card-body">
+              Ein Streifzug durch die Ökonomik von der Antike über die Denkschulen des 18./19.Jh. und die
+            großen Debatten des 20.Jh. bis zur Gegenwart.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+          </div>
+          <a class="stretched-link" href="./ideengeschichte-der-vwl"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Garantien statt Ver(un)sicherung</h5>
+          </div>
+          <div class="card-body">
+              Analyse und Kritik des aktuellen Sozialversicherungssystem sowie
+              Vorstellung einer womöglich besseren Alternative.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./garantien-statt-verunsicherung"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Project Cybersyn: Realisierte Utopie?</h5>
+          </div>
+          <div class="card-body">
+              Die Geschichte der Verbindung von Cyber-Kybernetik und demokratischen Sozialismus im Chile der 1970er.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-history">History</span>
+          </div>
+          <a class="stretched-link" href="./projekt-cybersyn"></a>
+        </div>
+      </div>
+
+     <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Economics for the current Crisis</h5>
+          </div>
+          <div class="card-body">
+            Discussion of two academic papers related to questions around
+            the Ukraine crisis, namely the pass-through of energy costs
+            and effects of an energy embargo.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+          </div>
+          <a class="stretched-link" href="./learning-from-econ-academia"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card german">
+          <div class="card-header">
+            <h5>Der unattraktivste Sixpack der Welt</h5>
+          </div>
+          <div class="card-body">
+              Eine Analyse der wichtigsten Bausteine des EU-Regelwerks zur Finanzpolitik und ein Ausblick inkl. Wiederaufbaufonds.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./unattraktivster-sixpack-der-welt"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Why constant deficits can be a good thing</h5>
+          </div>
+          <div class="card-body">
+            An interactive stock-flow-consistent model about the relevance of sufficient fiscal
+            spending and a new approach to inflation control.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+          </div>
+          <a class="stretched-link" href="./fiscal-policy-in-a-sfc-model"></a>
+        </div>
+      </div>
+
+    <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Understanding MMT with Models</h5>
+          </div>
+          <div class="card-body">
+              Presenting a critique of two mainstream macro textbook models
+              and an overview over five different approaches to modelling aspects of
+              Modern Monetary Theory.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-theory">Econ Theory</span>
+          </div>
+          <a class="stretched-link" href="./understanding-mmt-through-models"></a>
+        </div>
+      </div>
+
+
+      <!--
+
+      <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Stopping the Swing</h5>
+          </div>
+          <div class="card-body">
+              Why current account balances and trade imbalances have increased
+              since 1970 and how the international monetary system needs to
+              change to fix this.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-int">International System</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Stopping the Swing</h5>
+          </div>
+          <div class="card-body">
+              Why current account balances and trade imbalances have increased
+              since 1970 and how the international monetary system needs to
+              change to fix this.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-int">International System</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card article-card english">
+          <div class="card-header">
+            <h5>Stopping the Swing</h5>
+          </div>
+          <div class="card-body">
+              Why current account balances and trade imbalances have increased
+              since 1970 and how the international monetary system needs to
+              change to fix this.
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary lab-policy">Econ Policy</span>
+            <span class="badge badge-primary lab-int">International System</span>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

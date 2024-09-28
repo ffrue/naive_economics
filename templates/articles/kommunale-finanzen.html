@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="../favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/the-euro/images.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+    <a class="navbar-brand" href="../index.html">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles.html">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../dashboard.html">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../models.html">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me.html">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Eine Einführung in die kommunale Finanzpolitik</h2>
+
+    <p>
+       Für einen ansonsten oft als eher trocken wahrgenommenen Politikbereich wie die Finanzpolitik ist die Menge an Aufmerksamkeit in letzter Zeit fast schon erstaunlich. Vor allem nach dem Urteilsspruch des BVerfG zur Schuldenbremse werden tagtäglich in der öffentlichen Debatte mit Milliardensummen jongliert und der Bundeshaushalt samt Nebentöpfen unter die Lupe genommen. Die finanzielle Lage in Deutschland schien lange entspannt zu sein, bis sie nun plötzlich von einer Vielzahl krisenhaften Entwicklungen auf Talfahrt geschickt wurde. Diese Vorstellung geht jedoch an der Wirklichkeit vorbei und so manche strukturelle Großbaustelle verschwindet leicht hinter der Aufregung um das 60 Mrd. Loch im Klima- und Transformationsfonds. Eine dieser Großbaustellen sind die föderalen Finanzbeziehungen, konkret vor allem die Finanzausstattung der Kommunen. Diese ist nicht nur deshalb von besonderer Bedeutung, da es sich um ein seit vielen Jahren bestehendes Problem handelt, sondern auch, weil sie für die großen Herausforderungen der Zukunft eine essenzielle Rolle spielt, besonders mit Blick auf die ökologische Transformation und den gesellschaftlichen Zusammenhalt. Schließlich entscheidet sich vor Ort, ob die Wärmewende gelingt, der ÖPNV die Individualmobilität teilweise ersetzen, die Integration von Flüchtlingen gestemmt und staatliche Leistungen von Sozialwohnungen bis Schwimmbändern bereitgestellt werden können. Aus all diesen Gründen lohnt sich ein tieferer Blick in Probleme und Reformperspektiven kommunaler Finanzpolitik.
+    </p>
+
+    <h3>Die Rolle der Kommunen im deutschen Föderalstaat</h3>
+
+    <p>
+        Die große Bedeutung von Ländern und Kommunen in Deutschland ist nicht nur das Ergebnis historischer (Lern-)Prozesse und Ausdruck vertikaler Gewaltenteilung, sondern auch Umsetzung des Subsidiaritätsprinzips, das größtmögliche Eigenverantwortung zum Ziel hat und die Verlagerung von Entscheidungen auf höhere (vom Bürger weiter entfernteren) Ebenen für grundsätzlich begründungspflichtig hält. In Deutschland gibt es streng genommen nur zwei staatliche Ebenen, da Kommunen nach Art. 28 GG zwar ein Selbstverwaltungsrecht haben, staatsrechtlich jedoch als Teil der Länder gelten. Dies hat große Folgen für die Finanzpolitik: Einerseits gibt es hohe Hürden für direkte Transfers zwischen Bund und Kommunen, andererseits bestehen große Unterschiede zwischen den Bundesländern was rechtliche Rahmenbedingungen (z.B. Regeln für das kommunale Rechnungswesen) oder die Verteilung von Aufgaben und Finanzmitteln zwischen Land und Kommunen angeht (was sich etwa im sog. Kommunalisierungsgrad zeigt).
+    </p>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/laendervergleich-foederal.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/ausgaben-ebene-halbjahr.png" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <p>
+       Ohnehin kann die Feststellung dieses <a href="https://www.bpb.de/themen/deutsche-einheit/lange-wege-der-deutschen-einheit/47388/finanzausgleich-finanztransfers-und-reformen-der-finanzverfassung/" target="_blank">sehr guten Überblicksartikel der bpb zur deutschen Finanzordnung</a> nur unterstrichen werden, dass "die Finanzverfassung in einem föderalen Staat wohl das komplexeste aller Regelwerke [ist], die Mehrebenensysteme aufzuweisen haben". Zwar umfassen die entsprechenden Regelungen im Grundgesetz nur die Art. 104-115, jedoch unterliegen diese für eine Verfassung ungewöhnlich häufigen und detaillierten Änderungen. In den vergangenen beiden Jahrzehnten wurde in mehreren Föderalismusreformen substanzielle Weiterentwicklungen der Finanzordnung angestrebt, die allerdings meist im Streit zwischen Bund und Ländern stecken blieben. Während in der Föderalismusreform I in 2006 eine Entflechtung von Gesetzgebungskompetenzen (mehr ausschließliche Gesetzgebung des Bundes, weniger zustimmungspflichtige Gesetze, Abschaffung der Rahmengesetzgebung) und Finanzierungswegen (weniger Mischfinanzierung, Verbot der direkten Aufgabenübertragung von Bund an Kommunen) angestrebt wurde, verstärkten spätere Reformen die Verflechtung etwa durch Schaffung eigener Artikel für Finanzhilfen des Bundes im Bereich Bildung und Wohnungsbau. Die letzte große Reform bestand 2020 in der Abschaffung des Länderfinanzausgleichs, der durch den Finanzkraftausgleich ersetzt wurde: Während zuvor Zahlungen zwischen den Bundesländern zur Angleichung der Finanzkraft stattfanden, findet diese Umverteilung nun durch sog. Ergänzungszuweisungen des Bundes innerhalb der Umsatzsteuerzuteilung statt. Für eine Übersicht zu den aktuellen Finanzbeziehungen zwischen Bund und Ländern sei auf den zuvor verlinkten Artikel verwiesen. Letztlich zeigten sich in den vergangenen Jahren die etwa von Gunnar Schwarting diagnostizierten strukturellen Grundprobleme des gegenwärtigen deutschen Föderalismus: Zu starke Verflechtungen führen zu Ineffizienzen, mangelnder Reformfähigkeit, Intransparenz und Legitimationsproblemen.
+    </p>
+
+    <p>
+        Bevor wir uns an die Bestandaufnahme der kommunalen Haushaltslage machen, ein wichtiger Grundsatz: Kommune ist nicht gleich Kommune! Insgesamt gibt es in Deutschland rund 11.000 Gemeinden, von denen einige Teil von Landkreisen sind (und daher z.B. für Leistungen des Kreises eine Kreisabgabe zahlen), während andere als kreisfreie Städte Funktionen von Gemeinde und Kreisebene übernehmen. Je nach Bundesland gibt es noch weitere Einheit wie Regionen oder Gemeindeverbände. Dies spiegelt sich natürlich auch im Aufgabenumfang wider, den eine Kommune zu bewältigen hat, was Vergleiche zwischen Ländern erheblich erschwert. Auch Vergleiche über die Zeit sind problematisch: So wurde 1997 Krankenhäuser und andere Organisationen aus der kommunalen Finanzstatistik ausgegliedert (was zu scheinbar einbrechenden Ausgaben im Gesundheitsbereich führt), während seit der SGB II Reform 2005 einige sog. Optionskommunen Aufgaben der Bundesagentur für Arbeit selbst übernehmen (mit entsprechenden Effekten z.B. auf Personalstatistiken). Ganz abgesehen von statistischen Fragen ist die Finanzlage einer Kommune natürlich auch stark von ihrer lokalen Wirtschaftsstruktur abhängig. So haben Gemeinden im ehemaligen Osten oft noch immer eine geringere Finanzkraft, sodass Transferzahlungen der Länder an diese Gemeinden eine wichtigere Rolle spielen als im Westen. Eine weitere Besonderheit im Osten ist, dass auch nach dem Ende der DDR viele Einrichtungen in kommunaler Trägerschaft geblieben sind, was natürlich die Ausgabenstruktur eines Gemeindehaushalts beeinflusst.
+    </p>
+
+    <h3>Aktuelle finanzielle Situation deutscher Kommunen</h3>
+
+    <p>
+        Für einen ersten Eindruck zur kommunalen Haushaltslage können der Finanzierungssaldo (Differenz aller Einnahmen und Ausgaben) sowie der Schuldenstand der Kommunen herangezogen werden. Wie weiter unten erklärt dürfen Kommunen prinzipiell sich nur für Investitionen verschulden und sollen ihre Einnahmen und Ausgaben ansonsten ausgleichen. Kommt es dennoch zu einer Finanzierungslücke, so greift eine Kommune (insofern sie keine Rücklagen hat) auf Kassenkredite zurück, die daher oft auch als kommunaler Dispokredit bezeichnet werden.
+    </p>
+
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/finanzierungssaldo.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/verschuldung-zeitreihe.png" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <p>
+       Für die letzten Jahre sieht das Gesamtbild recht vielversprechend aus: Die Kommunen konnten insgesamt mehr einnehmen als ausgeben (positiver Finanzierungssaldo) und die Gesamtverschuldung war trotz steigender Investitionskredite rückläufig. Es gibt jedoch zwei große Probleme: Erstens weist der von der Kommunalen Bundesvereinigung prognostizierte Finanzierungssaldo für die nächsten Jahre deutlich ins Minus. Und zweitens darf bei der Gesamtschau aller Kommunen nicht die große Heterogenität zwischen ihnen vergessen werden. Ein aussagekräftigeres Bild ergibt sich daher, wenn wir die Streuung zwischen und innerhalb von Bundesländern berücksichtigen. Hier stellen wir fest, dass es keinen klaren Zusammenhang zwischen durchschnittlicher oder Median-Verschuldung und der Heterogenität der kommunalen Verschuldung zwischen den einzelnen Bundesländer gibt. Wie weiter unten ausgeführt, liegt das mitunter daran, dass einige Bundesländer bereits breite Entschuldungsprogramme für hoch verschuldete Gemeinden aufgelegt haben.
+    </p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/verschuldung-streuung.png" alt="First slide">
+    </div>
+
+  </div>
+</div>
+
+    <p>
+      Eine Bewertung der obigen Zahlen muss auch im Lichte der gesamtwirtschaftlichen Rahmenbedingungen erfolgen. Mit Blick auf die letzten Jahre spielt hier natürlich vor allem die Corona Pandemie eine große Rolle, die sowohl Einnahmen schmälerte (etwa durch 10 Mrd. € weniger an Gewerbesteuern) als auch partiell höhere Ausgaben mit sich brachte (z.B. im Gesundheits- und Schulbereich). Auf beiden Seiten sprangen jedoch Bund und Länder den Kommunen zur Seite, etwa durch Ausgleichszahlungen für Gewerbesteuermindereinnahmen oder eine höhere Bundesbeteiligung an den KdU (Kosten für Unterbringung und Heizung). In der Summe konnten die Kommunen so auch 2020 und 2021 Finanzierungsüberschüsse erzielen und Kassenkredite abbauen. Für einen Überblick zu den Maßnahmen während der Pandemie siehe <a href="https://www.wirtschaftsdienst.eu/inhalt/jahr/2022/heft/8/beitrag/zwei-jahre-im-krisenmodus-die-kommunalen-finanzen-bleiben-trotzdem-stabil.html" target="_blank">hier</a>. Mit Auslaufen der Sonderhilfen und der neuen Belastung durch eine schwache Konjunktur, gestiegenen Energie- und Baukosten sowie der Zinswende, die höher verschuldeten Kommunen Probleme bereitet, geht es den Kommunen nun auch in der Gesamtschau finanziell immer schlechter. Anders als während Corona haben einige Krisenmaßnahmen des Bundes, beispielsweise das Wachstumschancengesetz mit über 12 Mrd. € Steuermindereinahmen für die Gemeinden in den nächsten 5 Jahren, die Kommunen finanzieller noch weiter belastet. Die Lage sieht also zunehmend schlecht aus und das obwohl gerade in den nächsten beiden Jahrzehnten die Kommunen eine Schlüsselrolle in der Transformation spielen sollen. Wer im Lichte dessen den Haushalt seiner eigenen Kommune einmal auf Zukunftstauglichkeit abklopfen will, sollte sich mit dem kommunalen Rechnungswesen auseinandersetzen.
+    </p>
+
+    <h3>Grundlagen des kommunalen Rechnungswesen</h3>
+
+    <p>
+        Lange Zeit folgte die Haushaltsrechnung in den Kommunen einem einfachen Prinzip: Man schaute, welche Geldströme innerhalb eines Jahres vom Konto der Kommune abgingen (Ausgaben) oder auf dieses eingingen (Einnahmen). Die Vorteile eines solchen Systems, genannt Kameralistik, liegen vor allem in seiner Einfachheit und der direkten Verfügbarkeit aller notwendigen Daten. Nur die Ein- und Abgänge eines Jahres zu betrachten (sog. Kassenwirksamkeitsprinzip) bringt jedoch auch große Nachteile mit sich: Zunächst einmal ist ein Jahr ein denkbar kurzer Zeithorizont (auch die etwas weitergehende mittlere Finanzplanung schaut höchstens 3 Jahre in die Zukunft), bei welchem langfristige Probleme schnell übersehen werden. So haben etwa Gehaltszahlungen für kommunales Personal in einem bestimmten Jahr auch einen Effekt auf Pensionsansprüche in der längeren Frist, was jedoch in der kameralistischen Finanzrechnung nicht auftaucht. Ein ähnliches Problem gibt es mit Investitionen, die zwar per definitionem eine positive Wirkung in der Zukunft entfalten sollen, aber nur als negativer Zahlungsabgang im Jahr ihrer Tätigung verbucht werden. Der Wert eines so gebauten Schulgebäudes taucht nirgends auf, ebenso wenig wie sein Verfall über die Zeit in der Kameralistik sichtbar wird. Die fehlende Berücksichtigung von Vermögen als Bestandgrößen (im Gegensatz zu Kontoein-/abgängen als Stromgrößen) führt zudem dazu, dass der Verkauf solcher Vermögenswerte eine positive Wirkung auf den Haushalt einer Gemeinde in einem bestimmten Jahr hat, obwohl die Kommune dadurch ja weniger besitzt.
+    </p>
+
+    <p>
+        Um diese Probleme zu lösen, haben die meisten Kommunen in Deutschland inzwischen die Doppik eingeführt, welche aus drei Teilen besteht. Die Finanzrechnung erfasst Kontoströme ganz wie in der Kameralistik; ist ihr Saldo positiv, so erhöhen sich die Bareinlagen der Kommune. Die Ergebnisrechnung erfasst auf der Positivseite z.B. Erträge aus Vermögen oder den Aufbau von Rücklagen (was in der Finanzrechnung als negativer Posten steht), auf der Negativseite hingegen Dinge wie Abschreibungen auf Kapital (d.h. Wertverfall von Kommunalbesitz); ist ihr Saldo positiv, so erhöht sich das Eigenkapital der Kommune. Ein ausgeglichener Haushalt im Sinne der Doppik wird normalerweise auf den Ergebnishaushalt bezogen, d.h. ein Verkauf von Vermögensgütern ist als Aktivtausch kein Mittel zur Haushaltskonsolidierung.  Während Finanz- und Ergebnisrechnung auf Stromgrößen abstellen, listet die Vermögensrechnung oder Bilanz alle Vermögenswerte zu einem bestimmten Zeitpunkt auf. Beim Geld auf dem städtischen Konto ist das natürlich noch einfach, aber welche Zahl verbucht man für eine neue Straße? Was ist ein Schulgebäude wert und was eine neue Straßenbahnstrecke? Das Grundproblem für viele Dinge ist, dass sie keinen Marktwert haben, der als mehr oder weniger objektiver Wertmaßstab dienen kann. Aus diesem Grund werden meist Anschaffungs- und Herstellungskosten (AHK) als Wertmaßstab genutzt, Wertverluste durch Abnutzungen (Abschreibungen) über die Zeit werden in der Regel linear nach vom Bundesland bereitgestellten Tabellen verbucht (wobei die Kommunen hier Spielräume haben). Diese Abschreibungen orientieren sich allerdings am physischen Zustand und erfassen z.B. nicht, inwiefern ein heute gebautes Gebäude in 50 Jahren so überhaupt noch gebraucht wird. Ein weiteres Problem ist, dass bei Anwendung linearer Abschreibungen auf AHK steigende Preise nicht berücksichtigt werden, sodass bei steigenden Preisen Nettoinvestitionen (neue Investitionen minus Abschreibungen) auch dann positiv sein können, wenn der Kapitalstock gar nicht wächst Gütern (in der VGR für Deutschland gibt es dieses und andere Probleme nicht, da auf Wiederanschaffungspreise abgestellt wird, mehr dazu <a href="https://elibrary.utb.de/doi/abs/10.3224/dms.v16i2.02" target="_blank">hier</a>). Selbst bei scheinbar simplen Rechnungen wie benötigten Rückstellungen für zukünftige Pensionszahlungen ergeben sich durch die Wahl des Abzinsungsfaktors nicht unerhebliche Unsicherheiten (je höher dieser Zins angesetzt wird, desto mehr ist ein heutiger Geldbetrag in der Zukunft wert, desto eher werden Rückstellungsanforderungen also auf dem Papier erfüllt). Obgleich die Doppik also für deutlich mehr Transparenz sorgt, ist ihre Umsetzung in der Praxis durchaus anspruchsvoll. Daneben gibt es das Problem, dass vielerorts trotz der Doppik in der Haushaltspraxis primär auf die gewohnte kameralistische Finanzrechnung zurückgegriffen wird.
+    </p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" style="border: 0px;" src="/static/kommunale-finanzen/Doppik.png" alt="First slide">
+    </div>
+
+  </div>
+</div>
+
+    <p>
+       Dafür hat die Doppik mit ihrer Vermögensrechnung den zusätzlich Vorteil, dass auch Bereiche einbezogen werden können, die aus dem kommunalen Haushalt ausgelagert wurden und damit in der Finanzrechnung (Kameralistik) möglicherweise fehlen. Dies ist etwas der Fall, wenn einzelne Aufgaben in ein kommunales Unternehmen ausgelagert werden. Sollte ein solches Unternehmen dauerhaft Verluste machen und eine Kapitalerhöhung durch die Kommune benötigen, so taucht diese Finanzspritze aber auch in der kameralistischen Finanzrechnung auf. An dieser Stelle lohnt sich noch eine Bemerkung zum bereits erwähnten Eigenkapital. Während bei einem (privaten wie kommunalen) Unternehmen ein negatives Eigenkapital die Insolvenz bedeutet, hat das Eigenkapital einer Kommune keine praktische Bedeutung, sondern bildet sich lediglich aus der Differenz von Vermögenswerten (deren Bewertung wie beschrieben ohnehin oft rein fiktiv ist) und Verbindlichkeiten. Wie im Großteil der EU gibt es in Deutschland kein Insolvenzrecht für Kommunen und es ist natürlich vollkommen ausgeschlossen, dass es in einer Kommune aufgrund negativen Eigenkapitals zur Zahlungsunfähigkeit kommt, schließlich müssen essenzielle staatliche Leistungen wie z.B. Feuerwehren ja weiterhin bereitgestellt und finanziert werden. Die kommunale Selbstverwaltungsgarantie nach Art. 28 GG garantiert zudem ein Mindestmaß an freiwilligen Selbstverwaltungsaufgaben, sodass de facto eine Einstandspflicht der Länder für kommunale Schulden im Falle einer "Gemeindeinsolvenz" besteht.
+    </p>
+
+    <p>
+        Die Vorteile der Doppik überwiegen so eindeutig, dass die Doppik auch Grundlage der aktuellen Diskussion über EU-weite einheitliche Rechnungslegungsregeln ist (sog. EPSAS). Ein solcher Standard wäre nicht nur deshalb ein großer Gewinn, weil dadurch die unterschiedlichen Regeln für Gemeinden zwischen den Bundesländern angeglichen werden würden, sondern sie bietet nach <a href="https://www.derneuekaemmerer.de/news/wir-brauchen-in-deutschland-dringend-die-doppik-25809/" target="_blank">Ansicht von CDU-Mann Ralph Brinkhaus</a> die wahrscheinlich letzte Chance auf eine Vereinheitlich der Rechnungsstandards auf allen föderalen Ebenen. Während in Deutschland die Doppik nämlich lediglich bei den Kommunen weit verbreitet ist, gilt sie im Großteil der EU auch für Bundes- und Landesebene. Bisher kommt Deutschland auf Bundesebene bei diesem Thema kaum voran, was wohl vor allem am befürchteten Aufwand für die Umstellung liegt (Eurostat schätzt die finanzielle Belastung für Deutschland auf bis zu 2,3 Mrd. €). Langfristig wäre dies mit Blick auf die oben dargestellten Vorteile jedoch eine mehr als lohnende Investition und bis 2030 verpflichtet eine Richtlinie der EU-Kommission vom April 2023 ohnehin zur Einführung der Doppik. Mit seiner aktuellen Abwehrhaltung schadet Deutschland also nur sich selbst und bleibt bei den schon stattfindenden EPSAS-Diskussionen außen vor.
+    </p>
+
+    <h3>Einnahmenstruktur deutscher Kommunen</h3>
+
+    <p>
+        Woher kommen nun die Finanzmittel der Gemeinden? Grundsätzlich gibt es für die Finanzierung von Vorhaben eine vorgeschriebene Rangfolge der Finanzierungsquellen. Zuerst einmal muss eine Gemeinde ihre Ausgaben durch sonstige Erträge (z.B. Zinserträge auf Finanzvermögen) sowie zugewiesenen Mitteln aus dem Finanzausgleich des jeweiligen Landes decken. Durch den kommunalen Finanzausgleich (KFA) sollen nämlich nicht nur Unterschiede in der Finanzausstattung zwischen den Kommunen teilweise ausgeglichen werden, sondern auch ein Grundbeitrag des Landes zu den kommunalen Haushalten sichergestellt werden - schließlich sind, wie oben beschrieben, die Länder verpflichtet, das Selbstverwaltungsrecht der Gemeinden auch finanziell zu garantieren. Gerade in Ostdeutschland sind Kommunen stark abhängig von zugewiesenen Landesmitteln. Wie viel Geld eine Gemeinde aus dem KFA erhält, hängt vom Verhältnis zwischen den eigenen Mitteln (potenzieller Steuerkraft) und dem geschätzten Finanzbedarf ab. Übersteigen die Mittel den Finanzbedarf gilt eine Gemeinde als abundant und muss in manchen Ländern einen eigenen Beitrag zum KFA leisten. Obgleich Kommunen die Steuersätze für Gemeindesteuern (Grund- und Gewerbesteuer) selbst wählen können, wird bei der Berechnung der Steuerkraft ein einheitlicher Steuersatz unterstellt (Nivellierungssätze), um keinen Anreiz für zu niedrige Steuersätze zu bieten.  Die Berechnung des Finanzbedarfs ist von Bundesland zu Bundesland unterschiedlich, hängt aber immer stark von der Einwohnerzahl ab (standardmäßig wird davon ausgegangen, dass der pro Kopf Finanzbedarf in großen Kommunen höher ist als in kleinen). Der Ausgleichsgrad beschreibt, welcher Teil des ungedeckten Finanzbedarfs vom Land übernommen wird, und liegt meist unter 100%, um Gemeinden Sparanreize zu setzen. Neben den allgemeinen Schlüsselzuweisungen erhalten Gemeinden im KFA auch Zweckzuweisungen für einzelne Ausgaben, beispielsweise für Investitionen oder den Schuldenabbau, die nicht von der Deckungslücke abhängig sind. Daher ist es relevant, wie eine Landesregierung eine bestimmte Leistung/Ausgabenart fördert: Ändert sie die Berechnung des Finanzbedarfs, hängt die Förderhöhe für eine Gemeinde von ihrer Deckungslücke ab und abundante Gemeinden gehen leer aus. Wird eine neue Zweckzuweisung geschaffen, so können alle Gemeinden im gleichen Maße davon profitieren, doch die Mittel für den allgemeinen KFA sinken, sodass nicht geförderte Gemeinden schlechter gestellt werden als zuvor. Alternativ kann das Land ein Förderprogramm außerhalb des KFA aufsetzen, was dann jedoch die Kosten für das Land erhöht.
+    </p>
+
+<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/kommunale-einnahmequellen.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/steuereinnahmen-ebene.png" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <p>
+       Die nächste Finanzierungsquelle in der Rangfolge sind spezielle Entgelte, d.h. Gebühren und Beiträge. Gebühren werden laufend für kommunale Leistungen erhoben (z.B. für Abfallentsorgung). Sie müssen sich an den Kosten für die Bereitstellung der entsprechenden Leistung orientieren, können aber von diesen abweichen, etwa um soziale Ziele zu berücksichtigen. Neben diesem Kostendeckungsprinzip gilt auch das Äquivalenzprinzip, nach dem Gebühren nicht zu stark vom Wert der Leistung für den*die Gebührenzahler*in abweichen dürfen. Somit können Gebühren nicht beliebig hoch gesetzt werden, etwa um eine Lenkungswirkung zu erreichen. Beiträge sind einmalige Abgaben, die zur v.a. zur Finanzierung von Investitionen genutzt werden (z.B. Straßen- oder Leitungsbau), jedoch auch im Tourismusbereich für Übernachtungsgäste üblich sind. Welche Beiträge erhoben werden können wird durch Landesrecht geregelt, insbesondere durch das Kommunalabgabengesetz. Bei Beiträgen für Investitionen ist zu beachten, dass sie in der Doppik parallel zu den Abschreibungen über die Zeit gestreckt gebucht werden und somit nicht sofort haushaltswirksam werden.
+    </p>
+
+    <p>
+        Nach von der Gemeinde erhobenen speziellen Entgelten folgen Steuern, die jedoch nur teilweise der Kontrolle der Gemeinden unterliegen. Zu den Gemeindesteuern, bei denen Kommunen den Steuersatz über sog. Hebesätze bestimmen, zählen Grundsteuer und Gewerbesteuer. Die Grundsteuer ist unterteilt in Grundsteuer A (Forst- und Landwirtschaft) und B (Rest), ab 2025 gibt es für Kommunen auch die Möglichkeit einer Grundsteuer C auf Bauland (höhere Hebesätze hier sollen für mehr Bebauung und weniger Bodenspekulation sorgen). Die Grundsteuer ist auch in vielen anderen Ländern eine kommunale Steuer, weil es einen direkten Zusammenhang zwischen Grundbesitz und Inanspruchnahme kommunaler Leistungen gibt. Die Grundsteuer ist für Gemeinden attraktiv, da die Steuerbasis hier sehr stabil und das Aufkommen leicht zu prognostizieren ist. Welche Steuerbasis zugrunde gelegt wird (Grundstück oder Grundstück plus Haus, Berücksichtigung von Nutzungsform, Umgang mit Wertänderungen) ist bundesgesetzlich geregt, die Länder können jedoch mit eigenen Regeln abweichen. Die Gewerbesteuer setzt um, was von Art. 28 GG gefordert wird, nämlich "eine den Gemeinden mit Hebesatzrecht zustehende wirtschaftskraftbezogene Steuerquelle". Dies ist eine hohe Hürde für Forderungen nach einer (Teil-)Abschaffung der kommunalen Gewerbesteuer. Derartige Forderungen gründen in den großen Problemen der Gewerbesteuer: Erstens ist ihr Aufkommen stark konjunkturabhängig und ihre Erträge für die Kommune schlecht planbar; zweitens ist sie gerade in kleinen Gemeinden stark abhängig von einzelnen Unternehmen, die deshalb die lokale Politik stark beeinflussen können; drittens führen unterschiedliche Hebesätze zu einem Steuerwettbewerb, in dem gerade ärmere Kommunen schlechte Karten haben, die sich keine niedrigen Hebesätze leisten können. Aus diesem Grund ist es auch kritisch zu sehen, wenn die Gewerbesteuer als probates Instrument zum Ausgleich von Standortnachteilen gesehen wird. Vielmehr ist es so, dass ohnehin gut situierte Gemeinden Unternehmen mit niedrigen Steuersätzen anlocken können, und die Gewerbesteuer somit nicht zu einer Angleichung von Standortbedingungen führt. Zwar gibt es auch gegenteilige Beispiele (die Stadt Monheim sanierte sich etwa durch radikale Steuersatzreduzierung und Unternehmensansiedlungen), doch das Grundproblem der negativen Effekte auf andere Gemeinden bleibt. Immerhin wird diese Art des Steuerwettbewerbs durch eine Untergrenze bei den Hebesätzen zumindest eingeschränkt. Grundsätzlich fällt die Gewerbesteuer nicht nur am Hauptsitz eines Unternehmens an, sondern an allen Betriebsstätten, sodass ein Unternehmen möglicherweise Gewerbesteuer an mehrere Gemeinden zahlt. Gleichzeitig bedeutet dies, dass der Unternehmensgewinn allein nichts darüber aussagt, wie viel Gewerbesteuer tatsächlich fließt, da dies von der Betriebsstruktur und gerade für international agierende Unternehmen auch stark von ihren Steuervermeidungsstrategien abhängt (weswegen z.B. Ludwigshafen trotz hohen BASF-Gewinnen in einer Haushaltskrise steckt). Einen Teil der Gewerbesteuer müssen die Kommunen zudem als Gewerbesteuerumlage an den Bund abführen (bis 2020 war diese Umlage für westdeutsche Gemeinden im Rahmen des Solidarpaktes höher), was als Gegenleistung für die Beteiligung an den Gemeinschaftssteuern Einkommens- und Umsatzsteuer eingeführt wurde.
+    </p>
+
+    <p>
+        Diese Gemeinschaftssteuern sind eine weitere wichtige kommunale Finanzierungsquelle aus Steuermitteln. Sie werden durch Art. 106 GG gesichert, welches vorsieht, dass Gemeinden einen Anteil am Einkommenssteueraufkommen erhalten, der umso höher ist, je einkommensstärker die Bewohner eine Gemeinde sind. Auch die Höhe der Umsatzsteueranteile richtigen sich nach einem orts- und wirtschaftsbezogenen Schlüssel, der durch Bundesgesetz bestimmt wird. Ergänzend dazu schreibt Art. 107 GG Maßnahmen zum Ausgleich der Finanzkraft der Länder und Gemeinden vor. Wie bereits oben erklärt, findet dieser Ausgleich vor allem über Zu- und Abschläge bei der Umsatzsteuerverteilung zwischen Bund und Ländern statt, doch auch der Verteilungsschlüssel bei der Einkommenssteuer berücksichtigt die lokale Einkommensstärke nur bis zu einer gewissen Höhe. Wie stark zwischen den Kommunen eines Landes umverteilt wird, hängt von der Ausgestaltung des jeweiligen kommunalen Finanzausgleichs statt.
+    </p>
+
+    <p>
+        An der aktuellen Finanzordnung gibt es gerade mit Blick auf die Kommunen teils scharfe Kritik. Für den Politikwissenschaftlicher Roland Sturm etwa ist "der deutsche Föderalismus […] ein besonders weitgehender Fall der steuerpolitischen Entmündigung der Gliedstaaten". Konkret lässt sich das beispielsweise am Wachstumschancengesetz festmachen, dass die Bundesregierung vorgeschlagen hat: Dieses will Unternehmen in Deutschland steuerlich in einem Umfang von 7 Mrd. € jährlich entlasten. Diese 7 Mrd. € weniger an Steuern werden jedoch nur zu gut einem Drittel vom Bund getragen, der Rest entfällt auf Länder mit- 2.4 Mrd. € und Gemeinden mit -2 Mrd. € jährlich. Aus diesem Grund liegt das Gesetz zum Zeitpunkt dieses Textes (Februar 2024) auch noch im Vermittlungsausschuss des Bundesrates. Laut <a href="https://www.staedtetag.de/presse/pressemeldungen/2023/wachstumschancengesetz-deutlich-nachbessern" target="_blank"> Deutschem Städtetag </a> verlören Kommunen im aktuellen Gesetzentwurf einen mehr als doppelt so hohen Anteil ihrer Steuereinnahmen wie Bund und Länder. Zudem führten bereits das Inflationsausgleichgesetz und das Jahressteuergesetz des Bundes in 2022 zu Mindereinnahmen von 5 Mrd. € für Städte und Gemeinden. Kommunen haben auf diese Gesetze keinen direkten Einfluss. Prinzipiell sollen zwar im Bundesrat die Länder auch für "ihre" Kommunen kämpfen, doch spielen dort ländereigene Interessen sowie parteipolitische Zugehörigkeiten eine starke Rolle. Interessant ist, dass der gemeinsame Zugriff auf die wichtigsten Steuern international eher ein deutscher Sonderweg ist. In Kanada etwa haben die föderalen Ebenen zwar Zugriff auf die gleichen Steuerarten, entscheiden jedoch autonom, welche Steuersätze sie auf ihren Teil der Bemessungsgrundlage erheben.
+    </p>
+
+    <p>
+        In der Rangfolge der Finanzierungsquellen ganz unten steht schließlich die Kreditaufnahme, die für Gemeinden zwar nur unter recht strikten Einschränkungen möglich ist, jedoch nicht der Schuldenbremse unterliegen. Grundsätzlich müssen neue kommunale Schulden von der Haushaltsaufsicht des entsprechenden Landes bewilligt werden, um sicherzustellen, dass die Schuldentragfähigkeit der Gemeinde erhalten bleibt. Dies ist insofern verständlich, da die Länder die Verpflichtung haben, die kommunale Selbstverwaltung inkl. eines Mindestmaßes an freiwilligen Aufgaben zu garantieren, sodass bei Zahlungsunfähigkeit einer Kommune letztlich das Land einspringen müsste. Daneben ist die Kreditaufnahme seit 1969 eigentlich nur für Investitionen erlaubt und der kommunale Haushalt ansonsten auszugleichen. Sollte die Kommune aufgrund unerwarteter Mehrkosten oder wegen einer temporär besonders anspruchsvollen Haushaltslage im regulären Haushalt dennoch ein Defizit machen, so wird dieses mit sog. Kassenkrediten/Liquiditätskrediten gedeckt. Die Tatsache, dass einige Kommunen über einen langen Zeitraum Kassenkredite aufgebaut haben, ist ein Indikator für ihre strukturelle Unterfinanzierung und von der Finanzordnung so eigentlich nicht vorgesehen (obgleich das Niedersächsische Oberverwaltungsgericht 2002 urteilte, dass Kassenkredite zur regulären Finanzausstattung einer Kommune gezählt werden). Dies stützt Befürchtungen, dass aufgrund der strikten Defizitgrenzen für Bund (0.35% strukturell) und Länder (0% strukturell) durch die Schuldenbremse in Zukunft möglicherweise ein immer größerer Teil des Finanzierungsdrucks auf Kommunen abgewälzt werden könnte. Gemeinden verschulden sich typischerweise bei Banken, wobei sich in letzter Zeit Klagen über ein zurückgehendes Angebot seitens der Banken mehren. Die zuletzt deutlich gestiegenen Zinsen setzen gerade hoch verschuldeten Kommunen stark zu und lassen einige über alternative Verschuldungswege nachdenken. Ein Zusammenschluss von mehreren Gemeinden (Neuss, Krefeld, Mönchengladbach) gab beispielweise bereits eine eigene Anleihe heraus, was jedoch nicht weit verbreitet ist, da sich dies erst ab einem größerem Emissionsvolumen lohnt. Für die Einschränkungen der kommunalen Kreditaufnahme spielt die Form der Verschuldung ohnehin keine Rolle.
+    </p>
+
+    <p>
+        Vor allem die aufgebauten Kassenkredite waren und sind für viele Gemeinden ein großes Problem. Es sei jedoch daran erinnert, dass die finanzielle Lage sowohl zwischen als auch innerhalb von Bundesländern sehr heterogen ist. In der Vergangenheit galt dies noch viel mehr, sodass der Umgang mit kommunalen Altschulden sogar im Bundestagswahlkampf eine (kleine) Rolle spielte und Olaf Scholz eine <a href="https://kommunal.de/scholz-kommunen-interview" target="_blank">"Stunde Null"</a> für verschuldete Kommunen forderte. Vor allem aus zwei Gründen war dies ein recht leeres Versprechen: Erstens hat der Bund keine Kompetenz für das Auflegen von Entschuldungsprogrammen, da die Finanzausstattung der Gemeinden gemäß Art. 104 GG Ländersache ist und ein entsprechendes Programm höchstens mit einer Grundgesetzänderung zu machen gewesen wäre. Zweitens hätte es weder im Bundestag noch im Bundesrat eine Mehrheit dafür gegeben, da sowohl Bundesländer als auch Kommunen ohne besondere Altschuldenprobleme es sehr kritisch sehen, einer hoch verschuldeten Minderheit an Kommunen gemeinschaftlich finanziell zu helfen. Scholz hatte zudem erklärt, dass eine "Stunde Null" eine einmalige Unterstützung durch den Bund wäre und Länder danach die kommunale Finanzausstattung grundsätzlich reformieren müssen. Da Einmaligkeit in der Politik nie garantiert werden kann, hätte dies eine von vielen befürchtete negative Anreizwirkung auf Länder (eigenes Geld sparen, Kommunen sich verschulden lassen, Rettung vom Bund abwarten) natürlich nicht ausgeräumt. Aus diesem Grund waren es letztlich die Länder, die ihre eigenen, stark unterschiedlichen Entschuldungsprogramme aufsetzten und dabei von den Kommunen teilweise eine hohe Eigenbeteiligung einforderten (<a href=" https://kommunalwiki.boell.de/index.php/Konsolidierungshilfen " target="_blank">"wenig Zuckerbrot, viel Peitsche"</a>). Eine Übersicht über die von Hessen, Rheinland-Pfalz, Saarland und Sachsen-Anhalt bereits aufgelegten Programme findet sich beim <a href=" https://www.bundestag.de/resource/blob/959282/4e0aa92f5a44a4cf42ad195f6486ecf5/WD-4-042-23-pdf-data.pdf " target="_blank">Wissenschaftlichen Dienst des Bundestags</a>. In Nordrhein-Westfalen wird über die Ausgestaltung der Entschuldungshilfe gegenwärtig noch diskutiert. Zwar konnten bisherige Landesprogramme die Kassenkreditbestände teils stark reduzieren (siehe obige Grafik), jedoch ging dies oft einher mit höheren Hebesätze und geringeren Investitionen, wie <a href=" https://www.wirtschaftsdienst.eu/inhalt/jahr/2018/heft/8/beitrag/konsolidierungsprogramme-der-laender-fuer-finanzschwache-kommunen.html" target="_blank">wissenschaftliche Studien</a> zeigen. Ebenso lässt sich feststellen, dass teilnehmende Kommunen weiterhin unter deutlich höheren Sozialausgaben leiden als Nicht-Teilnehmer, die zentralen strukturellen Probleme wurden also nicht gelöst. Der folgende Abschnitt geht auf diese ausgabenseitigen Probleme genauer ein.
+    </p>
+
+    <h3>Ausgabenstruktur der Kommunen</h3>
+
+    <p>
+        Wie wir gesehen haben, besitzen die Kommunen in Deutschland nur einen sehr begrenzten Einfluss auf die ihr zur Verfügung stehenden Finanzmittel. Leider gilt dies auch mit Blick auf deren Verwendung. Grundsätzlich können kommunale Aufgaben in Selbstverwaltungsaufgaben, Pflichtaufgaben zur Erfüllung nach Weisung und staatliche Auftragsangelegenheiten unterteilt werden. Nur bei ersteren hat die Kommune die Entscheidungshoheit: Bei freiwilligen Selbstverwaltungsaufgaben kann sie entscheiden, ob und wie sie diese ausführen will (z.B. Grünanlagen, Museen, Schwimmbädern), bei pflichtigen Selbstverwaltungsaufgaben kann sie zumindest das wie bestimmen (z.B. Abfallbeseitigung, Gemeindestraßen, Jugendhilfe). Bei den anderen beiden Aufgabentypen handelt es sich um den (von Land oder Bund) übertragenen Wirkungskreis, bei der die Gemeindevertretung kein Mitspracherecht hat. Muss eine Kommune sparen, so findet dies als erstes bei freiwilligen Selbstverwaltungsaufgaben statt.
+    </p>
+
+    <p>
+        Der größte Posten auf der Ausgabenseite ist das Personal (75 Mrd. € in Gemeinden der Flächenländer in 2022). Auch wenn die Zahl der Beschäftigten natürlich in der Hand der Kommune liegt, ist die Menge an Leistungen, die von diesen erbracht werden müssen, primär von außen vorgegeben. Die Vergütung richtet sich zudem nach durch den Bund verhandelten Tarifverträgen, die zuletzt deutliche Lohnsteigerungen vorsahen und damit höhere Kosten für die Kommunen verursachen. Am höchsten ist die Fremdbestimmung bei der zweitgrößten Ausgabenart, den sozialen Leistungen (68 Mrd. €). Diese werden fast vollständig von Bund und Ländern geregelt - mehr dazu im folgenden Abschnitt. Der dritte große Posten besteht im laufenden Sachaufwand (63 Mrd. €), also letztlich alle laufenden Kosten außerhalb des Personals, etwa Heizkosten, Materialanschaffungen oder Instandsetzungen bestehender Gebäude und Straßen. Sachinvestitionen, die neues Kapitalvermögen aufbauen, sind rund 50% niedriger (37 Mrd. €) und bestehen zum Großteil aus Bauinvestitionen (28 Mrd €); mehr zu Investitionen weiter unten. Einen differenzierten Blick erlaubt die Aufschlüsselung nach Produktbereich anstelle von Ausgaben. Diese Daten finden sich nicht in der Kassenstatistik, sondern nur in der Rechnungsstatistik, die gemeinhin erst mit zwei Jahren Verzögerung zur Verfügung steht. Die folgenden Grafiken fassen die Zahlen für 2019 zusammen, um Sondereffekte während der Pandemie auszuschließen.
+    </p>
+
+    <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/ausgaben-bereiche.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/ausgaben-produkte.png" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <p>
+       Schauen wir noch einmal genauer auf den Sozialbereich. Die Leistungen hier folgen aus SGB II (Grundsicherung für Erwerbslose), SGB VIII (Kinder- und Jugendhilfe), SGB XII (Sozialhilfe) und Asylbewerberleistungsgesetz. Diese Grafik des Deutschen Städtetags schlüsselt die kommunalen Ausgaben nach diesen Kategorien auf:
+    </p>
+
+    <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" style="width:50%!important; text-align:center; margin:auto;" src="/static/kommunale-finanzen/soziale-leistungen.png" alt="First slide">
+    </div>
+    </div>
+    </div>
+
+    <p>
+       Auf den entscheidenden Punkt weist nun die Unterüberschrift hin: "ohne Berücksichtigung von aufgabenspezifischen Einnahmen". Denn ein Blick auf die Ausgabenbelastung für einzelne Kommunen reicht nicht aus, um die finanzielle Belastung durch Soziales einzuschätzen. Da die Gemeinden entsprechende Pflichtaufgaben im Auftrag von Bund und Land übernehmen, steht ihnen auch eine entsprechende Finanzausstattung dafür zu (Konnexitätsprinzip: "Wer bestellt, bezahlt"). Das Problem ist jedoch, dass Kommune entsprechende Ausgaben nicht einfach dem Land in Rechnung stellen können, sondern ihre finanzielle Kompensation über eine Mischung von leistungsspezifischen Zuschüssen und allgemeinen Mittelzuweisungen (etwa über den KFA) geschieht. Aus diesem Grund kann es eine Differenz zwischen verpflichtenden Ausgaben und zugewiesenen Finanzmitteln geben und im Regelfall kommt es auch zu einer solchen Deckungslücke. Ein <a href="https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/79_Nachhaltige_Finanzen/2017_2_NettoBelastKommunen_2017_final.pdf" target="_blank">Bertelsmann Report von 2017</a> hat die sich so ergebenen Nettosozialausgaben (Sozialausgaben minus aufgabenspezifischer "Kostenerstattungen") berechnet und untersucht, wie sich diese im Vergleich zu den allgemeinen Finanzzuweisungen (aus denen die verbleibenden Nettosozialausgaben bezahlt werden müssen) entwickelt haben. Für die Jahre 2010-2014 zeigte sich, dass Nettosozialausgaben im Schnitt fast die Hälfte der allgemeinen Finanzzuweisungen verbrauchten. Dennoch stiegen in allen Ländern die ungebundenen Deckungsmittel in diesem Zeitraum an. Obgleich der Report ein Grundproblem der bestehenden Finanzordnung gut veranschaulicht, sind zwei Dinge zu beachten: Erstens hat sich seit 2014 vieles verändert und der Bund bei zahlreichen Leistungen (etwa KdU oder Asylleistungen) seinen Finanzierungsanteil erhöht, sodass die Ergebnisse quantitativ heute sicher andere wären. Zweitens mag die Kombination aus aufgabenspezifischen Mitteln und allgemeinen Zuweisungen im Schnitt vielleicht gut funktionieren, die Deckungsquote für einzelne Gemeinden kann aber stark von den Durchschnittswerten abweichen. Je höher die Ausgabenbelastung durch Soziales, desto mehr der allgemeinen Deckungsmittel wird von Nettosozialausgaben aufgezehrt. Ohne eine tiefgreifende Reform der föderalen Finanzordnung wird dieses Problem wohl nicht gelöst werden können. Die Zeit für eine solche Reform drängt, denn in wirtschaftlich schwachen Kommunen verdrängen Sozialausgaben so dringend benötigte Investitionen.
+    </p>
+
+    <h3>Kommunale Investitionen</h3>
+
+    <p>
+        Waren Investitionen schon immer ein wichtiger Bestandteil kommunaler Ausgaben, so ist ihre Bedeutung in Zeiten der Klimakrise so groß wie nie. Zunächst einmal gilt es sich bewusst zu machen, dass Kommunen fast die Hälfte aller gesamtstaatlicher Investitionen tätigen (obwohl der Bundesanteil deutlich steigt, wenn Investitionszuschüsse berücksichtigt werden) und sogar rund 60% aller Bauinvestitionen. Schließlich wird fast die gesamte öffentliche Infrastruktur in den Städten, von Straßen über Schulen und Sozialwohnung bis zu Sportanlagen von den Gemeinden gebaut. In der Vergangenheit waren Investitionen in den staatlichen Kapitalstock jedoch so gering, dass nicht einmal dessen Wertverlust kompensiert werden konnte, die Nettoinvestitionen (Investitionen minus Abschreibungen) waren negativ. Auch hier gibt es natürlich wieder eine große Heterogenität zwischen Kommunen und Bundesländern: Während Gemeinden und Land in Bayern im ersten Halbjahr 2023 rund 450€ pro Einwohner investierten, waren es im Saarland lediglich 210€.
+    </p>
+
+    <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/nettoinvestitionen.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/investitionsrueckstand.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/kommunale-finanzen/ausgaben-laender-gemeinden.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <p>
+       Der Verfall der öffentlichen Infrastruktur behindert nicht nur das Erreichen politischer Ziele, etwa im Bereich Bildung, sondern erodiert auch grundsätzlich das Vertrauen in die Leistungsfähigkeit des Staates. In den nächsten Jahren müssen aber nicht nur Ersatzinvestitionen in Höhe von rund 166 Mrd. € getätigt werden. Schlüsselinvestitionen für die ökologische Transformation (z.B. Ausbau des ÖPNV) sind ebenfalls Aufgabe von Kommunen, eine Studie der Ökonomen Krebs und Steitz aus dem Jahr 2021 schätzt den (überwiegend zusätzlichen) Bedarf auf kommunaler Ebene auf rund 170 Mrd. €, sodass sich der Gesamtbedarf kommunaler Investitionen wohl auf rund 300 Mrd. € allein im nächsten Jahrzehnt beläuft. Vor allem die Schätzungen von Bedarfen für Ersatzinvestitionen sind allerdings mit großen Unsicherheiten verbunden. Während die Zahl 166 Mrd. €aus einer Befragung der Kommunen durch die KfW in ihrem Kommunalpanel 2023 stammt, schätzen <a href="https://www.wifa.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Wifa/Institut_f%C3%BCr_%C3%B6ffentliche_Finanzen_und_Public_Management/Komkis/014_KOMKIS_Analyse_-_Kommunale_Infrastrukturbedarfe.pdf" target="_blank">Ökonomen der Uni Leipzig</a> einen Bedarf von rund 87 Mrd. € auf Basis der VGR. Da dies wohl als Untergrenze zu sehen ist, ist das Problem damit definitiv nicht vom Tisch.
+    </p>
+
+    <p>
+        Um die Investitionstätigkeit der Gemeinden zu unterstützten, wurde bisher auf Förderprogramme von Bund (gesichert durch Ausnahmen im Art. 104 GG) und Ländern gesetzt. Kommunen klagen jedoch über hohen Verwaltungsaufwand sowie schlechte Planbarkeit. Ebenso ist der Personalmangel in Bauämtern und Co. Ein großes Problem, das durch die Förderprogramme allerdings nicht adressiert wird, da es sich bei Personalausgaben ja nicht um Investitionen handelt. Auch mit der Einführung der Doppik war die Hoffnung verbunden, dass die erhöhte Transparenz und verbesserte Buchung von Kapitalvermögen zu einer Erhöhung der kommunalen Investitionen führen würden. <a href="https://www.wirtschaftsdienst.eu/inhalt/jahr/2020/heft/9/beitrag/bremst-die-doppik-oeffentliche-investitionen-ergebnisse-aus-drei-aktuellen-evaluationsstudien.html" target="_blank">Studien</a> zeigen jedoch, dass dies nicht der Fall war - im Gegenteil. Ein Grund dafür könnte sein, dass der Aufbau von Kapitalvermögen durch Investitionen in der Doppik Abschreibungen nach sich zieht, die den Haushalt in den Folgejahren belasten. Dies ist allerdings nicht der Fall, wenn eine Investition per Kredit finanziert wird: Hier heben sich zunächst das neue Kapitalvermögen (positiv) mit den Kreditverbindlichkeiten (negativ) gegenseitig auf, was bei entsprechender Kreditgestaltung in den Folgejahren auch für Abschreibungen (negativ, da Reduktion von Kapitalvermögen) und Kredittilgungen (positiv, da Reduktion von Verbindlichkeiten) gilt. Die Doppik ist also nicht zwangsläufig weniger investitionsfreundlich als die Kameralistik, sondern lediglich finanzierungsneutraler. Eindeutig investitionsfreundlicher ist allerdings die sog. goldene Regel in der Kameralistik, die (unbegrenzte) Kreditaufnahme in Höhe der Investitionen erlaubt: Hier werden Abschreibungen nicht berücksichtigt, sodass es attraktiver sein kann, eine einmalige Investition zu tätigen anstatt regelmäßige Zahlungen zu leisten (z.B. eine Ampel zu bauen anstatt einen Polizisten zu bezahlen, den Verkehr zu regeln). Wie in <a href=" https://wrint.de/2023/11/30/wr1546-argentinien-schuldenbremse-ungleichheit/" target="_blank">dieser Folge wrint</a> von Christian Bayer erklärt, war die Gefahr potenziell übermäßiger Investitionen eine Begründung für die Einführung der Schuldenbremse.
+    </p>
+
+    <p>
+        In einem <a href="https://www.dstgb.de/themen/finanzen/investitionen/massnahmenkatalog-zum-abbau-des-kommunalen-investitionsrueckstandes/2018-08-pp-abbau-kommunaler-investitionsrueckstand.pdf?cid=6d8" target="_blank">Positionspapier</a> fordert der Deutsche Städte- und Gemeindebund daher neben einer Stärkung kommunaler Planungskapazitäten und bürokratischer Hürden (insbesondere für Förderprogramme) vor allem eine grundlegende Änderung der kommunalen Finanzausstattung. Das Konnexitätsprinzip muss besser umgesetzt werden und (Netto-)Sozialausgaben gesenkt werden. Das vom Grundgesetz vorgesehene Kooperationsverbot der föderalen Ebenen sollte laut DStGB ebenfalls stark eingeschränkt werden. Eine Möglichkeit dafür ist die Einführung einer Gemeinschaftsaufgabe Klimaschutz. Aktuell gelten Klimaschutz und Klimaanpassung nämlich als freiwillige kommunale Aufgaben, haben also Nachrang gegenüber anderen Pflichtaufgaben, zudem ist eine direkte Finanzierungsbeteiligung von Bund und Ländern nicht ohne weiteres möglich. Eine Gemeinschaftsaufgabe Klimaschutz in Art. 91a GG würde eine solche Mischfinanzierung langfristig absichern. Dadurch könnte etwa auch der Aufbau von neuem Personal auf kommunaler Ebene durch den Bund unterstützt werden. Hauptkritikpunkt an diesem Vorschlag ist die damit zunehmende finanzielle Verflechtung zwischen den föderalen Ebenen, obwohl doch gerade das zu strukturellen Schieflage in vielen Gemeinden geführt hat. Eine kurzfristige Alternative wäre die Bereitstellung von Finanzmitteln durch einen Sonderfonds des Bundes außerhalb der Schuldenbremse, was etwa der DGB fordert. Eine 2/3 Mehrheit dafür ist jedoch bei weitem nicht in Sicht. Wie die obigen Erläuterungen aber hoffentlich gezeigt haben, braucht es letzten Endes eine grundlegende Reform der föderalen Finanzordnung, damit alle Kommunen ihrer enorm wichtigen Stellung in unserem Gemeinwesen endlich wieder gerecht werden können.
+    </p>
+
+    <div class="disclaimer">
+        Wer sich mit dem Thema Kommunale Finanzen weiter beschäftigen möchte, findet mit dem <a href="https://kommunalwiki.boell.de/index.php/Hauptseite" target="_blank">KommunalWiki</a> der Heinrich-Böll-Stiftung oder das <a href="https://library.fes.de/pdf-files/akademie/kommunal/15866/15866-01.pdf" target="_blank">Grundwissen Kommunalpolitik</a> der Friedrich-Ebert-Stiftung einen guten Ausgangspunkt. Ebenfalls zu empfehlen sind Gunnar Schwartings Buch <a href="https://kommunalwiki.boell.de/index.php/Die_Stadt_und_ihr_Geld" target="_blank">"Die Stadt und ihr Geld"</a> oder für Eilige diese <a href="https://www.bundesbank.de/resource/blob/665100/1c428a4e79fc0cbb4b61cf08d35717da/mL/2016-10-gemeindefinanzen-data.pdf" target="_blank">Bundesbank Analyse</a> (von 2016). Daten zu Finanzen und sonstigem für viele deutsche Kommunen gibt es auf <a href="https://www.wegweiser-kommune.de/" target=_"blank"> www.wegweiser-kommune.de</a>
+    </div>
+
+
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

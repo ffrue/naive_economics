@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Substitutability in the General Equilibirium">
+  <meta name="twitter:description" content="A very simple explanation of how economists think about elasticities of substitution .">
+  <meta name="twitter:image" content="https://www.naive-economics.com/static/thumbnail-elasticities.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <!-- Modelling Javascript -->
+  <link href="https://kineticgraphs.org/css/kg.0.2.6.css" rel="stylesheet" type="text/css">
+  <script src="https://kineticgraphs.org/js/kg.0.2.6.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+
+  <!-- Formulas -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+
+  <script>
+    function draw() {
+
+      const lambda = 0.2
+      const q = 0.15
+      const f = 0.25
+      const a = parseFloat(document.getElementById("a").value)
+
+      const r = parseFloat(document.getElementById("r").value)
+      const w_u = parseFloat(document.getElementById("w_u").value)
+      const sigma = 1.7
+      const delta = 0.5
+      const tau = 0.5
+
+      // evaluate the expression repeatedly for different values of x
+      const yValues = math.range(0, 3, 0.5).toArray()
+      const as = yValues.map(function(x) {
+        return 100 * a * f * x / (lambda + f * x)
+      })
+      const ad = yValues.map(function(x) {
+        return ((delta - r * 2) / w_u) ** sigma * 1 / ((1 + tau * x) ** (sigma - 1)) + 20
+      }) // Interest rate effect enhanced and AD shifted
+
+      const as_start = yValues.map(function(x) {
+        return 0.25 * x / (0.2 + 0.25 * x) * 100
+      })
+      const ad_start = yValues.map(function(x) {
+        return ((0.5 - 0.02 * 2) / 0.05) ** 1.7 * 1 / ((1 + 0.5 * x) ** (1.7 - 1)) + 20
+      })
+
+      const pot = yValues.map(function(x) {
+        return a * 100
+      })
+      const pot_start = yValues.map(function(x) {
+        return 100
+      })
+
+      // render the plot using plotly
+      const trace1 = {
+        x: as,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'Aggregate Supply'
+      }
+      const trace2 = {
+        x: ad,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'Aggregate Demand'
+      }
+      const trace3 = {
+        x: pot,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'Potential Supply'
+      }
+      const trace4 = {
+        x: as_start,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        showlegend: false,
+        line: {
+          dash: 'dot',
+          color: '#1f77b4'
+        }
+      }
+      const trace5 = {
+        x: ad_start,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        showlegend: false,
+        line: {
+          dash: 'dot',
+          color: '#ff7f0e'
+        }
+      }
+      const trace6 = {
+        x: pot_start,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        showlegend: false,
+        line: {
+          dash: 'dot',
+          color: '#2ca02c'
+        }
+      }
+
+      var layout = {
+        title: '<b style="font-size:1.1rem;">The Michaillat-Saez Model</b>',
+        paper_bgcolor: '#CFD6DD',
+        plot_bgcolor: '#C5CCD3',
+        hovermode: false,
+        width: 800,
+        margin: {
+          t: 80,
+          b: 60,
+          l: 70,
+          r: 40
+        },
+        xaxis: {
+          title: '<b>Output</b>',
+          showticklabels: false,
+          range: [0, Math.max(111, a * 100 + 10)]
+        },
+        yaxis: {
+          title: '<b>Labor Market Tightness</b>',
+          showticklabels: false,
+          range: [0, 2.5]
+        },
+        legend: {
+          orientation: 'h',
+          y: 1.115,
+          x: 0.13
+        }
+      }
+
+      const data = [trace1, trace2, trace3, trace4, trace5, trace6]
+      Plotly.newPlot('plot', data, layout, {
+        displayModeBar: false
+      })
+    }
+
+    function paint() {
+
+      // evaluate the expression repeatedly for different values of x
+      const xValues1 = math.range(0, 30, 0.5).toArray()
+      const iso = xValues1.map(function(x) {
+        return -(x ** 1.7) + 60
+      })
+      const xValues2 = math.range(7, 16, 0.5).toArray()
+      const bev1 = xValues2.map(function(x) {
+        return 50 / (x - 6) + 2
+      })
+      const xValues3 = math.range(2, 12, 0.5).toArray()
+      const bev2 = xValues3.map(function(x) {
+        return 1000 / (x + 7.5) - 35
+      })
+
+      // render the plot using plotly
+      const trace1 = {
+        x: xValues1,
+        y: iso,
+        type: 'scatter',
+        mode: 'lines',
+        name: '<br />Isowelfare Curve<br />'
+      }
+      const trace2 = {
+        x: xValues2,
+        y: bev1,
+        type: 'scatter',
+        mode: 'lines',
+        name: '<br />Beverdige Curve <br />(High Elasticity)<br />'
+      }
+      const trace22 = {
+        x: [8.5,8.5],
+        y: [0,22],
+        type: 'scatter',
+        mode: 'lines',
+        showlegend: false,
+        line: {
+          dash:'dot',
+          color: '#ff7f0e'}
+      }
+      const trace3 = {
+        x: xValues3,
+        y: bev2,
+        type: 'scatter',
+        mode: 'lines',
+        name: '<br />Beverdige Curve <br />(Low Elasticity)<br />'
+      }
+      const trace33 = {
+        x: [5.5,5.5],
+        y: [0,42],
+        type: 'scatter',
+        mode: 'lines',
+        showlegend: false,
+        line: {
+          dash:'dot',
+          color: '#2ca02c'}
+      }
+      var layout = {
+        title: '<b style="font-size:1.1rem;">Labor Market Efficiency</b>',
+        paper_bgcolor: '#CFD6DD',
+        plot_bgcolor: '#C5CCD3',
+        hovermode: true,
+        width: 800,
+        margin: {
+          t: 80,
+          b: 60,
+          l: 70,
+          r: 40
+        },
+        xaxis: {
+          title: '<b>Unemployment Rate</b>',
+          showticklabels: false,
+          range: [0, 30]
+        },
+        yaxis: {
+          title: '<b>Vacancy Rate</b>',
+          showticklabels: false,
+          range: [0, 75]
+        },
+        legend: {
+          x: 0.9,
+          xanchor: 'right',
+          y: 0.9
+        },
+        annotations: [
+            {
+              x: 5.5,
+              y:9,
+              xref: 'x',
+              yref: 'y',
+              text: 'u*',
+              showarrow: false,
+              bgcolor: '#C5CCD3',
+              font: {color: '#2ca02c'}
+            },
+            {
+              x: 8.5,
+              y:9,
+              xref: 'x',
+              yref: 'y',
+              text: 'u*',
+              showarrow: false,
+              bgcolor: '#C5CCD3',
+              font: {color: '#ff7f0e'}
+            }
+          ]
+      }
+
+      const data = [trace1, trace2,trace3,trace22,trace33]
+      Plotly.newPlot('plot2', data, layout, {
+        displayModeBar: false
+      })
+    }
+
+    $(document).ready(function() {
+      draw();
+      paint();
+      document.getElementById("rv").innerHTML = 0.02;
+      document.getElementById("w_uv").innerHTML = 0.05;
+      document.getElementById("av").innerHTML = 1;
+    });
+
+  </script>
+
+</head>
+
+<body style="background-color: #C5CCD3;">
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../datawork">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../models">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Part -->
+
+<div class="container-fluid" style="padding-top: 2.5%; text-align: center; width: 65%; margin-bottom: 5%;">
+
+      <h2 class="title">Modelling Efficient Unemployment</h2>
+<div class="row text" style="text-align: justify;">
+      <p>
+          Unemployment is a key concern both for politicians and citizens, especially those experiencing or in danger of it.
+          Unemployment is seen as an individual misery, a trap preventing people from taking their fate into their own hands
+          and improving their living conditions. Economists, however, have a different perspective on unemployment.
+          For them, labour market participation is a choice, and many of their models do not include "involuntary" unemployment
+          (which is not to say that economists do not care about the unemployed in practice, of course).
+          Instead, many standard macroeconomic models see unemployment as an optimal choice of households
+          in reaction to decision criteria like the real wage level or the real interest rate. This requires an
+          amount of math that makes it hardly useful for guiding one’s thinking in practice.  Furthermore, they often rely
+          on the Philips curve relationship, i.e., the negative correlation of unemployment and inflation found in the 1950s.
+          This relationship is the subject of heated debates, as it empirically vanished over the decades. As a consequence,
+          many economists (most outspokenly Paul Krugman) still use the old IS-LM model for their day-to-day business.
+          Pascal Michaillat and Emmanuel Saez have now proposed another macroeconomic model that is suited for practical
+          thinking and abandons outdated ballast of both the IS-LM as well as modern NKM models.
+          Although their <a href="/static/michaillat-saez/Michaillat Saez 2021.pdf" target="_blank">2022 paper</a> is very accessibly
+          and well written, I still want to provide a brief overview below – especially for those interested
+          in the <a href="efficient-unemployment" target="_blank">empirical application</a> of their ideas about efficient unemployment.
+      </p>
+      <p>
+          At the centre of the model is the representative household maximizing utility from both consumption and holding wealth
+          (the latter is not part of standard models). To earn income, households sell labour services to other households –
+          the model abstracts from firms. The labour services market is modelled with a matching approach (as in the well-known DMP model):
+          Some households look for buyers for their services and some look for sellers. The better sellers and buyers match,
+          the higher is the matching elasticity. Importantly, there is no wage bargaining: The seller gets all of the revenue, i.e.,
+          the product of services provided times the respective price. This price grows at an exogenous rate, neither the price
+          level nor inflation are determined within the model. The rate at which potential sellers find interested buyers determines
+          the creation of new jobs, while there are also always some buyer-seller relationships breaking up. The Beveridge curve depicts
+          all pairs of unemployment and vacancy rates, where the number of jobs created and dissolved is equal (the steady state,
+          as we are in a model with continuous time). Using the Beveridge curve and labour market tightness
+          \( \theta = \frac{v}{u} \) (measuring how difficult it is to fill a vacancy with someone unemployed),
+          one can derive the number of employed households and total output (number of employed times productivity). This relationship forms
+          the upward-sloping aggregated supply (AS) curve depicting all pairs of tightness and output where the
+          unemployment rate is stable. As always, potential output marks total supply in case of full employment.
+      </p>
+      <p>
+          Every AS curve needs an AD (aggregated demand) curve. As stated, households devote their income either to consumption
+          (creating demand) or to wealth accumulation. As in the standard models, they do this by maximizing utility over time,
+          considering the real interest rate: The higher interest rates, the more attractive is saving. Crucially, consumption
+          is not equivalent to total output, because output also entails recruitment services. The higher
+          the costs for recruitment and the more vacancies there are, the bigger the difference between output
+          and consumption. As a consequence, a tighter the labour market lowers total demand (as recruiting
+          becomes more expensive, driving up consumer prices). This gives the downward-sloping AD curve.
+          Note that without any recruiting cost, it is the AD curve alone that determines total output, since
+          it then turns into a vertical line independent from the labour market tightness.
+      </p>
+      <p>
+          As always, the intersection of the AS and the AD curve determines the state of the economy.
+          As long as this intersection is left of potential output, there is unemployment.
+          There are two sources of unemployment: First, there is frictional unemployment due to the matching process,
+          which disappears if recruiting is costless. Secondly, there is Keynesian unemployment due to insufficient demand.
+          Even if the AD curve is turned into a vertical line (no recruiting cost and no frictional unemployment)
+          with the same horizontal axis intercept, it may be left of potential output.
+          The distance to potential output is then purely Keynesian unemployment. In this situation, a government would usually increase
+          public spending to fill the demand gap, but this public expenditure channel is missing in the model. So, what could politicians
+          do in this framework? There are two options: First, they could reduce interest rates (since inflation is exogenous,
+          the distinction between nominal and real interest rates does not matter) to make saving less attractive and stimulate demand.
+          Secondly, they could achieve the same effect by introducing a wealth tax. Such a wealth tax would decrease the marginal
+          utility from wealth, thereby making saving less attractive, too. This policy also works when monetary policy is at the zero lower bound,
+          i.e., when interest rates cannot be lowered any more. You can study both mechanisms in the figure below.
+      </p>
+    <p style="margin-top:2%;">
+        Interest rate: <span id="rv"></span> <input id="r" class="slider-model" type="range" min="-0.05" max="0.1" step="0.01" value="0.02" name="r" onchange="draw()">      |
+        Marginal utility of wealth: <span id="w_uv"></span> <input id="w_u" class="slider-model" type="range" min="0.03" max="0.1" step="0.01" value="0.05" name="w_u" onchange="draw()">      |
+        Productivity: <span id="av"></span> <input id="a" class="slider-model" type="range" min="0.5" max="1.5" step="0.1" value="1" name="a" onchange="draw()">
+      </p>
+      </div>
+
+      <script type="text/javascript">
+        var inr = document.getElementById("r");
+        var outr = document.getElementById("rv");
+        outr.innerHTML = 0;
+        inr.oninput = function() {
+          outr.innerHTML = this.value;
+        }
+
+        var inwu = document.getElementById("w_u");
+        var outwu = document.getElementById("w_uv");
+        outwu.innerHTML = 0;
+        inwu.oninput = function() {
+          outwu.innerHTML = this.value;
+        }
+
+        var ina = document.getElementById("a");
+        var outa = document.getElementById("av");
+        outa.innerHTML = 0;
+        ina.oninput = function() {
+          outa.innerHTML = this.value;
+        }
+      </script>
+      <div id="plot"></div>
+
+        <div class="row text" style="text-align: justify;">
+      <p style="margin-top: 2%;">
+          Now that we have looked at the Michaillat-Saez model, let us turn to the concept of efficient unemployment.
+          As long as you understand the main part of the model, this is actually a fairly small and easy step.
+          We have seen that vacancies requiring recruitment services, which are unproductive in the sense that
+          they are not available for producing consumption goods. We have also seen that the lower unemployment
+          and the higher labour market tightness gets, the costlier those vacancies become, leading to the negative
+          relationship between unemployment and vacancies. But we also know that unemployment is harmful (both on the individual
+          and the aggregated level). Therefore, it is undesirable to have high unemployment, but at the same time we also do not want
+          to have near zero unemployment since this skyrockets recruiting costs (increasing the wedge between total output and consumption).
+          Because of this trade-off, the optimal or efficient unemployment rate is above zero. We can solve this trade-off graphically:
+          Firstly, we know that in a vacancy-unemployment diagram, the same total welfare level can be achieved with different pairs of
+          vacancy and unemployment rates, since we would be indifferent between a high vacancy rate (costly recruiting) plus low
+          unemployment and a low vacancy rate (cheap recruiting) plus higher unemployment. This gives a concave and downward-sloping
+          isowelfare curve, which is shifted by the costs of unemployment (the value of nonwork) and the recruiting costs per vacancy.
+          The constraint preventing us from picking an isowelfare curve very far from the origin (i.e., a very high welfare level)
+          is the Beveridge curve. Remember that, in this framework, the economy is always moving along a Beveridge curve,
+          mainly determined by the job creation and destruction rates. The crucial characteristic of the Beveridge curve is
+          its elasticity, which captures how much a decrease in unemployment increases the vacancy rate. The point of efficiency is
+          found on the most outward isowelfare curve that still touches the Beveridge curve, i.e., the tangent of the Beveridge curvent
+          and the isowelfare curve.
+      </p>
+      </div>
+
+      <div id="plot2" style="margin-bottom: 5%;"></div>
+<div class="row text" style="text-align: justify;">
+        <p>
+            As can be seen in the above depiction, the efficient unemployment rate rises if the Beveridge elasticity increases,
+            as it becomes more costly in terms of vacancies to reduce unemployment (more production losses due to recruiting).
+            Additionally, the unemployment rate would also increase if unemployment was less costly or if recruiting became more expensive,
+            since both developments alter the unemployment-vacancy trade-off. The efficient unemployment rate balances costs from a tighter
+            labour market for labour service buyers and costs from more unemployment in an optimal way. Note that this is very different from
+            existing concepts like the natural rate of unemployment, which seek to stabilize inflation under the constraint of the Philips curve
+            relationship. Needless to say, the described model is very simple, and the authors point out
+            multiple shortcomings and possible extensions themselves. Nevertheless, their framework provides important insights, and the efficient
+            unemployment concept is useful to analyse the state of labour markets. If you want to know how such an analysis plays out for
+            European countries, check out <a href="efficient-unemployment" target="_blank">this tool</a>.
+        </p>
+        </div>
+    </div>
+
+<div class="bottom">
+      © Florian Frühhaber
+  </div>
+
+</body>
+
+</html>

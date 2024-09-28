@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Substitutability in the General Equilibirium">
+  <meta name="twitter:description" content="A very simple explanation of how economists think about elasticities of substitution .">
+  <meta name="twitter:image" content="https://www.naive-economics.com/static/thumbnail-elasticities.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <!-- Modelling Javascript -->
+  <link href="https://kineticgraphs.org/css/kg.0.2.6.css" rel="stylesheet" type="text/css">
+  <script src="https://kineticgraphs.org/js/kg.0.2.6.js"></script>
+
+  <!-- Formulas -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../datawork">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../models">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Part -->
+
+  <div class="container-fluid" style="padding: 2.5% auto auto 5%; text-align: center;">
+    <div style="width:75%; margin: auto; text-align: justify;">
+        <h2 class="title">Substitutability in the General Equilibrium</h2>
+
+        <p>
+            Recent debates around the energy crisis and possible consequences of a boycott against Russia
+            have brought the economic concept of elasticities into the spotlight. As with many economic terms,
+            it is used differently (or at least more multifariously) in the economics profession than
+            in the general public. With the following diagram, I aim at intuitively presenting some important aspects from
+            the perspective of economists.
+          </p>
+          <p>
+            The concept of elasticity is closely related to that of substitutability:
+            The higher the substitutability of a good or input in consumption or production, the higher is
+            the respective elasticity of demand (faced with a price increase, it is easier to switch to another
+            commodity). This is mainly discussed at the firm or industry level, which was coined the "engineering view"
+            by Christian Bayer, co-author of a much-discussed study on the effects of a gas boycott (about which I have
+            written <a href="https://www.naive-economics.com/learning-from-econ-academia" target="_blank">here</a>). For example,
+            it is often stressed that the chemical industry, at least in the short term, is
+            completely depended on gas as an input, and would have to shut down in case of a gas shortage
+            (zero substitutability, i.e. inelastic demand). But how does this translate into GDP-losses
+            at the national level?
+            </p>
+            <p>
+            Let's do what economists do best and simplify and assume: Imagine an economy where 50% of firms have
+            such a production technology that they cannot produce without gas. The most simple production function
+            for this case would be \(Y = min \{ E,L \} \), with E as energy and L as labour. The other 50% of firms
+            do not use gas and only produce with labour: \(Y = L \). In the below figure,
+            these input mixes are depicted by the blue GD (gas-dependent) and orange GI (gas-independent) lines
+            in the right panel.
+            Note how labour demand in the gas-dependent sector changes with the energy supply (\( E^S \)).
+            On the left panel, we depict a simple labour market with a strong simplification: Here, the GD-sector
+            buys as much labour as it needs before the GI-sector purchases its labour inputs.
+            Since wages equal unit labour costs in the GI-sector, it only buys labour up to the point where wages
+            equal unit prices for its goods (\( w^*_2 = P_2 \), again assuming a perfectly competitive setting).
+            </p>
+            <p>
+            What happens in case of an energy supply reduction? In an ideal world, the GD-sector would lay off workers,
+            which reduces prices (wages) on the labour market, so that the GI-sector compensates for these
+            layoffs with higher purchases (employment). If the GI-sector could grow without any hurdles, there would be
+            no GDP loss at all. Despite half of its firms having zero elasticity of substitution with respect to gas,
+            the whole economy is here perfectly elastic! This is caused by general equilibrium effects, i.e., the
+            reallocation of resources (here labour) driven by market mechanisms (here wages).
+            Of course, the GI-industries do have growth restrictions such as capacity (especially in the
+            short run) or demand limitations (also relevant in the long run). Also, in reality the GD firms produce inputs
+            needed by the GI sector (cascade effects via supply chains).
+            Depending on the magnitude of these frictions, the overall economic outcome looks very different, up to the worst case
+            where GI-industries do not
+            grow in response to the energy shortages (\( g_{GI} = 0 \)) and the whole economy shrinks by as much as
+            the GD-sector.
+            </p>
+            <p>
+            Therefore, one must never confuse partial equilibrium outcomes in certain sectors with the effects
+            for the whole economy. While it is important to know about the technical substitution possibilities on
+            the micro level (plants and firms), one should also think about possible general equilibrium channels:
+            Can other sectors of the economy make use of layed-off resources? How much of the production losses
+            can be compensated by imports (especially relevant for intermediary goods)? What is relevant for
+            the short run (6-12 months) and what only for the long run (2-3 years)? These are the questions that
+            economists ask (and assume answers about) in their model calculations.
+            </p>
+        </div>
+
+      <div class="diagram" style="margin-bottom: 5%; background-color: white;">
+
+     <div class="kg-container" style="background-color: white;">
+
+    params:
+      - {name: energy, value: 100, min: 0, max: 100, round: 1}
+      - {name: factor, value: 0, min: 0, max: 1, round: 0.1}
+
+    calcs:
+      factor: ((- params.energy / 100 + 1) * params.factor)
+
+    layout:
+      TwoHorizontalGraphsPlusSidebar:
+        leftGraph:
+          xAxis:
+           max: 105
+           title: Energy (E)
+          yAxis:
+           min: 0
+           max: 150
+           title: Labour (L)
+
+          objects:
+          - Line:
+              point: [0,0]
+              point2: [1,1]
+              color: blue
+              label: {text: "GD", x: 25}
+          - Line:
+              point: [params.energy, 0]
+              point2: [params.energy, 1]
+              color: red
+              lineStyle: dashed
+              label: {text: "E^S", x: params.energy}
+              drag:
+                - horizontal: energy
+          - Line:
+              point: [0,100]
+              point2: [1,100]
+              color: orange
+              label: {text: "GI", x: 25}
+          - Point:
+              coordinates: [params.energy, params.energy]
+              color: blue
+              droplines:
+                 horizontal: "L^D_1"
+
+        rightGraph:
+          title: Gas-independent Industry
+          xAxis:
+           max: 250
+           title: Labour (L) = Output (Y)
+          yAxis:
+           min: 0
+           max: 1.2
+           title: Wage (w)
+
+          objects:
+          - Segment:
+              a: [params.energy,0.5]
+              b: [(1 + calcs.factor) * 100 + params.energy,0.5]
+              color: orange
+              label: {text: "L^D_2", x: 1}
+          - Segment:
+              a: [(1 + calcs.factor) * 100 + params.energy,0.5]
+              b: [(1 + calcs.factor) * 100 + params.energy,0]
+              color: orange
+          - Segment:
+              a: [params.energy,0]
+              b: [params.energy,1]
+              color: blue
+          - Segment:
+              a: [0,1]
+              b: [params.energy,1]
+              label: {text: "L^D_1", x: 0.5 * params.energy}
+              color: blue
+          - Line:
+              point: [0,0]
+              point2: [200, 0.5]
+              color: black
+              label: {text: "L^S", x: 250}
+          - Point:
+              coordinates: [(100 + calcs.factor * 100 + params.energy),(0.25 + calcs.factor * 0.25 + params.energy*0.0025)]
+              color: red
+              droplines:
+                 horizontal: "w"
+          - Arrow:
+              begin: [100 + calcs.factor * 100 + params.energy, 0.1]
+              end: [200, 0.1]
+              trim: 0.001
+              double: true
+              color: red
+              label: {text: "dY", x: (0.01 * params.energy + calcs.factor + 3) * 50}
+          - Line:
+              point: [0, 0.5]
+              point2: [1, 0.5]
+              lineStyle: dotted
+              label: {text: "w_2^* = P_2", x: 250}
+          - Point:
+              coordinates: [params.energy, params.energy * 0.0025]
+              color: blue
+              droplines:
+                 horizontal: "w_1"
+
+        sidebar:
+          controls:
+          - title: Vary Parameters
+            description: Energy Supply and GI Growth Potential
+            sliders:
+            - {param: energy, label: "E^S"}
+            - {param: factor, label: "g_{GI}"}
+
+</div>
+
+      </div>
+
+  </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

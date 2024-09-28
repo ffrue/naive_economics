@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Wie golden ist die Goldene Regel?" />
+    <meta name="twitter:description" content="Warum intuitive pro/contra Argumente aus ökonomischer Sicht zu kurz greifen - und was tatsächlich für die Regel spricht." />
+    <meta name="twitter:image" content="https://www.naive-economics.com/static/goldene-regel/Grafik.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/goldene-regel/images.css">
+
+    <!-- Formulas -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Wie golden ist die Goldene Regel?</h2>
+
+        <p>
+            Auch wenn sich die Ampel vor kurzem auf einen Haushaltsentwurf für 2025 einigen konnte, ohne die geltende Schuldenbremse fundamental zu reformieren, bleibt das finanzpolitische Rahmenwerk in Deutschland einer der zentralen politischen Streitpunkte. So hat <a href="https://www.wiwo.de/politik/deutschland/bundestagswahl-2025-robert-habeck-will-neues-sondervermoegen-zum-wahlkampfthema-machen/29902806.html " target="_blank">Robert Habeck etwa angekündigt</a>, die Finanzierung von Investitionen mittels Sondervermögen zu einem zentralen Thema im Wahlkampf 2025 zu machen. Offen ist, ob die Grünen auch bei ihrer Forderung aus dem Jahr 2021 bleiben, staatliche Investitionen (mindestens teilweise) von der Schuldenbremse auszunehmen. Für eine solche Goldene Regel gab es in letzter Zeit viel Zuspruch, zu den Unterstützern zählen etwa der <a href="https://www.bmwk.de/Redaktion/DE/Publikationen/Ministerium/Veroeffentlichung-Wissenschaftlicher-Beirat/gutachten-wissenschaftlicher-beirat-finanzierung-von-staatsaufgaben.pdf?__blob=publicationFile&v=14" target="_blank">Wissenschaftliche Beirat des Bundeswirtschaftsministeriums</a> sowie die Wirtschaftsweisen Monika Schnitzer und Achim Truger. Auch die <a href="https://www.spdfraktion.de/system/files/documents/position-eckpunkte-gerechte-haushaltspolitik.pdf" target="_blank">SPD-Bundestagsfraktion</a> argumentierte Anfang des Jahres in diese Richtung, ebenso wie einige CDU-Ministerpräsidenten.
+        </p>
+
+        <p>
+            Interessant ist jedoch, dass in der volkswirtschaftlichen Literatur oder finanzwirtschaftlichen Lehrbüchern die Goldene Regel kaum eine Rolle spielt. So erklärt sich auch, dass in Publikationen häufig auf Referenzen wie <a href="https://www.jstor.org/stable/1803624" target="_blank">Musgrave 1939</a> (!) zurückgegriffen wird, der selbst jedoch wenige Zeilen auf das Thema verwendet und schon gar keine modelltheoretische Begründung bietet, wie sonst in der VWL üblich. Betrachtet man die Diskussion um die Goldene Regel aus einer ökonomischen Perspektive, so stellt man fest, dass viele Argumente sich zwar intuitiv logisch anhören, bei genauerer Betrachtung jedoch so pauschal nicht richtig sind. In diesem Artikel will ich daher erst die Goldene Regel kurz vorstellen und gängige Kritikpunkte einordnen, bevor ich von Unterstützern oft genannte Argumente genauer unter die Lupe nehme. Abschließend stelle ich das ökonomisch überzeugendste Argument für die Goldene Regel vor und ziehe ein Fazit.
+        </p>
+
+        <h3>Was ist die Goldene Regel?</h3>
+
+        <p>
+            Starten wir mit einer kurzen Begriffsklärung: Die Goldene Regel besagt, dass der Staat in einem Jahr nur maximal so viele Schulden aufnehmen darf, wie er netto investiert. Nettoinvestitionen ziehen von den getätigten (Brutto-)Investitionen die Kapitalstockverluste (Abschreibungen) eines Jahres ab. Kostet eine Brücke beispielsweise 100 Mio. Euro und steht 20 Jahre lang, so beträgt die jährliche Abschreibung 5 Mio. Euro. Baut der Staat in einem Jahr eine zweite Brücke für 100 Mio. Euro, so sind dies die Bruttoinvestitionen, während die Nettoinvestitionen 95 Mio. Euro betragen. Letztlich erfassen Nettoinvestitionen damit die tatsächlich Wertänderung des staatlichen Kapitalstocks (Gebäude, Straßen/Schienen, öffentliche Energieinfrastruktur etc.). Sind die Nettoinvestitionen negativ, so sinkt der staatliche Kapitalstock. Wie die folgende Grafik zeigt, war dies in den letzten 25 Jahren durchaus häufiger der Fall, während gerade nach der Finanzkrise der gesamtstaatliche Finanzierungssaldo (Differenz von Einnahmen und Ausgaben der Kommunen, der Länder und des Bundes) bis zur Pandemie positiv war. Statt den staatlichen Kapitalstock zu erhöhen, wurde also lieber die Verschuldung gesenkt. Obgleich dadurch in den Jahren vor der Pandemie das staatliche Nettovermögen (Kapitalstock minus Verschuldung) erhöht wurde, steht das Land nun vor enormen Investitionsbedarfen etwa in Verkehrs- und Energieinfrastruktur, sozialen Wohnraum oder Bildungseinrichtungen (von <a href="https://www.boeckler.de/de/pressemitteilungen-2675-600-milliarden-euro-staatliche-extra-investitionen-60422.htm" target="_blank">IMK und IW</a> pro Jahr auf 60 Mrd. Euro zusätzlich zu bestehenden Investitionen geschätzt).
+        </p>
+
+    <div class="figure">
+        <img src="../../static/goldene-regel/Grafik.png" id="img"/>
+      </div>
+
+        <p>
+            Eine Goldene Regel würde staatliche Investitionen erleichtern, indem sie für diese Art von Ausgaben eine Schuldenaufnahme erlaubt. Da sich auf diese Weise Kapitalstock und Verschuldung gleichermaßen erhöhen, bliebe das staatliche Nettovermögen konstant. In ihrer Reinform deckelt die Goldene Regel die maximale Verschuldungshöhe nicht, schränkt dafür jedoch die Verwendung der Mittel ein (auf investive Zwecke). Damit macht sie das genaue Gegenteil der Schuldenbremse, die eine maximale Verschuldungshöhe nennt (0.35% des BIP plus/minus Konjunkturausgleich), aber keinerlei Vorgaben für die Mittelverwendung macht. Die Schuldenbremse löste 2009 den bestehen Art. 115 GG ab, der noch großzügiger als die oben definierte Goldene Regel war, da er Schuldenaufnahme in Höhe der Bruttoinvestitionen erlaubte. Dies brachte problematischen Anreize, da es nun attraktiver war, eine Brücke verfallen zu lassen und neu zu bauen (positive Bruttoinvestition, aber insgesamt keine Nettoinvestition), als sie zu sanieren. Diesen Fehlanreiz benannte auch der Sachverständigenrat 2007 in einem Gutachten und empfahl eine Abstellung auf Nettoinvestitionen. Anstatt darauf zu hören, schüttete die Politik allerdings gleich das Kind mit dem Bade aus und beendete mit der Schuldenbremse jegliche Investitionsorientierung bei der Schuldenaufnahme.
+        </p>
+
+        <h3>Gängige Kritik an der Goldenen Regel</h3>
+
+        <p>
+            Verteidiger der Schuldenbremse nennen vor allem drei Punkte, weswegen sie eine Goldene Regel für problematisch halten. Erstens beklagen sie, dass eine Schuldenaufnahme per se zukünftige Generationen belastet, da in der Zukunft höhere Zinsen gezahlt werden müssen und irgendwann eine Tilgung der Schulden anstünde (das ist im Normalfall aber nicht der Fall, da für gewöhnlich alte Staatsanleihen einfach durch neue Anleihen ersetzt werden, also keine Tilgung stattfindet). Dies verkennt jedoch, dass auch ausbleibende Investitionen eine Belastung für zukünftige Generationen darstellen. Einerseits ist für die „Startchancen“ einer Generation das staatliche Nettovermögen relevant (Kapitalstock und Verschuldung), andererseits haben Investitionen über ihren Geldwert hinaus positive Effekte für zukünftige Generationen (Investitionen in die grüne Transformation reduzieren z.B. Schäden durch den Klimawandel). Selbst wenn es diese positiven Effekte nicht gäbe, wäre die Entscheidung zwischen Steuern und Schulden für die optimale intergenerationale Lastenverteilung jedoch nicht eindeutig, sondern abhängig von diversen Annahmen (mehr dazu weiter unten).
+        </p>
+
+        <p>
+            Ein weiterer Hauptkritikpunkt besteht in der Definition von „Investitionen“. Wenn eine Goldene Regel investive Ausgaben anders behandelt als konsumtive, dann muss natürlich gesetzlich geregelt sein, wie die Trennlinie zwischen den beiden Kategorien verläuft. Während Investitionen in der volkswirtschaftlichen Gesamtrechnung (VGR) noch recht klar definiert sind (als Steigerung materieller oder immaterieller Vermögensgüter), ist das politisch nicht so klar. Investitionen werden da manchmal schlicht als Ausgaben gesehen, deren Wirkung auf die Zukunft gerichtet ist, beispielsweise im Bildungsbereich. Laut VGR sind aber nur Ausgaben für den Bau einer Schule (Gebäude als materielles Vermögen) eine Investition, nicht aber die Gehälter für Lehrkräfte. Ebenso könnte man darüber streiten, ob eine Subvention für eine Chip-Fabrik als Investition gelten sollte oder nicht. In seinem Plädoyer für eine <a href="https://www.bmwk.de/Redaktion/DE/Publikationen/Ministerium/Veroeffentlichung-Wissenschaftlicher-Beirat/gutachten-wissenschaftlicher-beirat-finanzierung-von-staatsaufgaben.pdf?__blob=publicationFile&v=14" target="_blank"> „Goldene Regel Plus“</a> schlägt der Beirat des BMWK daher vor, die Definition des Investitionsbegriffs und die Kontrolle der entsprechenden Mittelverwendung an ein unabhängiges Gremium auszulagern.
+        </p>
+
+        <p>
+            Zuletzt bemängeln Kritiker, dass die Verschuldung des Staates bereits heute zu hoch ist und unter der Goldenen Regel eine prinzipiell ungedeckelte Kreditaufnahme möglich ist. Praktisch ist dieser Einwand eher wenig berechtigt, da es nur eine gewisse Kapazität für die jährliche Investitionstätigkeit gibt. Selbst wenn dem nicht so wäre, könnte man dieses Problem aber natürlich einfach politisch lösen, indem man die Goldene Regel um eine Defizitobergrenze ergänzt (die natürlich ausreichend hoch angesetzt sein müsste, um einen Unterschied zur bestehenden Schuldenbremse zu machen). Wir sehen also, dass die Schwächen einer Goldenen Regel durchaus politisch adressiert und die Hauptkritikpunkte so ausgeräumt werden könnten. Interessanter wird es, wenn wir die oft genannten Vorteile einer Goldenen Regel genauer unter die Lupe nehmen.
+        </p>
+
+        <h3>Gängige Argumente für die Goldene Regel</h3>
+
+        <p>
+            Eine gute Übersicht für oft genannte Vorteile einer Goldenen Regel bietet das bereits erwähnte <a href="https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/Expertisen/Staatsverschuldung_wirksam_begrenzen.pdf" target="_blank">Gutachten des SVR aus 2007</a>. In erster Linie implementiert eine Goldene Regel (scheinbar) das intuitive Pay-as-you-use Prinzip: Wenn eine Investition vor allem zukünftigen Generationen nutzt, dann sollten auch diese zukünftigen Generationen dafür bezahlen. Eine Schuldenfinanzierung kann entsprechend dazu dienen, den Zahlungszeitpunkt in die Zukunft zu verschieben und mit dem Nutzenzeitraum in Einklang zu bringen. Unter dem Gesichtspunkt der Generationengerechtigkeit erscheint es zudem (auf den ersten Blick) ebenfalls fair, dass alle Generationen mit dem gleichen staatlichen Nettovermögen beginnen. Wie bereits erklärt sorgt die Goldene Regel dafür, dass die Investitionstätigkeit das staatliche Nettovermögen nicht verändert, da die Verschuldung im gleichen Maße wächst wie der Kapitalstock.
+        </p>
+
+        <p>
+            Unter der Annahme einer wachsenden Volkswirtschaft erscheint es zunächst ebenfalls gerecht, wenn zukünftige Generationen, die aufgrund des Wirtschaftswachstums reicher sind (in dem Sinne, dass ihre Konsummöglichkeiten größer sind), mehr zur Staatsfinanzierung beitragen als heutige. Wäre diese Annahme per se gerechtfertigt, so könnte man allerdings genauso dafür argumentieren, dass nicht-investive Staatsausgaben (z.B. Sozialleistungen) durch Schulden finanziert werden, um den Finanzierungsanteil zukünftiger Generationen zu erhöhen. Eine andere Sichtweise besteht darin, die Finanzierungslast nur dann in die Zukunft zu verschieben, wenn staatliche Ausgaben zukünftige Generationen reicher machen. Aus diesem Grund wird häufig über die Produktivität staatlicher Investitionen gesprochen, also über ihre Wirkung auf das gesamtwirtschaftliche Wachstum. Da die empirische Evidenz für Deutschland auf eine recht hohe Produktivität von (bestimmten) staatlichen Investitionen hinweist, erscheint unter diesem Gesichtspunkt eine Schuldenfinanzierung im Sinne der Goldenen Regel gerechtfertigt.
+        </p>
+
+        <p>
+            Für Volkswirte gibt es noch ein interessantes theoretische Argument: Da der Zinssatz in einer Volkswirtschaft den Preis für Investitionen festlegt, wird der private Kapitalstock so lange wachsen, bis dessen Grenzproduktivität dem Zins entspricht (wenn also z.B. für Unternehmen der Nutzen einer Investition gerade noch so ihren Kosten entspricht). Es gibt dann einen optimalen staatlichen Kapitalstock, sodass dessen Grenzproduktivität ebenfalls dem Zins und damit der Grenzproduktivität privaten Kapitals entspricht. Dies ist effizient, weil eine Umverteilung von Kapital zwischen dem öffentlichen und privaten Sektor keine Wohlstandgewinne bringt. Da der Zins auch den Preis von staatlichen Schulden bestimmt, sorgt eine Kreditfinanzierung von Investitionen dann dafür, dass Kosten und Erträge staatlicher Investitionen übereinstimmen (sofern der Staat die effiziente Höhe für den staatlichen Kapitalstock wählt).
+        </p>
+
+        <h3>Generationengerechtigkeit aus ökonomischer Perspektive</h3>
+
+        <p>
+            Bis auf den letzten Punkt wirken obige Argument intuitiv, aber recht unökonomisch. Normalerweise leiten Volkswirte ihre Aussagen nämlich aus Modellen her und stützen sich in ihren Begründungen auf diese. Wie in der Einleitung erwähnt, gibt es allerdings kaum solche Arbeiten zur Goldenen Regel, weswegen verbale Argumentationen an die Stelle von Modellüberlegungen treten. Ein Modell kann allerdings dabei helfen, versteckte Annahmen hinter Argumentationsschritten offen zu legen und diese zu präzisieren. Für Diskussionen um die Goldene Regel ist dies ebenfalls sehr nützlich und offenbart einige argumentative Schwachstellen, wie ich im Folgenden erklären möchte. Eine fundierte Darstellung dieser Punkte in einem ökonomischen Modell bietet <a href="https://kovl.li/wp-content/uploads/2014/12/EJPE_2007.pdf" target="_blank">Kellermann 2007</a>.
+        </p>
+
+        <p>
+            Ganz grundsätzlich geht es bei der Frage, ob die Goldene Regel sinnvoll ist, um die optimale Verteilung der Finanzierungslast staatlicher Ausgaben zwischen Generationen. Mathematisch wollen wir die Gesamtwohlfahrt maximieren, die einer gewichteten Summe der Nutzenwerte der einzelnen Generationen \( \alpha_t U_t \) entspricht ( \( \alpha_t \) ist hier ein beliebiger Gewichtungsfaktor, mehr dazu gleich). Dabei müssen wir darauf achten, dass über den gesamten Zeitraum hinweg die Summe aller staatlichen Ausgaben G der Summe aller staatlichen Einnahmen T entspricht.
+        </p>
+
+        <p>
+            \( \max W = \alpha_1 U_1 + \alpha_2 U_2  +  ... \quad s.t. \quad \sum G_t = \sum T_t \)
+        </p>
+
+        <p>
+            Die Nebenbedingung bedeutet nichts anderes, als dass jede Ausgabe irgendwann durch Steuern bezahlt werden muss. Wenn der Staat nicht direkt mit Steuern bezahlen will, kann er stattdessen Schulden aufnehmen, also Staatsanleihen verkaufen. In diesem Fall muss er jedoch irgendwann in der Zukunft diese Staatsanleihen samt Zins tilgen – wegen des Zinses kostet die Verschiebung der Steuerlast also einen gewissen Preis. Man könnte einwenden, dass Staatsausgaben doch eigentlich nur Verteilungsfragen innerhalb der gleichen Zeitperiode darstellen, entweder vom Steuerzahler oder vom Staatsanleihenkäufer hin zum Staat (im Gegenzug für Staatsausgaben in die andere Richtung). Dies verkennt jedoch, dass Leute nur dann Staatsanleihen kaufen (der Staat sich also nur dann verschulden und die Finanzierungslast verschieben kann), wenn sie im Gegenzug in der Zukunft etwas dafür bekommen. Zukünftige Generationen sind an dieses Gegenleistungsversprechen gebunden und damit in ihren Möglichkeiten eingeschränkt. Dies ist eine intertemporale Umverteilung. Staatsanleihekäufer werden für ihren Konsumverzicht (mit dem sie für die Staatsanleihen bezahlen) also in der Zukunft entschädigt, sodass heute alle zufrieden sind, in der Zukunft jedoch Entschädigungen bezahlt werden müssen (also mehr Einnahmen generiert werden müssen als Ausgaben).
+        </p>
+
+        <p>
+            Wie finden wir das Maximum der Gesamtwohlfahrt? Beginnen wir mit den Nutzenwerten U der einzelnen Generationen. Im einfachsten Modell sind diese sind umso höher, je mehr eine Generation konsumieren kann. Höhere Steuern verringern die Konsummöglichkeiten, Wirtschaftswachstum vergrößert sie. Eine wichtige Annahme betrifft nun die genaue Form der Nutzenfunktion, die für einen Konsumwert einen Nutzenwert ausgibt. Vor allem müssen wir entscheiden, wie sehr der Nutzenwert ansteigt, wenn der Konsum ansteigt: Auf individueller Ebene ist es einleuchtend, dass der Unterschied zwischen gar nichts haben und ein bisschen haben für einen Menschen weit mehr ausmacht als zwischen ein bisschen haben und viel haben (man denke etwa an Nahrung). Wenn wir dieses Prinzip generalisieren, dann ist der zusätzliche Nutzen einer Konsumeinheit (Grenznutzen) umso geringer, je höher der Gesamtkonsum ist. Wenn wir also einer reichen Generation (oder Person) eine Konsumeinheit wegnehmen (durch Besteuerung), dann tut ihr das weniger weh als einer armen Generation (oder Person). Das ist es, was "fallender Grenznutzen" bedeutet. Diese Annahme über die Nutzenfunktion führt zu dem oben genannten Argument, dass es sinnvoll ist, die Finanzierungslast durch Schulden in die Zukunft zu transferieren, wenn zukünftige Generationen reicher sind. (Für VWLer: Das gleiche Argument kann auf individueller Ebene gemacht werden, wo die Attraktivität einer Verschiebung von Finanzierungslasten von der Präferenz eines Haushalts für Konsumglättung abhängt. Ist die intertemporale Substitutionselastizität hoch, dann ist eine Schuldenfinanzierung attraktiver.)
+        </p>
+
+        <p>
+            Angenommen alle Generationen sind gleich reich, dann ist eine höhere Finanzierungslast in der Zukunft mit obiger Überlegung erst einmal nicht sinnvoll. Wenn allerdings eine staatliche Investition zukünftige Generationen reicher macht, sollte diese mehr bezahlen – nicht, weil sie diese nutzen, sondern einfach, weil sie reicher sind und ihnen Steuern weniger weh tun (Steuern ihren Nutzen weniger stark reduzieren)! Wir sehen also, dass eine (teilweise) Schuldenfinanzierung staatlicher Investitionen gemäß der goldenen Regel dann sinnvoll ist, wenn (1) zukünftige Generationen reicher sind (die Wachstumsrate der Volkswirtschaft hoch ist) oder (2) die Investition zukünftige Generationen reicher macht. Gäbe es kein Wachstum und wäre der Grenznutzen von Konsum konstant, so wäre es für die Gesamtwohlfahrt vollkommen egal, wer wann welche staatlichen Ausgaben bezahlt.
+        </p>
+
+        <p>
+            Bisher haben wir auf das \( U \) in der Wohlfahrtsfunktion geschaut. Was ist mit den Gewichtungsfaktoren? Würden wir statt über mehrere Generationen über mehrere Jahre für die gleiche Person sprechen, so wäre es intuitiv, dass die Gewichtungsfaktoren mit der Zeit abnehmen. Schließlich würden die meisten Leute es vermutlich bevorzugen, wenn sie etwas heute haben könnte, anstatt erst noch 10 Jahre darauf zu warten (ökonomisch: sie diskontieren zukünftigen Nutzen aufgrund ihrer Zeitpräferenzrate). Würden die Gewichtungsfaktoren in der Wohlfahrtsfunktion mit der Zeit abnehmen, so wäre es sinnvoll, Finanzierungslasten in die Zukunft zu schieben. Wenn der Nutzen (das \( U \) ) einer Generation weit in der Zukunft sinkt, kümmert uns das schließlich weniger, als wenn die heutige Generation im gleichen Maße Nutzen einbüßt. Nach Generationengerechtigkeit klingt das aber nicht: Warum sollte man zukünftige Generationen per se anders behandeln als heutige, nur weil sie noch nicht geboren sind? Aus diesem Grund erscheint es plausibler, konstante Gewichtungsfaktoren zu verwenden, sodass eine Schuldenfinanzierung nur mit Blick darauf erst einmal keinen Vorteil bietet (es ist trotzdem wichtig, diesen Punkt anzusprechen, da Ökonomen sich über die „korrekten“ Gewichtungsfaktoren für verschiedene Generationen uneins sind).
+        </p>
+
+        <p>
+            Ein weiterer wichtiger Faktor, der bereits genannt wurde, aber nicht direkt in der Wohlfahrtsfunktion auftaucht, ist der Zins. Der Zins macht Schulden, also eine Verschiebung der Finanzierungslast, teurer. In unserem Maximierungsproblem beeinflusst dies die Nebenbedingung: Wenn wir uns für Schuldenfinanzierung entscheiden, dann steigen aufgrund der Zinskosten die Staatsausgaben über den gesamten Zeitraum automatisch an, sodass wir über die Zeit mehr Steuern einnehmen müssen. Ganz egal, wann wir diese Steuern einnehmen, wird dies die Gesamtwohlfahrt verringern (keiner freut sich über höhere Steuern). Je höher der Zins, desto höher sind die Kosten aus der Verschiebung der Finanzierungslast (umso mehr, je länger in die Zukunft wir diese schieben wollen). Wenn der Zins hoch ist (da es in unserem einfachen Modell keine Preise gibt, meine ich hier den Realzins), muss die Lastenverschiebung also große Vorteile mit sich bringen, um ihren Preis wert und besser als eine Steuerfinanzierung zu sein.
+        </p>
+
+        <p>
+            Was lernen wir aus dieser Analyse? Zuerst einmal ist das intuitive Pay-as-you-use Prinzip nicht in jedem Fall ökonomisch sinvoll oder „generationengerecht“. Ob eine Goldene Regel die Gesamtwohlfahrt erhöht, hängt von verschiedenen Faktoren (v.a. Annahmen über Nutzen- bzw. Grenznutzenfunktionen, Wachstumsrate und Zins) ab, die in der politischen Diskussion meist unter den Tisch fallen. Eine Goldene Regel ist sinnvoll, wenn das volkswirtschaftliche Wachstum hoch (wozu staatliche Investitionen natürlich beitragen können) und der Zins niedrig ist und wir keine allzu starken Annahme über stark fallende Grenznutzenkurven oder Gewichtungsfaktoren treffen (in diesen Fällen wäre eine höhere Steuerlast für reichere Generationen in der Zukunft für die Gesamtwohlfahrt recht egal und Schuldenfinanzierung für Investitionen wie Konsum fast immer gut). Wer sich an die ökonomischen Debatten um Staatsverschuldung vor der Pandemie erinnert, dem wird auffallen, dass wir damit wieder bei der Frage <a href=“https://economy-finance.ec.europa.eu/system/files/2022-04/dp171_en_vol1_part_2_chapter_3.pdf“ target=“_blank“>r vs g</a> (Zins vs Wachstumsrate) angelangt sind.
+        </p>
+
+        <p>
+            Gerade der Faktor des Wirtschaftswachstums ist in der kurzen Frist besonders wichtig: Ist der staatliche Kapitalstock nämlich zu niedrig (also unter seinem oben beschriebenen effizienten Niveau), dann sind die Wachstumseffekte von staatlichen Investitionen deutlich höher. Um einen Investitionsstau aufzuholen (den viele Ökonomen gegenwärtig diagnostizieren), kann eine Schuldenfinanzierung (oder zumindest ein höherer Anteil davon) also eher sinnvoll sein als in der langen Frist, wenn der staatliche Kapitalstock sein effizientes Niveau erreicht hat. Erinnern wir uns an die effiziente Situation Zins = Grenzproduktivität privaten Kapitals = Grenzproduktivität staatliches Kapital. Wenn der staatliche Kapitalstock ineffizient niedrig ist, dann sind die Erträge aus staatlichen Investitionen (Grenzproduktivität staatliches Kapital) höher als die Kosten aus der Schuldenfinanzierung (Zins). Dies bedeutet jedoch nicht zwangsläufig, dass eine vollständige Schuldenfinanzierung auch besser ist als eine Steuerfinanzierung, da dazu alle Faktoren unserer Analyse berücksichtigt werden müssen.
+        </p>
+
+        <h3>Was die Goldene Regel noch auszeichnet</h3>
+
+        <p>
+            Bis zu dieser Stelle scheint es, als könne man eine Goldene Regel nicht in jedem Fall empfehlen, vor allem in der langen Frist. Doch tatsächlich gibt es ein weiteres Argument für die Goldene Regel, das ich bisher aufgespart habe. Bisher haben wir nämlich nicht darüber gesprochen, wie der Staat überhaupt entscheidet, zu investieren, sondern sind davon ausgegangen, dass er tut, was notwendig ist. In einer Demokratie ist das aber natürlich nicht der Fall: Stellen wir uns vor, dass immer zwei Generationen gleichzeitig leben, eine junge und eine alte. Sofern jeder Wähler egoistisch denkt und sofern Investition erst aber der nächsten Zeitperiode einen Nutzen bringen, ist es plausibel, dass ältere Wähler weit weniger an Investitionen interessiert sind als jüngere – schließlich haben sie nichts davon. Würden der Staat keine Schuldenfinanzierung nutzen, müssten ältere Wähler sogar noch für die für sie selbst nutzlosen Investitionen bezahlen! In diesem Fall würde Politik, die auch von älteren Wählern gewählt werden wollen, lieber nicht für allzu viele staatliche Investitionen einstehen. Die Umsetzung des Pay-as-you-use Prinzip durch Schuldenfinanzierung von Investitionen wäre dann ein Weg, die Investitionsaversion älterer Wähler zu beseitigen, dass sie sich nun nicht mehr an der Finanzierung von Investitionen beteiligen müssten.
+        </p>
+
+        <p>
+            Die Goldene Regel würde dann nicht dazu dienen, Finanzierungslasten im Sinne der Gesamtwohlfahrt optimal zu verteilen, sondern allen Wählern das effiziente Investitionsniveau schmackhaft zu machen. Um den Unterschied zur obigen Analyse zu verdeutlichen, nehmen wir negatives Wachstum an, sodass zukünftige Generationen ärmer sind. Könnte der Staat ohne Rücksicht auf Wähler agieren, wäre dann eine Lastenverschiebung in die Zukunft schlecht (Steuern in der Zukunft schaden den dann ärmeren Generationen mehr als den reicheren heute). Würden ohne eine solche Lastenverschiebung ältere Wähler heute jedoch jegliche Investitionen blockieren, so wäre das für zukünftige Generationen noch schlechter! Eine Goldene Regel wäre dann sinnvoll aus politökonomischen, nicht wohlfahrtstechnischen Gründen.
+        </p>
+
+        <p>
+            Mit Blick auf die verfallende Infrastruktur und die zu geringe Investitionstätigkeit in der Vergangenheit (und gleichzeitig großzügiger Rentenpolitik), erscheint diese Überlegung nicht unplausibel. Tatsächlich gibt es <a href="https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2021.692913/full" target="_blank">einige Forschungsarbeiten</a>, die einen Bias älterer Wähler gegen zukunftsgerichtete Ausgaben feststellen – einen eindeutigen Befund gibt die Literatur bisher jedoch nicht her.
+        </p>
+
+        <h3>Fazit</h3>
+
+        <p>
+            Dieser Blogartikel hat gezeigt, dass sowohl Argumente für wie gegen die Schuldenbremse oft nicht fundiert genug sind bzw. auf einigen verborgenen Annahmen beruhen. Es ist hoffentlich auch deutlich geworden, dass eine ökonomische Betrachtungsweise beim Aufdecken dieser impliziten Annahmen hinter einer verbalen Argumentation sehr hilfreich sein kann. Das Ersetzen der Schuldenbremse durch eine Goldene Regel erscheint letztlich nur dann in jedem Fall sinnvoll, wenn sich das zuletzt genannte politökonomische Argument als zutreffend erweist oder langfristig hohes Wachstum (in dem Sinne, dass es zukünftigen Generationen deutlich besser geht) mit niedrigen Zinsen einhergeht.
+        </p>
+
+        <p class="disclaimer">
+            Weitere Infos zum Thema Fiskalregeln und Reformoptionen in Deutschland finden sich hier: <a href="https://fiscalfuture.de/de/themen/fiskalregeln" target="_blank">https://fiscalfuture.de/de/themen/fiskalregeln</a>
+        </p>
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

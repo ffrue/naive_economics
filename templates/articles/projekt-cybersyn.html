@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/projekt-cybersyn/images.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Projekt Cybersyn: Realisierte Utopie?</h2>
+
+      <p>
+        Unblutige Revolution, demokratischer Sozialismus, freiheitsliebende Zentralverwaltung. Alles Begriffspaare, die widersprüchlich wirken, und doch in einem der spannendsten Experimente der Menschheitsgeschichte umgesetzt werden sollten – und
+        zwar mittels Kybernetik. Das klingt ein wenig wie der Klappentext eines Science-Fiction-Romans und ist doch eine echte Geschichte, die hier kurz erzählt werden soll. Die Grundlage für meine folgende Erzählung bildet Eden Medinas
+        hervorragendes Buch <a href="https://www.ecolibri.de/shop/article/26581736/eden_medina_cybernetic_revolutionaries.html">„Cybernetic Revolutionaries“</a>, zwei weitere spannende und kurze Texte von zentralen Architekten des Projektes sind unten als PDF angehängt.
+      </p>
+      <p>
+        Für unsere Geschichte müssen wir uns ganze 12.000 km ins (gedankliche!) Flugzeug setzen und nach Chile reisen, genauer gesagt ins Chile des Jahres 1970. Am 24.Oktober dieses Jahres wird ein Mann zum Präsidenten gewählt, der einen neuen
+        Aufbruch verspricht: Salvador Allende. Als Kandidat eines Zusammenschlusses von verschiedensten Parteien links der Mitte inklusive Kommunisten und Sozialisten (Unidad Popular) war bereits seine Ernennung nicht ohne Schwierigkeiten. Zwar galt
+        in Chile das ungeschriebene Gesetz, dass für den Fall, dass kein Kandidat die absolute Mehrheit erringen sollte (wie es 1970 der Fall war), der Kandidat mit der größten relativen Mehrheit (Allende) gewählt werden sollte, doch gab es diesmal
+        in In- und Ausland beträchtliche Widerstände dagegen. Allen voran tobte der republikanische US-Präsident Nixon im Weißen Haus über die Aussicht auf einen chilenischen Präsidenten, der sich dem „demokratischen Sozialismus“ als dritten Weg
+        zwischen Kapitalismus (USA, Westeuropa) und Kommunismus (Sowjetunion, Kuba) verschrieben hatte. So kam es, dass zwei Tage vor der Parlamentsabstimmung der Oberbefehlshaber des Heeres, René Schneider, bei einem von der CIA mitfinanzierten
+        Entführungsversuch erschossen wurde, weil er die Wahl Allendes gemäß den politischen Traditionen unterstützt hatte. Es verwundert nicht, dass die Empörung darüber auch bei den moderaten Kräften wie den Mitte-Rechten Christdemokraten
+        ausreichte, um Allendes Wahl zu ermöglichen (was innerhalb der deutschen CDU übrigens scharf kritisiert wurde).
+      </p>
+      <p>
+        Politischer und wirtschaftlicher Druck von außen blieb jedoch ein zentrales Problem während Allendes gesamter Präsidentschaft, was das lateinamerikanische Land bei der Bewältigung seiner massiven Probleme stark behinderte. Zu diesen zählte
+        erstens die große Ungleichheit im Land, die dafür sorgte, dass untere Schichten kaum Konsumgüter erwerben konnten, während eine wohlhabende Unternehmerklasse sich immer weiter bereicherte. Teil dieses Problems war auch, dass viele inländische
+        Ressourcen von ausländischen Unternehmen abgebaut wurden und entsprechend viel Geld ins Ausland abfloss. Ein gutes Beispiel dafür war der amerikanische Konzern ITT Corp., dessen Manager später nicht nur ein 18-Punkte-Programm zum Sturz
+        Allendes entwarfen, sondern dessen Executive Vice President Edward Geritty sogar mit Nixon und der CIA zusammensaß, um Maßnahmen gegen Allende vorzubereiten. Woher der Zorn von ITT Corp. kam? Nun, das Unternehmen besaß 1970 mehrere
+        Kupferminen in Chile, die Präsident Allende gemeinsam mit anderen Schlüsselunternehmen kurzerhand verstaatlichte, um die Gewinne dem chilenischen Volk zukommen zu lassen und ihre Wirtschaftsaktivität zentral lenken zu können (der größte
+        Kupferproduzent weltweit, CODELCO, ist übrigens auch heute noch ein chilenisches Staatsunternehmen). Da es jedoch nicht nur diese gezielte top-down Verstaatlichung gab, sondern auch von aktivistischen Arbeitern übernommene Fabriken dazukamen
+        (bottom-up Verstaatlichung), wuchs der staatliche Sektor schnell an. Dessen Verwaltung war eine beträchtliche Herausforderung. Nicht nur, dass weder die Arbeiter noch die meisten Beamte in Allendes Verwaltungsapparat Erfahrungen mit
+        Industriemanagement hatten, die vertriebenen Manager hatten zu allem Übel auch noch häufig wichtige Unterlagen und Daten mitgenommen. Wie also konnte man diesen schnell wachsenden Staatssektor effizient lenken und produktiver machen?
+      </p>
+      <p>
+        Die Behörde, die sich mit dieser Frage auseinandersetzen musste, war CORFO (Corporación de Fomento de la Producción). Dort arbeitete ein politisch gewitzter und technisch versierter 28-Jähriger namens Fernando Florés als technischer Direktor
+        und hatte eine kühne Idee: Er schrieb dem britischen Kybernetiker Stafford Beer und bat ihn, seine in zahlreichen Büchern dargelegten Ideen für moderne Organisations- und Managementformen auf die chilenische Wirtschaftsverwaltung anzuwenden.
+        Stafford Beer war weltweit womöglich der Einzige, der dieser Bitte hätte nachkommen können. Nach einem Studium der Philosophie und Psychologie an der Universität London machte er sich bald international einen Namen als einer der führenden
+        Köpfe auf dem Feld der Kybernetik. Diese Disziplin, die heute nicht mehr eigenständig existiert, wurde von Norbert Wiener in den 1940ern begründet und beschäftigt sich mit der Funktionsweise von Systemen – ihr Name leitet sich passenderweise
+        vom griechischen Wort „kybernétes“ (Steuermann) ab. Das Besondere an der Kybernetik ist dabei, dass sie transdisziplinär arbeitet, indem sie ganz verschiedene Arten von Systemen aus Biologie (z.B. menschliches Nervensystem), Maschinenbau
+        (z.B. ein elektrischer Schaltkreis), Gesellschaft (z.B. eine Projektgruppe) etc. betrachtet, mittels einer einheitliche Sprache analysiert und allgemeine Organisationsprinzipien identifiziert, die schließlich auf völlig andere Systeme
+        übertragen werden können. Norbert Wiener definierte die Kybernetik daher als „study of control and communication in the animal and the machine”. Allerdings weist der Kybernetiker Ronald Kline auch darauf hin, dass Kybernetik tief im
+        nationalen, historischen und disziplinären Kontext verwurzelt ist – Projekt Cybersyn demonstriert dies eindeutig.
+      </p>
+      <p>
+        Für die Kybernetik Stafford Beers waren mehrere Merkmale wichtig. Zunächst einmal definierte er den zentralen Begriff „Kontrolle“ nicht als autoritäre oder oppressive Fremdbestimmung, sondern als die Fähigkeit eines Systems, sich bei
+        ändernder Umwelt selbst zu erhalten („adaptive control“). Diese Systemstabilität nannte er Homöostase. Systeme teilte er in deterministisch und probabilistisch ein und unterschied einfache, komplexe und überkomplexe Systeme.
+      </p>
+
+      <div class="figure">
+        <img src="/static/projekt-cybersyn/Klassifikation.png" id="Klassifikation" />
+        <p class="fig-desc">
+          Beers Klassifikation von Systemen
+        </p>
+      </div>
+
+      <p>
+        Probabilistische und komplexe Systeme sind zugleich die Schwierigsten als auch die Interessantesten. Beer legte Wert darauf, dass seine Arbeiten dazu keine mathematischen Theorietollereien wurden, sondern praktische Relevanz und Nützlichkeit
+        besaßen. So leitete er eine Beratungsfirma, die seine kybernetische Ideen im Managementbereich anwendete, wobei er stets das langfristige Überleben einer Firma über kurzfristige Zielerfüllungen stellte: das System Firma sollte sich
+        kontrollieren, d.h. selbst erhalten (ein gewichtiger Unterschied zu heutigen Shareholder-Ansätzen, die v.a. auf den laufenden Aktienkurs abzielen). Dies ist keine triviale Aufgaben, denn jedes komplexes System kann viele verschiedene Zustände
+        annehmen (man nennt dies Varietät), die man nicht vorhersehen kann. Um das System stabil zu halten, muss ein Kontrollmechanismus idealerweise auf jeden dieser Zustände optimal reagieren und entsprechend eine genauso oder zumindest ähnlich
+        große Varietät besitzen (Ashbysches Gesetz). Für einen Kybernetiker ist es dabei nicht wichtig, ein komplexes System vollständig zu verstehen und jedes seiner Bestandteile (Subsysteme) genau zu kennen. Stattdessen reicht es häufig aus,
+        bestimmte Teile als Blackboxes darzustellen, solange man ihre Rolle bzw. Funktion korrekt erfasst. Diesen Ansatz wandte Beer nun an, um firmeninterne Prozesse oder Organisationen klug aufzubauen und die verschiedenen Gruppen und Personen
+        sinnvoll zu vernetzen. Sein wohl wichtigstes Grundmodell ist dabei das Viable System Model (VSM). Dieses beschreibt ein Gesamtsystem aus fünf Systemen, die allesamt unterschiedliche Aufgaben erfüllen und damit eine effiziente, homöostatische
+        Funktionsweise gewährleisten. Im Mittelpunkt steht dabei – wie in fast allen kybernetischen Modellen – die Generierung und Weitergabe von Information.
+      </p>
+
+      <div class="figure">
+        <img src="/static/projekt-cybersyn/VSM.png" id="VSM" />
+        <p class="fig-desc">
+          Beers Viable System Model (VSM), eigene Darstellung
+        </p>
+      </div>
+
+      <p>
+        Machen wir uns das Konzept am fiktiven Beispiel eines großen Fahrradhersteller greifbar: Die Umwelt besteht hier u.a. aus Kunden, Zulieferern oder Verwaltungsbehörden. System 1 ist für die unmittelbare Wertproduktion zuständig und steht in
+        direktem Kontakt mit der Umwelt. In unserem Beispiel wären dies z.B. die Monteure in der Fabrikhalle, aber auch die Verkäufer im werkseigenen Laden, die mit den Kunden interagieren und ggf. deren Feedback oder Reklamationen in die Firma
+        tragen. System 2 sorgt sich primär darum, dass System 1 gut arbeiten kann. Daneben vernetzt es verschiedene Teile von System 1 (z.B. Monteure mit Verkäufern) kommunikativ, sammelt Informationen über System 1 und stellt diese gefiltert System
+        3 zur Verfügung. In der Fahrradfirma wären dies sowohl Kantinenmitarbeiter (ein leerer Bauch arbeitet nicht gern), die Buchhaltungsabteilung oder auch Handwerksmeister, die weniger selbst Hand anlegen als die übrigen Handwerker anzuleiten.
+        System 3 ist das Management für interne und kurzfristige Prozesse, das die laufende Leistung des Gesamtsystems sicherstellt und dafür die von System 2 bereitgestellten Daten nutzt (streng genommen gibt es noch ein System 3*, welches diese
+        Daten ab und an durch direkten Kontakt mit System 1 überprüft). Dies wären klassischerweise die Betriebsleiter bzw. Manager auf der unteren Ebene. Sie erstellen Schichtpläne, reagieren auf kleinere Produktionsprobleme und machen gelegentlich
+        einen Rundgang durch die Fabrik, um selbst einen Eindruck von der Fertigung oder dem Verkauf zu erhalten. System 4 steht – Überraschung – verbindend zwischen System 3 und 5. Hier findet die mittel- und langfristige Planung statt, wozu auch
+        ein Austausch mit der Umwelt und eine Analyse von Daten (gefiltert durch Ebene 2 und 3) erfolgt. Im Fahrradunternehmen wäre dies die obere Managementebene, die zukünftige Fahrradmodelle unter Berücksichtigung von Trends, Kundenwünschen und
+        Verkaufszahlen bestimmt und Verträge mit Zulieferern abschließt. Natürlich kann es dabei zu Konflikten zwischen System 3 und 4 kommen (z.B., wenn das obere Management sich unbedingt ein wendiges Elektro-BMX wünscht, aber die Handwerksmeister
+        der Meinung sind, so etwas könne man nicht bauen). Hier kommt nun System 5 ins Spiel und löst das Patt durch seine Stimme auf. System 5 ist allerdings nicht nur für das Beheben kritischer Fehler und Fehlerschleifen zuständig (z.B. ein ewiger
+        hin und her zwischen Betriebsleitern und Managern), sondern auch für große Richtungsentscheidungen für das Gesamtsystem. Um kritische Probleme auf unteren Ebenen schnell und effektiv zu beheben, gibt es auch eine direkte, ungefilterte
+        Kommunikationsverbindung von diesem zu System 5. Beer nennt hier übermittelte Informationen „algedonische Signale“. Für das Fahrradunternehmen wäre System 5 beispielsweise die Eigentümerfamilie, die sich nun entscheiden muss, ob sie das
+        Unternehmen als Vorreiter für verrückte Ideen oder als Produzent solider, traditioneller Fahrräder aufstellen möchte.
+      </p>
+      <p>
+        Ein weiteres zentrales Prinzip in Beers Denken und Wirken ist das der Rekursion. Hiermit wird das Phänomen bezeichnet, dass sich ein System oder Vorgang selbst enthält und sich entsprechend unendlich oft wiederholt. Ein Beispiel dafür, das
+        inzwischen wohl jedem bekannt sein dürfte, ist die unendlichfache Darstellung des eigenen Bildschirms, wenn ein Teilnehmer in einer Videokonferenz seinen Bildschirm teilt und dann auf die Seite der Videokonferenz selbst geht. In diesem Fall
+        teilt er seinen Bildschirm mit seinem geteilten Bildschirm, auf dem der geteilte Bildschirm mit dem geteilten Bildschirm mit dem geteilten Bildschirm… zu sehen ist. Nichts anderes ist Rekursion. Im Kontext von Wirtschaftsorganisation würde
+        dies bedeuten, dass sich eine vertikale Beziehung zwischen mehreren Subsystemen und einer von diesen gebildeten neuen Einheit auf der nächsthöheren Ebene quasi endlos oft auf immer höherer/niedrigerer Ebene definieren lässt. Der große Vorteil
+        dabei ist, dass man auf jeder Rekursionsebene nun das gleiche Organisationsmodell anwenden kann, sodass die die Organisation des Gesamtsystems sehr schnell eine hohe Komplexität und eine hohe Varietät erreicht.
+      </p>
+
+      <div class="figure">
+        <img src="/static/projekt-cybersyn/Rekursion.png" id="Rekursion" />
+        <p class="fig-desc">
+          Schema des Rekursionsprinzip, eigene Darstellung
+        </p>
+      </div>
+
+      <p>
+        Fernando Florés hatte über all diese Ideen in den Büchern Stafford Beers gelesen und hoffte nun, sie bei der Verwaltung des durch Verstaatlichungen schnell wachsenden Staatssektors mit Beers Hilfe anwenden zu können. Für die Hoffnung auf eine
+        fruchtbare Zusammenarbeit gab es auch einen guten Grund, denn Beers Kybernetik und Allendes System des demokratischen Sozialismus teilten eine gemeinsame Grundfrage: Wie erhält/kontrolliert sich ein Gesamtsystem, ohne dabei die Freiheit bzw.
+        Autonomie seiner Subsysteme zu stark einzuschränken? Die Anwendung kybernetischer Prinzipien auf gesellschaftliche oder wirtschaftspolitische Felder war keinesfalls neu. So beschäftigte sich der Think Tank RAND in den USA, an dem in den
+        1950ern u.a. der berühmte Mathematiker John von Neumann aktiv war, mit der Kontrolle komplexer Systeme für das US-Militär, weshalb es hier weniger um Autonomieerhalt, sondern um maximal effektive top-down Kontrolle ging. Wie bei Beer stand
+        jedoch der Umgang mit Information im Mittelpunkt: Informationen aus den sozialen Systemen sollte in quantitativen Gleichungen erfasst und mittels Computern gelöst werden, um numerische Daten und Prognosen für Entscheidungsträger
+        bereitzustellen. Aus diesen (u.a. spieltheoretischen) Überlegungen entwickelten sich übrigens viele Elemente, die später Eingang die neoklassische VWL fanden. Eine noch größere Parallele zu Chile stellt jedoch die Sowjetunion dar, die
+        ebenfalls über eine kybernetische Zentralsteuerung ihrer Wirtschaft nachdachte. Dazu sollte es ein dreistufiges Computernetzwerk geben, dass Daten auf Firmenebene sammelte und über Netzwerkknoten in wichtigen Städten nach Moskau leitete, um
+        die dortigen Entscheidungsträger zu unterstützen. Neben technischen Problemen mit Blick auf die benötigte Anzahl und Leistungsfähigkeit von Rechnern gab es auch spürbaren Widerstand von Managern und Bürokraten sowie von liberaleren Reformern.
+        Während Erstere einen Machtverlust durch die Verlagerung sämtlicher Prozesse in die Hauptstadt fürchteten, ging es Letzteren um die Sorge vor einer Zementierung nicht-marktbasierter Wirtschaftsmechanismen. Doch konnte dies kein Vorbild für
+        Chile sein, denn das fehlende „demokratisch“ vor dem sowjetischen Sozialismus macht sich in diesem Modell mit seiner reinen top-down Kontrolle klar bemerkbar. Wie also ließen sich mehr Freiheiten für die Arbeiter und mehr Kontrolle für den
+        sozialistischen Staat in Chile verbinden?
+      </p>
+      <p>
+        Um diese Frage zu beantworten, müssen wir uns die Bedingungen in Chile 1971 noch einmal genauer anschauen. Wie bereits erklärt, war eine Verstaatlichung wichtiger Schlüsselindustrien ein wesentliches Element von Allendes Wirtschaftspolitik.
+        In verstaatlichte Unternehmen wurden staatliche Manager (Interventoren) eingesetzt, um Anweisungen aus der Hauptstadt umzusetzen, doch waren diese Beamten häufig unterfahren und entsprechend wenig für Managementaufgaben geeignet. Die zu
+        lösenden Hauptprobleme lagen neben der effektiven Verwaltung der verstaatlichten Unternehmen in einer Erhöhung der gesamtwirtschaftlichen Produktion, um einerseits mehr Menschen Zugang zu Konsumgütern zu ermöglichen und andererseits die
+        Inflation niedrig zu halten. Letzteres war besonders deshalb relevant, da Allende in seinem ersten Amtsjahr die Wirtschaft mittels frisch gedrucktem Geld kräftig stimulierte (BIP-Wachstum von 7.7%, Konsumzuwachs um 11.6%, Produktionszuwachs
+        um 13.7%) und die steigende Geldmenge gemeinsam mit steigenden Löhnen nun einen weiteren Zuwachs beim Güterangebot erforderte, um nicht übermäßig inflationär zu wirken. Ein weiterer wichtiger Baustein lag in der Reduktion der Abhängigkeit
+        Chiles vom Ausland. Da Chile viele Güter nicht selbst produzieren konnte, war es auf Importe angewiesen, für die es ausländisches Geld benötigte. Diese Fremddevisen beschaffte es sich neben Krediten vor allem über den Export von Kupfer aus
+        dem Norden, Holzprodukten aus der Mitte des Landes und Eisen bzw. Stahl aus dem Süden. Nach der Wahl Allendes schränkte das Ausland seine Kreditvergabe allerdings massiv ein (um 90% auf nur noch 30 Millionen $ in 1972) und die Terms of Trades
+        verschlechterten sich, d.h. der Preis von Chiles Exportgütern (v.a. Kupfer) fiel im Verhältnis zu den Importpreisen. Die Devisenbestände des Landes schmolzen entsprechend schnell dahin. Ein weiteres Problem, das für Projekt Cybersyn sehr
+        relevant sein sollte, lag in der technologischen Abhängigkeit. Chile verfügte noch nicht über viele gut ausgebildete Techniker und Wissenschaftler geschweige denn über eigene Hersteller für Computersysteme. Wissen und Technik mussten daher
+        ebenfalls aus dem Ausland importiert werden, was die USA durch eine verdeckte Blockade zu großen Teilen verhinderte. Die stockende Entwicklung Chiles kann also als ein Musterbeispiel für die Dependenztheorie gesehen werden, nach der Probleme
+        in Entwicklungsländern eben gerade von der wirtschaftlichen Stärke und Dominanz industrialisierter Staaten herrühren.
+      </p>
+      <p>
+        Chile musste also mit sehr begrenzenten technischen Kapazitäten auskommen. Für Beers Organisationsmodelle war dies natürlich problematisch, da Informationsströme und Kommunikation möglichst ohne Verzögerung in deren Mittelpunkt stehen und ein
+        großes, lang gezogenes Land wie Chile freilich ungeeignet für postalische Wege o.ä. ist, Technologie war für reibungslose Kommunikation also alternativlos. Das Kommunikationsproblem hatte bereits die 1964 gewählte, christdemokratische
+        Regierung von Präsident Eduardo Frei im Blick gehabt und daher gezielt entsprechende Maschinen eingekauft, um einen besseren Zugriff auf die nationale Wirtschaft zu haben. Auch vor diesem Hintergrund lässt sich also feststellen, dass eine
+        kybernetische Wirtschaftslenkung keine vollkommen neue Idee war. Frei setzte ebenfalls bereits auf die teilweise Verstaatlichung von Schlüsselindustrien. Interessant ist dabei, dass Frei bei seinen Bemühungen in den 60er Jahren noch aktiv von
+        den USA unter Kennedy unterstützt wurde, die in einer „Alliance for Progress“ Südamerika wirtschaftlich unter die Arme greifen wollte.
+      </p>
+      <p>
+        Kurz nach seiner Ankunft in Chile, die seinen ersten Kontakt mit der lateinamerikanischen Kultur darstellte, entwarf Stafford Beer den Schlachtplan für das Projekt Cybersyn (Cybernetic + Synergy) in zwei Artikeln. Zunächst einmal beschrieb er
+        die Anwendung des Viable System Modells auf die chilenische Wirtschaft. Dabei betonte er, dass fundierte Entscheidungsprozesse Echtzeitdaten anstatt von schnell veralteten Schnappschüssen des Wirtschaftslebens bedürfen und dass die
+        Kommunikationsstränge im VSM keineswegs Einbahnstraßen darstellen, sondern dem „roll up“-Prinzip folgen: Anweisungen gehen von oben nach unten, Bedürfnisse werden von unten nach oben gemeldet. Außerdem sollte auf jeder Rekursionsebene
+        Debatten über „inside and now“ und „outside and then“ geführt werden, d.h. der Grundgedanke des VSM auf jeder Ebene implementiert werden. Auf diese Weise, so Beer, „zerstört das System die Dogmen von Zentralisierung und Dezentralisierung
+        gleichermaßen“.
+      </p>
+      <p>
+        Im zweiten Dokument ging es an die praktische Umsetzung seiner Vision einer „Liberty Machine“. Diese bestand daraus, dass Informationen als wichtigste Ressource einem zentralen Entscheidungsorgan gefiltert zugeführt werden sollten, wie es
+        etwa während des „Battle of Britain“ im zweiten Weltkrieg stattfand (oder im menschlichen Körper beim Zusammenspiel von Nervensystem und Gehirn). Praktisch sollte dies durch einen Datenstrom umgesetzt werden, der täglich aus den einzelnen
+        Firmen als Quellen gespeist und von einer Software analysiert werden sollte. Auf jeder Rekursionseben sollten die Daten zudem aggregiert und horizontal mit anderen Daten aus dieser Ebene für die Nächsthöhere aufbereitet werden. Die Software
+        detektiert dabei Anomalien, d.h. unerwartete Abweichungen von einem stabilen Wachstumspfad, und berechnet mittels einer statistischen Methode Prognosen für die Zukunft. Das Überprüfen der Daten auf Anomalien diente laut Beer auch dazu,
+        Manipulationen und Verschleierungen zu verhindern, wie sich im sowjetischen Modell vermutlich zuhauf vorgekommen wären. Bei einem Entdecken von Anomalien werden sowohl die niedrigere als auch die höhere Systemebene informiert und ein Timer
+        gestartet, bis zu dessen Ablauf die untere Ebene Zeit hat, die Anomalie bzw. das dahinter liegende Problem zu lösen; gelingt dies nicht, ist die nächsthöhere Ebene am Zug. Auf diese Weise soll die Autonomie unterer Ebenen möglichst lange
+        bewahrt werden. Die Bereitstellung von reduzierten Daten findet auf jeder Rekursionsebene statt und sollte auch eine Unterstützung für unerfahrene Interventoren darstellen. Das zentrale Organ in Beers „Liberty Machine“ besteht aus einem
+        Kontrollraum, in dem sich Entscheidungsträger treffen und auf Grundlage von grafisch aufbereiteten Daten über die Gesamtwirtschaft Richtungsentscheidungen beschließen. Der Clou: Das gesamte Systeme sollte mit der zur Verfügung stehenden
+        Technik auskommen, d.h. einem IBM 360/50 Lochkartenrechner (mit einem internen Speicher von 512 KB!) und einem Netzwerk aus Telex-Maschinen (Fernschreibern). Bei einem persönlichen Treffen mit Präsident Allende stellte Beer die Leitprinzipien
+        seines Entwurfs heraus: Dezentralisierung, Arbeiterpartizipation und Bürokratieabbau. Eine nette Anekdote ereignete sich, während Beer dem Präsidenten sein VSM vorstellte, welches Allende durch seine Ausbildung zum Mediziner auch schnell
+        erfasste (wie gesagt, ein kybernetisches Organisationsmodell passt auf viele Systeme). Als Beer beim übergeordneten System 5 ankam und im chilenischen Kontext dort den Präsidenten verortete, kommentierte dieser das lächelnd mit „Finalmente,
+        el pueblo“. Der demokratische Aspekt war also stets präsent – zumindest in Prinzip. Mit der politischen Absegnung von ganz oben konnte das Projekt offiziell starten und wurde unter der politischen Leitung von Fernando Florés im CORFO
+        angesiedelt.
+      </p>
+
+      <div class="figure">
+        <img src="/static/projekt-cybersyn/Cybersyn.png" id="Cybersyn" />
+        <p class="fig-desc">
+          Das VSM im Kontext von Projekt Cybersyn, eigene Darstellung
+        </p>
+      </div>
+
+      <p>
+        Wie aus den obigen Plänen ersichtlich wird, bestand Projekt Cybersyn also aus vier Elementen: Dem Kommunikationsnetzwerk aus Telex-Maschinen (Cybernet), der Software zur Datenaggregation und -analyse (Cyberstride), einem Programm zum
+        Erstellen von Wirtschaftsprognosen (CHECO) und der Kommandozentrale (Opsroom). Eine spätere Idee von Beer führte zusätzlich einen Mechanismus zum Erfassen von Stimmungslagen innerhalb der Bevölkerung ein (Cyberfolk), um das algedonsiche
+        Signal aus dem VSM umzusetzen. Dabei sollten die Haushalte jederzeit auf einer eindimensionalen Skala „unglücklich – glücklich“ ihre aktuelle Meinung/Stimmung anzeigen können, was gemäß Beer besonders während laufender Regierungsansprachen
+        nützlich wäre. Kybernetisch gesehen würde es sich hier um ein Homeostat handeln, also eine Verschaltung zweier Systeme, sodass diese aufeinander reagieren können. Ob diese Innovation in der Praxis sonderlich sinnvoll oder wirkmächtig gewesen
+        wäre, würde ich stark bezweifeln, allerdings kam diese Idee ohnehin zu spät und wurde nie umgesetzt – also zurück zum tatsächlichen Cybersyn Projekt.
+      </p>
+      <p>
+        Der technische Aufbau von Cybernet war verhältnismäßig einfach, da lediglich Fernschreiber in diejenigen Firmen gebracht werden mussten, in denen noch keine vorhanden waren. Schwieriger war dagegen, die menschliche Firmenebene mit in das
+        Projekt einzubinden. Die demokratische Partizipation der Arbeiter war Kernelement und Anspruch von Cybersyn, in der Realität aber schwierig umzusetzen. Das begann schon damit, dass einfache Arbeiter natürlich nicht intuitiv kybernetische
+        Managementlehre begreifen und sich das System entsprechend nicht direkt zu eigen machen. Beer skizzierte daher drei Möglichkeiten für eine breite Einführung von Cybersyn. Erstens könnte man Managern und Arbeitern das Konzept erklären (z.B. in
+        einer Modellfabrik), sodass sie schrittweise davon überzeugt würden. Beer schätzte für diesen Ansatz allerdings eine benötigte Zeitspanne von 5-10 Jahren, was angesichts der drängenden ökonomischen Probleme Chiles keine Option war. Zweitens
+        könnte man wie auf dem freien Markt aktiv für Cybersyn werben oder drittens schlicht eine von der Regierung zwangsverordnete Einführung durchsetzen. Letztlich entschied man sich für den zweiten Weg, wobei die aktive Werbung den Nebeneffekt
+        hatte, dass man das Projekt gegenüber den Arbeitern nicht kritisch einordnete, was intern durchaus geschah. Die via Cybernet zu meldenden Daten bezogen sich nur auf die Produktionsseite und bestanden vor allem in drei zentralen Größen:
+        tatsächliche Auslastung, unter aktuellen Bedingungen mögliche Auslastung, und hypothetische Maximalauslastung in der langen Frist. Diese und weitere Größen sollten per Fernschreiber gemeldet werden und in die Cyberstride Software eingehen.
+      </p>
+      <p>
+        Die Programmierung von Cyberstride hingegen war mit Blick auf den knappen Zeitplan – Allende konnte nach der Verfassung maximal fünf Jahre Präsident bleiben und zwei davon waren bereits um – eine Nummer zu groß für ein Land, das wie oben
+        beschrieben technologisch noch vom Ausland abhängig war. Aus diesem Grund griff Beer auf Kontakte aus seiner britischen Heimat zurück und ließ das Gerüst sowie einen Prototypen der Software durch Externe entwickeln, für mehr reichte das
+        Budget nicht aus. Immerhin reisten zwei der britischen Softwareexperten nach Chile, um den dortigen Programmierern die Software zu erläutern. Sobald sich die Chilenen an die eigene Arbeit machten, wurde die fehlende Expertise mit
+        Software-Großprojekten allerdings schnell deutlich, weswegen die externen Fachleute ihnen auch bei der Entwicklung einer eigenen Arbeitskultur (z.B. systematisches Entwickeln und Testen) helfen mussten. An dieser Stelle fand also ein
+        Wissenstransfer von Großbritannien nach Chile statt und baute dort neue Expertise auf. Tatsächlich konnte dieser Teil von Cybersyn auch weitestgehend umgesetzt und abgeschlossen werden: Zum Höhepunkt des Projekts konnte Cyberstride Daten
+        aggregieren und analysieren, wonach der Großteil verworfen wurde und nur relevante Informationen als Output den Rechner verließen.
+      </p>
+      <p>
+        Anders erging es dem Teilprojekt CHECO, bei dem eine computergestützte Simulation der chilenischen Wirtschaft entstehen sollte, um Politikexperimente durchzuspielen und Entscheidungsprozesse zu unterstützen. Hier fehlte es sowohl im Bereich
+        der ökonomischen Theorie als auch bei Informatik und Mathematik an wichtigen Kompetenzen, die jedoch aufgrund der Eigenheiten der chilenischen Wirtschaft und den Anforderungen an die Simulation nicht einfach so aus dem Ausland importiert
+        werden konnten. Lediglich die Grundlagen schaute man sich dort ab: So folgte man dem Ansatz des Systemwissenschaftlers J.W. Forrester, der im Gegensatz zu Input-Output Modellen die Wirtschaft nicht als Sammlung von aus Daten abgeleiteten
+        Produktionstechnologien F(Inputs) = Output auffasst, sondern die Struktur des Wirtschaftssystems mitsamt positiven und negativen Feedbackbeziehungen in den Mittelpunkt stellt. Zur Umsetzung dieses Ansatzes nutzt man die bereits existierende
+        Dynamo Software, die auch für den Club of Rome Report von 1972 verwendet wurde. Computergestützte Berechnungen sind hier zentral, da ein menschliches Hirn niemals die vielfältigen, interagierenden Feedback Schleifen und nicht-linearen
+        Beziehungen des Modells verarbeiten könnte. Das CHECO-Team musste bei der ökonomischen Theorie jedoch quasi bei null anfangen und erst für die verschiedenen Branchen herausfinden, welche internen Prozesse und externen Beziehungen dort
+        vorlagen. Diese ohnehin mühsame Arbeit wurde noch dadurch erschwert, dass ökonomische Daten zum Entwickeln und Testen des Modells entweder verwaltet waren oder gar nicht existierten. Es überrascht daher wohl nicht, dass CHECO weder
+        abgeschlossen wurde noch einen praktischen Nutzen für Cybersyn generieren konnte. Immerhin führte es jedoch dazu, dass wissenschaftliche Kompetenzen aufgebaut wurden und die chilenische Wirtschaft sukzessive besser verstanden wurde.
+      </p>
+      <p>
+        Der greifbarste Aspekt von Projekt Cybersyn war natürlich die Kommandozentrale, der „Operations Room“. In diesem sollten sich Entscheidungsträger mit der aktuellen wirtschaftlichen Lage des Landes vertraut machen und unterstützt von grafisch
+        aufbereiteten Daten und Modellrechnungen fundierte und passgenaue Programme für Chile entwerfen. Der Opsroom ist auch deshalb besonders interessant, weil hier die hinter Cybersyn stehenden Werte des demokratischen Sozialismus offen zutage
+        treten – und dabei zentrale Schwachstellen offenlegen. Stafford Beer machte von Anfang an klar, dass das Design des Opsrooms von entscheidender Bedeutung war, und so wurde eine Gruppe von Studenten, die das Fach Industrial Design kurz zuvor
+        erstmals in Chile aufgebaut hatten, Teil des Cybersyn-Teams und entwarf verschiedene Konzepte, die sich auch an ständig wechselnde Realisierungsorte anpassen mussten. Als Anregung nannte Beer die Atmosphäre eines britischen Gentleman Clubs,
+        in dem eine Gruppe Gleichgesinnter und Gleichgestellter sich in freier Manier gemeinsam einem Problem widmeten. Tatsächlich fand eine Bar, in der südamerikanische Cocktails gemixt werden konnten, direkt Eingang in die erste Skizze, genauso
+        wie eine Kreis aus zehn Stühlen, die um ein Bedienfeld angeordnet waren, von welchem aus man die Datenprojektionen an der Wand verändern konnte. Im Laufe der Zeit wich man davon jedoch ab und setzte stattdessen auf sieben Stühle mit jeweils
+        eigenem Bedienfeld, das aus wenigen geometrischen Flächen bestand. Die Idee dahinter war, eine optimale Kommunikation innerhalb der gesamten Gruppe zu ermöglichen – wofür nach psychologischen Erkenntnissen die Gruppengröße sieben Personen
+        nicht überschreiten darf – und jedem der Anwesenden die gleiche Macht über die Darstellungen zu geben, statt ein einziges Bedienfeld in die Mitte zu stellen. Die geometrischen Steuerelemente sollten auch für einfache Arbeiter intuitiv
+        verständlich sein, sodass der Raum für alle Schichten zugänglich sein würde. An den Wänden gab es vier Bildschirme: Einer zeigte die Erläuterungen für die Steuerelemente, die anderen stellten Diagramme über die Wirtschaft oder Fotos aus den
+        besprochenen Branchen dar, um eine sachliche und emotionale Nähe zu den besprochenen Themen zu generieren. Darüber hinaus gab es zusätzlich eine elektronische Tafel, die nach Dringlichkeit geordnete Meldungen (algedonische Signale) aus den
+        Fabriken oder Sektoren anzeigte. Zuletzt befand sich als ständiger Reminder noch eine schematische Darstellung von Beers VSM an der Wand.
+      </p>
+
+      <div class="figure">
+        <img src="/static/projekt-cybersyn/Opsroom.png" id="Opsroom" />
+        <p class="fig-desc">
+          Der fertiggestellte Opsroom
+        </p>
+      </div>
+
+      <p>
+        Der Anspruch des Opsroom bestand darin, allen Anwesenden einen schnellen Überblick über zentrale Entwicklungen zu geben und sie gemeinsam eine optimale Lösung finden zu lassen. Die Wirklich sah natürlich wie immer etwas anders aus – oder
+        hätte anders ausgesehen, denn der Opsroom wurde zwar fertiggestellt, jedoch eher als Vorführobjekt und nie als Entscheidungszentrum genutzt. Das Design aus geschwungenen Formen und Fieberglaß-Stühlen à la Star Trek war eine inspirierende
+        Verkörperung des neuen Zeitgeistes, doch hinter der schicken Fassade verbarg sich auch konservatives Denken. So begünstigte die Kommunikationsstruktur dominantes Gebaren, da sich entweder der Lauteste durchsetzte oder derjenige, der länger
+        den „Jetzt rede ich“-Knopf (ja, den gab es wirklich) an seinem Stuhl drückte. Diese eher männliche Art des Austausches wurde dadurch verstärkt, dass klassische Frauentätigkeiten (z.B. Sekretärinnen) aus dem Raum verbannt wurden – hier hat die
+        wenig diverse Teamstruktur bei Cybersyn (es gab nur eine wichtige Frau im Team) offenbar durchgeschlagen. Ebenfalls ist es mehr als fraglich, ob Beers Vision eines freien Diskurses zwischen Politikern und Arbeitern auf Augenhöhe tatsächlich
+        Realität geworden wäre. Wer hätte die Beteiligten ausgesucht und wären Organisationen wie Gewerkschaften gut eingebunden worden? Wäre der Austausch respektvoll und gleichberechtigt gewesen? Hätte man die Entscheidung der Sieben als
+        verbindlich angesehen? Insofern man diese Fragen verneint, muss man sich eingestehen, dass Projekt Cybersyn durchaus Züge des Taylorismus trug, also einer Managementlehre, die Arbeiter durch detaillierte top-down Vorgaben und eine Trennung
+        von einfacher manueller und geistig anspruchsvoller Arbeit entmächtigt – genau das Gegenteil des angestrebten Ziels von Cybersyn. Gewiss, die Idee von Cybersyn war, dass nur Probleme und Themen im Opsroom ankamen, die nicht auf niedrigeren
+        Ebenen gelöst werden konnten, doch ist dieses Subsidiaritätsprinzip dem System nicht immanent, sondern eine Frage der Leitwerte der relevanten Entscheider. An dieser Stelle wird also eines offensichtlich: Ein technisches System wird nicht nur
+        von seiner Bauweise, sondern auch von den sozialen Beziehungen geprägt, in die es eingebettet ist. Die wechselseitige Beeinflussung von Technologie und Gesellschaft muss bei der Betrachtung von entsprechenden Systemen stets mitgedacht werden.
+        Raul Espejo, der neben Beer und Florés der führende Kopf von Cybersyn war, ordnete dies 40 Jahre später so ein:
+      </p>
+      <p class="quote">
+        In practice this meant that Cybersyn did not pay adequate attention to enabling conversation for workers, managers and politicians to work out distributed but aligned purposes for the autonomous plants, enterprises, committees, ramas and
+        CORFO. The overall global political strategy of developing a people’s oriented industrial economy, in the context of a highly uncertain political environment, in the end restricted necessary conversations for distributed local self-reference
+        and autonomy. CHECO and Cyberstride together could have supported these conversations; however, the Operations Room failed to engage the right stakeholders. (Raul Espejo 2014: Cybernetics of Governance)
+      </p>
+      <p>
+        Nichtsdestotrotz sollte Cybersyn nur 18 Monate nach Beers Ankunft eine wichtige Rolle für den Erhalt des demokratischen Sozialismus spielen. Nach einer stetig wachsenden Polarisierung in Chile, die teils von Extremisten auf der rechten und
+        linken Seite, teils aber auch durch wachsende Spannungen zwischen den zentralen Parteien getrieben wurden, kam es nach einer Agrarreform, die Kollektiven gegenüber privaten Farmen bevorzugte, schließlich zu einem offenen Machtkampf um die
+        Ausrichtung der Wirtschaftspolitik. Unternehmensbesitzer schlossen ihre Fabriken und stoppten die private Logistik (die CIA flankierte dies mit Zahlungen an LKW-Fahrer für ihren Streik), Anwälte, Ärzte und ähnlich gehobene Berufsgruppen
+        setzen ebenfalls ihre Tätigkeiten aus. Um die Knappheit von Konsumgütern und Lebensmittel weiter zu schüren, wurden diese von rechtsextremen Gruppen im größeren Stil gehortet oder zerstört. All dies brachte die chilenische Wirtschaft jedoch
+        nicht zum Erliegen. Zum einen verschafften sich die einfachen Arbeiter gewaltsam Zugang zu den Fabriken und setzten ihre Arbeit fort, zum anderen stand das Militär weiterhin zur Regierung (für den Preis, dass es stärker in die Administration
+        eingebunden wurde, was schließlich auch geschah). Dennoch war die Koordination von Ressourcenallokation und Güterdistribution eine enorme Herausforderung, da kaum Transportmittel zur Verfügung standen und es an horizontaler Vernetzung der
+        Arbeiter fehlte. Hier schlug nun die große Stunde von Cybernet, dem landesweiten Telex-Netzwerk, das zum zentralen Instrument für die vertikale und horizontale Kommunikation wurde (obgleich nur eine kleine Anzahl – knapp 25% der staatlichen
+        Betriebe – direkt daran angeschlossen war). Genauso entscheidend wie die technische Infrastruktur waren natürlich die Arbeiter selbst, die dezentral Bedürfnisse austauschten. Diese Verbindung von technischen und menschlichen Systemkomponenten
+        kann auch als Verbindung von Allendes Revolution von oben und der Arbeiterrevolution von unten gesehen werden. Auch dank Cybernet gelang es, die grundlegende Produktion und Versorgung über den gesamten einmonatigen Streik hinweg zu
+        gewährleisten.
+      </p>
+      <p>
+        Die Einschätzung über die Wichtigkeit Cybersyns fiel allerdings unterschiedlich aus. Stafford Beer hielt Cybersyn für einen entscheidenden Faktor für den Erhalt der Regierung und eine schnelle Expansion des Systems auf weitere Bereiche für
+        wünschenswert. So sollte nach seinen Vorstellungen bald die gesamte Wirtschaft sowohl angebots- als auch nachfrageseitig (d.h. Produzenten und Konsumenten) Teil des Systems werden und die kybernetischen Prinzipien auch auf Regierung und
+        Verwaltung übertragen werden. Die erfolgreiche Verteidigung gegen den Oktoberstreik sah Beer also als Ausgangspunkt für ein Umkrempeln des Gesamtsystems Chile. Fernando Florés hingegen sah vor allem die Grenzen des kybernetischen Projekts,
+        das besonders gegen gewaltsame Aktionen der politischen Gegner – die immer bedrohlicher wurden – mehr oder weniger machtlos war. Als Politiker erkannte Florés zudem, dass nun keinesfalls der Zeitpunkt für die Umsetzung großer Utopien war,
+        sondern Präsident Allende sich mehr und mehr in der Defensive gegen die rechte Opposition und das erstarkende Militär befand. Nichtsdestotrotz brach für Cybersyn nun eine neue Zeit an, da es durch den Erfolg des Telex-Netzwerks
+        regierungsintern mehr Aufmerksamkeit erhielt und dadurch in seiner kreativen Autonomie eingeschränkt wurde.
+      </p>
+      <p>
+        Das größte Problem für Projekt Cybersyn lag jedoch in der Beförderung von Fernando Florés zum Wirtschaftsminister und bald darauf Finanzminister durch Präsident Allende, der dessen politisches Geschick – auch mit Blick auf die Kooperation mit
+        Stafford Beer – erkannt hatte. Cybersyn fehlte damit die politische Führungsfigur und es entbrannte mehr und mehr ein Richtungsstreit innerhalb der Projektgruppe, ob wissenschaftliche Weiterentwicklung (Beer) oder praktische Implementierung
+        (Espejo) oberste Priorität sein sollte. Auch galt es, bestehende Probleme wie die Verzögerung bei der Datenerhebung und -analyse oder die immer noch stark mangelhafte Beteiligung der Arbeiterschaft zu lösen. Die Streitereien über praktische
+        und ideologische Fragen behinderten die Fortentwicklung des Projektes und stellen eine praktische kybernetische Lektion dar, denn das Cybersyn Team war ebenfalls analog zum Viable System Model organisiert worden: Raul Espejo war für das
+        aktive Management verantwortlich (System 3), Stafford Beers Fokus lag auf der zukunftsorientierten Entwicklung (System 4) und Fernando Florés war die letztlich verantwortliche politische Führung gewesen (System 5).
+      </p>
+
+      <div class="figure">
+        <img src="/static/projekt-cybersyn/Teamorga.png" id="Teamorga" />
+        <p class="fig-desc">
+          Das VSM bei der Organisation der Cybersyn-Leitung, eigene Darstellung
+        </p>
+      </div>
+
+      <p>
+        Durch den Abgang Fernando Florés fehlte also das System, das für die Lösung von Konflikten zwischen System 3 (Espejo) und System 4 (Beer) sowie die Vorgabe von Richtungsentscheidungen zuständig ist. Genervt von den Meinungsverschiedenheiten
+        mit Espejo ließ sich Beer in einem Brief sogar dazu hinreißen, sich darüber zu beschweren, dass Espejo eigene Ziele verfolge und nicht mehr seine hauptsächliche Aufgabe erfüllen würde – nämlich die vollständige Umsetzung von Beers Ideen. Auch
+        für einen Kybernetiker scheinen die eigenen Leitprinzipien also ab und an mehr Anspruch als Wirklichkeit zu sein. Stafford Beer politisierte sich mit der Zeit immer weiter und sinnierte in seinem 1973 erschienen Essay „Status Quo“ über die
+        Verbindung von Marx und Kybernetik (eine keinesfalls neue Idee), wobei sich sein Frust über die stockende Umsetzung der Vision Cybersyn Bahn bricht:
+      </p>
+      <p class="quote">
+        For Marx, capital was evil and the enemy. For us, capital remains evil, but the enemy is STATUS QUO.
+      </p>
+      <p>
+        Für Beer kam der größte Widerstand gegen seine Reformen aus dem bürokratischen Apparat (besonders von CORFO selbst). Dieses Problem beschrieb er kybernetisch mit dem von Maturana und Valera entwickelten Konzept der „Autopoiesis“, das die
+        Selbsterhaltung eines Systems durch Selbsterschaffung bzw. Reproduktion beschreibt (z.B. bei einer sich immer wieder teilenden biologischen Zelle). Laut Beer versuchte auch der bürokratische Apparat sich immer wieder zu reproduzieren, d.h.
+        sich unverzichtbar zu machen. Ein aktuelles Beispiel hilft vielleicht zur Veranschaulichung: So wurde – wieder einmal – Kritik an Verkehrsminister Andreas Scheuer laut, weil dieser beim Umbau der sog. Autobahn GmbH eine Heer von Beratern
+        beschäftigte, das am Ende bis zu 130 Millionen € kosten könnte. Beobachter merkten dabei an, dass wohl gerade die Berater, die für eine effiziente und schlanke Verwaltungsorganisation zuständig waren, so komplizierte Prozesse implementierten,
+        dass sie sich selbst unentbehrlich machten, weil ansonsten kein Mensch durchblickte – die Berater betrieben Autopoiesis, um ihre Pfründe zu sichern.
+      </p>
+      <p>
+        Neben internen Streitigkeiten wurde bald noch ein weiteres Problem offensichtlich. Die Rolle des Telex-Netzwerkes Cybernet während des Oktoberstreiks hatte Cybersyn zwar Aufmerksamkeit und Anerkennung gebracht, jedoch wurde Cybersyn nicht als
+        neues Gesamtsystem adaptiert, sondern Wirtschaftsmanager nutzten nur einzelne Komponenten daraus, um ihr traditionelles Management zu unterstützten, die Grundlegende Organisation änderte sich hingegen kaum. Es ist schwer abzuschätzen, ob eine
+        stärkere Einbindung von und Aufklärung für die Arbeiter und Firmenverantwortlichen den Wert von Cybersyn als Gesamtsystem deutlicher gemacht und eine Adaption auf breitere Ebene ermöglicht hätte. Hier zeigt sich deutlich, was der Soziologe
+        Bruno Latour meint, wenn er Technologie als nicht objektiv, sondern als Objekt sozialer Verhandlungen bezeichnet. Nicht der Schöpfer einer Technologie, die Anwender bestimmen deren letztliche Verwendung und Wirkung. Zu alledem kam auch noch
+        eine äußerst verkorkste PR-Arbeit hinzu, nachdem die britische Zeitung „Oberserver“ mittels geleakter Informationen ein verzerrtes Bild von Cybersyn als repressives Machtinstrument eines totalitären Staates malte. Dieses Negativbild von
+        Projekt Cybersyn wurde von westlichen Medien und der rechten Opposition in Chile immer wieder aufgegriffen und trotz seines leidenschaftlichen Einsatzes für die Darstellung eines demokratischen und nicht-technokratischen System konnte
+        Stafford Beer daran wenig ändern.
+      </p>
+      <p>
+        Die Tage von Cybersyn waren allerdings ohnehin gezählt. Vor allem wegen der schlechten Wirtschaftslage im dritten Jahr von Allendes Präsidentschaft und dem anhaltenden wirtschaftlichen Druck durch das Ausland nahmen die internen Spannungen
+        immer weiter zu. Der Einfluss des Militärs war seit dem Oktoberstreik zudem stetig gewachsen und am 11. September 1973 kam es schließlich zum bewaffneten Putsch, bei dem die Armee sogar den Präsidentenpalast aus der Luft bombardierte. Der
+        chilenische dritte Weg des demokratischen Sozialismus war gewaltsam beendet worden und Präsident Allende erschoss sich im Präsidentenpalast im Saal der Unabhängigkeit. Der amerikanische Sicherheitsberater und spätere Außenminister
+        kommentierte dies mit den Worten, dass die USA zwar den Putsch nicht direkt ausgeführt, jedoch alles dafür getan hätten, ihm den Weg zu bereiten. Damit begann in Chile die Militärdiktatur unter Pinochet, der mittels neoklassischer
+        Wirtschaftspolitik (Stichwort: <a href="https://de.wikipedia.org/wiki/Chicago_Boys">Chicago Boys</a>) flankiert von massiver staatlicher Unterdrückung und Gewaltanwendung eine 180° Wende ggü. der Politik Allendes vollzog.
+      </p>
+      <p>
+        Welche Spuren hinterließt also Projekt Cybersyn? Materiell so gut wie keine, denn der Operations Room war am Tag des Putsches von Soldaten zerstört worden (Raul Espejo hatte davor aber immerhin noch eine große Anzahl Dokumente retten können).
+        Für alle Beteiligten war Cybersyn dennoch eine lebensverändernde Erfahrung. Der ehemals exzentrische und luxusliebende Stafford Beer wandelte seinen Lebensstil nach seiner chilenischen, persönlich wie intellektuell äußerst eindringlichen
+        Erfahrung so sehr, dass es ihn sogar seine Ehe kostete, und zog sich für ein bescheideneres Leben nach Wales und später Kanada zurück. Beer war zwar noch mehrmals als Berater für Regierungen in Mexiko, Uruguay und Venezuela tätig, doch
+        nirgends war ihm ein ähnlicher Erfolg wie in Chile beschieden (obgleich mit Urucib in Uruguay ein ähnlicher Auftrag einging). Fernando Florés hingegen baute nach mehrjähriger Gefangenschaft in der Pinochet-Diktatur ein erfolgreiches
+        Beratungsunternehmen in den USA auf, in dem er kybernetische Prinzipien auf das Unternehmensmanagement anwendete und es damit bis zum Multimillionär brachte. Politisch entfernte er sich jedoch immer weiter von der Allende-Zeit und hielt in
+        seinem Buch „Disclosing New Worlds“ von 1973 ein Plädoyer für Demokratie und freie Märkte, da nur in einer solchen Umgebung Menschen frei genug seien, um Geschichte zu schreiben. Von 2002 bis 2010 war Florés sozialdemokratischer Senator in
+        Chile und unterstützte danach den konservativen Sebastian Pinera für das Präsidentschaftsamt.
+      </p>
+      <p>
+        Projekt Cybersyn bleibt nach all den Jahren dennoch ein schillerndes und faszinierendes Projekt. Seine Kernfrage nach der Verbindung von Systemstabilität, individueller Autonomie und politischen Werten ist in Zeiten der ökologischen und
+        sozialen Krise so aktuell wie nie zuvor. Viele der damals entworfenen, utopisch anmutenden Ideen sind heute längst Realität. Algorithmen und Statistiker sammeln teilweise in Echtzeit enorme Datenmenge über sämtliche Wirtschaftsakteure und
+        erstellen Prognosen über individuelles Konsumverhalten im Amazon-Shop bis zur Entwicklung der Weltwirtschaft. Eine computergestützte Wirtschaftslenkung wäre heute also bei Weitem einfacher und effektiver realisierbar als in den 1970ern.
+        Fraglich ist natürlich, ob sie grundsätzlich überhaupt machbar ist. Nicht einmal in einem Land wie Chile, dessen Wirtschaft relativ klein und wenig divers war, hatte man 1973 bei CHECO eine funktionierende Abbildung der wirtschaftlichen
+        Zusammenhänge erreicht. Doch selbst wenn es realisierbar wäre, wollte man das? Cybersyn hat gezeigt, dass das Zusammenspiel von Technologie und sozialen Beziehungen darüber entscheidet, welches System letztlich entsteht, und dass der Bau
+        einer Maschine, die sich bei sich ändernder politischer und sozialer Umwelt von einem freiheitsfördernden in ein repressives Instrument wandelt, entsprechend hoch riskant ist. Mit Blick auf unsere digitale Vernetzung müssen wir uns aber
+        natürlich fragen, ob wir so eine Mashcine nicht ohnehin schon längst geschaffen haben – in China wird das mehr als deutlich. Projekt Cybersyn zeigt jedoch auch losgelöst vom konkreten Inhalt, dass der staatliche Sektor zu einem enorm
+        innovativen und kreativen Denken fähig ist. Die Verbindung von klarerer Zielorientierung, politischen Werten und der Bereitschaft zum Risiko hat Kräfte freigesetzt, die in nur zwei Jahren Unvorstellbares geleistet haben. Für mich ist die
+        Wirkung dieses „Mission-oriented Approach“, wie die Ökonomin Mariana Mazzucato es nennt, die größte Lektion aus Projekt Cybersyn. Wer radikal und groß und mutig denkt, der hat es in der Hand, den Lauf der Geschichte zu verändern. Wir werden
+        leider niemals wissen, wie das chilenische Experiment ausgegangen wäre, hätte man es sich ohne ausländische Repressalien und ohne Putsch entwickeln lassen. Inspirieren lassen können wir uns von Projekt Cybersyn aber trotzdem.
+      </p>
+
+      <div class="material">
+      <p>
+        Für Interessierte:
+        <ul>
+          <li>
+            <a href="https://link.springer.com/chapter/10.1007/978-4-431-54478-4_3" target="_blank">Raul Espejo: Cybernetics of Governance (2014)</a>
+          </li>
+          <li>
+            Stafford Beer: Cybernetics of National Development (1974) <a role="button" class="btn btn-outline-light btn-sm" href="/static/projekt-cybersyn/Cybernetics of National Development.pdf" target="_blank">Download</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

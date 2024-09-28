@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/understanding-mmt-through-models/images.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"">Dashboard</a>
+        </li>
+        <li class=" nav-item">
+            <a class="nav-link"">Models</a>
+        </li>
+        <li class=" nav-item">
+              <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Understanding MMT with Models</h2>
+
+      <p>
+        In case you are a (soon to be) economist or an observer of the often a bit too lively econ-Twitter bubble, the title alone should have been sufficient to arouse some kind of emotion in you. It is almost impossible to be interested in
+        macroeconomics or economic policy and not to have an opinion about this … well, what is Modern Monetary Theory actually? Depending on who you ask, the possible answers range from “radical political movement steering the economic policy
+        towards chaos” to “unoriginal Keynesians without anything new to add to economics”. In my opinion, the reason for this is that (1) MMT has two sides, one of which is explicitly political (the other pure description), and (2) MMT does not
+        speak the same language as the academic mainstream. Evidence for this are the often very similar discussions both on Twitter and in other formats, that usually end with a “conventional” economist saying something like “well, show me your
+        [MMT] model and we can take it to the data”. This is because working with abstract mathematical models is the modus operandi of modern macroeconomics – both in research and in teaching. The big advantage lies in the unambiguous character of
+        equations requiring specificity and logical consistency and in the possibility to make quantitative predictions (e.g., “When the public deficit increases by 5%, inflation will rise by 3%”) that can more or less be empirically tested. I say
+        “more or less” because it is very hard (some would say impossible) to identify causal relationships in the complex reality of economics. Also, it is important to note that the track record of mainstream economic theory in recent decades has
+        been so bad (e.g., leading to the idea that austerity in Greece would bring down government debt and spur growth), that a different approach to doing economics might be reasonable. Nevertheless, when higher public deficits of similar
+        magnitude always coincide with lower inflation in various different environments, then a model producing the above prediction should probably be discarded. This refers to the claim that a scientific theory must be falsifiable – and Modern
+        Monetary Theory is a theory after all, isn’t it? So where are its models?
+      </p>
+      <p>
+        The following text wants to do three things: Firstly, give a very brief outlay of some aspects of MMT and its different approach to economics; secondly, explain what propositions MMT makes that are in conflict with the current mainstream
+        understanding of the economy and standard models; and thirdly (the more technical part), present various approaches to modeling MMT ranging from neoclassical micro-founded to dynamic stock-flow-consistent models. It is not the goal to study
+        all models in detail, think of the following more like a travel catalog.
+      </p>
+      <p>
+        First things first, in my opinion, the name “Modern Monetary Theory” is not ideal. Yes, MMT is “modern” in the sense that it deals with the modern financial and monetary system after the end of Bretton Woods, where the amount of currency was
+        in principle tied to the available stock of gold (which does not mean that you cannot draw important insights from MMT for the times before – you can, and you should). And yes, MMT is very much “monetary” since the mechanics of our monetary
+        system and money itself build its core. One could even go so far as to say that MMT is exclusively about describing the monetary system and drawing policy-oriented conclusions from this description. And for that reason, it is difficult to say
+        how much theory there is in MMT, which is usually described by leading advocates as an “empirical lens”. Of course, every theory claims to describe reality and to provide a lens through which one can learn something about the real world, but
+        at its core, it is usually an interpretation of some observations whose processing leads to the construction of testable hypotheses in a theoretical model with reduced complexity. MMT, however, does little more than describe the ongoings of
+        the monetary system, there is no interpretation and there is principally no reduced complexity. This is often undermined by the commendable attempt of MMTers to explain financial mechanics to a broad audience for which they understandably use
+        simple pictures. But at its core, MMT does not want to reduce complexity, it just wants to describe the existing institutions and formulate good policies with that knowledge. In fact, constructing useful models for academic research has
+        probably never really been the goal of MMT, since its founder Warren Mosler came up with the basics of MMT as a hedge fund manager. MMT is foremost useful as a corrective for economic models to check whether their mechanisms or predictions
+        fit the real world (in this area, it is indeed more destructive than constructive). MMTers are much more policy-oriented than many conventional academics and convincing the democratic public of their ideas is considered to be more important
+        than publishing in a prestigious journal. I have the impression that this different approach to doing economics in general is responsible for a big part of the conflict between MMT and its critics. So, what are essential elements of the MMT
+        picture and how do they contrast standard economic theory?
+      </p>
+      <p>
+        The most prominent insight from MMT is that a government does not need taxes to finance expenditure. This follows from the architecture of our two-tiered money system with its hierarchical relationship between state money (reserves) and
+        credit money (deposits). State money consists of cash and deposits of banks and the government at the central bank. From an accounting perspective, state money is a liability of the central bank and is created by keystroke: Whenever the
+        government makes expenditures or the central bank purchases something, the central bank puts additional reserves in the deposits of the banks. State money is destroyed when the government collects taxes or when the central bank sells
+        something to a bank (a government bond, for example). A government deficit always leads to a surplus in the private sector, which then gets more reserves than it has to give back in form of taxes. Taxation (destruction of reserves) is not
+        needed for expenditure (creation of reserves). In modern times, this is not immediately obvious, because the government still has an account at the central bank that is credited through taxation and debited for expenditures, but the fact
+        alone, that taxation and spending do not occur simultaneously and, therefore, cannot offset each other, shows that expenditures being separated from collecting taxes is actually a necessity (see <a href="https://www.levyinstitute.org/pubs/wp244.pdf">here</a> for details). Consumers make most of their
+        purchases using bank deposits, which are created when a bank grants a loan to a customer and credits their deposit account with the respective sum. The repayment of the loan destroys the additional deposit money. In case of a transaction
+        between customers of two different banks or the payment of taxes, a bank must either shift some of their reserves to the other bank or hand it over to the central bank (leading to the destruction of these reserves). To be able to carry out
+        those transactions, a bank must always hold a certain proportion of deposits as reserves (the amount is influenced by regulatory requirements and the economic environment). However, a bank does not need reserves before they grant a loan,
+        because the central bank always guarantees to provide as many reserves to the banking sector as demanded to a fixed interest rate (the federal funds rate). There is another interest rate on the interbanking market for reserves determined by
+        supply and demand of reserves by banks between each other, but the central bank can sustain a certain interest rate on that market by open market transaction or changes in the lending facilities. The amount of deposit money is not under the
+        control of the central bank and the supply of reserves is determined by the demand of the banking sector. The above is only a small part of the MMT picture, but it is enough to debunk two mainstream stories about our monetary system. We will
+        also get to some more MMT when looking at various models, but this text is not meant as an MMT introduction (for a thorough and accessible outlay of MMT see <a href="https://www.levyinstitute.org/publications/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems">here</a>).
+      </p>
+      <p>
+        The first story we want to have a look at is fiscal policy. In macroeconomics courses at the university, the explanatory model is very simple (see as an example the figure from the bestseller “Macroeconomics” by Gregory Mankiw, 9th edition):
+        In the economy, there is a supply of money (no distinction between reserves and deposits) that is controlled by the central bank. When firms want to finance investments by loans, they need to find someone who previously gained more money than
+        they spent (i.e., has accumulated savings) – this is the “loanable funds theory”. When government expenditures are higher than taxes, the government must make up for the difference by selling bonds (to get the money needed for financing
+        expenditures) to someone with savings. This reduces the amount of saving available for investors and the competition among investors for those saving increases the interest rate up to the point at which so many investors do not want to invest
+        anymore (higher interest rates increase the cost of investment) that demand and supply for funds are in equilibrium. This negative reaction of investors is called “crowding-out”.
+      </p>
+
+      <div class="figure">
+        <img src="../../static/understanding-mmt-through-models/crowding-out.png" id="crowding-out" />
+        <p class="fig-desc">
+          Figure from "Macroeconomics" (Mankiw, 9th edition)
+        </p>
+      </div>
+
+      <p>
+        The description of the monetary system provided by MMT rejects every single element of this model. Abstracting from the two-tiered monetary system and reducing it down to just “money” may be justified with regard to lowering complexity, but
+        ignoring the role of money creation for credits is just wrong. There can never be an excess demand for loans by investors because loans are granted by the creation of new money. Also, while it is true that selling bonds reduces reserves in
+        the banking sector (which would correspond to reducing the money or saving supply in the above model), this is actually an instrument of the central bank to stabilize a certain interest rate, not a cause for an unintended interest rate hike
+        that prevents useful investments; financial crowding-out is therefore impossible. It is important to note, however, that MMT does recognize that government purchases can lead to real crowding-out: When there are no free resources to be
+        mobilized, additional usage of recourses by the government does, obviously, prevent the private sector from using them. But this has nothing to do with the mechanisms of the monetary system. Looking at government deficits and interest rates
+        in the last decade and especially during Covid, it is evident that MMT describes the financial system correctly: despite huge government deficits, interest rates have not increased, but actually fallen.
+      </p>
+      <p>
+        The second story I want to retell concerns everybody’s favorite panic: inflation. The picture below shows the current money market as presented in the intermediate macroeconomics by Stephen Williamson (“Macroeconomics”, 6th edition; an
+        obvious error in the figure was corrected).
+      </p>
+
+      <div class="figure">
+        <img src="../../static/understanding-mmt-through-models/money-market.png" id="money-market" />
+        <p class="fig-desc">
+          Figure from "Macroeconomics" (Williamson, 6th edition)
+        </p>
+      </div>
+
+      <p>
+
+        The money market depicted is only about state money, while there is another market for credit card services. However, this is not a two-tiered monetary system, because at the end of the day (the model thinks in time periods) consumers always
+        have to hold state money and using credit cards is only a temporary substitute for cash, enabling the consumer to invest the money until the end of the period for a rate of return r. When it is very attractive to invest state money (high r or
+        low costs of credit), consumers use more credit money and reduce their demand for state money as means of payment. In equilibrium, consumers buy goods Y for the price P, with the price level P as a result of the interaction between the amount
+        of money (for transactions) demanded and supplied. This model really bugs me because it seems to get some things right at first only to mess them up really hard at a closer look. As already mentioned, one could think that there is a
+        differentiation between state money and credit money, but there isn’t. Credit card services are apparently only a means of payment and give consumers no access to credit money, which they in reality could also invest like state money.
+        However, using credit card services has apparently no inflationary effect whatsoever. Instead, more usage of credit cards only reduces the amount of goods purchased with money leading to a lower money demand. In case of a constant money
+        supply, less goods are bought with the same amount of money in the economy, and this is supposed to be inflationary. In the real world, of course, consumers can pay with cash (state money) and deposits (credit money) and the effect on
+        inflation is identical. It is true that more loans used for purchasing goods can lead to inflation, but the reason is the increase in demand resulting from the newly created credit money, not some effect on cash demand. In the end, the model
+        follows the “monetarist” school and sees the money supply by the public sector as a driver for inflation, while MMT explains that the money supply is endogenous (determined by the behavior of the private agents in the economy) and not set
+        from outside. Therefore, the model does not fit the actual monetary system and is more confusing than educational.
+      </p>
+      <p>
+        I want to use this moment to draw attention to a very important fact: MMT has no complete set of unique ideas about the economy as a whole. MMT describes the monetary system and develops some new policy proposals, but in the bigger context it
+        is just a branch of Postkeynesianism. This school of thought refers back to J.M. Keynes and does offer a perspective on pretty much all relevant macroeconomic issues. For example, in the paragraph above we used MMT to reject the present
+        mainstream model, but MMT offers no own theory of inflation. Instead, it just follows the Postkeynesian school and explains inflation as a result of a set of factors such as wages rising faster than productivity (higher unit labor costs),
+        which is dependent on the power distribution between unions and capitalists, or higher aggregate demand. Following from the insight that the government does not face financial constraints, though, MMTers developed the Job Guarantee as a new
+        policy tool to control inflation via fiscal policy. By the way, important basics of a MMT analysis such as endogenous money or the sector balances approach (government deficits are private sector surpluses, for example) are also part of the
+        Postkeynesian tradition.
+      </p>
+      <p>
+        By this point, it should be understandable why there is no such thing as a common “MMT-model”. But there are a variety of models that aim at incorporating features of the monetary system that are described by MMT or theoretically
+        experimenting with MMT policy proposals. Depending on their background, economists use different approaches to building economic models which can sometimes be as difficult to understand as a foreign language. For that reason, let’s begin with
+        the universal language of mainstream economics, namely a <a href="https://mpra.ub.uni-muenchen.de/109005/1/MPRA_paper_109005.pdf">micro-founded mathematical model</a>. We do this not because it is the best approach to modeling the macroeconomy (definitely not), but because it is the lowest initial hurdle for most
+        conventional economists. The bridge between Neoclassics and MMT was built by Yasuhito Tanaka (2021), apparently with the not-inflationary Japanese deficit spending in mind. The model consists of consumers that are either employed (for a
+        homogenous nominal wage) or unemployed (no wage income). This is pretty unusual, by the way, since normally micro-founded models do not incorporate involuntary unemployment. Both types of consumers receive an equal share of profits made by
+        firms and maximize their utility by consuming and saving (even unemployed people save because savings enter their concave utility function). As always, consumers face a budget constraint where purchases of goods plus taxes (proportional on
+        income) must be equal to income. Even though the model is static (a consumer lives for one period), there are multiple periods, and savings accumulates through inheritance. The government also purchases goods to maximize consumption given a
+        certain exogenous expenditure level that is not dependent on the revenue from taxation (no government budget constraint). The last sector consists of multiple firms in monopolistic competition. Labor is the only input and labor productivity
+        grows at an exogenous rate. Firms maximize profits and set an optimal markup on wages to determine prices. When the government increases demand too much, firms can set higher markups and inflation arises. The main point of the model is that
+        to achieve full employment and stable inflation in this economy, the government must run a deficit in all periods, which are not covered by future surpluses. The deficit gets too big and inflationary when it increases demand over the level of
+        full employment. On the other side, insufficient deficits lead to recessions that need to be cured by temporarily higher government deficits. The model is, therefore, able to implement the Job Guarantee as an instrument for stable prices and
+        full employment in a micro-founded framework. Another MMT/Postkeynesian-inspired aspect is that at the end of the paper all money flows are checked for consistency (Is every payment mirrored by an income somewhere else?), following the
+        sectoral balances approach. In an advancement of the model, the author even introduces government bonds that generate interest income for the household sector. While the model is an interesting mixture of mainstream modeling with MMT ideas,
+        it is probably not really attractive to Postkeynesians because it sticks to maximizing behavior under perfect information and rationality and provides no room for instability. MMTers would be probably not very interested because the financial
+        sector and its mechanics play no role. In my opinion, the academic achievement lies in the integration of MMT in a model with an endogenous price level.
+      </p>
+      <p>
+        To understand what is missing in the above model, one could have a look at another paper that is nothing more than a <a href="https://www.researchgate.net/profile/Greg-Hannsgen/publication/340568292_MMT_In_Equations_and_Diagrams_An_Expositional_Framework_Revised_April_2020/links/5eac679845851592d6b1f7b2/MMT-In-Equations-and-Diagrams-An-Expositional-Framework-Revised-April-2020.pdf">systematic description of the financial sector as presented by MMT</a>. For that reason, it is not really a model in the
+        conventional sense and neither allows for theoretical experiments nor does it make any predictions. The contribution of this simple list of equations, though, is that it makes very clear at which gear in the monetary system MMT considers
+        which factors to be of relevance. Also, it transparently debunks the loanable funds theory mentioned above: The interest rate on reserves for banks is set by the central bank and influences the interest rates on loans in combination with a
+        mark-up factor. Loan supply is only determined by loan demand and reserve holdings are determined after loans were granted. The author actually provides a graph for replacing figures like the above from Mankiw’s textbook (to be honest, that
+        part of the paper I did not find very useful).
+      </p>
+      <p>
+        Another <a href="https://www.econstor.eu/bitstream/10419/68474/1/734365128.pdf">take on replacing graphical models in textbooks</a> comes from Dirk Ehnts. He aims at explaining the situation of a country in a currency union that faces demand-side problems, i.e., either too much demand due to excessive credit creation
+        or too little demand due to austerity (cutting government expenditures or raising taxes). If you are thinking of the Eurozone after 2008, you are thinking correctly. To achieve this, Ehnts integrates endogenous money (credit money creation by
+        private banks) into the model: Credit supply is determined by the demand of creditworthy applicants (consumers, entrepreneurs, and speculators). Money creation for government expenditure is framed as the government getting loans because there
+        is no distinction between reserves and deposits here. The endogenous money assumption is a big difference to similar Keynesian models used in textbooks which still use an exogenous money supply, or to DSGE models which in their basic form
+        often abstract from credit and sectoral balances and rule out coordination failures on capital markets (too much private debt, for example) via perfect intertemporal optimization. The model only looks at the short-run (no economic growth) and
+        uses just flows and no stocks. Probably to the disappointment of conventional economists, the price level is fixed exogenously. This makes sense, since only the short run is of interest and, as already mentioned, MMT has no theory of
+        endogenous inflation (the Postkeynesian perspective of wage struggles is not relevant for endogeneity because there is no labor market in the model). Under the assumption of an existing output gap and no supply-side problem (like
+        bottlenecks), higher demand does not lead to inflationary pressure anyway. However, Ehnts does recognize inflation as being potentially of interest and introduces a quadrant (bottom right) that connects income and deposits through a given
+        price level (i.e., inflation can be introduced “manually”). Investment is exogenous and only affected by expectations about future demand, not by the interest rate set by the central bank. As usual, the goods market (upper right) is in
+        equilibrium when exogenous supply is equal to total demand (by consumers, investors, government, and the rest of the world).
+      </p>
+
+      <div class="figure">
+        <img src="../../static/understanding-mmt-through-models/ehnts.png" id="ehnts" />
+        <p class="fig-desc">
+          Figure from <a href="https://www.econstor.eu/bitstream/10419/68474/1/734365128.pdf">Ehnts 2012</a>
+        </p>
+      </div>
+
+      <p>
+        At the model’s core is the sectoral balance approach: In equilibrium, all sectors have neither a deficit nor a surplus. But when one sector is going into surplus, another sector must go into deficit. The figure above shows the effect of an
+        increase in government spending under the assumption of a balanced current account (exports = imports): Because the government sector goes into deficit, the private sector can accumulate wealth (saving higher than investment). This measure
+        would be appropriate for dealing with a recession, other policies for smoothing the business cycle can also be understood in the model, such as facilitating the expansion of loans for the private sector (private sector goes into deficit) or
+        lower nominal wages (deflation, foreign sector goes into deficit, i.e. exports higher than imports). The model can also show why austerity in Greece did not work: The government sector was supposed to go into surplus, but the foreign sector
+        (the rest of the Eurozone like Germany) did not want to buy more products from Greece (= did not want to go into a trade deficit, for example by raising wages adequately). The result was pressure on the Greek private sector that reduced
+        domestic demand and harmed the economy so much, that Greece still has not reached its pre-2008 level of output.
+      </p>
+      <p>
+        A completely different way of <a href="https://www.patreon.com/posts/one-mathematical-41295202">building a model (probably the most MMT-like)</a> comes from Steve Keen. He uses his own <a href="https://sourceforge.net/projects/minsky/">software Minsky</a> to construct a dynamic picture of the various mechanisms in the financial sector with a special focus on
+        stock-flow-consistency (SFC). This is a requirement for the logical consistency of a model and boils down to the fact that every financial asset has to be the financial liability of someone else and every outflow of money in one place has to
+        be an inflow of money in another (like the saying “Money is never gone, it is just somewhere else”). The software Minsky achieves this by generating a balance sheet for every sector in the economy and by checking whether the sum of assets
+        plus liabilities plus equity (net wealth) in every balance sheet is always zero. The other highlight of Minsky is that you can build differential equations (for changes over time in a dynamic setting) via drag and drop, giving you a graphical
+        version (shown below) and a mathematical version just with the equations.
+      </p>
+
+      <div class="figure">
+        <img src="../../static/understanding-mmt-through-models/keen.png" id="keen" />
+        <p class="fig-desc">
+          Figure from <a href="https://www.patreon.com/posts/one-mathematical-41295202">Keen 2020</a>
+        </p>
+      </div>
+
+      <p>
+        In the MMT-model, Keen looks at six sectors/agents (central bank, treasury, banks, firms, workers, capitalists) and thirteen financial flows (e.g., workers buy goods from firms or the central bank buys bonds from banks). The model also
+        acknowledges the creation of credit money through the lending of the banking sector (endogenous money) and differentiates between credit money and reserves. Thereby, it paints a stylized but comprehensive picture of a modern monetary system.
+        The key purpose is explaining the mechanisms behind what Stephanie Keltons calls “Their red ink is our black ink”: For the non-government sector to be in positive equity (positive net wealth) the government sector must be in identical
+        negative equity, and a surplus (more inflows than outflows) for the government sector is necessarily a deficit for the non-government sector (banks, firms, workers, capitalists). Because banks always have to be in positive equity (otherwise
+        they are bankrupt), a government surplus harms firms, workers, or capitalists. Another insight from the model is that the government does indeed spend before it taxes because a government deficit is needed to increase reserves to pay taxes or
+        to purchase bonds. Interestingly, when a government deficit is equalized by borrowing from the central bank, the central bank’s equity is unaffected. With this financial machine room ready to go, Keen explains the problems arising from
+        government surpluses, which are often temporarily disguised by booms caused by private sector indebtedness, using the example of the USA in the 1920s: After a long time of stable government deficits, President Coolidge pushed for a government
+        surplus of 1% during his term and the US economy soared. Never has “correlation is not causation” been more important than here, since the boom was due to a soaring indebtedness of the private sector leading to additional demand from credit
+        created (remember: When the government has a surplus, someone else must be in deficit). If the private sector had not gone into deficit, GDP would have fallen due to lacking demand under austerity. The problem is that eventually the private
+        sector did not go further into debt and started to deleverage while the government was still in surplus – the start of an economic crisis (a.k.a. the “Great Depression”). The only option in such a balance sheet recession is that the
+        government deficit spends to stabilize the economy and to allow the private sector to deleverage. If you are thinking of the Eurozone after 2008, you are, again, on the right track. I can recommend downloading the model and playing with it
+        using the (free and open-source) software Minsky. Below I provide a model I built based on the Keen article but with the extension of a foreign sector (to fully acknowledge the balances approach as in the Ehnts paper above   <a role="button" class="btn btn-outline-light btn-sm" href="../../static/understanding-mmt-through-models/MMT Model of an Open Economy.mky" target="_blank">Download</a> ).
+      </p>
+      <p>
+        MMT Model of an Open Economy
+
+        In case a model in an unusual (and sometimes still a bit buggy) software is too wonky for some people, I have one last rather traditional and more accessible model, namely <a href="https://www.levyinstitute.org/pubs/wp_494.pdf">a simple Postkeynesian SFC-model by Wynne Godley and Marc Lavoie</a>. I
+        have already presented the model in a previous post and also built an <a href="https://mybinder.org/v2/gh/ffrue/Fiscal-Policy-in-a-SFC-model/d76545a366733ab86e6cb8500213ff7e4ee76479">interactive web version</a> with Python ( <a role="button" class="btn btn-outline-light btn-sm" href="../../static/understanding-mmt-through-models/Fiscal%20Policy%20in%20a%20SFC%20model.ipynb" target="_blank">Download</a> as Jupyter-Notebook), so I will not go into details here. Moreover, it is not really MMT-based because it does not feature important elements of the
+        financial sector (no private credit, for example), but it still manages to replicate some MMT-facts in a sectoral balances approach (importantly, government deficit equals the net financial surplus of the private sector). Similar to the
+        Minsky software, the core of a SFC-model is the transactions matrix, showing all sectors of the model economy and all financial flows between them. In this simple form, the matrix consists of only three sectors (households, firms, government)
+        and only five financial flows (private and government expenditure, income, taxes, and interest payments). Since the growth of the potential output is exogenous but demand endogenous, there could be output gaps unnecessarily reducing total
+        income. To avoid this, the government sets its purchases (and for a given tax rate the deficit) so that the output gap is closed. The model achieves to show two things: Firstly, it discards the usual assertion that the public debt-to-GDP
+        ratio is only sustainable (not growing exponentially) when the interest rate on debt is lower than the growth rate of GDP. This results from the fact that higher interest rates result in higher monetary inflows for the private sector holding
+        government bonds and this increases demand so much, that the government can run a primary surplus (primary = before interest payments) large enough to hold the debt-to-GDP ratio constant while maintaining a closed output gap.
+      </p>
+
+      <div class="figure">
+        <img src="../../static/understanding-mmt-through-models/godley-sfc.png" id="godley-sfc" />
+        <p class="fig-desc">
+          Figure from <a href="https://www.levyinstitute.org/pubs/wp_494.pdf">Godley and Lavoie 2007</a>
+        </p>
+      </div>
+
+
+      <p>
+        Secondly, when making inflation endogenous and determined by the output gap (i.e., supply and demand on the goods market), the model shows that fiscal policy is able to stabilize the inflation rate at any level and to simultaneously achieve
+        full employment (just like in the micro-founded model from the beginning). In an extension with a foreign sector, the model also leads to the conclusion that a debtor country does not need a trade surplus to stabilize interest payments on
+        debt (analogous to the first insight). Of course, the model structure is highly simplified: In reality, for example, government bonds are mostly held by private and central banks where increases in the interest rate do not lead to higher
+        aggregate demand (which is actually a soothing fact because then there is no inflationary pressure resulting from those interest payments). But still, the SFC model presented gives a good intuition for the consequences of pursuing a
+        SFC-approach that can be expanded to any scale needed (for example, there is even an agent-based SFC model of the Eurozone called <a href="http://www.eurace.org/?page_id=109">Eurace</a>).
+      </p>
+      <p>
+        This list of somewhat MMT-related is, of course, by no means exhaustive, but I hope it gives you helpful starting points to understand MMT from a model perspective. However, as stressed before, MMT itself is mainly an empirical description of
+        the real financial system and does not aim at producing models of the larger economy with massively reduced complexity. Therefore, there is truth in the complaint of many conventional economists that MMT is more destructive than constructive
+        when it comes to economic modeling. However, this does in no way reduce the value and relevance of MMT, especially not with regard to teaching economics and when it comes to designing policies to improve our economy and society. And that is
+        what we are here for after all, isn’t it?
+      </p>
+
+
+      <div class="bottom">
+        © Florian Frühhaber
+      </div>
+
+</body>
+
+</html>

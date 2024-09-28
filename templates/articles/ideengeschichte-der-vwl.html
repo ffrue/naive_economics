@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Eine kurze Geschichte der Ökonomik</h2>
+
+      <div class=".disclaimer">
+        <p>
+          Auch eine kurze Geschichte kann ganz schön lang sein, daher hier eine kleine Inhaltsübersicht:
+          Im Folgenden geht es von <a href="#Merkantilisten">Merkantilisten</a> und <a href="Physiokraten">Physiokraten</a> über die <a href="#Englisch">Englische Klassik</a> und die <a href="#Historisch">Historische Schule</a> bis hin zur <a
+            href="#Österreichisch">Österreichischen Schule</a> und dem <a href="#Sozialismus">wissenschaftlichen Sozialismus</a> von Marx und Engels.
+          Danach geht es in 20. Jahrhundert zur <a href="#Neoklassik">Neoklassik</a>, ihrem großen Gegenspieler <a href="#Keynes">John Maynard Keynes</a> sowie dessen Widersachern, der <a href="#Synthese">neoklassischen Synthese</a> und den <a
+            href="#Monetarismus">Monetaristen</a>.
+          Zuletzt schauen wir auf <a href="#Entwicklungen">moderne Entwicklungen</a> in der Ökonomik.
+        </p>
+        <p>Wer sich einen groben Überblick verschaffen will, kann hier eine tabellarische Übersicht herunterladen: <a role="button" class="btn btn-outline-light btn-sm" href="/static/ideengeschichte-der-vwl/Ideengeschichte der Ökonomik.pdf"
+            target="_blank">Download</a> </p>
+      </div>
+
+      <p>
+        Wer sich mit ökonomischen Ideengeschichte auseinandersetzt, steht heutzutage beinahe unter einem Rechtsfertigungsdruck. Da die gegenwärtige Mainstream-Ökonomik den Anspruch hat, wirtschaftliches Geschehen grundsätzlich und objektiv zu
+        beschrieben, gibt es aus ihrer Sicht keinen Grund, warum man sich mit „alten“ Lehren auseinandersetzen sollte – weswegen Ideengeschichte im Standard-Curriculum auch nicht vorkommt (nur ein Grund, warum es eine neue Ökonomik braucht).
+        Tatsächlich spricht jedoch nicht nur das humanistische Bildungsideal für die Auseinandersetzung mit der Geschichte des ökonomischen Denkens: Zuerst einmal lädt es zur Selbstreflexion ein und fördert ein kritisches Verständnis der ökonomischen
+        Disziplin (Wieso grenzen wir den ökonomischen Forschungsgegenstand heute so ab? Woher kommen unsere Ideen?). Daneben dient sie auch dazu, für Schwächen der heutigen VWL sensibel zu werden und seinen eigenen Denkhorizont zu erweitern. Gerade
+        in den Gesellschaftswissenschaften darf man nicht im eigenen Paradigma (d.h. der eigenen wissenschaftlichen „Bubble“) steckenbleiben, sondern muss verschiedene Perspektiven einnehmen können sowie verstehen, inwiefern diese vom zeitlichen,
+        räumlichen oder sozialen Kontext geprägt sind. Der Soziologe Thomas Kuhn wies nämlich darauf hin, dass theoretische Konzepte oder empirische Beobachtungen meist nur innerhalb des eigenen Paradigmas überprüft werden und echter Fortschritt in
+        Form von Paradigmenwechsel, wie z.B. die Ablösung des geozentrischen durch das heliozentrische Weltbild, somit ohne Pluralität ausbleibt. Wer sich auf ideengeschichtliche Erkundungstour begibt, deckt die zurückliegenden Paradigmenwechsel in
+        der VWL auf, die zur heutigen Neoklassik geführt haben, und wird dabei ihren Allgemeingültigkeitsanspruch ebenfalls in Frage stellen. Dies führt uns hoffentlich zu einem neuen, pluralen Paradigma – schließlich gibt es viel mehr Fragen und
+        Antworten zum wirtschaftlichen Handel, als heute gemeinhin gestellt und gegeben werden.
+      </p>
+      <p>
+        Wer nach den Anfängen systematischen Wirtschaftsdenkens sucht, wird in der Antike des 4./5. Jh. v.Chr. fündig. Xenophon, ein Schüler von Sokrates, verfasste beispielsweise zwei Bücher ökonomischen Inhalts, eines zur individuellen
+        Haushaltsführung und eines über finanzpolitische Fragen zum Athener Stadtstaat, wobei er – wie später der berühmte Adam Smith – bereits die Vorteile der Arbeitsteilung beschrieb. Selbst das Präfix des heutigen Begriffs „Ökonomik“ leitet sich
+        von „oikos“ = „Haus“ ab und zeugt von den Anfängen der Disziplin als Hausverwaltungskunst. Aristoteles hingegen legte den Grundstein für wichtige Konzepte der modernen Ökonomik wie etwa die Triade des Geldes (Unterscheidung der drei
+        Geldfunktionen Tauschmittel, Wertaufbewahrung, Recheneinheit) oder die Unterscheidung von Gebrauchs- und Tauschwert einer Sache, wobei Gebrauchswert den praktischen Nutzen eines Gegenstandes („Ein Brot kann ich essen“) und der Tauschwert
+        seine Kaufkraft auf dem Markt („Für ein Brot bekomme ich drei Euro und damit wiederum z.B. drei Eier“) bemisst. Der Zusammenhang zwischen beiden Konzepten und die Bestimmung des Tauschwertes war ein zentraler Gegenstand der Ökonomik bis zur
+        neoklassischen Revolution um 1900. Schon an der Verwendung des Begriffs „Wert“ sieht man, dass Ökonomik lange Zeit eine dezidiert normativ-philosophische Angelegenheit war und noch keine abgegrenzte Disziplin mit naturwissenschaftlichem
+        Anspruch (dies änderte sich erst im 20. Jh.). Aristoteles unterschied etwa zwischen den wirtschaftlichen Handlungsformen Ökonomik (sittliche Hausverwaltung) und Chrematistik (gieriger Gelderwerb). Sowohl Forschungsgegenstand als auch Methodik
+        waren zum Beginn der VWL also vom Leben und staatsphilosophischen Denken in der griechischen Polis geprägt.
+      </p>
+      <p>
+        Da die Römer außer Schriften zur Landwirtschaft keine Beiträge zum ökonomischen Denken lieferten, bringt uns die nächste ideengeschichtliche Etappe in das Mittelalter, genauer gesagt in die Hochscholastik (13./14. Jh.). Hier war das
+        ökonomische Denken klar Teil der patristischen, d.h. von den Kirchenvätern dominierten Philosophie und beschäftigte sich mit der Anwendung kirchlicher Lehren auf das Wirtschaftsleben. Die Hauptfragen bezogen sich daher auf die Rechtfertigung
+        von Eigentumsrechten oder Zinsen, das Ermitteln gerechter Preise und das Ermöglichen einer sozialen Mindestversorgung, wobei viele Gedanken von Aristoteles aufgegriffen wurden. Die mittelalterliche Wertlehre sah die Äquivalenz von
+        Produktionskosten und Marktpreis als ethisch notwendig an und setzte zur Befriedigung von Grundbedürfnissen u.a. auf die christliche Pflicht zu Almosen. Die scholastische Ökonomik wurde jedoch nicht nur von kirchlichen Lehren, sondern auch
+        von gesellschaftlichen und wirtschaftlichen Realitäten geprägt: Aufgrund des Glaubens an die Sinnhaftigkeit der feudalen Ordnung war marktwirtschaftliches Denken rar (die Bedingungen für freie Märkte schuf erst die Aufklärung, wie wir später
+        sehen werden) und die stationäre Wirtschaftsentwicklung ließ für die später zentrale Frage nach den Bestimmungsgrößen des Wachstums keinen Raum. Die Vorstellung von einer göttlich offenbarten, ganzheitlichen Erfahrungswelt wirkt bis in die
+        Neuzeit nach und bis zum 17.Jh. finden in der Ökonomik lediglich betriebswirtschaftliche Innovationen wie die Entwicklung der doppelten Buchführung oder die Erfindung neuer Unternehmensformen und des modernen Bankwesens statt.
+      </p>
+
+      <div id="Merkantilisten" class="jumper">
+      </div>
+
+      <p>
+        In der Zeit des französischen Absolutismus des 17.Jh. bildet sich schließlich die erste neuzeitliche Schule der Ökonomik heraus: die Merkantilisten. Ganz dem politischen System der Zeit folgend stand für sie der Reichtum des Staates im
+        Zentrum, der sich über die Menge an Gold in den Schatzkammern definierte, welches damals in großen Mengen aus der neuen Welt nach Europa geschifft wurde. Die dafür optimale Politik leiteten sie aus formalen Überlegungen über eine in ihrer
+        Vorstellung quasi mechanisch funktionierenden Wirtschaft ab, worin sich ihre Prägung durch den Rationalismus Descartes und die Abkehr von der mittelalterlichen Idee einer göttlich organischen Gesellschaft zeigt – überhaupt gab es zu dieser
+        Zeit einen europaweiten Hype um mechanische Darstellungen und Modelle von allem möglichen, wie z.B. dem Verdauungstrakt einer Ente. Mit Blick auf den Außenhandel bedeutete das für die Merkantilisten, dass Exporte von Gütern gegen Geld
+        grundsätzlich gut und Importe wegen des damit verbundenen Goldabflusses schlecht sind. Besonders im Merkantilismus französisch Prägung mit seiner Leitfigur Jean-Baptiste Colbert (1619-1683), seines Zeichens Finanzminister unter Ludwig XIV.,
+        führte dies einerseits zu einer protektionistischen Handelspolitik aus Importzöllen und Exporterleichterungen, andererseits aber auch zu einer aktiven Förderung der inländischen Manufakturen. Doch selbst vor härteren Maßnahmen wie
+        Ausfuhrverboten für Rohstoffe, Kontingentierungen oder aggressiver Kolonialpolitik inkl. der Bereitschaft zu Handelskriegen schreckten die Merkantilisten nicht zurück. Schließlich strömt so Gold ins Inland und die damit steigende Geldmenge
+        kurbelt nach Ansicht der Merkantilisten die Nachfrage an, was die Wirtschaft stimuliert. Zwar propagierte im 16. Jh. bereits Jean Bodin in einer führen Form der sog. Quantitätstheorie den positiven Zusammenhang von Geldmenge und Preisniveau
+        (was den Nachfrageeffekt dämpfen bis kompensieren würde), jedoch gingen die Merkantilisten von einer unausgelasteten Wirtschaft aus, die auf erhöhte Nachfrage mit einem steigenden Angebot und nicht mit höheren Preisen reagierten (eine
+        Annahme, die auch heute hoch relevant ist). Da global nur eine begrenzte Menge Gold zur Verfügung stand, sahen die Merkantilisten den Handel als Nullsummenspiel, bei dem ein Land nur auf Kosten eines anderen Gewinne machen könne und müsse
+        (sog. Beggar-thy-Neighbour Politik). Besonders die beiden letztgenannten Ideen wurden später von Vertretern der englischen Klassik um Adam Smith und David Ricardo scharf kritisiert. Neben dem staatszentrierten französischen Merkantilismus
+        bzw. Colbertismus entwickelten sich in Europa jedoch noch zwei anderen Spielarten. Da in England seit der Glorious Revolution von 1688/1689 die bürgerliche Klasse eine wichtige Stellung einnahm, standen im dortigen Kommerzialismus private
+        Kaufleute und deren Handel, v.a. mit den wachsenden Kolonien, im Mittelpunkt. Im preußischen Kameralismus (vom lateinischen „camera“ = fürstliche Schatzkammer) hingegen ging es nach den Verwüstungen des 30-jährigen Krieges (1618-1648) primär
+        um eine Stärkung des heimischen Staatswesens und die Regernation der im Krieg zurückgegangen Bevölkerung, wozu die sog. Peuplierungspolitik und der Aufbau von gemeinwohlorientierten Caritas-Systemen betrieben wurde. Es ging also mehr um eine
+        aktive Bevölkerungsbilanz als um eine aktive Handelsbilanz wie bei den französischen Merkantilisten. Als entscheidender Faktor für die wirtschaftliche Entwicklung wurde ebenfalls weniger der Handel, sondern der Aufbau von inländischer
+        Produktion durch aktive Industrie- und Gewerbeförderung gesehen. Die staatliche Besteuerung sollte zudem durch Bevölkerungsstatistiken und staatliche Buchführung verbessert werden. Gemeinsam war allen merkantilistischen Strömungen jedoch die
+        praktische, wirtschaftspolitische Orientierung und der Fokus auf die Bedürfnisse und Möglichkeiten des Staates. Während Adam Smith die Merkantilisten verspottete, da sie „Reichtum mit Gold verwechseln“ würden, zeichnete Joan Robinson ein
+        positiveres Bild: Den Merkantilisten sei es nicht primär um Goldaufbau gegangen, sondern sie wollten verhindern, dass durch Importe und damit einhergehende Goldabflüsse effektive Nachfrage im Inland verschwindet. Nur wenn die Ausgaben des
+        einen Bürgers Einnahmen für einen anderen Bürger (und nicht für das Ausland) bedeuteten, konnte eine Wirtschaft florieren. Aus dieser Perspektive waren die Merkantilisten deutlich innovativer, als man gemeinhin glaubt.
+      </p>
+
+      <div id="Physiokraten" class="jumper">
+      </div>
+
+      <p>
+        Im Zeitalter der Aufklärung und wohl auch im Schein der heraufziehenden Revolution entwickelten sich im 18. Jh. die Physiokraten. Diese stellten die gesamte Volkswirtschaft erstmals theoretisch in einem logisch geschlossenen Schema dar und
+        könnten daher eigentlich als Begründer der modernen Makroökonomie gelten. Dabei sahen sie – in Abgrenzung zu den goldfokussierten Merkantilisten – den landwirtschaftlich genutzten Boden als einzige Quelle für Wertschöpfung, d.h. als Ursprung
+        allen Wohlstandes. Der Mehrertrag von Saat und Ernte wird in dem berühmten Tableau Économique von Francois Quesnay (1694-1774) von der produktiven Klasse (Bauern, Pächter) als zusätzliche landwirtschaftliche Rohstoffe geerntet und an die
+        beiden anderen Klassen – sterile Klasse (Handwerker) und distributive Klasse (Grundbesitzer) – verkauft. Während die Handwerker die Rohstoffe in andere Konsumgüter umwandeln (keine zusätzliche Wertschöpfung), streichen die Grundbesitzer
+        lediglich die Bodenpacht ein und kaufen Güter der anderen Klassen, ohne selbst tätig zu sein. Wirtschaftspolitisch ergab sich aus dieser Analyse für die Physiokraten eine Forderung nach Förderung der Landwirtschaft, die in Frankreich unter
+        der Politik Colberts stark gelitten hatte, und nach einer Bodensteuer als alleinige Einnahmequelle des Staates, die die unproduktive Rente der Grundbesitzer abschöpfen sollte. Ansonsten galt für sie die berühmte Losung „Laisser faire et
+        laissez passer“, die im scharfen Widerspruch zum Staatsinterventionismus der Merkantilisten stand. Methodisch lagen die großen Innovationen der Physiokraten in einer formalen Abstraktion, die offen für quantitative Untersuchungen ist (Welche
+        Klasse zahlt/verkauft wieviel wohin?), in der Betonung eines geschlossenen Geldkreislaufes, der bis heute die Grundlage der volkswirtschaftlichen Gesamtrechnung bildet, und in der Suche nach einem gesamtwirtschaftlichen Gleichgewicht und
+        seinen Faktoren. Auch das Prinzip des abnehmenden Grenzertrags, das alle folgenden Ökonomen in irgendeiner Weise prägte, wurde durch Anne Robert Turgot (1727-1781) für den landwirtschaftlichen Sektor formuliert. Äußerst tragisch ist mit Blick
+        auf die heutige Ökonomik, dass die physiokratische Tugend der logischen Geschlossenheit von Kreisläufen (z.B. „Die Ausgaben des einen sind die Einnahmen des anderen“) auf dem Gebiet der Modellierung von konventionellen DSGE-Modellen
+        missachtet wird, während postkeynesianische Stock-Flow-Consistent Models in dieser Hinsicht das Erbe der Physiokraten wahren (was, wie hier gezeigt, u.a. zu ganz anderen fiskalpolitischen Empfehlungen führt).
+      </p>
+
+      <div id="Englisch" class="jumper">
+      </div>
+
+      <p>
+        Aus der kritischen Auseinandersetzung mit Merkantilisten und Physiokraten entstand in England wiederum eine bis heute enorm einflussreiche Denkschule mit berühmten Vertretern wie Adam Smith und David Ricardo. Um ihren rasanten Aufstieg im
+        späten 18. und 19. Jh. zu verstehen, muss man sich zunächst der historischen Hintergründe bewusst werden, denn für die Entstehung der Englischen Klassik sind – in Marxscher Terminologie – sowohl Basis als auch Überbau der neu entstehenden
+        Gesellschaft enorm wichtig. So setzte nämlich in England durch verschiedene technische Erfindungen (Dünger in der Landwirtschaft, verbesserte Transportmittel, erste Textilmaschinen etc.) und politische Faktoren (Bürgerliche Freiheitsrechte,
+        private Finanzsysteme wie nationale Börsen, Gewerbe- und Unternehmensförderung) Innovationen erstmals in der Menschheitsgeschichte ein kontinuierliches wirtschaftliches Wachstum ein – obgleich das Wachstum in England bis 1850 lediglich 2% pro
+        Jahr betrug). Die Gesellschaft wurde durch die Schwächung des Feudalsystems und die größere Bedeutung von privatem Kapital deutlich dynamischer und wirtschaftliche Beziehungen und die Einkommensverteilung zum prägenden Strukturelement.
+        Geistig geprägt wurde der klassische Liberalismus v.a. von der Aufklärung und der intellektuellen Revolution von Rationalismus und Empirismus, die sich u.a. in Newtons „Principia Mathematica“ von 1687 Bahn brach. Die Newtonsche Methode von
+        Formalisierung und logischer Deduktion von Gesetzen aus übergeordneten Prinzipien prägte die Ökonomik, die sich wie viele andere Lebensbereiche und Disziplinen als eigenständiges Feld herausbildete. Als Wegbereiter der Klassik ist John Locke
+        (1632-1704) besonders hervorzuheben, der mit seinen radikal neuen Gedanken im 17. Jahrhundert die Entstehung einer bürgerlichen Gesellschaft und eines liberalen Staatswesens nach dem Absolutismus mit einläutete. Im Zentrum stand dabei seine
+        Naturrechtsphilosophie, nach der die Herrschaft des Souveräns – anders als bei Hobbes allmächtigen Leviathan – durch die Unverletzlichkeit von Person und Eigentum und der Vernunft als Leitprinzip eingeschränkt wird. Neben dem so begründeten
+        modernen Individualismus hinterließ Locke zudem erste Arbeiten zur Vertragstheorie und modernen Eigentumstheorie und schuf damit die Grundlage für die kapitalistische Gesellschaft und den Markt als zentrale Wirtschaftsinstitution. Darüber
+        hinaus stellte er selbst ökonomische Studien an und entwickelte sowohl eine Geld- und Zinstheorie auf Grundlage des Merkantilismus als auch die Umlaufgeschwindigkeit des Geldes als wichtigen zusätzlichen Faktor in der Quantitätstheorie des
+        Geldes.
+      </p>
+      <p>
+        Als Begründer des klassischen Liberalismus und wichtigster Vertreter ihrer sog. „optimistischen Phase“ gilt Adam Smith (1723-1790). Dieser beschäftigte sich vor dem Hintergrund der im 18. Jh. beginnenden Frühindustrialisierung in England mit
+        der Frage nach den Bestimmungsgrößen des wirtschaftlichen Wachstums und des neuen Wohlstands, wie sich am Titel seines ökonomischen Hauptwerks „Wealth of Nations“ von 1776 bereits erkennen lässt. Adam Smith selbst hätte sich jedoch vermutlich
+        in erster Linie nicht als Ökonom, sondern als Philosoph bezeichnet. Nach einem klassisch-humanistischen Studium beim Moralphilosophen Francis Hutcheson übernahm er nach dessen Tod den Lehrstuhl für Logik an der Universität in Glasgow. Sowohl
+        besagter Lehrer als auch Smiths Philosophenfreund David Hume, seines Zeichens bedeutendster Vertreter der schottischen Aufklärung und des Empirismus, hatten sich neben der Philosophie auch mit ökonomischen Problemen beschäftigt, was zeigt,
+        dass Ökonomik damals keineswegs als streng abgegrenzte, geschweige denn (wie heute) naturwissenschaftlich orientierte Disziplin angesehen wurde. Auch Adam Smith veröffentlichte 1759 zunächst ein bedeutendes Werk zur Moralphilosophie, die
+        „Theory of Moral Sentiment“. Darin beschreibt er individuelle Interessen und sittliche Empfindungen als gesellschaftskonstituierend und zeichnet das Bild eines empathischen und an seine Mitbürger denkenden Menschen, der recht wenig mit dem
+        neoklassischen, egoistischen Homo Oeconomicus gemein hat. Diese ethische Grundlage ist entscheidend für das Verständnis seiner ökonomischen Gedanken, da bei Smith ein Wirtschaftsliberalismus nur mitsamt moralischen Fundament funktioniert.
+        Institutionell wird das Agieren der Wirtschaftsakteure jedoch nicht nur von der Natur des Menschen und seiner Vernunft, sondern auch durch kollektive, vom Staat gesetzte Regeln sowie durch die Gesetze des Wettbewerbs reglementiert. Der
+        Wettbewerb bewirkt laut Smith nämlich, dass sich langfristig der Preis eines Gutes auf die Höhe seiner Produktionskosten einpendelt, welche in entwickelten Gesellschaften aus der Summe von Löhnen, Rente und Gewinn besteht (sog. additive
+        Wertlehre). An den Summanden erkennt man bereits, dass im klassischen Liberalismus gesellschaftliche Klassen (Arbeiter, Unternehmer, Grundbesitzer) unterschieden werden und ein wichtiger Bestandteil der Analyse sind. Besonders die Tätigkeit
+        der Arbeiter spielt eine wichtige Rolle, da im Gegensatz zu den Physiokraten nun Arbeit (und nicht der landwirtschaftliche Mehrwert aus Boden) als Quelle von Wohlstand identifiziert wird. Die Wertschöpfung der Arbeiter kann durch
+        Arbeitsteilung – ermöglicht durch Transaktionen auf einem optimalerweise möglichst großen Markt – und Investitionen gesteigert werden, d.h. Unternehmer leisten bei Smith einen positiven und entscheidenden Beitrag zum wirtschaftlichen
+        Wachstum. Dass die Löhne lediglich das Existenzminimum der Arbeiter abdecken, liegt nicht an den bösen Kapitalisten, sondern an den Mechanismen von Angebot und Nachfrage in einem Umfeld hoher Bevölkerungszahlen und den damit einhergehenden
+        Machtverhältnissen. An Mindestlöhne dachte Smith noch nicht, stattdessen sollte der Staat Marktinstitutionen (Eigentumsrechte, Wettbewerb etc.) schützen und öffentliche Güter wie Landesverteidigung, Justizwesen oder Bildung bereitstellen. Von
+        einer optimistischen Phase kann man deshalb sprechen, weil bei Smith wirtschaftliches Wachstum und Dynamik sowie die Verbindung individueller Freiheit mit gesamtgesellschaftlicher Wohlfahrt im Mittelpunkt stehen. Was den Beitrag Smiths zur
+        ökonomischen Disziplin angeht, gibt es auch kritische Stimmen: Seine große Leistung liegt sicherlich in der systematischen Beschreibung und Analyse wirtschaftlicher Grundmechanismen seiner Zeit, in der Anwendung der Newtonschen Methode auf
+        die Ökonomie und in der Vereinigung des damals bekannten ökonomischen Wissens. Außerordentliche eigene Originalität sieht der große Joseph Schumpeter in Smiths ökonomischen Werk jedoch nicht.
+      </p>
+      <p>
+        Smiths Nachfolger auf dem Ökonomenolymp, David Ricardo (1772-1823), wird bereits zur pessimistischen Phase der Englischen Klassik gerechnet. Ricardo formuliert das Hauptproblem der politischen Ökonomie als Untersuchung der Verteilung des
+        steigenden Wohlstands, woran man sieht, dass die wirtschaftliche Dynamik zu seiner Zeit kein Faszinosum, sondern bereits eine anerkannte Tatsache war. Ein limitierender Faktor der fortschreitenden Entwicklung lag jedoch im hohen
+        Bevölkerungswachstum und den damit einhergehenden Versorgungskrisen. Da landwirtschaftlich nutzbarer Boden begrenzt ist und technischer Fortschritt aufgrund fallender Profite und Investitionen nicht ewig weitergehen kann, prophezeite Ricardo
+        das Erreichen eines stationären Stadiums in der Zukunft – die Postwachstumsökonomie ist also keinesfalls eine Erfindung der Moderne! Das Gesetz der fallenden Profitrate ergibt sich bei Ricardo aus seinem Arbeitswertgesetz, bei dem der einzige
+        Faktor für die Erklärung relativer Tauschwerte der durchschnittliche Arbeitseinsatz ist, im Gegensatz zu Smith (additive Werttheorie) handelt es sich hier also um eine absolute Arbeitswerttheorie. Berühmt machte ihn jedoch ein anderes
+        Gegenargument zu Adam Smith: Während ersterer absolute Kostenurteile als Treiber für internationalen Handel sah, erfand Ricardo das Prinzip des komparativen Kostenvorteils und beschrieb selbiges mittels quantitativer Modellrechnungen –
+        ebenfalls eine wichtige Innovation für die VWL. Nach dem Kauf eines Parlamentssitzes aus den Erlösen von Börsenspekulationen setzte er sich daher entschieden für die Abschaffung von Zöllen ein, die seiner Meinung nach lediglich Preise und
+        damit einhergehend die Armut erhöhen. Daneben kritisierte er die negative Verteilungswirkung der in den sog. „Corn Laws“ festgelegten Preisgarantien für Getreide. In einem anderen Werk („On the High Price of Bullion and Inflation” von 1810)
+        hatte er schon einem anderen Überbleibsel aus den napoleonischen Kriegen den Kampf angesagt, nämlich der problematischen Mischung aus hohen Staatsausgaben, massiver Staatsverschuldung und gestiegener Geldmenge, die zu steigenden Preise
+        führte. Ricardo argumentierte dabei ähnlich wie die Quantitätstheorie und sah die Wiedereinführung der Goldbindung und die Verminderung der umlaufenden Geldmenge als zentrale Lösungen, welche bis 1844 weitestgehend durchgesetzt wurden.
+        Bekannt ist er darüber hinaus für seinen Zweifel an der generellen Wirksamkeit von Ausgabenerhöhungen vonseiten des Staates, welcher bis heute in einer verfeinerten (aber nichtsdestotrotz unsinnigen) Version unter dem Begriff „Ricardianische
+        Äquivalenz“ bekannt ist. Ebenfalls zur pessimistischen Phase des klassischen Liberalismus gehört Thomas Malthus (1766-1834), der erstmals die empirische Arbeit – in seinem Fall die Erhebung von Bevölkerungsstatistiken und die Beobachtung von
+        sozialer Not – als einen Schwerpunkt ansah und daher induktiv vorging (Schluss von konkreten Beobachtungen auf allgemeine Gesetze). Aus der Beobachtung von massiver Armut und rasantem Bevölkerungswachstum in Kombination mit seiner Annahme
+        eines triebgesteuerten Menschen entwickelte er auf diese Weise ein einfaches Modell der Bevölkerungsentwicklung, bei dem die Bevölkerung schneller wächst als die zur Verfügung stehende Nahrung und sich somit ein Zustand der permanenten
+        Mangelversorgung sowie wegen des Überangebots an Arbeitskräften ein Lohn einstellt, der lediglich für die Sicherung des Existenzminimums der Arbeiter ausreicht. Wie wir heute wissen, war diese Schlussfolgerung falsch, was letztlich wohl auch
+        an der fehlenden Auseinandersetzung mit Produktionsstatistiken lag, weshalb Malthus die enormen Produktivitätssteigerung in der Landwirtschaft nicht vorhersehen konnte. Genauso wie sein Freund Ricardo betätigte sich Malthus auch politisch,
+        trat jedoch als Befürworter der „Corn Laws“ und drakonischer Armengesetzgebung auf, da für ihn staatliche Almosen lediglich zu erhöhtem Bevölkerungswachstum und damit zu mehr Elend führten. Ein weiterer Gegensatz zu Ricardo besteht in seiner
+        Kritik an übermäßiger Abstraktion in der Ökonomik, was mit Blick auf die heutige Neoklassik sogar noch relevanter geworden ist. Allen Vertretern der Englischen Klassik ist allerdings gemeinsam, dass sie sich aus einer Makroperspektive mit der
+        Wirtschaft beschäftigten (d.h. Analyse von Aggregaten anstelle von Individuen), Formalisierungen und Abstraktionen vornahmen, das gesellschaftliche Wohlergehen aus dem Nutzen aller Akteure hinweg betrachteten (Utilitarismus von Jeremy
+        Bentham) und bei alledem von der Lage des sich industrialisierenden Englands geprägt wurden.
+      </p>
+
+      <div id="Historisch" class="jumper">
+      </div>
+
+      <p>
+        Es erscheint daher nur folgerichtig, dass sich der wichtigste Gegenspieler zur ökonomischen Klassik in Deutschland formierte, das im Gegensatz zu England einerseits erst recht spät industrialisiert wurde (ca. ab 1840) und andererseits die
+        geistigen Neuerungen von Rationalismus und Utilitarismus mit der romantischen Bewegung beantwortete, die statt objektiver Vernunft lieber subjektive Gefühle propagierte und die Eigenheiten verschiedener Nationen und Völker herausstellte. Als
+        Wegbereiter der Historischen Schule der Nationalökonomie, die wie die Romantik Relativismus und Kontextgebundenheit von Theorien betonte, kritisierte Friedrich List (1789-1846) daher, dass die Lehren der Englischen Klassik nicht
+        allgemeingültig, sondern auf Großbritannien mit seiner wirtschaftlichen Hegemonie zugeschnitten seien. Formal unterscheidet List dabei drei Ebenen der politökonomischen Analyse – individuell, national, global – und weist auf
+        Entwicklungsdefizite in Kontinentaleuropa v.a. auf nationaler Ebene hin. Wirtschaftliche Systeme sollten stets unter Berücksichtigung des historischen und geografischen Kontexts untersucht werden, was List formal mittels sog.
+        (Entwicklungs-)Stufenmodelle konzeptionalisierte, die stilprägend für die Historische Schule wurden. Wirtschaftspolitisch folgerte er, dass der vom klassischen Liberalismus propagierte Freihandel für Englands wirtschaftlich zurückliegende
+        Handelspartner kein gutes Geschäft wäre, da dieser internationale Produktivitätsunterschiede zementiert und protektionistische Maßnahmen für sich im Aufbau befindende Volkswirtschaften sinnvoll sind. List empfahl daher für Deutschland den
+        Abbau von Binnenzöllen, damit sich eine nationale Wirtschaftsebene herausbilden konnte (was 1883 mit dem Deutschen Zollverein geschah), und die Einführung von Schutzzöllen gegen England. Interessant ist dabei, dass List nicht nur auf
+        ökonomische, sondern auch auf politische, gesellschaftliche und historische Argumente zurückgriff, so wie sich die Historische Schule später auch als interdisziplinäre und historisch-staatswissenschaftlich orientierte Schule verstand.
+      </p>
+      <p>
+        Wie viele andere Disziplinen im damaligen Deutschland folgte die Historische Schule dem Historismus, der die Geschichtswissenschaften als Leitdisziplin betrachtete. Historische Quellenarbeit, qualitative Fallstudien, induktives Vorgehen und
+        der Fokus auf staatliche Institutionen sowie sittliche Normen bilden ihren methodologischen Kern. In weiterer klarer Gegensatz zur Klassik besteht darin, dass allgemeine Gesetze und die Suche danach in einer von menschlichem Handeln geformten
+        Ordnung von der Historischen Schule für sinnlos erklärt werden. Stattdessen sei es Aufgabe der Ökonomen, die „Dinge wahrzunehmen, wie sie sind“ (wie Heinrich von Storch das prägnant formulierte). Dennoch kann man zwei Strömungen
+        unterscheiden, nämlich eine Ältere und eine Jüngere Historische Schule. Erstere verfolgte einen stark geschichtsphilosophischen Ansatz und suchte noch nach allgemeinen Entwicklungsprinzipien für menschliche Gesellschaften. So entwickelte
+        Bruno Hildebrand (1812-1878) beispielsweise ein Stufenmodell, das die wirtschaftliche und gesellschaftliche Entwicklung von der Naturalwirtschaft über die Geldwirtschaft bis hin zur Kreditwirtschaft skizziert (sein Text dazu von 1864 ist bis
+        heute sehr lesenswert). Für seine wissenschaftliche Arbeit fertigte Hildebrand zahlreiche Statistiken an und war Herausgeber der Statistischen Jahrbücher. Damit folgte er der historischen Methode von Wilhelm Roscher (1817-1894), nach der man
+        zunächst möglichst viel Wissen über Völker und ihre Wirtschaft in Gegenwart und Vergangenheit sammeln sollte, um dann nach dem Herausfiltern des Wesentlichen und dem Vergleich mit anderen Wirtschaftsräumen allgemeine historische
+        Gesetzmäßigkeiten offenzulegen. Der Forschungsgegenstand der Historischen Schule – Jüngere wie Ältere – war also intertemporal und international.
+      </p>
+      <p>
+        Die Jüngere Historische Schule formte sich, als die Industrialisierung auch in Deutschland schon Fahrt aufgenommen hatte und sich das Kaiserreich gründete. Mehr noch als die Ältere Schule forderte sie eine streng geschichtswissenschaftliche
+        Quellenarbeit inklusive umfassender Sammlung historischer Daten sowie eine sich daran anschließende Theoriebildung, wobei sie Partialanalysen (also die Isolation bestimmter Sachverhalte) grundsätzlich ablehnte. Gleichzeitig sah sie die
+        Nationalökonomik als sittliche Disziplin, die in den politischen Diskurs eingreifen sollte. Ihr führender Kopf Gustav Schmoller (1838-1917) war deshalb ein wichtiger Sozialreformer seiner Zeit und gründete den bis heute bestehenden „Verein
+        für Socialpolitik“, der sich für einen Mittelweg zwischen Manchesterliberalismus und Sozialismus einsetzte und den Staat als wichtigen Akteur z.B. im Bereich der Schulbildung oder Wettbewerbsregulierung sah. Zudem verfasste Schmoller ein Werk
+        über 400 Jahre deutscher Wirtschaft und betrieb detaillierte Studien zur Entwicklung deutscher Gewerbezweige – den eigenen Anspruch der umfassenden Theoriebildung erfüllten er und die Jüngere Schule allerdings nicht. Dafür kämpfte die Jüngere
+        Schule in zwei Methodenstreits gegen prominente Gegner. Den einen davon führte sie mit Max Weber, der die Trennung von wissenschaftlichen, objektiven Aussagen und subjektiven Werturteilen forderte, da nur so das akademische Gebot der
+        Falsifizierbarkeit erfüllt werden könne. Das Beharren der Jüngeren Schule auf der Nationalökonomik als dezidiert wertbehaftete Disziplin wirft bis heute die Frage auf, inwiefern man überhaupt werturteilsfrei Ökonomik betreiben kann. Die
+        Verortung eigener Aussagen im Sinne des kritischen Rationalismus sowie das sozialkonstruktivistische Bewusstsein der eigenen Standortgebundenheit ist womöglich das einzig mögliche Vorgehen. Den anderen Methodenstreit löste Carl Menger aus,
+        indem er das induktive Vorgehen und den empirischen Historismus scharf kritisierte. Seiner Meinung nach sollte die theoretische Ökonomik eine exakte Wissenschaft mit deduktiv-abstraktem Vorgehen und von historischer Wissenschaft (Statistik &
+        Geschichte) und praktischer Nationalökonomik (Wirtschaftspolitik) getrennt sein. Schmoller gestand zwar sowohl Induktion als auch Deduktion einen Platz im ökonomischen Werkzeugkasten zu, im hitzig geführten Streit fand man aber dennoch nicht
+        zueinander, sondern verursachte eine teilweise bis heute bestehende Trennung unter deutschsprachigen Ökonomen. Joseph Schumpeter sah den Streit ohnehin als von Karriereinteressen vergiftet und hielt ihn rundum für „vergeudete Energie“.
+        Nichtsdestotrotz bleiben von der Historischen Schule bis heute wichtige Gedanken: Ihre Kritik an der Englischen Klassik kann in vielen Teil auch auf die heutige Neoklassik übertrag werden, v.a. was die Ablehnung der Idee eines
+        selbstregulierenden, zu einem Gleichgewicht strebenden Marktes, die Kritik an übermäßiger Mathematisierung und an der Formulierung von Gesetzen, die der menschlichen Natur nicht gerecht werden, sowie die Betonung von Institutionen und
+        gesellschaftlich-kulturellem Kontext angeht.
+      </p>
+      <div id="Österreichisch" class="jumper">
+      </div>
+      <p>
+        Deutsche Ökonomen des 19. Jh. prägten noch weitere Strömungen neben der Historischen Schule. Hervorzuheben ist dabei etwa Heinrich von Thünen (1783-1850), der sich als Agrarwissenschaftler und als Ökonom einen Namen machte. In seinem
+        Hauptwerk „Der isolierte Staat in Beziehung auf Landwirtschaft und Nationalökonomie“ entwickelte er einerseits ein Modell zur landwirtschaftlichen Raumstruktur, bei dem mit zunehmender Entfernung von einem Stadtzentrum aufgrund der steigenden
+        Transportkosten nur landwirtschaftliche Güter mit höherer Wertigkeit produziert werden, und beschäftigte sich mit Verteilungsfragen wie der Lohnbestimmung in der Landwirtschaft. Hier widersprach er der klassischen Existenzlohntheorie, sondern
+        sah die Produktivität der Arbeiter und die Attraktivität der Alternativoption einer eigenen Subsistenzwirtschaft (Opportunitätskostenprinzip) als wichtige Faktoren. Da er eine mathematische Analyse inkl. Anwendung der Differentialrechnung als
+        sinnvoll erachtete, leitete er sogar einen „naturgemäßen Lohn“ mathematisch her. Seine Methodik besteht aus stark isolierender Abstraktion – eine Frühform der ceteris-paribus Methode –, theoretischer Modellbildung und der Marginalanalyse, bei
+        der marginale Veränderungen „at the margin“ im Zentrum der Betrachtung stehen (hierzu nutzte er die leibnizsche Infinitesimalrechnung). Die Marginalanalyse propagierte auch Hermann Gossen (1810-1858), der überdies hinaus die systematische
+        Mikroperspektive, die das Handeln einzelner Individuen zur Grundlage hat, in die Ökonomik einführte. Anders als die englischen Klassiker vertrat er eine rein subjektive Werttheorie, nach der allein der Nutzen für den potenziellen Käufer über
+        den Tauschwert einer Sache entscheidet. Die Gossenschen Gesetze von abnehmenden Grenznutzen („Je mehr ich von einem Gut habe, desto weniger bringt mir eine zusätzliche Einheit“) und dem kollektiven Nutzenoptimum bei identischen Grenznutzen
+        („Eine Gruppe maximiert ihren Gesamtnutzen durch ein Gut, wenn jedes Gruppenmitglied für eine weitere Einheit gleich viel zahlen würde“) zählen bis heute zu den fundamentalen Bausteinen der Neoklassik. Zu Lebzeiten stellte sich jedoch für
+        Gossen noch kein Erfolg ein: Sein Hauptwerk, das er selbst für eine „kopernikanische Wende“ in der Ökonomik hielt, verkaufte sich wohl auch wegen grottiger Lesbarkeit – es gab nicht einmal eine Gliederung durch Kapitel o.ä. – so schlecht,
+        dass es lange Zeit als verschollen galt.
+      </p>
+      <p>
+        Eine klare Brücke von den Innovationen Thünens und Gossens lässt sich zu Österreichischen Schule schlagen, die allerdings – anders als ihr Name suggeriert – keine geschlossene Schule ist, sondern durch recht heterogene Vertreter auffällt.
+        Gemeinsam ist ihnen allen die von Carl von Menger (1902-1985) propagierte deduktiv-theoretische Methode sowie die von Gossen betriebene Marginalanalyse und subjektive Werttheorie, mathematische Formulierungen sowie statische
+        Gleichgewichtsanalysen lehnen die Österreicher jedoch grundsätzlich ab. Im Zentrum steht bei ihnen die Beschäftigung mit der Dynamik, aber auch mit den Krisen des Kapitalismus. Joseph Schumpeter (1883-1950) führte etwa die Konjunkturanalyse
+        in die Ökonomik ein und sah den Pionierunternehmer, der neue Produkte entwickelt und damit am Markt Konkurrenten verdrängt („schöpferische Zerstörung“), als treibende Kraft des Kapitalismus. Meist zeichnen die Österreicher sich dabei durch
+        ein negatives Staatsbild aus: Bereits ihr Begründer Carl von Menger erklärte, der Markt sein nicht das Produkt staatlichen Handelns, sondern aus einer spontanen Ordnung freier Individuen entstanden (er wird also für dessen Erhalt nicht
+        gebraucht), und auch spätere Vertreter wie Ludwig von Mises (1881-1983) oder Friedrich von Hayek (1899-1992) kämpften für einen möglichst kleinen Staat. Mises betonte dabei die Wichtigkeit von Preissignalen als Lenkungsindikatoren, die nur
+        auf Märkten mit freiem Eigentum, stabilem Geld und freiem Tausch zustande kommen können, und kritisierte auf dieser Grundlage Sozialismus und Gemeinwirtschaft. Hayek wiederum stellte das Problem der zerstreuten und asymmetrischen Information
+        ins Zentrum seines ökonomischen Denkens. Das Wissen über individuelle Bedürfnisse, Fertigkeiten etc. ist in der Gesellschaft verteilt und niemand, auch nicht der Staat, könne sich anmaßen, den dezentralen Markt mit all seinen Akteuren in der
+        Verarbeitung dieser Informationen zu schlagen. Wie eigentlich alle Österreicher sah Hayek die politische Beratung und Agitation als wichtigen Teil seiner Arbeit an und predigte die segensreichen Wirkungen der neoliberalen Marktfreiheit z.B.
+        in der von ihm gegründeten Mont-Pellerin-Gesellschaft. Seine Arbeiten zum Thema Geld, das eine große Rolle für Österreichische Krisentheorien spielt, prägten zudem den späteren Monetarismus von Milton Friedman (mehr dazu in Teil 2). Obwohl
+        die beworbenen Rezepte also durchaus Ähnlichkeit zur gegenwärtigen Neoklassik haben, unterscheidet sie die Österreichische Schule von ihr in der Betonung von Dynamik und Krisenhaftigkeit des Kapitalismus sowie in einer streng deduktiven, aber
+        unmathematischen Methodik.
+      </p>
+      <div id="Sozialismus" class="jumper">
+      </div>
+      <p>
+        Auch für einen anderen Ökonom des 19. Jh. standen Krisen im Mittelpunkt seiner wissenschaftlichen Arbeit, obgleich er zu vollkommen gegensätzlichen Schlüssen kam – die Rede ist von Karl Marx (1818-1883). Auch wenn Marx heute teilweise für den
+        Erfinder des Sozialismus gehalten wird, gab es schon ab 1800 eine sozialreformistische Bewegung, die gegen die neue Ordnung der Industrialisierung und für die Sache der Arbeiter kämpften. Diese Vertreter des sog. „utopischen Sozialismus“
+        wollten alle das System verändern, jedoch ohne es revolutionär zu stürzen oder zentrale Konzepte wie das Privateigentum abzuschaffen. Charles Fourier (1772-1837) setzte sich etwa für gemeinwirtschaftliche Lösungen wie Genossenschaften ein und
+        Robert Owen (1771-1858) realisierte verschiedene Sozialexperimente zur Schaffung besserer Arbeitermilieus. Eine Brücke zu Keynes lässt sich von Jean Sismondi schlagen, der bereits im 19. Jh. vor den Gefahren unzureichender Gesamtnachfrage
+        warnte. Den beiden Erfindern des sog. „wissenschaftlichen Sozialismus“ Karl Marx und Friedrich Engels (1820-1895) ging dies jedoch nicht weit genug. Engels hatte als Fabrikantensohn und Leiter eines Unternehmens in Manchester die
+        katastrophalen Zustände der Arbeiter (Pauperismus) erlebt und sich schon früh sowohl mit dem Zusammenhang zwischen Kapitalismus und Armut als auch mit den Lehren der Englischen Klassik beschäftigt. In seiner bemerkenswerten Schrift „Umrisse
+        zu einer Kritik der Nationalökonomie“ von 1844 griff er bereits viele Konzepte aus dem späteren „Kapital“ von Marx voraus (z.B. Charakterisierung von Kapital als „geronnene Arbeit“) und kritisierte v.a. die additive Wertlehre von Adam Smith –
+        so wie auch Marx später die absolute Wertlehre des David Ricardo übernahm, nach der nur der durchschnittliche Arbeitseinsatz über Tauschwertrelationen entscheidet. Engels war also nicht nur Finanzier und Publizist von Karl Marx, sondern auch
+        selbst ein scharfsinniger Autor und Ökonom. Zudem trat er als Pionier der empirischen Sozialforschung auf, indem er in der „Lage der arbeitenden Klasse in England“ von 1845 eine präzise Bestandsaufnahme der Arbeiterklasse im
+        Manchesterliberalismus machte. Karl Marx selbst wiederum war eher theoretischer Kritiker als direkter Beobachter des Kapitalismus, hatte jedoch ebenfalls eine Begabung für die politische Agitation, wie er in seiner Zeit als Chefredakteur der
+        liberalen Rheinischen Zeitung mit beißender Sozialkritik sowie mit dem mit Engels 1848 verfassten „Manifest der kommunistischen Partei“ unter Beweis stellte. Eine wichtige Prägung erhielt Marx während seines Studiums in Berlin im Kreis der
+        Junghegelianer, die die Hegelsche Dialektik bewunderten und für gesellschaftliche Änderungen eintraten. Marx wandte die dialektische Methode aus „These – Antithese – Synthese“ auf die gesellschaftliche Entwicklung im Sinne von „Status-Quo –
+        Gegenbewegung/Konflikt – Lösung/Neuordnung“ an, wobei das Fortschreiten der Gesellschaft über Stufen (man kann hier zurecht an die Stufentheorien der Historischen Schule denken) laut Marx stets von Klassenkonflikten geprägt waren. Diese
+        Klassen und ihre Ideen („Überbau“) bildeten sich jeweils aus den Produktionsverhältnissen („Basis“), die u.a. von Technologie und Ressourcen abhingen. So hatte etwa das Fabriksystem der Industrialisierung mit seiner monotonen und von
+        Maschinen determinierten Arbeitsweise das moderne Proletariat als Gegenspieler der Kapitalisten (die zuvor den Feudaladel gestürzt hatten) erschaffen. Der Glaube an einen teleologische Entwicklung hin zum Kommunismus leitete Marx also
+        theoretisch her und stand auch mit seinem deterministischen Fortschrittsglauben in der Nachfolge Hegels. Den „wissenschaftlichen Sozialismus“ zeichnete allerdings v.a. eine gründliche Analyse des bestehenden Kapitalismus aus. Für Marx und
+        Engels war der Kapitalismus im Kern eine Warenwirtschaft, in der Güter nicht um ihrer selbst willen, sondern mit der Absicht produziert wurden, sie wieder in Geld zu verwandeln (Geld ist hier also Zweck und kein Mittel). Kapitalisten nutzen
+        Geld, um damit Maschinen und Arbeitsstunden (konstantes und variables Kapital) zu kaufen, die im Produktionsprozess zusammen Waren produzieren, die dann wiederum verkauft werden können. Zentral ist dabei, dass die Arbeiter Wertschöpfung
+        betreiben, also mehr Wert erzeugen, als der Kapitalist für ihre Arbeit bezahlen muss (was den Lohn anging hielt sich Marx an die Existenzlohntheorie von Malthus). Anders ausgedrückt: der Tauschwert der Ware Arbeit ist geringer als ihr
+        Gebrauchswert. Der durch Arbeit geschaffene Mehrwert fließt also den Kapitalisten zu – dies ist die „Ausbeutung“ der Arbeiter, die zunächst einmal wertfrei beschrieben wird – und ermöglicht die Akkumulation von immer mehr Kapital und damit
+        eine stetig steigende Produktion. Da jedoch die Menge an Arbeit (variables Kapital) begrenzt ist, häufen die Unternehmer immer mehr Maschinen (konstantes Kapital) an, sodass die Profitrate (Mehrwert relativ zum eingesetzten Kapital) mit der
+        Zeit zwangsläufig sinkt. Wie Ricardo formuliert Marx also ein Gesetz der fallenden Profitrate, obgleich er es anders herleitet. Um Profit zu generieren, müssen die Kapitalisten einerseits den Arbeitslohn immer weiter drücken, was die
+        allgemeine Nachfrage und damit die Absatzmöglichkeiten für die Unternehmen verringert, und andererseits Wettbewerber immer aggressiver aus dem Markt drängen. Beide Praktiken führen zwangsläufig und immer wieder zu endogenen Krisen und zu
+        einer wachsenden Konzentration im Produktionssektor, bis schließlich eine Masse von wütenden Proletariern einer winzigen Minderheit von Kapitalisten gegenübersteht und das kapitalistische System durch den Sozialismus ersetzt, in welchem die
+        Produktionsmittel vergemeinschaftet sind. Obwohl Marx also einige Elemente der Englischen Klassik übernimmt (deduktive Methode und fallende Profitrate von Ricardo, Existenzlohntheorie von Malthus, Klassen als Analyseeinheit) und er deshalb zu
+        den klassischen Ökonomen gezählt wird, birgt seine Analyse entscheidende Neuerungen (Arbeit als Ware, endogene Krisen, neue Charakterisierung von Kapital) und führt zu gänzlich anderen Schlüssen. Dabei ist zu betonen, dass Marx den
+        Kapitalismus keinesfalls per se verachtete, da er zugestand, dass dieser enorme Dynamiken freigesetzt hatte und einen notwendiger Schritt in der gesellschaftlichen Evolution hin zum Kommunismus bildet. Auch Kapitalisten sieht Marx nicht als
+        teuflische Verbrecher, sondern als Gefangene ihrer Rolle im kapitalistischen System. Nichtsdestotrotz wurde und wird Marx natürlich stark kritisiert: Besonders die Österreichische Schule wies etwa darauf hin, dass einer marktfreien
+        Gesellschaft Preise als Signale für Knappheit und Bedürfnisse fehlen, was Allokationsprobleme weitaus schwieriger macht. Einer staatlichen Lösung dafür steht zudem das oben bereits beschriebene Problem der asymmetrischen Information im Wege.
+        Allerdings ist festzuhalten, dass Marx lediglich die Vision einer klassenlosen Gesellschaft ohne Ausbeutung der Arbeiter und mit freier Selbstbestimmung der Menschen in Aussicht stellte, ohne diese näher zu beschreiben oder sich gar über
+        potenzielle Probleme Gedanken zu machen. Dennoch sind viele Elemente der Marxschen Analyse, wie etwa der Fokus auf Machtverhältnisse und Produktionsstrukturen, bis heute sehr wertvoll. Besonders spannend ist zudem eine Kritik bzw. Erweiterung
+        von Marx innerhalb seines Systems, die Steve Keen zur Erklärung der ausbleibenden sozialistischen Revolution entwickelte: Marx hatte laut Keen nämlich nicht bedacht, dass nicht nur Arbeit Mehrwert schaffen und ausgebeutet werden kann, sondern
+        das Gleiche für Energie gilt: Das Wachstum der Industriegesellschaft mit steigendem Lebensstandard für alle (auch für Arbeiter) konnte nur gelingen, weil man die natürlichen Energiequellen ausbeutete! Mit Blick auf die Klimakrise des 21. Jh.
+        und die Notwendigkeit des Umbaus unseres Energiesystems inklusive Reduktion des ständig wachsenden Energieeinsatzes ist ein Erhalt des aktuellen kapitalistischen Systems aus dieser Perspektive also durchaus fraglich und Marx bald
+        möglicherweise aktueller denn je.
+      </p>
+      <div id="Neoklassik" class="jumper">
+      </div>
+      <p>
+        Obgleich bereits bei David Ricardo (1772-1823) oder Heinrich von Thünen (1783-1850) erste Formalisierungen und mathematische Abstraktionen auftraten, spielte die Perspektive der empirischen Sozialwissenschaft fast überall eine wichtige Rolle.
+        Während das Bild der Ökonomik des 19. Jahrhundert also bunt und facettenreich war, wird der Gang durch das 20. Jahrhundert deutlich weniger abwechslungsreich. Als alternativen Titel für diesen Text könnte man nämlich schlicht „Der Siegeszug
+        der Neoklassik“ wählen, die fast unangefochten die ökonomische Zunft seit 100 Jahren beherrscht. Um zu sehen, welche Kernelemente die Neoklassik ausmachen und wie diese entstanden, kehren wir zu einem Bekannten aus Teil 1 der Geschichte
+        zurück: Hermann Gossen (1810-1858). Dieser entwickelte (gleichzeitig mit anderen) wichtige Prinzipien für das, was die Neoklassik aus- und stark macht: Ihre formale Darstellung. Gossen stellte dabei den methodologischen Individualismus ins
+        Zentrum seines Denkens. Während die englische Klassik hauptsächlich in Klassen dachte (v.a. Arbeiter, Unternehmer und Rentiers) und die Nationalökonomik sich auf die kollektive Fortentwicklung ganzer Nationen fokussierte, wurde nun das
+        Individuum die zentrale Einheit der ökonomischen Analyse. Die Erklärung des wirtschaftlichen Geschehens sollte unmittelbar aus dem Verhalten einzelner Akteure abgeleitet werden. Freilich stellte sich dabei ein Problem: Individuen sind
+        individuell, also verschieden und einzigartig. Für die volkwirtschaftliche Analyse braucht es damit ein ausreichend großes Maß an Abstraktion, um möglichst alle Individuen in einer Volkswirtschaft auf dieselbe Weise abbilden zu können. Hier
+        kommt nun der berühmt-berüchtigte Homo Oeconomics ins Spiel, der stellvertretend für alle Menschen einer Volkswirtschaft steht. Damit ist keineswegs gemeint, dass sich jeder einzelne Mensch genau so verhält wie der Homo Oeconomicus, sondern
+        dass dieser das durchschnittliche Verhalten aller Akteure aggregiert widerspiegelt. Angenommen, alle Arbeiter eines Landes haben eine 40-Stunden-Woche und erhalten eine Lohnerhöhung um 10%, worauf die eine Hälfte mit einer
+        Arbeitszeitreduktion von 5% auf 38h reagiert (da sie lieber mehr Freizeit bei gleichem Lohn hat) und die andere Hälfte mit einer Arbeitszeiterhöhung um 10% auf 44h (da Freizeit nun mehr entgangener Lohn bedeutet). In einem Modell wäre der
+        Homo Oeconomicus dann so beschaffen, dass er seine Arbeitszeit um 2.5% auf 41h erhöht und damit den Gesamteffekt für die Volkswirtschaft korrekt abbildet – soweit jedenfalls die Idee. Der methodologische Individualismus ermöglicht zudem, die
+        Mathematisierung der Volkswirtschaftslehre voranzutreiben und die Ökonomik an naturwissenschaftlichen Prinzipien auszurichten. Man darf nicht vergessen, dass um die Jahrhundertwende schier unglaubliche Fortschritte in Physik, Chemie und
+        anderen Wissenschaften gemacht wurde und dort überall neu entwickelte Mathematik den Weg ebnete – obgleich es auch zahlreiche Fälle gab, in denen rätselhafte Entdeckungen (man denke hier etwa an die Quantenrevolution) in der Physik erste die
+        Entwicklung neuer mathematischer Methoden anstieß. Vor diesem Hintergrund ist es durchaus verständlich, dass auch in der Ökonomik Werkzeuge wie die Infinitesimalrechnung Verwendung fanden. Thünen und Gossen nutzen sie zur Untersuchung
+        wirtschaftlicher Entscheidungen bei der Marginalanalyse. Die Idee hierbei ist, dass man stets Änderungen „at the margin“ untersucht, sich also z.B. nicht fragt, wie viel Nutzen ein Individuum aus dem Konsum von vier Birnen zieht, sondern wie
+        sich sein Nutzen verändert, wenn eine weitere Birne hinzukommt (ökonomisch ausgedrückt: Was ist der Grenznutzen beim Konsum von vier Birnen?). Dem Gossenschen Gesetz zufolge gilt hier immer das Prinzip des abnehmenden Grenznutzens: Der
+        zusätzliche Nutzen aus einer weiteren Einheit eines Gutes bleibt zwar stets positiv, nimmt aber kontinuierlich ab. Analog dazu hatte Thünen die Marginalbetrachtung auf der Produktionsseite eingeführt und in seiner Grenzproduktivitätstheorie
+        erklärt, dass eine weitere hinzugefügte Einheit von einem Produktionsfaktor die Produktionsmenge zwar stets positiv ausweitet, diese Produktionssteigerung jedoch mit zunehmenden Inputeinsatz immer geringer wird. Diese Prinzipien gelten
+        allerdings immer nur c.p. (des Ökonomen liebste Abkürzung), also „Ceteris paribus“. C.p. bedeutet „das Übrige gleich“ und meint, dass eine Änderung nur im Kontext ansonsten gleichbleibender Bedingungen betrachtet wird. Angenommen, ich
+        bräuchte für einen Produktionsprozess zwei Inputs, Kapital und Arbeit, und füge immer mehr Arbeit hinzu, so wird der Produktionszuwachs immer geringer – sofern die Kapitalmenge und alles andere konstant bleibt. Erhöhe ich jedoch gleichzeitig
+        die Menge an Kapital, ist es plausibel, dass die Produktionssteigerung immer den gleichen Wert beträgt. Selbst wenn dieses Prinzip banal erscheint, ist es ungemein wichtig, es beim Interpretieren von neoklassischen Modellen und Darstellungen
+        stets mitzudenken, da andernfalls bedeutende Fehler unterlaufen.
+      </p>
+      <p>
+        Das beste Beispiel dafür ist der Mindestlohn und seine Auswirkungen in neoklassischen Modellen. Um ihn zu untersuchen, braucht ein neoklassischer Ökonom nur ein Marktmodell mit zwei Elementen, nämlich einer Angebots- und einer Nachfragekurve.
+        Diese Kurven zusammen ergeben das berühmte Marktkreuz, welches vielen beim Gedanken an den Begriff VWL wohl als erstes in den Sinn kommt. Beide Kurven leiteten sich dabei aus dem Marginalprinzip ab, da sich ihre Form stets aus der Frage nach
+        der Änderung von Nachfrage oder Angebot ergibt, wenn der Preis um eine weitere Einheit steigt bzw. fällt. Die Nachfrage sollte bei steigendem Preis ceteris paribus (!) immer weiter sinken, das Angebot hingegen immer weiter steigen
+        (schließlich kann man als Hersteller nun mehr mit dem Verkauf des Produktes verdienen). Die anderen Faktoren, die hier ceteris paribus konstant gehalten werden sollen, sind auf der Nachfragerseite v.a. Einkommen, Präferenzen und der Preis von
+        Alternativgütern (Wenn Eurosport teurer wird, aber Sky gleichzeitig noch viel stärker im Preis steigt, dann wird die Nachfrage nach Eurosport zunehmen) und auf der Anbieterseite v.a. Absatzmärkte, Produktionstechnologien sowie Preise für
+        Produktionsinputs. Ein Mindestlohn ist nun ein Preisanstieg der Ware Arbeit und führt daher in einem einfachen neoklassischen Modell zur sinkenden Nachfrage nach Arbeit – es entsteht also Arbeitslosigkeit. Dieses Argument wurde sowohl bei der
+        Einführung des Mindestlohns 2015 (Hans-Werner Sinn sah gleich 900.000 Arbeitsplatz gefährdet) als auch aktuell bei der Diskussion um die von SPD, Grünen und Linke geforderte Mindestlohnerhöhung bemüht. In der empirischen Literatur ist
+        allerdings umstritten, ob die Einführung von Mindestlöhnen eine Volkswirtschaft überhaupt Jobs kostet und auch in Deutschland war von einem Jobeinbruch nichts zu sehen. Mindestlohn-Kritiker behaupten zwar, dass dies nur an der guten
+        konjunkturellen Lage gelegen habe und ohne Mindestlohn ja noch viel weniger Arbeitslose dagewesen wären, doch es gibt noch einen viel einfachere Erklärung: Die letztlich auf das oben beschriebene Partialmarktmodell zurückgehende Überlegungen
+        werden ceteris paribus angestellt. Ein Mindestlohn aber gibt Beschäftigten mehr Lohn, sodass ihr Einkommen und Konsum steigt und sich somit die Absatzmärkte für Unternehmen vergrößern. Wenn Arbeiter mehr Lohn bekommen, können sie auch mehr
+        produzierte Produkte kaufen – das wusste schon Henry Ford. Im einfachen Marktmodell tritt dieser Effekt nicht auf, weil die ceteris paribus Klausel (u.a. konstantes Einkommen) bei einem volkswirtschaftlich so bedeutenden Preis wie dem
+        Lohnniveau nicht halten kann. Preisbewegungen verschieben die Kurven selbst, sodass statische Gleichgewichte überhaupt keine Aussagekraft haben.
+      </p>
+      <p>
+        Neben der ceteris-paribus-Methode und der Marginalanalyse finden wir in diesem kritischen Beispiel weitere Kennzeichen der Neoklassik, die ebenfalls zu ihrem historischen Fundament gehören und im weiteren Verlauf der Geschichte besprochen
+        werden. Interessanterweise wurde die neoklassische Schule keinesfalls von Gossen oder Thünen selbst auf dem gegossenen Fundament gegründet, sondern ihre Innovationen wurden zunächst kaum von anderen Ökonomen beachtet. Den Stein ins Rollen
+        brachten erst William Jevons (1835-1882) und Leon Walras (1840-1921) im späten 19. Jahrhundert. Jevons war es übrigens auch, der der Disziplin den neuen Namen „Economics“ gab anstelle von „Political Economy“, wie es noch bei Ricardo geheißen
+        hatte. Bereits diese Umbenennung zeigt, dass nun andere Schwerpunkte gelegt wurden, denn die großen Probleme des 19.Jahrhundert schienen im Grundsatz gelöst: Wirtschaftswachstum und internationaler Handel hatte sich in den Industriestaaten
+        etabliert und die soziale Frage, die von klassischen Ökonomen wie Malthus oder Marx ins Zentrum gestellt worden war, fand ihre Antwort in Reallohnanstiegen sowie der Etablierung von Gewerkschaften und sozialdemokratischen Parteien. Die
+        Ökonomen bewegten sich daher vermehrt von der Makroebene zur Mikroebene und die Ökonomik wandte sich stärker nach innen, die Fortentwicklung der eigenen Theorie wurde also immer wichtiger. Theoretische Modellierung und mathematische Methoden
+        waren der Ausgangspunkt des neuen Denkens, während die Empirie in den Hintergrund trat. Gleich zu Beginn ging man ein Problem an, dass den Klassikern viel Kopfzerbrechen bereitet hatte und als „klassisches Wertparadox“ bekannt ist. Kurz
+        gesagt besteht dieses in der Frage, warum Wasser eigentlich so viel günstiger ist als Diamanten, obwohl Wasser doch so viel nützlicher für den Menschen ist. Dieses Beispiel zur Unterscheidung von (Tausch-)Wert und Nutzen findet sich bereits
+        beim (übrigens hochinteressanten) Ökonomen John Law (1671-1729) in seinem Werk „Money and Trade Considered“ und konnte von der Englisch Klassik nicht erklärt werden, da dort der langfristige relative Preis sich entweder nach der Summe der
+        Herstellungskosten (Adam Smith) oder dem Arbeitseinsatz (David Ricardo) richten sollte. Die Marginalanalyse der Neoklassik bot nun eine neue Erklärung: Der Preis von Wasser richtet sich nach dessen Grenznutzen in der aktuellen Situation.
+        Hätte jeder Mensch nur ein Glas Wasser pro Tag und entsprechend großen Durst, so wäre der zusätzliche Nutzen eines zweiten Glases sehr hoch und damit auch der Preis. Da jedoch die Menschen vielerorts in der Ausgangssituation aufgrund des
+        großen Angebots bereits Zugang zu einer gewissen Menge an Wasser haben, ist der Grenznutzen einer weiteren Einheit Wasser nicht sehr groß und damit der Preis recht niedrig. Auch hierfür hatte Gossen sowohl intuitiv als auch mathematisch eine
+        Lösung entwickelt, die einige Jahrzehnte später wieder aufgegriffen wurde.
+      </p>
+      <p>
+        Damit wandte sich die Neoklassik ebenso wie die Österreichische Schule von der objektiven Werttheorie der Englischen Klassik ab und definierte Nutzen als etwas rein Subjektives. Philosophisch knüpfte sie damit an den Utilitarismus an, den
+        Jeremy Bentham im frühen 19. Jahrhundert entwickelt hatte und dessen ethischer Leitspruch „Das größte Glück der größten Zahl“ lautet. Was gut und was schlecht ist, sollte also nur mit Blick auf die Folgen beurteilt werden. Da sich die
+        Neoklassiker sicher waren, dass der Markt der beste Mechanismus zur Verteilung von Inputs und Outputs sei, standen sie also vor zwei Aufgaben: 1. Herausfinden, welches Ergebnis der Markt produziert, und 2. Ein allgemeines Kriterium zur
+        Bewertung des Marktergebnisses entwickeln. Es liegt auf der Hand, dass die Suche nach allgemeingültigen Prinzipien nicht in der echten Welt, sondern nur innerhalb von Modellen geschehen kann. Leon Walras (1840-1921) leistete hierzu einen
+        großen Beitrag, indem er mathematisch aufzeigte, dass bei entsprechender Modellierung tatsächlich ein eindeutiges Ergebnis gefunden werden kann, das auf allen Märkten Angebot und Nachfrage in Einklang bringt, d.h. ein allgemeines
+        Gleichgewicht eintritt. Diese Gleichgewichtsidee ist bis heute eine tragende Säule der Neoklassik und notwendig für die selbstgesteckte Aufgabe der Marktlegitimierung: Gäbe es auf einen Markt kein Gleichgewicht und Angebot und Nachfrage wären
+        nicht im Einklang, so würden Ausgleichsprozesse einsetzen, die wiederum andere Märkte beeinflussen und das Marktergebnis wäre nicht stabil, sodass man es auch nicht nach seinen Auswirkungen bewerten könnte. Ein Gleichgewicht kann in der
+        Realität natürlich nie beobachtet und damit nie empirisch überprüft werden – was gleichermaßen ein Problem und ein nützliches Schutzschild ist. Ökonomen behaupten nämlich nicht, dass sich langfristig ein Gleichgewicht tatsächlich einstellt,
+        sondern ihre Gleichgewichtslösung, heutzutage z.B. in sogenannten Mikrosimulationen berechnet, wäre quasi der finale Zustand nach allen Ausgleichsbewegungen ceteris paribus. Um in seinen Modellen überhaupt zu einer mathematischen Lösung zu
+        kommen, stellt Walras Maximierungsrechnungen an (maximaler Nutzen oder maximaler Profit) und leitet daraus stetige Nachfrage- und Produktionsfunktionen ab. Zur Darstellung des Marktprozesses erfindet er einen hypothetischen Auktionator, der
+        für alle Güter alle Preise für alle denkbaren Situationen das Angebot und die Nachfrage aller Marktteilnehmer abfragt und summiert. Dort wo sie sich entsprechen, stellt sich der Marktpreis ein und das Marktergebnis ist gefunden. Es zeigt
+        sich, dass diese Art der Modellierung auch dazu führt, dass für den repräsentativen Konsumenten im Gleichgewicht der Preis eines Gutes seines Grenznutzen entspricht. Mittels massiver Abstraktion, zahlreichen Annahmen und viel Mathematik hatte
+        Walras aus Sicht der Neoklassik damit das erste Rätsel gelöst und das Marktergebnis gefunden – blieb noch dessen Bewertung.
+      </p>
+      <p>
+        Hier betritt nun Vilfredo Pareto (1848-1923) die Bühne, der Leon Walras auf dem Lehrstuhl für Politische Ökonomie in Lausanne nachfolgte und die von ihm begründete Tradition der „Lausanner Schule“ fortführte. Pareto erkannte, dass das
+        utilitaristische Prinzip eine große Schwachstelle hatte, nämlich die der notwendigen Quantifizierung von Nutzen. Will ich den Nutzen aller Beteiligten maximieren, muss ihn dem individuellen Nutzen einen numerischen Wert zuordnen können – ein
+        unmögliches Unterfangen. Pareto konzeptualisierte Nutzen deshalb neu: Die Präferenzen der Wirtschaftsakteure finden ihren Ausdruck nicht in quantitativen Nutzenzuordnungen (Ein Apfel bringt mir drei Nutzeneinheiten mehr als eine Birne),
+        sondern in qualitativen Präferenzordnungen (Zwei Äpfel bringen mir mehr Nutzen als drei Birnen). Dies vereinfachte zwar die Analyse und konnte mathematisch auch wunderbar umgesetzt werden, erforderte jedoch ein neues Bewertungskriterium
+        anstelle der Summenmaximierung. Pareto entwickelte daher die nach ihm benannte Pareto-Effizienz, die ein Optimum darüber definiert, was es nicht ist: Ein Zustand ist nicht optimal, wenn jemand ein höheres Nutzenniveau erreichen kann, ohne
+        dabei einen anderen schlechter zu stellen. Alle Zustände, in denen das nicht möglich ist, sind im Umkehrschluss effizient. Das erscheint logisch, ist aber für die echte Welt absolut ungeeignet, wer würde es schließlich optimal nennen, wenn
+        eine Person alle Güter erhält (was pareto-effizient ist)? Nichtsdestotrotz waren die Neoklassiker begeistert, denn es stellte sich heraus, dass in der Walrasianischen Modellwelt tatsächlich jedes Marktergebnis pareto-effizient ist. Die
+        Legimitationsbasis für den Markt war geschaffen.
+      </p>
+      <p>
+        Ausgestattet mit einem in sich geschlossenen und berechenbaren Marktmodell trat die Neoklassik ihren Siegeszug in den Universitäten an. Von entscheidender Bedeutung hierfür war Alfred Marshall (1842-1924), der mit dem stringent konzipierten
+        und gut geschriebenen Lehrbuch „Principles of Economics“ die neoklassischen Lehren in die Köpfe mehrerer Generationen von Studenten brachte. Die Meinungshoheit in der akademischen Welt sichert sich, wer den Nachwuchs prägt, d.h. wer eine
+        konsistente Lehre und dominante Lehrbücher bereitstellt, und bis heute ist die Macht der Neoklassik hier ungebrochen. Der Erfolg von Marshalls Lehrbuch gründete sich wohl auch darauf, dass er als erstes griffige Darstellungen wie das
+        Marktkreuz von Angebot und Nachfrage einführte und dennoch einer übermäßigen Abstraktion in der VWL kritisch gegenüber stand. Marshall griff Elemente aus der Englischen Klassik wie das Produktionskostenprinzip (Smith) wieder auf und verband
+        es mit neoklassischen Elementen wie der Marginalanalyse, wofür Schumpeter ihn den Titel des großen „Versöhner“ gab. Zudem versuchte Marshall das statische Marktmodell der Neoklassik zu dynamisieren und unterschied eine kurze First, in der das
+        Angebot starr und die Nachfrage determinierend für das Marktergebnis ist, und eine lange Frist, in der das Angebot flexibel ist und die Produktionskosten den Preis bestimmen. Darüber hinaus erfand er die repräsentative Firma analog zum
+        repräsentativen Konsumenten sowie das enorm wichtige Konzept der Elastizitäten (Um wie viel % ändert sich z.B. die Nachfrage, wenn der Preis eines Gutes um 1% steigt?) und legte mit der Konzeptualisierung von externen Effekten (Auswirkung
+        einer Handlung, die von Marktakteuren nicht berücksichtigt bzw. nicht eingepreist wird) wichtige Grundlagen für die von Pigout begründete Wohlfahrtsökonomik. Bei alledem vergaß Marshall nie die praktische Politik und beschäftigte sich viel
+        mit praktischen Wirtschaftsproblemen sowie der Formulierung von politischen Lösungen. Je nach akademischer Perspektive ergeben es daher ganz unterschiedliche Marshall-Bilder: Neoklassiker würdigen ihn für die Einführung neuer Konzepte und
+        sein bahnbrechendes Lehrbuch, Kritiker hingegen sehen bei ihm die gleiche Realitätsferne wie bei anderen Neoklassikern. Ein faires Urteil käme wohl zu dem Schluss, dass Marshall ein kritischer Neoklassik war: Marshall sah Abstraktion und
+        Mathematik nur begrenzt als sinnvolles Werkzeug und betonte stets die Verortung der Ökonomik als „Study of wealth and man“ in den Sozialwissenschaften.
+      </p>
+      <p>
+        Der Lauf der Geschichte brachte die neue etablierte Neoklassik jedoch bald ins Wanken. Kurseinbrüche an der amerikanischen Börse läuteten 1929 die „Große Depression“ ein, die erst in den USA ausbrach und alsbald v.a. wegen ausbleibender
+        amerikanischer Finanzierungsströme sowie protektionistische Maßnahmen über die gesamte industrialisierte Welt schwappte. Deutschland traf es dabei besonders hart, denn zur realwirtschaftlichen Krise kam 1931 auch noch eine Bankenkrise hinzu.
+        Entwicklungen wie der Freihandel wurden schon vor Ausbruch des ersten Weltkrieges Schritt für Schritt zurückgedreht, bis der Protektionismus schließlich mit der Weltwirtschaftskrise von 1929 seinen Höhepunkt nahm. Für die akademische
+        Neoklassik war die Weltwirtschaftskrise ebenfalls ein Problem, denn man hatte sie nicht kommen sehen. Schlimmer noch, neoklassische Ökonomen scheiterten ebenfalls beim Ausarbeiten praktikabler Lösungen, was kein Wunder ist, da sich die
+        ökonomische Zunft doch zuvor primär mit der theoretischen Lobpreisung des Marktes beschäftigt hatte. Das Versagen der Neoklassik mit Blick auf die Weltwirtschaftskrise erlaubte es einem berühmten Ökonomen, sie in ihren Grundzügen anzugreifen:
+        John Maynard Keynes (1883-1946).
+      </p>
+      <div id="Keynes" class="jumper">
+      </div>
+      <p>
+        Keynes war nicht nur der wohl wichtigste Ökonom des 20. Jahrhunderts, sondern auch eine schillernde Persönlichkeit. Bereits in Eton fiel er als hochbegabter Schüler auf und wechselte danach an die Universität Cambridge zum Studium der
+        Mathematik und klassischen Philologie, hörte allerdings auch Vorlesungen beim dort lehrenden Alfred Marshall. Neben seinem Studium war er Teil der Bloomsbury Group, einer Gruppe junger, eng befreundeter Intellektueller, zu denen u.a. die
+        Schriftstellerin Virginia Wolf und der Maler Duncan Grant zählten. Mit letzterem führte Keynes sieben Jahre lang offen eine Beziehung, heiratete später allerdings – zum Unmut seiner Bloomsbury-Freunde – die russische Ballettänzerin Lydia
+        Lopokova. Keynes legte ein steile akademische Karriere hin, gewann bereits 1909 den bedeutenden Adam-Smith-Preis und wurde 1920 Professor in Cambridge. Zuvor war er auch politisch in wichtige Funktionen innerhalb des Finanzministeriums
+        aufgestiegen und wurde u.a. Unterhändler bei den Vertragsverhandlungen von Versailles, bis er aus Unmut über die kontraproduktive Härte gegenüber Deutschland zurücktrat. Seine damals formulierte Kritik „The Economic Consequences of the Peace“
+        ist bis heute lesenswert und im Rückblick wahrlich prophetisch. Obwohl Keynes sich in seinen akademischen Anfängen noch auf dem neoklassischen Fundament bewegte, erfuhr er schon mit vorsichtig alternativen Ansichten teils starken Gegenwind.
+        So forderte er 1926 in seiner Schrift „The End of Laissez Faire“ eine aktivere Rolle des Staates inklusive Übernahme von Steuerungs- und Stabilisierungsfunktionen – ein Unding für die marktliberalen Neoklassiker, in deren Modellen und Denken
+        der Staat größtenteils keinen anderen Platz als die Sicherung der marktwirtschaftlichen Ordnung hatte. Im 1930 erschienenen „A Treatise on Money“ formulierte Keynes erstmals wichtige Konzepte seines späteren Denkens. So differenzierte er die
+        Geldnachfrage je nach angestrebten Verwendungszweck und wies auf die bedeutende Rolle der Sparquote für wirtschaftliche Entwicklung hin (Sparen ist letztlich nichts anderen als Nicht-Konsum). Die oft beschworene „Keynesianische Revolution“
+        kam dann 1936 mit der Veröffentlichung seines Hauptwerks „General Theory of Employment, Interest and Money“, in der er Lehren aus der Weltwirtschaftskrise von 1929 zog. Darin widersprach er der neoklassischen Idee, dass bei zu niedrigen
+        Investitionen das Absinken des Zinses (was Investitionen günstiger macht) selbige wieder ausreichend erhöht, um zum Vorkrisengleichgewicht zurückzukehren. Stattdessen sind Absatzerwartungen entscheidend für die Investitionsentscheidungen für
+        Unternehmer, sodass in einem Umfeld großer Unsicherheit und fallender Absätze aufgrund von geringerem Konsum sich ein Teufelskreis aus zu geringen Investitionen, wirtschaftlicher Unterauslastung und geringen Konsums einstellen kann. Der
+        Marktmechanismus allein reicht hier nicht, um die Wirtschaft wieder in Schwung zu bringen, stattdessen muss der Staat durch eigene Ausgaben die gesamtwirtschaftliche Nachfrage so stark anregen, dass Unternehmen und Konsumenten wieder höhere
+        Einkommen und optimistischere Erwartungen haben und damit mehr investieren bzw. konsumieren. Zudem betonte er die Bedeutung von Erwartungen und „animal spirits“ (Instinkte, Emotionen, Narrative etc.) im Gegensatz zur neoklassischen
+        Vorstellung von hyperrationalen Risikoberechnungen, die allein schon daran dann, weil Menschen die Zukunft nicht durch Risiken quantifizieren können, sondern diesbezüglich fundamentale Unsicherheit herrscht. Damit negierte Keynes das in Teil
+        1 kennengelernte Saysche Theorem der Neoklassik, nach dem sich jede Produktion, die Löhne und Einkommen in gleicher Höhe erzeugt, automatisch eine ausreichende Nachfrage schafft. Stattdessen spielt die Konsum- bzw. Sparquote eine gewichtige
+        Rolle, wobei es auf Makroebene zum sog. Sparparadoxon kommen kann: Wenn alle Bürger eines Landes mehr sparen, um später mehr Geld zu haben, dann führt die dadurch zurückgehende Nachfrage dazu, dass alle Bürger auch weniger Einkommen erzielen
+        (die Ausgaben des einen sind das Einkommen des anderen) und am Ende stehen alle ärmer da also zuvor. Das individuelle Verhalten auf der Mikroebene kann also nicht direkt auf die Makroebene übertragen werden (man spricht hier von der „fallacy
+        of composition“). Diese Überlegung führt auch zu dem Schluss, dass die steigende Einkommens- und Vermögenskonzentration in den 20er Jahren zu einer insgesamt fallenden Konsumnachfrage geführt hat (Reichere Leute geben einen kleineren Anteil
+        ihres Einkommens wieder aus und sparen mehr als Ärmere) und damit die Gesamtnachfrage nach realen Gütern (in Abgrenzung zur grassierenden Wertpapierspekulation) im Vorfeld der Krise bereits geschwächt war. Bei all seinen Analysen kehrte
+        Keynes wichtigen Grundprinzipien der Neoklassik den Rücken zu: Mathematische Beschreibungen von individuellem Verhalten lehnte er ab, Bewegungen in der kurzen Frist waren ihm wichtiger als Gleichgewichtszustände in der hypothetischen langen
+        Frist („In the long run we are all dead“, wie Keynes prägnant zuspitzte) und der Fokus wurde wieder auf Beschäftigung und wirtschaftspolitische Fragestellungen gelegt. Nachfrageorientierte Politik à la Keynes, die dem Staat bedeutende
+        Fähigkeiten zugesteht, war nach dem 2. Weltkrieg äußert populär und die Nachkriegszeit eine Phase des inklusiven, schnellen Wachstums (was jedoch nicht nur ein keynesianischer Erfolg war, schließlich lag vieles in Trümmern und musste neu
+        aufgebaut werden).
+      </p>
+      <p>
+        Deutschland ging zu Keynes Zeiten einen Sonderweg, der unter dem Begriff „Ordoliberalismus“ oder „Freiburger Schule“ bekannt ist und noch immer einen hohen Stellenwert in Deutschland hat. Wichtigster Vertreter dieser Richtung ist Walther
+        Eucken (1891-1950), der aufgrund seiner selbstgewählten Distanz zum nationalsozialistischen Regime nach dem Ende des zweiten Weltkriegs wirtschaftspolitischer Berater der Besatzungsmächte wurde. Während des Krieges hatte Eucken 1939 die
+        Schrift „Grundlagen der Nationalökonomie“ veröffentlicht, in der er die Historische Schule als zu sehr aufs Datensammeln versteift kritisierte, und erklärt, die Marktwirtschaft (die bei Eucken „Verkehrswirtschaft“ heißt) brauche
+        notwendigerweise den Rechtsstaat, während die Zentralverwaltungswirtschaft der Nationalsozialisten nur mit diktatorischen Mitteln operieren könne. Eucken sprach hier von der „Interdependenz der Teilordnungen“ (Recht und Wirtschaft) und machte
+        den Ordoliberalismus somit in Teilen zu einem Vorläufer der modernen Institutionenökonomik. Seine eigenen Ideen, die die Reformen der Nachkriegszeit prägten, lassen sich im 1952 posthum erschienen Buch „Grundsätze der Wirtschaftspolitik“
+        nachlesen, wobei der Titel bereits seine praktische Orientierung nach dem Ende des Naziregimes zeigt. Eucken unterschieidet darin zwischen der Wirtschaftsordnung, d.h. dem institutionellen und rechtlichen Rahmen, innerhalb dessen
+        wirtschaftlichen Handeln stattfindet, und dem Wirtschaftsprozess, d.h. den tatsächlichen Wirtschaftsaktivitäten wie etwa Transaktionen zwischen den Wirtschaftsakteuren. Seiner Meinung nach sollte der Staat ausschließlich in die
+        Wirtschaftsordnung, nicht aber den Wirtschaftsprozess politisch eingreifen. Gute Politik folgt laut Eucken sieben konstituierenden Prinzipien: Freie Preise, stabile Währung, offene Märkte, Vertragsfreiheit, Privateigentum, Haftung und
+        konstante/verlässliche Wirtschaftspolitik). Diese allein reichen jedoch selbst bei einer Marktwirtschaft mit funktionierendem Wettbewerb, den Eucken für eine fundamentale Notwenigkeit ansieht, nicht aus, um ein ökonomisch und gesellschaftlich
+        stabiles System zu gewährleisten. So muss der Staat eingreifen bei natürlichen Monopolen, der realisierten Einkommensverteilung, auf Arbeitsmärkten und zum Schutz der Umwelt. Daher werden die sieben konstituierende Prinzipien noch um vier
+        regulierende Prinzipien erweitert: Monopolaufsicht, Einkommenspolitik, Auffangen anomaler Angebotsreaktionen und Korrektur der Wirtschaftsrechnung. Ein weiterer Vertreter der Freiburger Schule, Alfred Müller-Armack (1901-1978), prägte
+        schließlich einen zentralen Begriff für die ordoliberale Vorstellung einer Wirtschaftsordnung: „Soziale Marktwirtschaft“. Nachdem Müller-Armack zunächst in der Tradition der deutschen Nationalökonomik vor allem aus einer kultursoziologischen
+        und historischen Perspektive auf Wirtschafts- und Gesellschaftsordnungen geschaut hatte, wobei während des Krieges teilweise durchaus rassische Färbungen in seinen Texte auftauchten, trat er nach dem zweiten Weltkrieg der CDU bei und
+        arbeitete ab 1952 unter Ludwig Erhard im Wirtschaftsministerium als Leiter der Grundsatzabteilung. Die Präsenz ordoliberaler Lehren im akademischen wie im politischen Raum sorgte dafür, dass deutsche Ökonomen auf die Richtungsentscheidungen
+        der weltweit dominierenden angelsächsischen Ökonomik wenig Einfluss nahmen und die Auseinandersetzung um keynesianische Politik hier weniger intensiv geführt wurde.
+      </p>
+      <div id="Synthese" class="jumper">
+      </div>
+      <p>
+        Die akademische Neoklassik in USA und Großbritannien musste hingegen eine Antwort auf den Frontalangriff durch Keynes finden. Unrühmlich verdient machte sich dabei John Hicks (1904-1989), der in einem Kommentar zur keynesianischen Analyse ein
+        einfaches Modell (IS/LM) zu dessen Darstellung formulierte, das bald ein Eigenleben entwickelte. In diesem Modell kann zwar beispielsweise das Wirken keynesianischer Wirtschaftspolitik gezeigt werden, es übergeht jedoch wichtige Grundgedanken
+        von Keynes. Es handelt sich dabei nämlich wieder um ein langfristiges Gleichgewichtsmodell, in dem Erwartungen oder Marktimperfektionen keinerlei Rolle spielen. Auch gibt es dort keine unfreiwillige Arbeitslosigkeit und der Staat wird außer
+        bei krisenhafter Unterauslastung nicht gebraucht. Zudem bedient es sich der Idee der langfristigen Neutralität des Geldes, wonach Geldpolitik langfristig keine realen Effekte auf die Wirtschaft hat. Für die Ökonomen alter Schule war diese
+        angebliche „Synthese“ eine große Erleichterung: Man hatte keynesianische Gedanken vorgeblich aufgegriffen, ohne die Grundfeste des eigenen Systems zu verändern. Hicks selbst bedauerte später die große Verbreitung und Interpretation seines
+        Modells und denunzierte es als „a classroom gadget“. Deutlichere Worte fand die Ökonomin Joan Robinson (1903-1983), die die keynesianische Analyse begeistert aufgenommen hatte und die sich nach Keynes Tod verbreitende neoklassische
+        (Fehl-)Interpretation als „Bastard-Keynesianismus“ geißelte. Obgleich heute eher weniger bekannt, galt Robinson ihren Zeitgenossen als scharfsinnige und scharfzüngige Ökonomin, die einen Nobelpreis sicher gehabt hätte, wäre sie nicht links
+        und eine Frau gewesen. Robinson lehnte Gleichgewichtstheorien ohne Erwartungen und Marktimperfektionen rundherum ab und entwarf alternative Modelle zur formalen Darstellung eines Marktes ohne perfekten Wettbewerb. In ihrer Arbeit setzte sie
+        sich nicht nur intensiv – und teilweise kritisch – mit Keynes auseinander, dem sie unter anderem eine unterschätzte Inflationsgefahr durch Vollbeschäftigung und eine Vernachlässigung qualitativer Aspekte der Produktion vorwarf, sondern
+        beschäftigte sich auch viel mit den Arbeiten von Kalecki, Sraffa und Marx. Sie macht die Verteilung von Macht und Vermögen zu einem zentralen Aspekt ihrer Analyse und wies daraufhin, dass das Problem der Arbeitslosigkeit auch eine Machtfrage
+        war, denn Unternehmen nützen Arbeitslose wegen ihrer Lohnsenkenden Wirkung (Ein Arbeiter kann nicht so viel Lohn fordern, wenn er weiß, dass 10 Arbeitslose nur darauf warten, ihn für weniger Geld zu ersetzen). Mit ihrer konsequenten
+        Weiterentwicklung keynesianischer Gedanken in Opposition zur neoklassischen „Synthese“ gilt Robinson als Begründerin des Post-Keynesianismus (nicht zu Verwechseln mit dem neoklassischen Neu-Keynesianismus), der heute der wohl wichtigste
+        Gegenspieler der Neoklassik ist. Als in den 1970ern eine Periode hoher Inflation und hoher Arbeitslosigkeit (sog. Stagflation) einsetzte und vorgeblich keynesianische Wirtschaftspolitik als überholt und wirkungslos angesehen wurde, sah
+        Robinson das Problem nicht im Versagen der keynesianischen Ökonomik, sondern in deren Nicht-Umsetzung. So schrieb sie 1971: „The Keynesian revolution still remains to be made both in teaching economic theory and in forming economic policy”.
+      </p>
+      <div id="Monetarismus" class="jumper">
+      </div>
+      <p>
+        Dass diese Einschätzung bis heute gilt, liegt an der neoklassischen Gegenrevolution zu Keynes – sofern man zuvor von einer keynesianischen Revolution hätte sprächen können – in Form des Monetarismus. Ähnlich wie die keynesianische Analyse
+        trat der Monetarismus mit einer Interpretation der Weltwirtschaftskrise von 1929 in das akademische Scheinwerferlicht. Milton Friedman (1912-2006) und Anna Schwartz sahen in ihrem Aufsatz „A Monetary History of the United States“ die
+        Geldmengenreduktion im Vorfeld der Krise als zentrales Problem, worin sie sich mit Keynes noch recht einig waren. Ebenfalls gemeinsam mit Keynes ist ihnen die Kritik an der wirtschaftspolitischen Reaktion auf die Krise, die von der
+        Liquidationsthese der Österreichischen Schule geprägt war. Laut den Österreichern führt ein übermäßiges Geldmengenwachstum (damals im Boom der goldenen 20er) zu einer Fehlallokation von Ressourcen und schlechten Investitionsentscheidungen,
+        sodass die Krise und eine sinkende Geldmenge benötigt werden, um die Fehlallokationen aus dem System zu spülen, bis die Wirtschaft von selbst wieder – gewissermaßen wie ein Phönix aus der Asche – in Schwung gerät. Ökonomen wie Hayek und
+        Schumpeter hatten entsprechende Empfehlungen zur staatlichen Nicht-Einmischung ausgesprochen, die von Präsident Hoover in den 1930ern auch umgesetzt wurden, worüber er sich in seinen Memoiren retrospektiv sehr ärgerte. Monetarismus und
+        Keynesianismus waren also beide gegen das Nichtstun, hatten aber völlig verschiedene wirtschaftspolitische Rezepte: Während Keynes die Nachfrage in den Mittelpunkt gestellt und höhere Staatsausgaben als Lösung gesehen hatte, hielten Friedman
+        und Schwartz die Geldpolitik allein für völlig ausreichend. Zentral war für sie die Quantitätsgleichung, die als Identität das Produkt aus Geldmenge und Umlaufgeschwindigkeit mit dem Produkt aus Preisniveau und Volkseinkommen gleichsetzt. Um
+        die Wirtschaft wieder in Schwung zu bringen, hätte es laut ihnen 1930 ausgereicht, wenn die FED die Geldmenge erhöht hätte. Im Kern ist der Monetarismus nämlich eine neoklassische Gleichgewichtstheorie, die die Entwicklungen des Privatsektor
+        als grundsätzlich stabil erachtet. Nur dann, wenn der Bedarf für zusätzliches Geld durch eine wachsende Wirtschaft nicht ausreichend von der Geldpolitik befriedigt wird bzw. diese nicht auf die Schrumpfung der Geldmenge durch Bankenpleiten
+        (wie 1929) reagiert, kommt es zu krisenhaften Entwicklungen. Als Schuldiger an der Großen Depression wurde demnach nicht der Privatsektor oder die Fiskalpolitik, sondern die Zentralbank identifiziert. Mit dieser Interpretation konnten die
+        Neoklassiker endlich aufatmen: Der Monetarismus hatte nicht nur Gleichgewichtsideen und den Glauben an die Kraft des Marktes zurückgebracht, sondern den Staat auch wieder an den Spielfeldrand versetzt. Zentralbanken wurden vom Staat getrennt
+        und sollten allein das Geldmengenwachstum im Blick behalten, was die EZB übrigens in ihren Anfangsjahren auch noch praktizierte. Letztlich fiel der Monetarismus jedoch im Praxistest durch, denn weder ist die notwendige Geldmenge klar
+        vorhersagbar noch kann aufgrund privater Geldschöpfung die Geldmenge direkt von der Zentralbank gesteuert werden.
+      </p>
+      <p>
+        Obwohl der Monetarismus letztlich scheiterte, wirken sein Glaube an Marktkräfte und sein Misstrauen gegenüber staatlicher Wirtschaftspolitik bis heute nach. Die Neoklassik setzte sich in Universitäten und Ministerien weiter durch und wandte
+        sich akademisch vor allem wieder ihren theoretischen Modellen zu. Wichtige Beiträge hierzu leistete etwa Robert Lucas (*1937), der vermutlich einflussreichste lebende Ökonom. Lucas wurde vor allem für seine Kritik an keynesianischen Modellen
+        bekannt, die seiner Meinung nach zu viele exogene Parameter enthielten und zu wenig endogen aus dem Verhalten der Individuen ableiteten. Wo Keynes in der Makroökonomik die Betrachtung von Aggregaten als zentral angesehen hatte, sah Lucas nun
+        die Mikrofundierung, d.h. die konsequente Umsetzung des methodologischen Individualismus in der Makroökonomik, als die große Aufgabe seiner Generation. Dazu entwickelte er beispielsweise die Annahme rationaler Erwartungen, nach der
+        Wirtschaftsakteure sämtliche Informationen in ihre Entscheidungen einfließen lassen und so stets ex-ante korrekte Vorhersagen über die wirtschaftliche Entwicklung treffen. Aus der Lucas-Kritik gingen die heute von Zentralbanken und anderen
+        Instituten genutzten DSGE-Modelle (Dynamic Stochastic General Equilibrium) hervor, die auf Basis mathematischer Beschreibungen individuellen Verhaltens langfristige Gleichgewichte berechnen. Gewürzt wird dieser Ansatz noch mit
+        spieltheoretischen Elementen, die während des kalten Krieges von Mathematikern wie Oskar Morgenstern (1902-1977) entwickelt wurden. Mit ihrer realitätsfernen Abstraktion und totalen Mathematisierung ist die Neoklassik damit heute genau das
+        geworden, vor dem ihr Vater Alfred Marshall gewarnt hatte.
+      </p>
+      <div id="Entwicklungen" class="jumper">
+      </div>
+      <p>
+        Mit diesem ernüchternden Urteil sind wir nach einer abwechslungsreichen und hoffentlich interessanten Reise wieder in der Gegenwart angekommen. Um jedoch nicht zu düster zu enden, soll am Ende noch ein kurzer Blick auf alternative
+        Entwicklungen in der Ökonomik geworfen werden, die keineswegs immer nur außerhalb des neoklassischen Mainstreams zu finden sind: So ist die Neue Institutionenökonomik, die wie der Ordoliberalismus eine staatswissenschaftliche Perspektive
+        einnimmt, durchaus in der modernen VWL etabliert und richtet ihr Hauptaugenmerk auf die Untersuchung des Wandels von ökonomischen Institutionen wie Märkten oder Unternehmen. Sie begreift das Wirtschaftssystem als menschengemacht und damit als
+        dynamisch und offen sowie eingebettet in soziale Normen und staatliche Regeln. Zentrale Inhalt sind hier die Transaktionskostentheorie, die Property-Rights-Theorie oder die Prinzipal-Agenten-Theorie. In gewisser Weise schlägt die Neue
+        Institutionenökonomik, u.a. auch mit ihrer international vergleichenden Methodik, eine Brücke zu Aspekten der Historischen Schule. Eine andere im Mainstream angekommene Entwicklung ist die Verhaltensökonomik, für die prominent etwa Daniel
+        Kahnemann (*1932) steht. Diese nimmt ihren Ausgangspunkt in der Beobachtung, dass eine Diskrepanz zwischen ökonomischen Modellen und der Realität besteht, und versucht die Neoklassik durch ein realistischeres und psychologisch fundierteres
+        Menschenbild zu verbessern. Der Homo Oeconomics sollte laut ihr endogene Präferenzen haben, nicht perfekt rational, sondern unter dem Einfluss von kognitiven Biases handeln, und statt Nutzenmaximierung eher sog. Satisficing betreiben. Ein
+        weiterer Vorreiter der Verhaltensökonomik, Robert Shiller (*1946), untersucht im Rückgriff auf Keynes „animal spirits“ die Bedeutung von Narrativen für wirtschaftliche Krisen. Vor dem Hintergrund der Klimakrise wird zudem der
+        Ressourcenökonomik immer mehr Beachtung zuteil, die mit Anknüpfungen zu den Naturwissenschaften natürliche Beschränkungen des Wirtschaftsleben untersucht. Eine konsequente Form dessen stellt die Postwachstumökonomik dar, die aufgrund des
+        dringenden Handlungsbedarfs bei der Emissionsreduktion und des immernoch starken Zusammenhangs von konventionellem Wachstum und Energieverbrauch alternative Wirtschaftskonzepte für eine Welt des differenzierten und qualitativen Wachstum
+        ausarbeitet. Anders als die zuvor genannten Strömungen werden ihre Vertreter (z.B. Tim Jackson) von der aktuellen Mainstream-Ökonomik noch ausgegrenzt, was genauso für viele andere plurale Ansätze gilt. Zu dieses zählen auch die bereits
+        erwähnten Post-Keynesianer, die Kernpunkte der keynesianischen Analyse in ihrer Arbeit fortsetzen. Doch selbst bei im Mainstream anerkannten alternativen Ansätzen fehlt die Verschränkung mit zentralen Elementen der Neoklassik (z.B.
+        DSGE-Modelle) und es ist mehr als fraglich, ob dies überhaupt gelingen kann oder es nicht doch einer Zeitenwenden in der VWL braucht. Wie wir gesehen haben, ist die Geschichte der Ökonomik reich an vielfältigen Ideen und
+        Verbesserungsvorschlägen für eine bessere Wirtschaftsordnung – hoffen wir, dass das für ihre Zukunft genauso gilt.
+      </p>
+
+
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

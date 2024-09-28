@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/stopping-the-swing/images.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Stopping the swing: How to balance the world economy</h2>
+
+      <p>
+        In Germany, a new government has entered the political stage. And while there are many projects that the former leading, conservative party CDU had blocked (for example access to information about abortions at doctors or a higher minimum
+        wage) and many goals that are more ambitious than those of earlier governments (especially with regard to climate protection), there is still a lot of continuity – unsurprisingly, since the new chancellor Olaf Scholz had deliberately
+        presented himself as a male version of Angela Merkel. However, it is worrying to see where this continuity has not even been part of the debate. This holds very much true for the issue of balanced trade, despite it being one of the corners of
+        the so-called Magic Square of economic policy, and despite its crucial importance for both the Eurozone and the world economy as a whole. As it is widely known and relentlessly criticized by other countries, Germany has run a persistent trade
+        surplus since the mid-2000s and holds tightly – and proudly – on to the infamous title of “export champion”. But it is not only Germany that brings the world economy out of balance: After the end of the Bretton Woods regime in the 1970s,
+        macroeconomic imbalances have increased globally and led to problems for deficit and surplus countries alike. The following text aims at giving an introduction into why this is the case, which problems arise from that, and what is needed for
+        rebalancing the global economy.
+      </p>
+
+      <div class="figure">
+        <img src="../../static/stopping-the-swing/cab.png" id="cab-static"/>
+        <p class="fig-desc">
+          Own figure, data from Worldbank
+        </p>
+      </div>
+
+      <p>
+        As depicted in the figure above, current account imbalances have strongly increased since the 1970s. Typical surplus countries are either exporters of resource commodities like Saudi-Arabia (pink bars) or countries with strong exporting
+        industries in the manufacturing sector like Germany (blue bars) or Japan (turquoise bars). An interesting case is China (salmon bars), whose growth model has been export-oriented for some time, but which has worked on increasing domestic
+        demand so that its trade surplus has melted away in the last decade. On the other side – and there always is another side, since trade balances are a zero-sum game globally – the USA (brick-red bars) had had increasingly high deficits,
+        especially in the forefield of the financial crisis of 2008. Although they have shrunk in size, they are still by far the biggest in the world. Other countries with relatively high deficits were Spain (orange bar) in the 2000s and the UK
+        (pink bars) in the 2010s. But as already mentioned in the introduction, macroeconomic imbalances are not only an issue at the global stage, but also both root and symptom of many problems in the Eurozone. Here, a good indicator are the
+        Target-balances, which show the accumulated net capital flows between the Eurozone members (I’ve already discussed their implications and relevance here).
+      </p>
+
+      <div class="figure">
+          <img src="../../static/stopping-the-swing/target.png" id="target"/>
+        <p class="fig-desc">
+          Target-2 Balances
+        </p>
+      </div>
+
+      <p>
+        It is evident from looks alone, that there is a problem in the Eurozone: Germany attracts much more capital flows, while Southern countries like Spain or Greece have large deficits. The Target balances themselves are not problematic, but they
+        indicate deep routed imbalances between Eurozone member states that are only inadequately – and often even counterproductively – addressed by the Macroeconomic Imbalances Procedure (MIP) of the European Commission (about which I have written
+        here).
+      </p>
+      <p>
+        But back to the global stage. What are trade imbalances, mainly indicated by Current Account (CA) balances, actually? As it is often the case, a simple formula helps to grasp the phenomenon:
+      </p>
+      <p class="formula">
+        CA = EX – IM = GNDI – GNE = S – I
+      </p>
+      <p>
+        The first element captures the simple truth that the current account balance measures the difference between exports and imports of a country. A current account deficit occurs when a country imports more goods than it exports (outflow of
+        capital) and vice versa for a current account surplus. From this, the zero-sum game character of trade balances becomes apparent, since one country’s exports are another country’s imports. It is, therefore, nonsense to only blame deficit
+        countries for global imbalances – we will come to that point in greater detail below. Moreover, it is clear that both domestic and foreign factors determine the trade balance of a country: Exports increase when the level of income increases
+        in a foreign country, which now imports more goods. Analogously, domestic income is positively correlated with domestic imports or foreign exports. The second element of the formula stresses exactly this point: The current account balance
+        equals the difference between Gross National Disposable Income (GNDI, sum of all income flows belonging to a country’s residents) and Gross National Expenditure (GNE, sum of all expenditures made by a country’s residents). This is why deficit
+        countries are often criticized for “living beyond their means” since they make expenditures above their total income. However, one could also criticize surplus countries for draining global demand by making not enough expenditures to absorb
+        global potential supply. The third part of the equation frames this in a slightly different way: The current account balance shows the difference between domestic saving and investment (both flow concepts). Through trade, a country can make
+        investments higher than national saving, with a CA deficit as a consequence. However, it is important to stress that it is difficult to give a meaningful interpretation of this, because saving is by definition the difference between total
+        income Y and private and public consumption (C + G), while investment is the third category of total expenditures (C + G + I). Therefore, saving is only an accounting identity, and the relation S > I (for a CA surplus country) refers to
+        nothing more than the fact that investments are lower than the level necessary to equalize domestic income and spending. However, it makes apparent the important role of investment decisions in determining trade flows. Countries with very
+        high levels of investment have usually a trade deficit, because private and public consumption decreases by less than investment raises.
+      </p>
+      <p>
+        While the above formula makes various statements about the real side of trade imbalances, i.e. about actual goods and services traded between countries, the equation
+      </p>
+      <p class="formula">
+        CA = – (FA + KA)
+      </p>
+      <p>
+        sheds light on the other, financial side of the coin. First, note the minus sign in front of the left side: A CA surplus (high exports of goods and services) is necessarily accompanied by an outflow of capital. This implies a negative
+        financial (FA) or capital account (CA). While the former is equal to the net flow of financial assets (debt obligations, stocks, foreign reserves), the latter is only affected by capital transfers like foreign aid (sometimes, the sum of FA
+        and CA are also called Capital Account) and is normally only relevant for developing countries. A negative financial account (CA surplus) signifies that more financial assets flow into the country than out of it, which means that more money
+        flows out than in. At first glance, this may seem counterintuitive, but in the end, it is only logical that a CA surplus country (more exports than imports) must hand out money to its trading partners so that they can pay for their imports
+        (its exports). In general, this is being done by granting loans to foreign countries. CA deficits are consequently associated with increasing debt liabilities. On the other side, CA surplus countries build up external wealth, be it by
+        accumulating claims against foreign countries or by purchasing financial (stocks) or real assets (factories) there. An important element of the financial account is the Official Settlement Balance (OSB) which measures the net flows of foreign
+        reserves (hoards of foreign currency, to put it simple) into/out of the vault of the domestic central bank. When a Moroccan consumer purchases a German car, but the German car manufacturer does not want to receive Moroccan Dirham in return,
+        the Moroccan consumer’s bank must go to the Moroccan central bank and convert Moroccan Dirham into Euro. Thereby, the Moroccan central bank’s amount of foreign reserves decreases. When they are depleted, it cannot convert Dirham into Euro and
+        the consumer’s bank must buy Euro deposits on the foreign exchange market (forex), which drives down the exchange rate of the Dirham against the Euro, making imports from Germany more costly in terms of Dirham. Low levels of foreign reserves
+        are a big problem for developing countries, which are often very import dependent (more details below).
+      </p>
+      <p>
+        Now we understand current account balances from multiple perspectives, but we still have not talked about what factors steer trade flows and determine CA balances. This is such a big and difficult question, that I cannot do it justice in this
+        article, and I better want to keep this paragraph short. In general, there are two main answers to the question: The first is the theory of absolute advantage, attributed to Adam Smith. Here, countries with lower costs per unit (be it due to
+        low wages or high productivity) are able to supply goods to the world market at a lower price and outbid competitors. Consequently, countries with low unit labor costs (ULC) have CA surpluses and those with higher ULC have CA deficits. The
+        second theory is based on comparative advantage, attributed to David Ricardo. Here, even a country with relatively high costs of production can achieve a balanced CA, when it focuses on exporting the good it is the least bad at producing.
+        However, only in theory this leads to balanced CAs for all countries, because for this result to hold, multiple unrealistic assumptions have to be made, such as full employment in all countries. Nevertheless, both theories provide a lens to
+        find explanations for actual trade flows. For example, it makes sense that countries with globally scarce and desired resources usually have trade surpluses (Saudi-Arabia, Norway). However, it is important to note that this only holds when
+        those resources are exploited by domestic enterprises. Also, it comes as no surprise that countries with low labor costs have high advantages in producing labor-intensive goods (think of Bangladesh and the production of clothing).
+        Industrialized countries with technological advances can also turn those into exports and can defend themselves against competitors with intellectual property rights (the now infamous TRIPS agreement of the WTO). Hereby, one can also see that
+        exercising power is another important factor: Intellectual property rights can only be enforced by multilateral agreements that industrialized countries can push through by using their political and economic power. All in all, Smith’s
+        absolute advantage theory seems to be the most relevant for explaining trade flows and CA balances around the globe.
+
+      </p>
+      <p>
+        A theoretical result that definitely has to be discarded with regard to the empirical evidence is – as depicted above – the one of equalized trade flows (balanced CAs) in the long-term. But where exactly do theory and practice collide? The
+        theoretical mechanism leading to disappearing imbalances is based on flexible exchange rates. A brief recap: Before World War I, silver and gold standards were the modus operandi. Here, the value of each currency was defined in terms of the
+        amount of silver or gold you get in exchange for one unit of currency, and the exchange rates between currencies were derived accordingly (so that one could not buy more metal by converting one’s money into another currency). During WWI,
+        national governments needed additional fiscal space and revoked the convertibility of their currency into gold to set the supply politically without material constraints. As a consequence, a floating exchange rate regime emerged until the
+        Great Depression, that led some countries to temporarily return to the gold standard. After WWII, it was evident that the gold standard was dead since European gold reserves were now largely in the USA. In the Bretton Woods system, the
+        US-Dollar was consequently the only currency directly convertible into gold, while all other countries’ currencies were stabilized at an individual exchange rate to the dollar. Although the Dollar was not the only reserve currency, and many
+        currencies were also pegged (= kept at a fixed exchange rate) to the British Pound, the German Mark or the French Franc, the US-Dollar was by far the most important one. The functioning of international trade, therefore, depended on a
+        sufficient supply of US-Dollar, which the Marshall Plan granted to European Countries. After the restart of the European economy (which was associated with trade deficits since it needed machines and other goods from the USA), current
+        accounts were relatively balanced, which was not so much the result of stabilized exchange rates, but of global capital controls, which prevented large deficits from being financed.
+      </p>
+      <p>
+        Nevertheless, the collapse of this system was inevitable, since a growing world economy needed a growing money supply as well as more and more reserves (US-Dollar) for international trade, which was incompatible with the convertibility of the
+        US-Dollar into gold with a fixed supply. Free floating exchange rates between (uncovered) fiat money were expected to bring the world economy into equilibrium. The idea was pretty simple: Whenever a country had a CA surplus, i.e. whenever it
+        exported more than it imported, there was a high demand for its currency (since many trading partners needed to pay for their imports = its exports) and the currency should have appreciated (the price of the currency on the forex market
+        should have gone up). This would have made exports of that country more expensive for its trading partners, and imports from them cheaper. As a result, the country should have exported less and imported more, bringing the CA balance back to
+        its equilibrium. What is wrong with that? The first problem is theoretical (so-called Marshall-Lerner-Condition): The CA balance only closes, when the described quantity effect (more imports, less exports) is stronger than the price effect,
+        which lets export prices in the domestic currency stay constant but lowers import prices , leading to a wider CA disbalance in the hypothetical case of zero quantity effects due to a perfectly inelastic demand (elasticity describes how much
+        demand reacts to price changes). In general, the Marshall-Lerner conditions with regard to import and export elasticities hold. However, there is another problem with the described balancing mechanism: It simply does not happen in reality.
+      </p>
+
+      <div class="figure">
+        <img src="../../static/stopping-the-swing/cab_exr.png" id="cab-exr"/>
+        <p class="fig-desc">
+          Own figure, data from Worldbank
+        </p>
+      </div>
+
+      <p>
+        The figure depicts the percentual change of the real effective exchange rate (an average exchange rate relative to all trading partners, corrected for inflation) against the CA balance (again in real terms). Green dots stand for a
+        relationship in line with the above mechanism (positive CAB + currency appreciation or negative CAB + currency depreciation), while red dots stand for cases where the reaction was the exact opposite. What do we see? The number of “correct”
+        and “false” reaction balance each other – which would never balance CAs in the long run. The reason for that lies in the forex market being very different from a normal market. First of all, there is no fixed supply of currency, because in
+        our modern world with endogenous money, banks can just create additional money by granting a loan. When a Vietnamese company wants to buy Chilean copper, then it can go to a Chilean bank, apply for a loan, and transfer the granted credit
+        money to the Chilean copper company. Additional demand for Chilean Pesos directly leads to additional supply of Chilean Pesos, so no price (exchange rate) adjustments take place. Secondly, efficient (“correct”) market outcomes are very
+        unlikely in forex markets because the beauty of markets in general lies in their capacity to process asymmetrical and dispersed information. However, the main actors in the forex market usually have no unique information themselves but
+        instead all gain their knowledge from common sources. As a result, their analyses and expectations are very homogenous and herd mentality is the general rule. A third source for inefficiencies stems from those expectations: Because the
+        exchange rates on forex markets are not based on dispersed information depicting real fundaments, the risk of self-fulfilling prophecies is very high. When all market participants observe the same sunspot (a random piece of positive or
+        negative information regarding future exchange rates), they are likely to all react in the same way leading to the outcome predicted by the sunspot. When everyone believes that other traders expect a currency to fall and that those other
+        traders, therefore, sell their foreign reserves, they also sell their own reserves in fear of lower prices in the future. This surge in reserves supply results in an actual depreciation of the currency. Moreover, because expectations react
+        much quicker to changes in the economy than goods prices, the phenomenon of “Overshooting” (an exchange rate moves stronger in the short-term than in the long-term) is very common. In short: Forex markets are not rooted in the real economy
+        and its agents are not rational in the original sense, so that their outcomes are also mostly irrational and inefficient. A good way to observe those irrational outcomes is to look at the interplay of inflation differences and exchange rates.
+      </p>
+
+      <div class="figure">
+          <img src="../../static/stopping-the-swing/inf_exr.png" id="inf-exr"/>
+        <p class="fig-desc">
+          Own figure, data from Worldbank
+        </p>
+      </div>
+
+      <p>
+        The figure depicts the relationship between inflation differences (between a country and the USA) and the exchange rate (of a country’s currency relative to the US-Dollar). In a rational world, a currency should depreciate when the domestic
+        inflation is higher than that of a trading partner – after all, one unit of currency can now purchase less goods. But similar to the scatterplot regarding CABs and exchange rates, empirically this behaviour is not the norm. Why is that?
+        Normally, a central bank reacts to inflation by increasing interest rates. This attracts foreign investors who now get a higher rate of return on their deposits held in that currency. Therefore, the demand for the domestic currency increases
+        and the currency appreciates. Accordingly, the currency of the trading partner with lower rates (lower inflation) depreciates because people convert their deposits into the foreign currency. This strategy of speculators is called “Carry
+        Trade” and makes the work of central banks much more difficult – especially in developing countries with low official reserves (see below). Carry Trades also put into question the “Trilemma of Monetary Politics”, which states that free
+        capital flows, effective autonomous monetary policy and fixed exchange rates cannot be achieved simultaneously. As a consequence, many people argue in favour of floating exchange rates to gain more politic space for the central bank. In the
+        real world with powerful financial speculators producing adverse effects of monetary policy, this argument does not really hold.
+
+      </p>
+      <p>
+        The aspect of interest rate differentials adds another layer to our explanation of why exchange rates do not equalize CABs in the long run: While under the Marshall-Lerner conditions exchange rates would affect imports and exports in a
+        stabilizing way, investments decisions can more than set them off. Think of the USA and China: Many observers argue that China keeps the value of the Renminbi relative to the US-Dollar low on purpose to make its exports more competitive.
+        However, it is by no means certain that an appreciation of the Renminbi would reverse the flows of goods from China to the USA, because investments in the USA would now become more attractive relative to those in China (especially those in
+        the US’ exporting sector) and the higher demand for investment goods could result in a higher flow of such goods from China to the USA. The net reaction of the trade balance between the USA and China is, therefore, ex ante unclear. Think of
+        the equation from the beginning: while (EX – IM) at first glance seem to be negatively affected by a currency appreciation, the reverse seems true for (S – I).
+      </p>
+      <p>
+        Floating exchange rates not reflecting the fundamental economic conditions lead to various problems. First of all, the high volatility and to some extent unpredictability of exchange rates make economic decisions more difficult and riskier,
+        and lower economic efficiency. For example, the exchange rate matters a great deal for the exporting sector and respective investments (a weak currency benefits exporters). But since exchange rates can move contrary to fundamentals, investors
+        do not know whether to invest in tradable or untradable goods (for whose production a strong currency is better because it makes imports of intermediates less expensive), so that the overall investment level is probably lower than in a world
+        with less uncertainty (i.e. with fixed exchange rates).
+      </p>
+      <p>
+        Another problem of volatile exchange rates affects creditors and debtors. The value of claims/liabilities against another country does not only depend on the contractually more or less fixed interest rate, but also on the exchange rate
+        between those countries. When the domestic currency depreciates, it becomes more expensive to serve interest payments on debt denominated in a foreign currency. As an illustrative real-world example, consider Switzerland and Hungary: Before
+        2008, the interest rate in Switzerland was much lower than in Hungary, and many Hungarians wanted to use this to their advantage by borrowing in Swiss Franc. When the financial crisis hit in 2008, there was a high inflow of money into
+        currencies perceived as “safe” – just like the Swiss Franc. As a consequence, the Swiss Franc appreciated against the Hungarian Forint and the loans taken out by Hungarians suddenly became a lot more expensive. More than two thirds of
+        Hungarian homeowners were affected by this and found themselves now under severe financial pressure. Only one person in Hungary benefitted from this dire situation: Viktor Orban, who rose to power by promising haircuts on those foreign loans.
+        Hungarians were not the only people to have fallen into the exchange rate trap since such loans were common across (high interest) East Europe. In an interesting case, the European Court of Justice ruled that the brokering banks shared
+        responsibility for advertising such instruments to consumers in Poland and had to accept a reduction in debt repayments. One cannot expect citizens to work out the ongoings in the complex international monetary system.
+      </p>
+      <p>
+        A third danger I want to mention in light of recent events, is the potential inflationary pressure from exchange rates. Especially for developing countries, which heavily depend on various imports – often inputs for the production of other
+        goods –, the effect of falling exchange rates on import prices (making them more expensive) can lead to inflation, because consumers have to pay more for imported goods that cannot be supplied by domestic producers at a similar price. This is
+        exactly the main problem of Turkey right now: The depreciation of the Lira, which is driven by various factors (mainly low political stability, lack of faith in economic policies, high foreign debt, low interest rates, and self-fulfilling
+        prophecies of speculators), makes imports more costly and drives up domestic inflation.
+      </p>
+      <p>
+        Besides the described problems of flexible exchange rates, the end of the Bretton Woods system also did not deliver the benefits many expected. After the 1970s, the IMF and other institutions pushed for financial liberalization, i.e. opening
+        national borders for free capital movements. Economists believed that this would be beneficial for developing countries, where the rate of return on capital (of investments) was considered to be higher than in industrialized countries (where
+        the law of diminishing return supposedly lowered the marginal product of capital). However, as Robert Lucas famously noticed, the expected capital flows from rich to poor countries did not happen – quite the opposite! Apparently, the rate of
+        return on capital was still higher in richer countries, which can mainly be explained by differences in socio-technological productivity (different quality of institutions, technologies, education etc.), risk premiums on foreign investments
+        (due to exchange rate volatility or lower political stability), differing capital shares, and lower investment costs in the industrialized nations. As a result, developing countries did not gain but potentially loose from financial
+        liberalization.
+      </p>
+      <p>
+        We have seen that floating exchange rates cause multiple problems and are no mechanism for balancing international trade. But we still have not answered the question why equalized CABs are actually desirable. First of all, the assessment of
+        CA deficits or surpluses is by no means unambiguous. People tend to see deficit countries as the clear losers and surplus countries as the clear winners of international trade, because only surplus countries experience increasing financial
+        wealth. However, with regard to actual goods and commodities, it is deficit countries that have a higher inflow of goods – they can consume more than they produce. A country that runs a permanent CA surplus until the end of time has given
+        away a lot of goods it could have enjoyed itself, which is obviously not in its self-interest. Only temporary CA surpluses that allow a country to build up financial wealth to be spent in the future on goods (implying future deficits) are
+        beneficial.
+      </p>
+      <p>
+        However, there is no way around the fact that not everybody can run trade surpluses, and when many countries pursue an export-oriented strategy (as it is currently the case), they create a situation where demand for goods (imports) is too low
+        to absorb the potential supply (exports), resulting in higher unemployment around the globe. The dependence of many nations on foreign demand becomes even more clear in times of crises: The magnitude of the economic consequences of the
+        Coronavirus was very depended on the developments in the big markets like China. Had China been less successful in containing the virus and had it not stabilized its level of demand, the world economy would have taken a much bigger hit. And
+        there are big risks to this stability in the future, too, most prominently by the relatively high level of corporate debt (think of Evergrande). A financial crisis in China would be highly contagious and would hurt economies around the globe.
+      </p>
+      <p>
+        Persistent CA imbalances actually increase the likelihood of financial crisis since they are necessarily accompanied by unbalanced capital flows and increasing debt levels of deficit countries. Without the availability of imports, debt driven
+        expenditures would not be possible to a large extent without causing immediate economic damage (some economists even argue that without large CA deficits of the USA, the financial crisis of 2008 would not have been triggered). And as laid out
+        above, the risks from debt are even higher when it is denominated in a foreign currency. Note that this not only concerns private debt: Argentina’s economy, for example, has yet to recover from the blow it took from its debt crisis, triggered
+        by the inability of its government to serve interest payments on US-Dollar loans. This, by the way, even led to the situation that despite an agreement between the IMF and Argentina to forgive parts of its debt (a so-called haircut),
+        Argentina was sued before an US court by some American hedgefonds which had previously bought huge amounts of government bonds at a very low prices and now managed to enforce the repayment of almost all of those bonds, achieving a rate of
+        profit above 1000%. Again – but to a lesser extent – countries with CA surpluses, too, can lose by accumulating external wealth, because valuation effects or exchange rate volatility can diminish the value of foreign assets. The investment
+        strategy of German banks for all the money earned by CA surpluses was so bad that Americans laughed about “Stupid German Money”, and Germany’s financial wealth took a big hit by the financial crisis in 2008. Thereby, claims on future
+        backflows of goods and services into Germany, built up by CA surpluses, were destroyed. However, the ability to accumulate claims on future goods (especially for aging societies) and to invest without giving up current consumption is, in
+        principle, a good thing.
+      </p>
+      <p>
+        We have already seen that reality often looks different (e.g., Lucas Paradox of capital flows from poor to rich countries) and studying the global distrubtion of assets and liabilities adds another element to the explanation: Poor countries
+        possibly do not have the option to increase investment by running trade deficits, because they have not enough financial assets (which other countries accumulate by CA surpluses) to serve as collaterals for borrowing from abroad. And even
+        when poor economies manage to sustain high growth rates, they run into another problem: Thirwall’s Law. Higher growth rates at home than in the rest of the world come together with higher demand growth at home than abroad. Since part of this
+        increasing consumption comes in the form of higher imports, the country’s imports rise faster than exports (which depend on foreign demand levels). Consequently, without political intervention (trade restrictions, for example) high growth
+        rates lead to CA deficits with all the problems outlined above. That explains the export orientation of many developing countries, often creating the danger of the so-called Dutch Disease. This concept refers to the problems of specializing
+        in the export sector (often resource commodities) and neglecting industry diversification, which backfires when the trading environment changes (due to international crises, demand adjustments, technological progress etc.).
+      </p>
+      <p>
+        At this point, it should be clear that trade imbalances and permanent CA deficits/surpluses are both the root for and the symptom of many problems. So how can international trade be fixed? An important principle needs to be that surplus and
+        deficit countries share responsibility for rebalancing, instead of pressuring only deficit countries into an export growth-regime as it is currently often done. Surplus countries need to strengthen domestic demand (which increases imports),
+        while deficit countries need to keep an eye on unstainable demand levels due to too much private debt (which decreases imports). Since we have seen that absolute costs are the most important factor for steering trade flows, wage policies need
+        to be coordinated internationally – especially, among countries with fixed exchange rates or a common currency (which is nothing else than a perfectly fixed exchange rate). Much of the imbalances within the Eurozone mentioned in the
+        introduction with regard to CAs or differences in inflation and unemployment are the result of unfair wage restraints during the 2000s in Germany, that enabled German firms to outcompete foreign competitors. If it were not for the Euro, its
+        European neighbours could have used exchange rate adjustments to counterbalance this. After all, lowering wages unlike actual innovations do not justify higher competitiveness and gains in world market shares.
+      </p>
+      <p>
+        To prevent this from happening, exchange rate should be politically fixed at a level consistent with the purchasing power parity (PPP). The PPP is fulfilled, when nominal exchange rates adjusted in a way offsetting inflation differences
+        (which are mainly driven by wage differences), so that real exchange rates are constant. A simple example helps to illustrate this: Imagine two identical countries E and D (with currencies Ene and Dada) that both only produce apples using
+        labour. In the beginning, both countries produce 100 apples per day, whose price per unit lies at 10 Ene and 10 Dada, respectively. Therefore, the exchange rate is exactly 1. Now, country E reduces its wages so that it pushes production costs
+        and thereby the price for an apple down to 5 Euro. In country E, we observe a deflation. If the exchange rate did not change, E would force D out of the market, because apples from E would cost 5 Dada (which is below D’s 10 Dada). To gain
+        back its market shares, D could also cut wages and reduce production costs (this is basically what Germany wanted Greece to do), starting a harmful race to the bottom. A better solution would be, to adjust the exchange rate in a way
+        offsetting the different price developments. In this case, this would imply an appreciation of the Ene to an Ene/Dada exchange rate of two. Now apples in both countries cost 5 Ene and 10 Dada, so that both countries are equally competitive
+        again. The only problem is that this rule also prevents gains in competitiveness from higher productivity (better harvesting technologies, for example), which one would deem more appropriate. But in the end, those surpluses too have to be cut
+        down and the more productive country still benefits from a higher production value. Also note that a single firm still gains from higher productivity in both the domestic and the foreign market.
+      </p>
+      <p>
+        The PPP is, therefore, a reasonable concept for determining how exchange rates should adapt to changing fundaments. However, it tells us nothing about the appropriate exchange rate level necessary. There are various methods for estimating
+        equilibrium exchange rates, and assessing them would go way beyond the scope of this article. Nevertheless, I want to give an impression of such estimates with an example taken from a policy brief by William Cline for the PIIE in 2017 (for
+        different estimates, have a look at the EQCHANGE database):
+      </p>
+
+      <div class="figure">
+          <img src="../../static/stopping-the-swing/feers williamson.png" id="feers"/>
+        <p class="fig-desc">
+          Figure from Cline 2017 (PIIE)
+        </p>
+      </div>
+
+      <p>
+        In the figure, a point above the horizontal zero-line indicates that the exchange rate of a currency relative to the US-Dollar (red) or the average of all their trading partners (blue) is too low. Since the USA has very high CA deficits, it
+        makes sense that almost all currencies should appreciate relative to the US-Dollar, making US-exports cheaper on the world market and leading to a smaller CA deficit of the USA. Interestingly, Argentina is the only country whose currency is
+        noticeably too strong relative to the US-Dollar. Needless to say, one must handle such estimates with great care since they are based on theoretical models with a lot of simplifications. Under a fixed exchange rate regime, where governments
+        decide collectively and collaboratively which exchange rates are appropriate, those rates would have to be constantly reassessed in the light of meeting the desired CA targets. Especially so, since we have seen how many uncertainties there
+        are with regard to the effect of exchange rates on CAs. In general, exchange rates should be stable enough to increase planning security and facilitating global investment, but also flexible enough to meet the changing needs of all countries.
+        An unchanged exchange rate anchor would, for example, be a problem for fast growing developing countries, where wages increase faster and the real exchange rate would, therefore, continuously rise, worsening their competitiveness. Remember:
+        real exchange rates should be constant to establish a level playing field for all (no wage dumping).
+      </p>
+      <p>
+        Both under the proposed and the existing regime, CA deficit countries need a sufficient amount of foreign reserves (foreign money or bonds to sell/buy) for stabilizing their exchange rates or financing capital outflows due to CA deficits.
+        Currently, the by far most important reserves are US-Dollars, whose supply is almost exclusively determined by the USA. To accumulate US-Dollar, countries mainly have to export goods in exchange for US-Dollars, leading to the already
+        described problem of demand drain from excessive export orientation. This is why you often hear the argument that the CA deficits of the USA are required to supply the world with US-Dollar reserves. However, that statement is disputable
+        because such reserves are also created when banks grant loans to foreigners, which enter the balance of payments not in the CA but as exports of deposits in the financial account. Nevertheless, the global supply of reserves as well as capital
+        flows in general are strongly depended on the behaviour of the USA. Inflation in the USA, for example, is a big problem for developing countries because it usually leads to higher interest rates set by the FED. This increases the rate of
+        return for capital in the USA and leads to capital outflow from developing countries, draining their foreign reserves. In the worst case, those countries are soon not able to pay for much needed imports or to serve interest payment in foreign
+        debt: a balance of payments crisis.
+      </p>
+      <p>
+        Providing aid in the form of lending out reserves is the main task of the International Monetary Fund (IMF). For a long time, the IMF could only lend out reserves it had previously collected from its member countries, depending on their
+        quotas. The IMF attached strict conditions to those loans and enforced neoliberal policies (privatization, smaller state budgets, financial liberalization) in many countries, which was both undemocratic and economically harmful. The
+        reputation of the IMF is consequently pretty bad in the global south (and in Greece, where it was part of the infamous Troika during the debt crisis).
+      </p>
+      <p>
+        To make the instruments of the IMF less depended on its members’ contributions and to supplement the US-Dollar as main reserve currency in the long-term, so-called special drawing rights (SDR) were introduced in 1969. Put simply, these are
+        international clearing units which grant their holders the right to purchase a certain amount of reserves (be it US-Dollars, Euros, Yens etc.) in exchange for SDRs from other IMF members. However, the total amount of SDRs allocated so far
+        (660 billion SDR, equivalent to 935 billion US-Dollar) is very low relative to global trade (19.5 trillion US-Dollar in 2018) and a country’s share in a tranche is determined by its quota (which depends on it share in global trade). Moreover,
+        the issuance of those SDRs requires a majority of 85% percent on the Board of Governors, giving the USA and EU-countries (insofar EU-member states vote uniformly) a veto right. At least, there has recently been a 456 billion allocation
+        (already included in the above number) to enable developing countries to purchase essential imports like vaccines and medical equipment. It is obvious that it would make more sense to take into a country’s needs into account for SDR
+        allocations, but then it would turn them into some form of foreign aid, and this is – so far – not the role SDRs are supposed to play. SDRs also differ from the Bancor imagined by John Maynard Keynes during the Bretton Woods Conference. In
+        his concept of the International Clearing Union, the Bancor was the central international reserve asset to account all international transactions. CA surplus countries would have accumulated Bancors which they had to lend out to deficit
+        countries at favourable conditions. Moreover, both too high and too low Bancor holding should have been penalized with a penalty interest, to motivate both CA surplus and CA deficits to rebalance their trade positions. In my opinion, this
+        would have been a far better solution than the system implemented by the USA to strengthen the role of the US-Dollar and, thereby, of the USA itself.
+      </p>
+      <p>
+        A new monetary system with a truly international, multilaterally controlled reserve unit alone would, of course, not solve all problems with CA balances. As we have seen, the push for free capital flows harmed many developing countries
+        because it often led to capital outflows (or sudden stops/reversals of capital inflows) and increased the probability of financial or balance of payments crises. Steering capital flows should, therefore, again become an accepted policy
+        instrument as they were until the 1970s, especially for developing countries. However, the implementation of capital controls is not easy and never watertight. On the international level, a useful form would be a tax on international
+        financial transactions (so-called Tobin Tax) to limit the volatility of capital flows and the scope of foreign exchange speculations, which distort exchange rates. On a national level, there could be additional requirements for asset
+        purchases by foreign investors like minimum retention periods. This also serves to make capital flows more reliant and to increase the policy space of those countries.
+      </p>
+      <p>
+        So far, this text has mainly dealt with financial problems and reforms. But of course, the supply side is very important for resolving trade imbalances, too. For example, economic development in the global south is massively hampered by the
+        bad quality of infrastructure and institutions. To increase productivity, it is necessary to invest in better education, to prevent brain drain, and to speed up the economic catch-up process with more technology transfers. Hopefully, the
+        latter point has gained lasting attention by the controversies around vaccination patents. Moreover, it is not only important to improve the environment for economic growth in general, but also to foster economic diversification to make
+        economies more resilient against changing demand patterns (think of the Dutch Disease from above) and to decrease import dependence. Needless to say, this also concerns sustainable energy production.
+      </p>
+      <p>
+        There are many more things necessary to improve economic development quantitatively and qualitatively around the world, but as this article has shown, fixing the international monetary system must be part of the solution. A country that has
+        indisputably been very successful in its catching-up is China. Here, the exchange rate of the renminbi has not been left to markets (to this day, the renminbi is not freely tradable) but has been a policy target of the central bank, while
+        stabilizing inflation was achieved by wage and fiscal policies (as it should be). Other instruments used by China were capital controls, forced technological controls, and strict regulations for foreign investments. Moreover, China only
+        relied on an export-oriented strategy temporarily and now uses domestic demand to stabilize growth, as can be seen from the rebalancing of its CA balance in the first figure. Although China is special in some regards (especially with regard
+        to its market size) and there are certainly a lot of massively problematic policies, developing countries can learn from its meteoric rise.
+      </p>
+      <p>
+        There are many more things necessary to improve economic development quantitatively and qualitatively around the world, but as this article has shown, fixing the international monetary system must be part of the solution. A country that has
+        indisputably been very successful in its catching-up is China. Here, the exchange rate of the renminbi has not been left to markets (to this day, the renminbi is not freely tradable) but has been a policy target of the central bank, while
+        stabilizing inflation was achieved by wage and fiscal policies (as it should be). Other instruments used by China were capital controls, forced technological controls, and strict regulations for foreign investments. Moreover, China only
+        relied on an export-oriented strategy temporarily and now uses domestic demand to stabilize growth, as can be seen from the rebalancing of its CA balance in the first figure. Although China is special in some regards (especially with regard
+        to its market size) and there are certainly a lot of massively problematic policies, developing countries can learn from its meteoric rise.
+      </p>
+      <p>
+        Nevertheless, fixing global trade and reducing global imbalances requires actions from both deficit and surplus countries. As it is the case with so many global problems, multilateral cooperation and redistribution is urgently needed. The
+        target of balanced international trade must again be actively pursued, which is not only relevant for preventing crises, but also to secure support for international trade by citizens that are rightfully more and more upset with the way
+        globalization is managed. International trade can vastly improve living conditions and human progress worldwide, but we have to make it work for everyone.
+      </p>
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>

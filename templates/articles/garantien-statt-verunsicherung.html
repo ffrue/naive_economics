@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Naive Economics</title>
+  <link rel="icon" href="/static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/garantien-statt-verunsicherung/images.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top navbar-article">
+    <a class="navbar-brand" href="../">Naive Economics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link here" href="../articles">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../datawork">Datawork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../models">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-me">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top: 2.5%;">
+
+    <!-- Text -->
+    <div class="row text" style="text-align: left; padding: 0 10%; margin-bottom: 5%;">
+      <h2 class="title">Garantien statt Ver(un)sicherung</h2>
+
+      <p>
+        Gerechtigkeit ist ein zentrales Prinzip in Politik, Wirtschaft und letztlich überall, wo Menschen gemeinsam handeln. Die Frage danach, was gerecht oder ungerecht ist, wird bei jeder Wahl, bei jeder Abstimmung neu behandelt und beantwortet und
+        ist auch bei den aktuell laufenden Sondierungen eine Kernfrage. Besonders offen tritt das Thema natürlich zutage, wenn es darum geht, wie Einkommen und Vermögen verteilt sind und wie viel Personen etwa von ihrem Einkommen abgeben oder dazu
+        hinzubekommen sollen. Dies ist nicht nur eine moralische Frage, da ein hohes Maß an Ungleichheit die allgemeine Nachfrage hemmt (Reiche konsumieren nur einen kleinen Teil ihres Geld und Arme haben keines, um es auszugeben) und damit das
+        Wirtschaftswachstum behindert, doch steht die normative Bewertung meistens im Vordergrund. Und wie es bei normativen Fragen nunmal so ist, gibt es hier keine berechenbare richtige Lösung, keinen unentdeckten Masterplan, sondern die Frage nach
+        der gerechten Verteilung von Geld und Gütern muss jeder Wähler für sich selbst beantworten und in Wahlen kommunizieren. Damit eine Bewertung des aktuellen Systems aber überhaupt für den Normalbürger möglich ist, braucht es Transparenz und
+        Verständlichkeit. Natürlich sind alle Zahlen, Tarife und Geldströme des aktuellen Systems in irgendwelchen offiziellen Datenbanken und Sozialgesetzen zu finden, aber erstens ist das Zusammentragen von Informationen so ein zu großer Aufwand
+        und zweitens sind die darauf folgenden Schritte der Analyse und Meinungsbildung ziemlich komplex. Wer die radikale Vereinfachung von staatlichen Systemen als Lösung für dieses Problem fordert (z.B. die berühmte Steuererklärung auf dem
+        Bierdeckel von Friedrich Merz), sieht sich schnell – und nicht zu Unrecht – dem Vorwurf ausgesetzt, damit deren Effektivität zu verringern und zielgenaue bzw. gerechte Verteilungskorrekturen zu erschweren. Es gibt jedoch Bereiche, in denen
+        gibt es diesen Trade-Off gar nicht, sondern Komplexität, Intransparenz und Ineffizienz gehen Hand in Hand. Wohl nirgends ist dies so ausgeprägt, wie bei den überwiegend beitragsfinanzierten Sozialversicherungen. Im Folgenden will ich daher
+        den Status-Quo einmal vorstellen und argumentieren, dass es eine transparentere, effektivere und gerechtere Gestaltungsmöglichkeiten für diesen zentralen Pfeiler unseres Sozialstaates gibt.
+      </p>
+      <p>
+        Grundsätzlich wird das soziale Sicherungssystem in Deutschland vor allem von fünf Versicherungen getragen, nämlich Renten-, Kranken-, Arbeitslosen-, Pflege- und Unfallversicherung. Letztere ist dabei ein Sonderfall, da sie sich nur auf den
+        Arbeitsplatz bezieht und ausschließlich von den Arbeitgebern getragen wird, weshalb wir sie im Folgenden beiseitelassen. Während sonst im sozialen Bereichen vor allem von staatlichen Leistungen die Rede ist, spielen hier also Versicherungen
+        eine zentrale Rolle. Wie immer bei Definitionsfragen lohnt ein Blick in die Wikipedia:
+      </p>
+      <p class="quote">
+        „Mit Versicherung wird das Grundprinzip der kollektiven Risikoübernahme bezeichnet, bei dem viele einen Geldbetrag in die Kapitalsammelstelle einzahlen, um beim Eintreten eines entsprechenden Schaden aus dieser Kapitalsammelstelle einen
+        Schadensausgleich zu erhalten“.
+      </p>
+      <p>
+        Zum Begriff der Sozialversicherung heißt es weiter:
+      </p>
+      <p class="quote">
+        „Die Zweige der Sozialversicherungen können nur eingeschränkt zu den Versicherungen gezählt werden, da es sich nur um umlagefinanzierte staatlich organisierte Pflichtversicherungen handelt“.
+      </p>
+      <p>
+        Was bedeutet das und was folgt daraus? Zunächst liegt es auf der Hand, dass Sozialversicherungen einen Sonderfall ggü. klassischen Versicherungen darstellen. Erstens ist ihr Abschluss bzw. die Teilnahme an ihr nicht freiwillig, sondern
+        verpflichtend, wofür es verschiedene Gründe gibt. Zunächst einmal kann es sein, dass eine Marktlösung zu suboptimalen Ergebnissen führt. So sieht man in den USA, dass es etwa für Menschen mit einer Vorerkrankung extrem schwierig ist, eine
+        bezahlbare private Krankenversicherung zu finden. Darüber hinaus kann es zu Ineffizienzen kommen, da Nachfrager von Versicherungen einen Anreiz haben, über ihre tatsächliche Risikogefährdung zu lügen und damit Versicherungen vor das Problem
+        der asymmetrischen Information und korrekten Bepreisung stellen. Ein weiteres Argument für Pflichtversicherung ist ein moralisches: So müsste eine Gesellschaft, in der der Abschluss von Krankenversicherungen eine rein private Entscheidung
+        ist, bereit sein, einen unversicherten Schadensfall in ihren Reihen tatsächlich zu ertragen (d.h. eine schwere Erkrankung ohne Behandlungsmöglichkeit nur aufgrund fehlender individueller Finanzierung). Sobald die Gesellschaft dies nicht
+        möchte und zumindest existenzielle Risiken öffentlich absichert, bewegt sich das System von einer privaten Lösung näher hin zu einer (im Extremfall rein) staatlichen Versicherung.
+      </p>
+      <p>
+        Ein zweiter Unterschied zwischen klassischen Versicherungen und Sozialversicherungen besteht in der Finanzierung. Eine private Versicherung sammelt schlicht die Beitragszahlungen ihrer Kunden ein und befüllt mit diesen einen Topf. Aus diesem
+        werden die Leistungen im Versicherungsfall finanziert und ein nicht akut gebrauchter Teil in Finanzanlagen umgewandelt, um eine Rendite für den Versicherungsanbieter zu erwirtschaften. Je genauer eine Versicherung die Risiken ihrer Kunden
+        kennt, desto besser kann sie den optimalen Finanzierungsbeitrag und die gefahrlose Anlagesumme bestimmen. Im Umkehrschluss bedeutet dies auch, dass bei schlechter Kassenlage weniger Leistungen ausbezahlt werden können oder die Beiträge erhöht
+        werden müssen, was beides einen Nachteil im Wettbewerb mit anderen Versicherungen darstellt. Eine andere Möglichkeit der Kassenhaltung besteht darin, dass die Beiträge für jeden Kunden individuell aufsummiert werden und deren Höhe über die
+        Auszahlung im Versicherungsfall entscheidet. Eine Lebensversicherung z.B. funktioniert ähnlich wie ein Sparbuch, auf das regelmäßig einbezahlt wird, nur dass hier für den Fall eines frühzeitigen Todes eine zusätzliche Auszahlung an die
+        Hinterbliebenen vereinbart wird und bei einem „Überleben“ der eigenen Versicherung (d.h. bei einem Nicht-Eintreten des Versicherungsfalles) die interne Verzinsung deutlich schlechter als bei anderen Anlageformen ist. Da hier mit den eigenen
+        Beiträgen ein individueller Anspruch auf spätere Leistungen erworben wird, ähnelt dieses System auf den ersten Blick dem der Renten- oder Arbeitslosenversicherung. Auch dort hängt schließlich die Auszahlungshöhe, d.h. die Rente bzw. das
+        Arbeitslosengeld I (das ALG II ist unabhängig von früheren Einzahlungen), von den vorherigen Beiträgen bzw. dem vorherigen Lohn ab. Dieser Eindruck, dass die eigenen Beiträge einen individuellen, klaren Leistungsanspruch aufbauen, ist in der
+        Sozialversicherung jedoch falsch und ein Grund für die Undurchsichtigkeit des aktuellen Systems.
+      </p>
+      <p>
+        Grundsätzlich spiegeln die Relationen der Beitragszahlungen recht gut die Relationen der Ausgaben der jeweiligen Sozialversicherungen wider. Die Beiträge werden von Arbeitnehmer und Arbeitgeber paritätisch geleistet, sie teilen sich also die
+        Zahlungen an die Sozialkassen. Da bei derlei Aussagen häufig Missverständnisse aufkommen, sei an dieser Stelle darauf hingewiesen, dass diese formal hälftige Lastenteilung keineswegs mit der tatsächlichen Lastenverteilung übereinstimmen muss
+        und dies auch nicht tut. Wenn Arbeitgeber aufgrund der zu zahlenden Beiträge schlicht den Lohn für die Beschäftigten reduzieren, so würden sie die Abgabenlast auf die Arbeitnehmer überwälzen. Diese Überwälzung zu messen, ist sehr schwierig,
+        gemeinhin geht die ökonometrische Literatur jedoch von einer vollständigen Überwälzung aus, Arbeitnehmer müssen also einen niedrigeren Bruttolohn sowie eine Abgabenbelastung in Kauf nehmen. Obgleich die Finanzierung paritätisch ist, treffen
+        Beitragserhöhungen damit letztlich fast nur die Arbeitnehmer. Da im politischen Geschäft dieser Umstand meist keine Erwähnung findet, sind die Wähler über die tatsächlichen Belastungswirkungen meist im Unklaren und können Fragen der gerechten
+        Finanzierung nicht wirklichkeitsgetreu beantworten – ein Problem, dass jedoch auch bei Steuern besteht. Im Folgenden werden nur die formellen Belastungen der Arbeitgeber dargestellt, die verdeckte Überwälzung der Arbeitnehmerbeiträge in Form
+        niedrigerer Löhne sollte jedoch stets mitgedacht werden. Aktuell belaufen sich die Beitragssätze auf 14,6% für die gesetzliche Krankenversicherung (GKV), 18,6% für die gesetzliche Rentenversicherung (GRV), 2,5% für die
+        Arbeitslosenversicherung (AV) und 3,05% für die erst 1995 eingeführte Pflegeversicherung (PV). Bei der Krankenversicherung kommt zudem noch ein von der jeweiligen Versicherung abhängige Zusatzbeitrag hinzu, den sich seit einem Beschluss der
+        GroKo in 2018 Arbeitnehmer und -geber ebenfalls paritätisch (nicht) teilen. Insgesamt belaufen sich die Beiträge für Arbeitnehmer und -geber damit auf knapp über 40%, bei einem Bruttolohn von 3.000€ bedeutet dies für den Arbeitnehmer einen
+        Abzug von ca. 600€. Finanziert werden damit Ausgaben der Sozialversicherungen im Umfang von insgesamt 640 Milliarden € (ich habe mich meist an die Zahlen aus 2019 gehalten, um Sondereffekte von Corona auszublenden). Auch auf der Ausgabenseite
+        ist die GRV für den Löwenanteil von 333 Mrd. € verantwortlich, die GKV für 250 Mrd. €, die PV für 47 Mrd. € und die AV für 31 Mrd. €. Die Ausgaben für die GKV beziehen sich dabei tatsächlich nur auf die gesetzlichen Krankenversicherungen, die
+        Ausgaben der privaten Versicherer (für die man sich ab einem Einkommen von 60.750€ entscheiden kann) sind hier nicht inkludiert. Die Argumente im Folgenden lassen sich jedoch gleichermaßen auf GKV und private KV/PV beziehen, weswegen diese
+        Unterscheidung nicht weiter thematisiert wird.
+      </p>
+
+      <div class="figure">
+        <img src="/static/garantien-statt-verunsicherung/Arbeitnehmerbeitrage.png"  id="AN-Beiträge"/>
+      </div>
+      <div class="figure">
+        <img src="/static/garantien-statt-verunsicherung/Gesamtausgaben Sozialversicherungen.png"  id="Gesamtausgaben"/>
+        <p class="fig-desc">
+          Eigene Darstellungen, Daten aus Sozialbudget 2019
+        </p>
+      </div>
+
+      <p>
+        An dieser Stelle wollen wir die Ausgabenseite der Sozialversicherungen kurz näher betrachten. Wie oben bereits erwähnt, ist der Eindruck eines Aufbaus von fest definierten Ansprüchen nicht richtig, v.a. nicht bei staatlichen
+        Sicherungssystemen. In einer privaten Versicherung ist es noch so, dass in einem Vertrag verbindlich und dauerhaft festgelegt werden kann, welche Leistungen in welchen Versicherungsfällen gezahlt werden. Für Lebensversicherer ist dies ein
+        großes Problem, schließlich konnten sie zur Jahrtausendwende noch Verträge mit einer garantierten Verzinsung von 4% abschließen und dabei ein gutes Geschäft machen, während sie sich im aktuellen Niedrigzinsumfeld sehr schwer damit tun, eine
+        ausreichend Rendite für entsprechende Auszahlungen zu erwirtschaften. Als einziges Mittel bleibt ihnen, Kunden früher aus ihren Verträgen zu locken, die Versicherungsleistung einfach ändern können sie nicht. Bei den Krankenversicherungen ist
+        dies anders, da hier sowohl im gesetzlichen wie im privaten Bereich die Kassen selbst ihr Leistungsportfolio festlegen und dabei im Wettbewerb mit den anderen stehen. Je mehr Geld die Krankenkassen also für essentielle Versorgungsleistungen
+        (v.a. bei älteren Menschen) ausgeben müssen, desto weniger andere Leistungen können sie ihren Mitglieder bieten (u.a. sehr zum Ärger aller Brillenträger). Noch ausgeprägter ist die Leistungsflexibilität jedoch bei der Rentenversicherung, die
+        als Einheitskasse für alle gesetzlich Versicherten weder im Wettbewerb mit anderen Kassen steht noch ihr Leistungsportfolio sonderlich anpassen kann. Die Politik legt hier nicht nur die Beitragsmodalitäten fest, sondern bestimmt mittels
+        gesetzlich niedergeschriebenen Formeln auch die daraus resultierende spätere Rentenhöhe. Es lohnt ein kurzer Blick: Während ihres Erwerbsleben sammeln Angestellte sog. Entgeltpunkte abhängig von ihrem Einkommen (1 Entgeltpunkt erhält, wer ein
+        exakt durchschnittliches Einkommen bezieht), deren Summe multipliziert mit dem Zugangsfaktor, dem Rentenartfaktor und dem aktuellen Rentenwert die monatliche Rentenhöhe ergibt. Der Zugangsfaktor senkt die Rente für Frührentner und ist daher
+        kleiner als eins, wenn man vor dem gesetzlichen Renteneintrittsalter, das politisch festgelegt und jederzeit geändert werden kann, in Rente geht. Der Rentenartfaktor beträgt eins für die klassische Altersrente und nimmt niedrigere Werte an,
+        wenn es sich um andere Rentenarten handelt. So erhält beispielsweise eine Witwe, die kaum eigenes Einkommen aufgrund langjähriger Kindererziehung oder einer Erwerbsminderung hat, 55% der Rentenansprüche ihres verstorbenen Gatten
+        (Rentenartfaktor 0,55). Politisch besonders brisant ist zudem der sog. aktuelle Rentenwert, der sich wiederum als Produkt aus vorherigem Rentenwert, der Lohnkomponente, dem Riesterfaktor und dem Nachhaltigkeitsfaktor berechnet. Die
+        Lohnkomponente lässt Renten steigen, wenn die Bruttolöhne steigen, wobei die sog. Rentengarantie dafür sorgt, dass fallende Löhne nicht negativ auf die Rente wirken. Der Nachhaltigkeitsfaktor wiederum soll demografische Entwicklungen abbilden
+        und lässt die Rente sinken, wenn das Verhältnis von Rentnern zu Beitragszahlern (der sog. Rentnerquotient) steigt. Die genauen Formeln für die Berechnung des aktuellen Rentenwertes sind in §68 SGB VI festgeschrieben und können durch die
+        Veränderung von Parameterwerten politisch mit einfacher Mehrheit angepasst werden. Mit anderen Worten: Die Rentenhöhe ist eine ausschließlich politische Entscheidung. Dies gilt übrigens nicht nur für das Gesamtniveau, sondern auch für
+        mögliche Umverteilungen von hohen Ansprüchen zu niedrigen Ansprüchen. Betrachtet man die RV wie eine reguläre Anlage, so ergibt sich nach Berechnungen des DIW eine solide Verzinsung von 2% bis über 3,5%. Problematisch ist allerdings, dass
+        diese Verzinsung stark von der Lebensdauer abhängt (je länger ich Rente beziehe, desto mehr bekomme ich für meine Beiträge) und gerade ärmere Haushalte eine niedrigere Lebenserwartungen und damit eine geringere interne Verzinsung haben.
+        Ungleichheit ergibt sich also nicht nur aus der unterschiedlichen Höhe von Entgeltpunkten.
+      </p>
+      <p>
+        Wir haben gesehen, dass bei Sozialversicherungen, v.a. bei der Rente, individuelle Ansprüche nicht fest fixiert, sondern eine politische Angelegenheit sind. Aber ist die Rente denn grundsätzlich sicher, wie Norbert Blüm 1986 im Bundestag
+        erklärte? Mit Blick auf die bereits heute enorm hohen Ausgaben der RV und GKV, die beide durch die immer weiter alternde Bevölkerung weiter steigen werden, wird dies heute immer wieder angezweifelt und v.a. das sog. Umlageverfahren bei der
+        Rente als unsicher kritisiert. Parteien wie die FDP haben bereits Alternativ- bzw. Ergänzungskonzepte für Kapitaldeckungsverfahren z.B. mittels einer Aktienrente auf den Tisch gelegt. Das Umlageverfahren bei der Rente wird auch als
+        „Generationenvertrag“ bezeichnet und bedeutet, dass die Einzahlungen der Arbeitnehmer unmittelbar an die aktuellen Rentenbezieher ausgeschüttet werden. Die Generation der aktuellen Arbeiter finanziert die Generation im Ruhestand. Bei einem
+        Kapitaldeckungsverfahren fließen sammeln sich die eigenen Beiträge stattdessen in einem Topf, aus dem bei der Aktienrenten zur Erzielung von Renditen Aktien gekauft werden, und fließen erst dann als Auszahlungen zurück, wenn der Einzahlende
+        das Rentenalter erreicht hat. Hier sorgt also jede Generation für sich selbst vor. Als Vorteile für dieses System werden daher insbesondere die Krisenfestigkeit gegen demografische Entwicklungen, das Ausnutzen von Wertsteigerungen bei
+        Finanzanlagen (z.B. Aktien) oder auch der Schutz gegen negative Entwicklungen am Arbeitsmarkt (z.B. sinkende Einkommen, Arbeitslosigkeit) genannt. Das Umlageverfahren sichert wiederum gegen negative Entwicklungen an den Kapitalmärkten sowie
+        gegen Inflation ab (steigende Löhne bringen höhere Beiträge und gleichen damit gestiegene Preise aus) und ist zudem flexibler bei steigendem Leistungsbedarf (die Integration von Rentner aus der DDR in ein kapitalgedecktes System in der BRD
+        wäre z.B. nicht einfach so möglich gewesen). Darüber hinaus profitieren Rentner beim Umlageverfahren von positiven Entwicklungen auf dem Arbeitsmarkt und partizipieren so am steigenden Wohlstand. Bevor wir kritisch diese Argumente
+        hinterfragen, muss allerdings darauf hingewiesen werden, dass die Konzeptualisierung des aktuellen Systems als reines Umlagesystem zwischen Beitragszahlern nicht ganz ehrlich ist. Bereits heute decken die laufenden Beiträge nämlich bei weitem
+        nicht sämtliche Auszahlungen an Leistungsempfänger, weswegen der Staat besonders in die RV eine beträchtliche Summe zuschießen muss. Diese Zuschüsse in Höhe von über 100 Milliarden € machen ganze 30% des Bundeshaushalts aus.
+      </p>
+
+      <div class="figure">
+        <img src="/static/garantien-statt-verunsicherung/Beitrage vs Bund.png"  id="Finanzierung"/>
+        <p class="fig-desc">
+          Eigene Darstellung, Daten aus Sozialbudget 2019
+        </p>
+      </div>
+
+      <p>
+        Die oben aufgezählten klassischen Argumente führen allerdings sowieso in die Irre, da sie rein nomineller Natur sind – will heißen, es geht nur ums Geld. Dieses kann man natürlich durch Sparen in die Zukunft transferieren, doch was heißt das
+        schon? Am Ende geht es schließlich immer nur um die Verteilung der gegenwärtig produzierten Güter, denn Verbrauchsgüter wie Lebensmittel lassen sich schließlich nicht einfach so in die Zukunft mitnehmen. Was Rentner konsumieren können, hängt
+        in jedem Fall primär von der laufenden Produktion der Arbeiter ab. Ihr angespartes Geld ist zwar ein Instrument zur Sicherung eines Stücks vom Kuchen (d.h. dem realen Volkseinkommen aus Gütern), die Größe oder auch nur der Anteil des Stücks
+        lässt sich jedoch nicht im Vornherein sichern. Würde die arbeitende Bevölkerung geschlossen den Dienst verweigern, hätten die Rentner weder im Umlagesystem noch im Kapitaldeckungssystem eine reale Rente in Form von Gütern. Dieser Gedanke ist
+        keineswegs neu, sondern wurde bereits 1952 von Gerhard Mackenroth ausformuliert, der damit die Gestaltung der großen Rentenreform von 1959 beeinflusste:
+      </p>
+      <p class="quote">
+        „Nun gilt der einfache und klare Satz, daß aller Sozialaufwand immer aus dem Volkseinkommen der laufenden Periode gedeckt werden muß. Es gibt gar keine andere Quelle und hat nie eine andere Quelle gegeben, aus der Sozialaufwand fließen
+        könnte, es gibt keine Ansammlung von Periode zu Periode, kein ‚Sparen‘ im privatwirtschaftlichen Sinne, es gibt einfach gar nichts anderes als das laufende Volkseinkommen als Quelle für den Sozialaufwand […] Kapitalansammlungsverfahren und
+        Umlageverfahren sind also der Sache nach gar nicht wesentlich verschieden. Volkswirtschaftlich gibt es immer nur ein Umlageverfahren.“
+      </p>
+      <p>
+        Abgesehen vom gemeinsamen Denkfehler obiger Argumente, der übrigens typisch für die auf dem realwirtschaftlichen Auge blinde VWL ist, bringt das Kapitaldeckungsverfahren jedoch nicht nur keine Vorteile, sondern auch noch einen entscheidenden
+        Nachteil: Sparen bedeutet nicht-Konsum. Während im Umlageverfahren die Beiträge direkt wieder ausgezahlt werden und der Nettoeffekt auf den Gesamtkonsum neutral bzw. eher positiv ist (Rentner sparen weniger als Arbeitnehmer und konsumieren
+        damit einen höheren Anteil ihrer Rente, als Beschäftigte es mit dem Geld getan hätten), kann es im Kapitaldeckungsverfahren zu einem Konsumrückgang durch Ersparnisbildung kommen, da das Ersparte in den Anlagetopf und nicht zurück in die
+        Wirtschaft fließt. Wenn mehr Leute in die individuellen Rentendepots einzahlen als aufgebaute Rente beziehen, ist der Nettoeffekt auf den Konsum negativ. Das Argument, dass die zusätzliche Ersparnis als Ausgleich die Investitionen erhöht, da
+        sich die Finanzierungsbedingungen für die Unternehmen an den Kreditmärkten verbessern (schließlich wird das Ersparte dort angelegt) überzeugt nicht. Die Vergabe von Bankkrediten ist von Ersparnissen unabhängig (siehe wieder hier) und
+        besonders im aktuellen Niedrigzinsumfeld sind Unternehmen nicht auf andere Formen der Finanzierung angewiesen. Stattdessen ist viel eher zu befürchten, dass der Konsumrückgang die Absatzmöglichkeiten von Unternehmen reduziert und diese daher
+        weniger investieren also zuvor. Wie man es dreht und wendet, eine kapitalgedeckte Rente macht gesamtwirtschaftlich keinen Sinn.
+      </p>
+      <p>
+        Der Fokus auf die realwirtschaftliche Seite soll nicht suggerieren, dass nominale Geldfragen in diesem Kontext keine Relevanz haben. Während die realwirtschaftliche Seite primär bestimmt, wie viele Güter insgesamt zur Verfügung stehen,
+        bestimmt die nominale Seite v.a. deren Verteilung. Dabei geht es nicht um die Gesamtmenge an Geld, da diese bei konstanter Verteilung lediglich das Preisniveau verändert, sondern ausschließlich um die Frage, wer welchen Anteil an der
+        Geldmenge hält (wie das alles zusammenhängt und was das mit Fiskalpolitik zu tun hat, ist ebenfalls hier ausführlich erklärt). Wenn die Politik (d.h. der Großteil der Wähler) sich dazu entschließt, dass Bezieher von niedrigen Einkommen, also
+        u.a. zahlreiche Rentner, einen höheren Anteil an der gesamten Gütermenge erhalten sollten, dann gibt es dazu zwei extreme Wege: Den Reicheren so viel Geld wegnehmen, dass die Preise sinken und sich die Ärmeren mehr vom gleichen Geld kaufen
+        können, oder den Armen so viel Geld geben, dass sie mehr kaufen können, wobei das dadurch steigende Preisniveau den Wert des Geldes der Reicheren reduziert. Am sinnvollsten ist natürlich ein Mittelweg aus weniger Geld für die Reichen und mehr
+        Geld für die Armen, also über progressive Steuern finanzierte Sozialleistungen, wie z.B. höhere Renten plus höhere Beiträge. Man darf jedoch in Anbetracht der schwierigen Durchsetzbarkeit von Steuererhöhungen für Reiche nicht vergessen, dass
+        der zweite Weg trotzdem offensteht (allerdings nicht mit der aktuellen Schuldenbremse) und Inflation bei konstanten bis steigenden Realeinkommen für die unteren Schichten eine soziale Umverteilung sein kann (Betonung auf „kann“).
+      </p>
+      <p>
+        Nun gibt es allerdings ein Problem: Renten sind aktuell größtenteils nicht progressiv finanziert und daher kein Instrument zur potenziellen Umverteilung. Tatsächlich ist das Beitragssystem regressiv und damit eigentlich unsozial. Zur
+        Übersetzung: Ein Abgabensystem (Steuern, Beiträge) kann einen regressiven, linearen oder progressiven Tarif haben. Damit beschreibt man, wie sich die Abgabenlast mit steigendem Einkommen verändert. Bei einem linearen Tarif (z.B. konstanter
+        Steuersatz von 20% für alle) ist die prozentuale Belastung unabhängig vom Einkommen und für alle gleich. Ein regressiver Tarif (z.B. eine Pauschalabgabe von 1.000€) hingegen belastet untere Einkommen prozentual stärker als höhere, während ein
+        progressiver Tarif (z.B. ansteigender Steuersatz) höhere Einkommen prozentual stärker belastet. Die Einkommenssteuer in Deutschland ist progressiv, da auf den 100.000sten Euro Monatseinkommen mehr Steuern anfallen (45ct) als auf den 9.168sten
+        Euro (14ct). Die Mehrwertsteuer hingegen ist regressiv, da sie einen konstanten Steuersatz auf Konsumgüter festlegt und ärmere Menschen einen höheren Anteil ihres Einkommens für Konsum ausgeben (und damit einen höheren Anteil ihres Einkommens
+        für die Mehrwertsteuer ausgeben). Wie schaut es nun bei den Sozialbeiträgen aus? Da die Beitragssätze für die einzelnen Versicherungen konstant sind, könnte man meinen, es handele sich hier um einen linearen Tarif ohne Verteilungswirkung –
+        dem ist jedoch nicht so. Entscheidend dafür ist, dass Sozialbeiträge nur auf einen bestimmten Teil des Einkommens gezahlt werden müssen, nämlich den unterhalb der sog. Bemessungsgrenze. Die 14,6% GKV-Beitrag fallen etwa nur auf das
+        Monatseinkommen bis 4.837,50€ an, jeder weitere Euro wird nicht belastet. Je höher das Einkommen, desto geringer ist der prozentuale Anteil der Sozialbeiträge (sofern die Bemessungsgrenze überschritten wird), d.h. das Abgabensystem ist
+        regressiv. Dies führt dazu, dass das gesamte Lohnabgabensystem aus Steuern und Beiträgen weniger progressiv ist, als es durch die Einkommenssteuer allein wäre (eine Kurzanalyse vom DIW zum aktuellen Abgabensystem findet sich unter dem
+        Artikel). In der folgenden Grafik sieht man das daran, dass die roten Balken allein schneller ansteigen würden als die rotblauen Balken zusammen. Der progressive Anstieg der Balken zu Beginn ergibt sich daraus, dass es analog zur
+        Bemessungsgrenze Abzugsregeln gibt, mit Hilfe derer man das zu belastende Einkommen runterrechnen kann.
+      </p>
+
+      <div class="figure">
+        <img src="/static/garantien-statt-verunsicherung/iaq grafik.png"  id="IAQ"/>
+        <p class="fig-desc">
+          Darstellung von IAQ
+        </p>
+      </div>
+
+      <p>
+        In absoluten Beträgen kommt es aber selbstverständlich auch bei einem linearen und auch bei den gängigen regressiven Tarifen zu einer Umverteilung von oben nach unten. Dies spielt beispielsweisen in der Krankenversicherung eine wichtige
+        Rolle, da hier Leistungen einkommens- bzw. beitragsunabhängig sind (anders als bei den Rentenzahlungen). Reichere tragen also durchaus einen größeren Anteil der Finanzierung, doch ist er groß genug, um gerecht zu sein? Werden ärmere und
+        reichere Haushalte gleichermaßen gemäß ihrer Leistungsfähigkeit belastet? Dies sind, wie einleitend betont, normative Fragen, die an der Wahlurne beantwortet werden müssen. Dabei fällt auf, dass in aktuellen Debatten die überwiegende Mehrheit
+        (abgesehen von bei FDP und AFD verorteten Wählern) nicht der Meinung zu sein scheint, dass Reiche in Deutschland ggü. den Ärmeren überfordert werden. Viele Bürger wollen stattdessen eine noch progressivere Lastenteilung, um staatliche
+        Leistungen zu finanzieren. Aber ist es nicht seltsam, dass wir bei Straßen, Schulen, Militär oder Kindergeld eine stark progressive Finanzierung durchsetzen, aber bei der ebenfalls staatlichen Leistung Gesundheit ein regressives System
+        aufrechterhalten? Nicht einmal die Linke, geschweige denn Grüne oder SPD, wollen eine Abkehr von der Beitragsfinanzierung der GKV, sondern fordern lediglich eine einheitliche Bürgerversicherung für alle Gruppen (also die Einbeziehung von
+        Beamten, Selbstständigen und Personen mit Einkommen aus Nicht-Arbeit in die GKV). Dies würde es zwar ermöglichen, die GKV finanziell besser aufzustellen und ihr Leistungsportfolio zu erhöhen oder die Beitragshöhe zu senken, aber dennoch wäre
+        Gesundheit damit immer noch weniger progressiv finanziert als Autobahnbrücken. Gerechtigkeitsdebatten schießen damit meist am Elefanten in Raum vorbei: Wir streiten über die die Verteilung der Steuerlast, aber vergessen dabei die
+        Sozialabgaben, deren Aufkommen nur um ein Drittel niedriger liegt.
+      </p>
+
+      <div class="figure">
+        <img src="/static/garantien-statt-verunsicherung/Steuern und Sozialbeitrage.png"  id="Steuern"/>
+        <p class="fig-desc">
+          Eigene Darstellung, Daten aus Sozialbudget 2019
+        </p>
+      </div>
+
+      <p>
+        Welche Vorteile hätte es also, das aktuelle System der durch Sozialbeiträge finanzierten Sozialversicherungen durch ein System steuerfinanzierter Garantieleistungen zu ersetzen, in dem alle Leistungen staatlich garantiert sind und direkt dem
+        Bundeshaushalt entspringen? Zuerst einmal würde es das System radikal vereinfachen und die Bürger würden besser verstehen, wer wie viel zu welchen öffentlichen Gütern beiträgt und welche große Rolle die Politik sowohl auf der Einnahmen- als
+        auch der Ausgabenseite hat. Die Macht des Staates würde sich dabei nicht wirklich verändern, da wir ja bereits oben festgestellt haben, dass dieser schon heute beispielsweise in der RV bereits alles regelt (bzw. regeln muss) und eben keine
+        garantierten Ansprüche aus unveränderlichen Beiträgen bestehen. Sobald diese Politisierung der Sozial“versicherungen“ klar und transparent ist, können Bürger offen und frei darüber entscheiden, wie sie das System gestalten wollen – ein großer
+        Gewinn für die Demokratie. Zweitens würde ein einfacheres Abgabensystem Erhebungskosten (monetär wie anderweitig) deutlich reduzieren. Die eigene Steuerbelastung in verschiedenen Szenarien zu kennen ist schon teilweise nicht ganz einfach,
+        Sozialbeiträge machen die Sache wirklich nicht leichter – also bitte weniger Unklarheit, weniger Bürokratie, weniger Stress. Drittens, die Finanzierung zentraler Gemeinschaftsaufgaben wie die Sicherung der Gesundheit aller Bürger wäre
+        progressiver und sozialer. Gewiss, der Steuertarif müsste für alle Einkommensgruppen erhöht werden, um die wegfallenden Beiträge zu kompensieren, aber auch das würde zu einer wohltuenden Debatte über die Lastenverteilung in unserer
+        Gesellschaft führen. Viertens würden auf der Ausgabenseite, d.h. bei den sozialen Leistungen, offengelegt, dass es einzig um die Bereitstellung realer Güter und Dienstleistungen aus dem laufenden Volkseinkommen geht, sowie kontraproduktive
+        und nutzlose Ersparnisbildungen in Kapitaldeckungssystemen verhindert werden. Und zuletzt würde, fünftens, die bereits heute v.a. in der RV bestehende Abhängigkeit der Sozial“versicherungen“ von staatlicher Finanzierung transparent und die
+        monetäre Macht des Staates im sozialen Bereich endlich entfesselt werden. Wie oben beschrieben, kann Umverteilung auch über die Zuteilung von mehr Geld an Ärmere mittels staatlicher Defizite ohne die Durchsetzung von höheren Abgaben von
+        Reichen stattfinden. Der Staat ist nicht auf Einnahmen angewiesen, sondern kann Geld beliebig nach den Wünschen und Bedürfnissen der Wähler erzeugen und verteilen (ausführlich dazu wieder hier). Doch selbst wenn man nicht so weit gehen
+        wollte: Den Haushaltsdruck innerhalb der Sozialkassen, die auch negativ auf die Entlohnung im Pflege- und Gesundheitssektor wirkt, würde eine Integration in den Bundeshaushalt wegnehmen und die Priorisierung von öffentlichen Ausgaben könnte
+        ohne vorgetäuscht Sachzwänge wieder ehrlich und offen diskutiert werden. Fünf gute Gründe also, einmal radikal neu zu denken und, statt ständig am bestehenden Sozialsystem herumzudoktern, ein großes Projekt umzusetzen: Demokratischer,
+        sozialer, gerechter.
+      </p>
+
+    </div>
+
+    <div class="bottom">
+      © Florian Frühhaber
+    </div>
+
+</body>
+
+</html>
